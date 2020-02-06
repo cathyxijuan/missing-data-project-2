@@ -1,7 +1,8 @@
 library(lavaan)
 source("functions.R")
 source("Models_WM.R")
-
+load("fitNoMissingShort_WM.RData")
+fitNoMissingShort_WM
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
 #Argument:
@@ -65,7 +66,7 @@ fit.ind.matrix.MCAR_2Var <- function(pop.model.list, fitted.mod, sample.nobs = 1
       simuData <- MCARMaxPattern_2Var(pop.model.list[[i]], sample.nobs, missing.percentage)
     } 
     fit.ind.vector <- all.fit.approx.indices(fitted.mod, dataset=simuData)
-    fit.indices.MCAR<- rbind(fit.indices.MCAR,fit.ind.vector)
+    fit.indices.MCAR<- cbind(fit.indices.MCAR,fit.ind.vector)
   }
   
   fit.indices.MCAR
@@ -221,7 +222,7 @@ fit.ind.matrix.MCAR_6Var <- function(pop.model.list, fitted.mod, sample.nobs = 1
       simuData <- MCARMaxPattern_6Var(pop.model.list[[i]], sample.nobs, missing.percentage)
     } 
     fit <- cfa(fitted.mod, data=simuData, missing="fiml", mimic="EQS")
-    fit.indices.MCAR<- rbind(fit.indices.MCAR,lavInspect(fit, "fit")[c("fmin","rmsea","cfi","srmr","gfi", "df", 
+    fit.indices.MCAR<- cbind(fit.indices.MCAR,lavInspect(fit, "fit")[c("fmin","rmsea","cfi","srmr","gfi", "df", 
                                                                        "chisq", "pvalue", "baseline.chisq", "baseline.df",
                                                                        "rmsea.ci.lower", "rmsea.ci.upper")])
   }
@@ -249,9 +250,19 @@ fit.ind.matrix.MCAR_6Var <- function(pop.model.list, fitted.mod, sample.nobs = 1
 
 
 
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM <- 
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_nmax <- 
   fit.ind.matrix.MCAR_2Var(pop.model.list=pop.mod, 
-                           fitted.mod=fitted.mod, missing.percentage = 0.20, missing.type = "min")
+                           fitted.mod=fitted.mod,
+                           missing.percentage = 0.20, missing.type = "min")
+fitNoMissingShort_WM
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n1000 <- 
+  fit.ind.matrix.MCAR_2Var(pop.model.list=pop.mod, 
+                           fitted.mod=fitted.mod,sample.nobs = 1000,
+                           missing.percentage = 0.20, missing.type = "min")
+
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n1000
+
+
 
 fitMCAR_MinPat_50PerMiss_2VarMiss_WM <- 
   fit.ind.matrix.MCAR_2Var(pop.model.list=pop.mod, 

@@ -169,23 +169,78 @@ all.fit.approx.indices <- function(fitted.mod, dataset){
   
   #--------New fit index versions without small sample corrections (equation 6 and 7 in the Overleaf document)------------#
   n<-N-1 #EQS variety, remove and replace with N to study Mplus variety
-  rmsea.uncorr <-sqrt(Fc/dfh-1/n) 
-  cfi.uncorr <-1-(Fc-dfh/n)/(FcB-dfb/n)
+
+  
+  
+  if (Fc/dfh-1/n < 0 ) { 
+    rmsea.uncorr <-  0} else {
+      rmsea.uncorr <-sqrt(Fc/dfh-1/n) 
+    }
+  
+  
+  if ( Fc-dfh/n < 0 ){
+    cfi.uncorr <- 1
+  } else {
+    cfi.uncorr<-1-(Fc-dfh/n)/(FcB-dfb/n)
+  }
+  
   #recall Fc is the Fmin for the structured model; FcB is the Fmin for the baseline model
   
   #--------New fit index versions WITH small sample corrections (equation 8 and 9 in the Overleaf document)---------------#
   
   #Study these four RMSEAS
-  rmsea.obs<-sqrt(Fc/dfh-k.obs/(dfh*n))
-  rmsea.obs.nonn<-sqrt(Fc/dfh-k.obs.nonn/(dfh*n))
-  rmsea.exp<-sqrt(Fc/dfh-k.exp/(dfh*n)) 
-  rmsea.exp.nonn<-sqrt(Fc/dfh-k.exp.nonn/(dfh*n))
+  if (Fc/dfh-k.obs/(dfh*n) < 0 ) { 
+    rmsea.obs <-  0} else {
+      rmsea.obs <-sqrt(Fc/dfh-k.obs/(dfh*n))
+    }
+  
+  
+  if (Fc/dfh-k.obs.nonn/(dfh*n) < 0 ) { 
+    rmsea.obs.nonn <-  0} else {
+      rmsea.obs.nonn <-sqrt(Fc/dfh-k.obs.nonn/(dfh*n))
+    }
+  
+  
+  if (Fc/dfh-k.exp/(dfh*n) < 0 ) { 
+    rmsea.exp <-  0} else {
+      rmsea.exp <-sqrt(Fc/dfh-k.exp/(dfh*n))
+    }
+  
+  if (Fc/dfh-k.exp.nonn/(dfh*n) < 0 ) { 
+    rmsea.exp.nonn <-  0} else {
+      rmsea.exp.nonn <-sqrt(Fc/dfh-k.exp.nonn/(dfh*n))
+    } #negative at small sample size 
+  
+  
   
   #Study these four CFIs
-  cfi.obs<-1-(Fc-k.obs/n)/(FcB-kb.obs/n) 
-  cfi.obs.nonn<-1-(Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n) 
-  cfi.exp<-1-(Fc-k.exp/n)/(FcB-kb.exp/n) 
-  cfi.exp.nonn<-1-(Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n) 
+  if ( Fc-k.obs/n < 0 ){
+    cfi.obs <- 1
+  } else {
+    cfi.obs<-1-(Fc-k.obs/n)/(FcB-kb.obs/n) 
+  }
+  
+  
+  if ( Fc-k.obs.nonn/n < 0 ){
+    cfi.obs.nonn <- 1
+  } else {
+    cfi.obs.nonn<-1-(Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n) 
+  }
+  
+  
+  if ( Fc-k.exp/n < 0 ){
+    cfi.exp<- 1
+  } else {
+    cfi.exp<-1-(Fc-k.exp/n)/(FcB-kb.exp/n)  
+  }
+  
+  
+  
+  if ( Fc-k.exp.nonn/n < 0 ){
+    cfi.exp.nonn<- 1
+  } else {
+    cfi.exp.nonn<-1-(Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n)  
+  }#negative values for both denominator and numerator 
   #--------------End of Fit Indices---------------------------------------------------------------------------------#
   
   
@@ -196,9 +251,9 @@ all.fit.approx.indices <- function(fitted.mod, dataset){
   
   
   #comparison
-  fit.indiecs.vector<-c(rmsea.fiml,rmsea.uncorr,rmsea.obs,rmsea.obs.nonn,rmsea.exp,rmsea.exp.nonn, 
+  fit.indices.vector<-c(rmsea.fiml,rmsea.uncorr,rmsea.obs,rmsea.obs.nonn,rmsea.exp,rmsea.exp.nonn, 
                         cfi.fiml, cfi.uncorr, cfi.obs,cfi.obs.nonn,cfi.exp,cfi.exp.nonn)
-  names(fit.indiecs.vector) <- c("rmsea.original.fiml","rmsea.uncorr.approx","rmsea.corr.obs","rmsea.corr.obs.nonn","rmsea.corr.exp","rmsea.corr.exp.nonn",
+  names(fit.indices.vector) <- c("rmsea.original.fiml","rmsea.uncorr.approx","rmsea.corr.obs","rmsea.corr.obs.nonn","rmsea.corr.exp","rmsea.corr.exp.nonn",
                                  "cfi.original.fiml","cfi.uncorr.approx","cfi.corr.obs","cfi.corr.obs.nonn","cfi.corr.exp","cfi.corr.exp.nonn")
-  fit.indiecs.vector
+  fit.indices.vector
 }
