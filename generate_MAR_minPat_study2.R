@@ -57,9 +57,6 @@ MARWeak_2Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
   simuData
 }
 
-simuData <- MARStrong_2Var(pop.mod[[1]], sample.nobs=1000000, missing.percentage=0.2)
-fit <- cfa(fitted.mod, data=simuData, missing="fiml", mimic="EQS")
-lavInspect(fit,"patterns")
 
 
 #Arguments:
@@ -85,7 +82,7 @@ fit.ind.matrix.MAR_2Var <- function(pop.model.list, fitted.mod, sample.nobs=1000
 #strong dependency
 
 #Usage: FOR THIS RESEARCH ONLY. There need to be 12 Variables. 
-#       Creating missing data on x11 and x12. Strong dependence:missing of x9 and x11 depends on x7; missing of x10 and x12 depends on x8.
+#       Creating missing data on x9, x10, x11 and x12. Strong dependence:missing of x9 and x11 depends on x7; missing of x10 and x12 depends on x8.
 #Argument:
 #model: lavaan defined population model
 #sample.nobs: numeric; sample size without missing data

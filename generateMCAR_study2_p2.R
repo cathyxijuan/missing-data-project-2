@@ -1,8 +1,7 @@
 library(lavaan)
 source("functions.R")
 source("Models_WM.R")
-load("fitNoMissingShort_WM.RData")
-fitNoMissingShort_WM
+
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
 #Argument:
@@ -216,69 +215,69 @@ fit.ind.matrix.MCAR <- function(pop.model.list, fitted.mod, sample.nobs = 100000
 
 
 
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n100000 <-
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                            fitted.mod=fitted.mod,sample.nobs =1000000,
                            missing.percentage = 0.20, missing.type = "min", var.with.missing = 2), 8)
-#save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n100000, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n100000.RData")
+#save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n1000000, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n1000000.RData")
 
 
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n100000 <-
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                            fitted.mod=fitted.mod,sample.nobs = 1000000,
                            missing.percentage = 0.50, missing.type = "min", var.with.missing = 2), 8)
 
-#save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n100000, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n100000.RData")
+#save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n1000000, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n1000000.RData")
 
 
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_n100000 <- 
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_n1000000 <- 
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod, 
                            fitted.mod=fitted.mod,sample.nobs = 1000000,
                            missing.percentage = 0.20, missing.type = "max", var.with.missing = 2), 8)
-#save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_n100000, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_n100000.RData")
+#save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_n1000000, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_n1000000.RData")
 
 
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_n100000 <-
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                            fitted.mod=fitted.mod,sample.nobs = 1000000,
                            missing.percentage = 0.50, missing.type = "max",  var.with.missing = 2), 8)
-#save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_n100000, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_n100000.RData")
+#save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_n1000000, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_n1000000.RData")
 
 
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_n100000 <-
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                            fitted.mod=fitted.mod,sample.nobs = 1000000,
                            missing.percentage = 0.20, missing.type = "min" ,var.with.missing = 4), 8)
-#save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_n100000, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_n100000.RData")
+#save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_n1000000, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_n1000000.RData")
 
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_n100000 <-
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                            fitted.mod=fitted.mod,sample.nobs = 1000000,
                            missing.percentage = 0.50, missing.type = "min",var.with.missing = 4), 8)
 
-#save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_n100000, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_n100000.RData")
+#save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_n1000000, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_n1000000.RData")
 
 
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_n100000 <-
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                             fitted.mod=fitted.mod,sample.nobs = 1000000,
                             missing.percentage = 0.20, missing.type = "max" ,var.with.missing = 4), 8)
-#save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_n100000 , file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_n100000.RData")
+#save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_n1000000 , file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_n1000000.RData")
 
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_n100000 <-
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                             fitted.mod=fitted.mod,sample.nobs = 1000000,
                             missing.percentage = 0.50, missing.type = "max" ,var.with.missing = 4), 8)
-#save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_n100000, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_n100000.RData")
+#save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_n1000000, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_n1000000.RData")
 
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_n100000 <-
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                             fitted.mod=fitted.mod,sample.nobs =1000000,
                             missing.percentage = 0.20, missing.type = "min", var.with.missing = 6), 8)
-#save( fitMCAR_MinPat_20PerMiss_6VarMiss_WM_n100000, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_n100000.RData")
+#save( fitMCAR_MinPat_20PerMiss_6VarMiss_WM_n1000000, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_n1000000.RData")
 
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_n100000 <-
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_n1000000 <-
   round(fit.ind.matrix.MCAR(pop.model.list=pop.mod,
                             fitted.mod=fitted.mod,sample.nobs =1000000,
                             missing.percentage = 0.50, missing.type = "min", var.with.missing = 6), 8)
-#save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_n100000 , file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_n100000.RData")
+#save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_n1000000 , file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_n1000000.RData")
