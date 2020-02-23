@@ -249,7 +249,7 @@ if (FcB-kb.exp/n <0 ){
 }
 
 
-if(FcB-kb.exp.nonn/n) {
+if(FcB-kb.exp.nonn/n  <0 ) {
   cfi.exp.nonn<- 99
 } else {
   if ( Fc-k.exp.nonn/n < 0 ){

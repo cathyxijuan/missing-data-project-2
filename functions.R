@@ -254,7 +254,7 @@ all.fit.approx.indices <- function(fitted.mod, dataset){
   }
   
   
-  if(FcB-kb.exp.nonn/n) {
+  if(FcB-kb.exp.nonn/n <0) {
     cfi.exp.nonn<- 99
   } else {
     if ( Fc-k.exp.nonn/n < 0 ){
