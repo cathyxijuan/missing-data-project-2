@@ -214,33 +214,56 @@ all.fit.approx.indices <- function(fitted.mod, dataset){
   
   
   #Study these four CFIs
-  if ( Fc-k.obs/n < 0 ){
-    cfi.obs <- 1
+  
+  
+  if ( FcB-kb.obs/n < 0 ){
+    cfi.obs <- 99
   } else {
-    cfi.obs<-1-(Fc-k.obs/n)/(FcB-kb.obs/n) 
-  }
-  
-  
-  if ( Fc-k.obs.nonn/n < 0 ){
-    cfi.obs.nonn <- 1
-  } else {
-    cfi.obs.nonn<-1-(Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n) 
-  }
-  
-  
-  if ( Fc-k.exp/n < 0 ){
-    cfi.exp<- 1
-  } else {
-    cfi.exp<-1-(Fc-k.exp/n)/(FcB-kb.exp/n)  
+    if ( Fc-k.obs/n < 0 ){
+      cfi.obs <- 1
+    } else {
+      cfi.obs<-1-(Fc-k.obs/n)/(FcB-kb.obs/n) 
+    }
   }
   
   
   
-  if ( Fc-k.exp.nonn/n < 0 ){
-    cfi.exp.nonn<- 1
+  
+  if (FcB-kb.obs.nonn/n < 0) {
+    cfi.obs.nonn <- 99
   } else {
-    cfi.exp.nonn<-1-(Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n)  
-  }#negative values for both denominator and numerator 
+    if ( Fc-k.obs.nonn/n < 0 ){
+      cfi.obs.nonn <- 1
+    } else {
+      cfi.obs.nonn<-1-(Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n) 
+    }
+  }
+  
+  
+  
+  
+  if (FcB-kb.exp/n <0 ){
+    cfi.exp<- 99
+  } else {
+    if ( Fc-k.exp/n < 0 ){
+      cfi.exp<- 1
+    } else {
+      cfi.exp<-1-(Fc-k.exp/n)/(FcB-kb.exp/n)  
+    }
+    
+  }
+  
+  
+  if(FcB-kb.exp.nonn/n) {
+    cfi.exp.nonn<- 99
+  } else {
+    if ( Fc-k.exp.nonn/n < 0 ){
+      cfi.exp.nonn<- 1
+    } else {
+      cfi.exp.nonn<-1-(Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n)  
+    }#negative values for both denominator and numerator 
+  }
+  
   #--------------End of Fit Indices---------------------------------------------------------------------------------#
   
   

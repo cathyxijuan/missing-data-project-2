@@ -1,0 +1,9 @@
+
+load("fitNoMissingShort_WM.RData")
+load(file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n100000.RData")
+load(file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n100000.RData")
+load(file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_n100000.RData")
+fitNoMissingShort_WM
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n100000
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n100000
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_n100000
