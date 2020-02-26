@@ -83,7 +83,7 @@ Wm <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1@Model,
 #W<-lavInspect(fit1,"wls.v") #asy weight matrix used in estimation, hypothesized model,(pstar+p)x(pstar+p)
 #This will match lav_model_h1_information_expected 
 
-#sandwich meat
+#sandwich meat # Cathy's note: In Yves' notes, B1 is called J. 
 B1 <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1@Model,
                                                    lavsamplestats = fit1@SampleStats, lavdata = fit1@Data,
                                                    lavoptions = fit1@Options, lavimplied = fit1@implied,

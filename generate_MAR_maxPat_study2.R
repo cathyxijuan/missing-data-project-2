@@ -82,10 +82,7 @@ fit.ind.matrix.MAR_2Var <- function(pop.model.list, fitted.mod, sample.nobs=1000
   fit.indices.MAR
 }
 
-# #double checking missing data patterns
-# simuData <- MARWeak_2Var(pop.mod[[1]], sample.nobs=1000000, missing.percentage=0.2)
-# fit <- cfa(fitted.mod, data=simuData, missing="fiml", mimic="EQS")
-# lavInspect(fit,"patterns")
+
 
 #strong dependency
 
