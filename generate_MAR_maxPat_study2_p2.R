@@ -232,6 +232,7 @@ save(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_n1000000, file="fitMAR_Strong_ma
 fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_n1000000 <- round(fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod,
                                                                                   missing.percentage = 0.50, missing.type = "strong",
                                                                                   var.with.missing = 2), 8)
+
 save(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_n1000000, file="fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_n1000000.RData")
 
 
