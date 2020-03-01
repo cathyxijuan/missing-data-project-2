@@ -59,7 +59,7 @@ MCAR_4Var <- function(model, sample.nobs=1000000,  missing.percentage){
 ##var.with.missing: the number of variables with missing data; it can be 2 or 4
 fit.ind.matrix.MCAR <- function(pop.model.list, fitted.mod, sample.nobs = 1000000, 
                                      missing.percentage, var.with.missing){
-  fit.indices.MCAR <-matrix( nrow = 12, ncol = 0)
+  fit.indices.MCAR <-matrix( nrow = 28, ncol = 0)
 
   for(i in 1:length(pop.model.list)){
     if (var.with.missing==2){ simuData <- MCAR_2Var(pop.model.list[[i]], sample.nobs, missing.percentage)
@@ -75,7 +75,6 @@ fit.ind.matrix.MCAR <- function(pop.model.list, fitted.mod, sample.nobs = 100000
   colnames(fit.indices.MCAR) <-paste(names.part1, names.part2, sep=";")
   fit.indices.MCAR
 }
-
 
 
 
@@ -104,3 +103,4 @@ fitMCAR_50PerMiss_4VarMiss_2CR_DF_n1000000 <-
   fit.ind.matrix.MCAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                       missing.percentage = 0.50, var.with.missing = 4)
 save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_n1000000, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_n1000000.RData")
+warnings()

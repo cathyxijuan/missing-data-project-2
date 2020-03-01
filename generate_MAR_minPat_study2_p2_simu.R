@@ -182,7 +182,7 @@ fit.ind.matrix.MAR.simu <- function(pop.model.list, fitted.mod, sample.nobs=1000
   fit.indices.list <- vector(mode="list", length=simu.num)
   
   for(j in 1:simu.num){
-    fit.indices.MAR.minPat <-matrix( nrow = 12, ncol = 0)
+    fit.indices.MAR.minPat <-matrix( nrow = 28, ncol = 0)
     
     for(i in 1:length(pop.model.list)){
       if (var.with.missing == 2){
@@ -217,7 +217,7 @@ fit.ind.matrix.MAR.simu <- function(pop.model.list, fitted.mod, sample.nobs=1000
   
 }
 
-
+set.seed(111)
 
 
 ############2 variables with missing data########

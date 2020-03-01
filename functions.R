@@ -37,11 +37,11 @@ cfi_table <- function(fit.matrix) {
 all.fit.approx.indices <- function(fitted.mod, dataset){
   fit1<-cfa(model=fitted.mod,data=dataset,mimic="EQS",estimator="ML",missing="FIML") #normal data, EQS
   
-  rmsea.fiml<-lavInspect(fit1,"fit")["rmsea"]  #0.1085526 
-  cfi.fiml<-lavInspect(fit1,"fit")["cfi"] #0.7708192
+  rmsea.fiml<-lavInspect(fit1,"fit")["rmsea"] 
+  cfi.fiml<-lavInspect(fit1,"fit")["cfi"] 
   dfh<-lavInspect(fit1,"fit")["df"]
   
-  fit01<- lavaan:::lav_object_independence(fit1) #independence model run (nice feature!)
+  fit01<- lavaan:::lav_object_independence(fit1, se=T) #independence model run (nice feature!)
   dfb<-lavInspect(fit01,"fit")["df"]
   
   #---------------------------------------NEW FIT INDICES----------------------------------#
@@ -216,13 +216,18 @@ all.fit.approx.indices <- function(fitted.mod, dataset){
   #Study these four CFIs
   
   
+  
   if ( FcB-kb.obs/n < 0 ){
-    cfi.obs <- 99
+    cfi.obs <-99
   } else {
     if ( Fc-k.obs/n < 0 ){
       cfi.obs <- 1
-    } else {
-      cfi.obs<-1-(Fc-k.obs/n)/(FcB-kb.obs/n) 
+    } else { 
+      if ( (Fc-k.obs/n)/(FcB-kb.obs/n)>1 ) {
+        cfi.obs <- 98
+      } else {
+        cfi.obs<-1-(Fc-k.obs/n)/(FcB-kb.obs/n) 
+      }
     }
   }
   
@@ -234,8 +239,10 @@ all.fit.approx.indices <- function(fitted.mod, dataset){
   } else {
     if ( Fc-k.obs.nonn/n < 0 ){
       cfi.obs.nonn <- 1
-    } else {
-      cfi.obs.nonn<-1-(Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n) 
+    } else { if ((Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n)>1 ){
+      cfi.obs.nonn <- 98
+    } else{
+      cfi.obs.nonn<-1-(Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n) }
     }
   }
   
@@ -247,36 +254,76 @@ all.fit.approx.indices <- function(fitted.mod, dataset){
   } else {
     if ( Fc-k.exp/n < 0 ){
       cfi.exp<- 1
+    } else { if ((Fc-k.exp/n)/(FcB-kb.exp/n)>1){
+      cfi.exp<- 99
     } else {
       cfi.exp<-1-(Fc-k.exp/n)/(FcB-kb.exp/n)  
+    }
     }
     
   }
   
   
-  if(FcB-kb.exp.nonn/n <0) {
+  if(FcB-kb.exp.nonn/n  <0 ) {
     cfi.exp.nonn<- 99
   } else {
     if ( Fc-k.exp.nonn/n < 0 ){
       cfi.exp.nonn<- 1
-    } else {
-      cfi.exp.nonn<-1-(Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n)  
-    }#negative values for both denominator and numerator 
+    } else { if ( (Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n)>1) {
+      cfi.exp.nonn<-98
+    } else{
+      cfi.exp.nonn<-1-(Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n) }
+    } 
   }
+  
+  is.null.vcov <- is.null(vcov(fit1))
+  is.null.vcov.b <- is.null(vcov(fit01))
+  
+  is.converge <- inspect(fit1, "converged")
+  is.converge.b <- inspect(fit01, "converged")
+
+  
   
   #--------------End of Fit Indices---------------------------------------------------------------------------------#
   
   
   #-------------Comparison of Proposed Indices-----------------------------------------------------------------------#
-  #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
-  #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
+
   
   
   
   #comparison
-  fit.indices.vector<-c(rmsea.fiml,rmsea.uncorr,rmsea.obs,rmsea.obs.nonn,rmsea.exp,rmsea.exp.nonn, 
-                        cfi.fiml, cfi.uncorr, cfi.obs,cfi.obs.nonn,cfi.exp,cfi.exp.nonn)
-  names(fit.indices.vector) <- c("rmsea.original.fiml","rmsea.uncorr.approx","rmsea.corr.obs","rmsea.corr.obs.nonn","rmsea.corr.exp","rmsea.corr.exp.nonn",
-                                 "cfi.original.fiml","cfi.uncorr.approx","cfi.corr.obs","cfi.corr.obs.nonn","cfi.corr.exp","cfi.corr.exp.nonn")
+  fit.indices.vector<-c(rmsea.fiml,rmsea.uncorr,rmsea.obs,
+                        rmsea.obs.nonn,rmsea.exp,rmsea.exp.nonn, 
+                        cfi.fiml, cfi.uncorr, cfi.obs,
+                        cfi.obs.nonn,cfi.exp,cfi.exp.nonn, 
+                        is.null.vcov,is.null.vcov.b, 
+                        is.converge, is.converge.b,
+                        Fc, dfh, FcB, dfb, 
+                        k.obs,kb.obs,
+                        k.obs.nonn, kb.obs.nonn,
+                        k.exp, kb.exp,
+                        k.exp.nonn,kb.exp.nonn)
+  names(fit.indices.vector) <- c("rmsea.original.fiml","rmsea.uncorr.approx","rmsea.corr.obs",
+                                 "rmsea.corr.obs.nonn","rmsea.corr.exp","rmsea.corr.exp.nonn",
+                                 "cfi.original.fiml","cfi.uncorr.approx", 
+                                 "cfi.corr.obs",  "cfi.corr.obs.nonn",
+                                 "cfi.corr.exp","cfi.corr.exp.nonn",
+                                 "is.null.vcov","is.null.vcov.b", 
+                                 "is.converge", "is.converge.b",
+                                 "Fc", "dfh", "FcB", "dfb", 
+                                 "k.obs","kb.obs",
+                                 "k.obs.nonn", "kb.obs.nonn",
+                                 "k.exp", "kb.exp",
+                                 "k.exp.nonn","kb.exp.nonn")
   fit.indices.vector
 }
+
+
+
+
+
+
+
+
+

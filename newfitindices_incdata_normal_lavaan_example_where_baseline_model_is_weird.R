@@ -14,7 +14,7 @@ library(lavaan)
 #data1<-simuDataComplete[1:1000,] #N=1000
 
 load("simuDatawithMiss.RData") #this is N=1,000,000
-data1<-simuDatawithMiss[1:500,] #N=1000
+data1<-simuDatawithMiss[400:500,] #N=1000
 
 
 
@@ -25,7 +25,8 @@ f1 ~~ 1*f1
 '
 
 
-
+test <- all.fit.approx.indices(fitted.mod, data1)
+length(test)
 
 
   
@@ -35,7 +36,7 @@ rmsea.fiml<-lavInspect(fit1,"fit")["rmsea"]  #0.1085526
 cfi.fiml<-lavInspect(fit1,"fit")["cfi"] #0.7708192
 dfh<-lavInspect(fit1,"fit")["df"]
 
-fit01<- lavaan:::lav_object_independence(fit1) #independence model run (nice feature!)
+fit01<- lavaan:::lav_object_independence(fit1, se=T) #independence model run (nice feature!)
 dfb<-lavInspect(fit01,"fit")["df"]
 
 #---------------------------------------NEW FIT INDICES----------------------------------#
@@ -212,12 +213,16 @@ if (Fc/dfh-k.exp.nonn/(dfh*n) < 0 ) {
 
 
 if ( FcB-kb.obs/n < 0 ){
-  cfi.obs <- 99
+  cfi.obs <-99
 } else {
   if ( Fc-k.obs/n < 0 ){
     cfi.obs <- 1
-  } else {
-    cfi.obs<-1-(Fc-k.obs/n)/(FcB-kb.obs/n) 
+  } else { 
+    if ( (Fc-k.obs/n)/(FcB-kb.obs/n)>1 ) {
+      cfi.obs <- 98
+    } else {
+      cfi.obs<-1-(Fc-k.obs/n)/(FcB-kb.obs/n) 
+    }
   }
 }
 
@@ -229,8 +234,10 @@ if (FcB-kb.obs.nonn/n < 0) {
 } else {
   if ( Fc-k.obs.nonn/n < 0 ){
     cfi.obs.nonn <- 1
-  } else {
-    cfi.obs.nonn<-1-(Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n) 
+  } else { if ((Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n)>1 ){
+    cfi.obs.nonn <- 98
+  } else{
+    cfi.obs.nonn<-1-(Fc-k.obs.nonn/n)/(FcB-kb.obs.nonn/n) }
   }
 }
 
@@ -242,8 +249,11 @@ if (FcB-kb.exp/n <0 ){
 } else {
   if ( Fc-k.exp/n < 0 ){
     cfi.exp<- 1
+  } else { if ((Fc-k.exp/n)/(FcB-kb.exp/n)>1){
+    cfi.exp<- 99
   } else {
     cfi.exp<-1-(Fc-k.exp/n)/(FcB-kb.exp/n)  
+    }
   }
   
 }
@@ -254,10 +264,30 @@ if(FcB-kb.exp.nonn/n  <0 ) {
 } else {
   if ( Fc-k.exp.nonn/n < 0 ){
     cfi.exp.nonn<- 1
-  } else {
-    cfi.exp.nonn<-1-(Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n)  
-  }#negative values for both denominator and numerator 
+  } else { if ( (Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n)>1) {
+    cfi.exp.nonn<-98
+  } else{
+    cfi.exp.nonn<-1-(Fc-k.exp.nonn/n)/(FcB-kb.exp.nonn/n) }
+  } 
 }
+
+is.null.vcov <- is.null(vcov(fit1))
+is.null.vcov.b <- is.null(vcov(fit01))
+
+is.converge <- inspect(fit1, "converged")
+is.converge.b <- inspect(fit01, "converged")
+Fc
+dfh 
+FcB
+dfb
+k.obs
+kb.obs
+k.obs.nonn
+kb.obs.nonn
+k.exp
+kb.exp
+k.exp.nonn
+kb.exp.nonn
 
 
 

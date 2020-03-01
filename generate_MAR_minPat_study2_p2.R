@@ -178,7 +178,7 @@ MARWeak_6Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
 #var.with.missing: the number of variables with missing data; it can be 2, 4, 6
 fit.ind.matrix.MAR <- function(pop.model.list, fitted.mod, sample.nobs=1000000,  
                                     missing.percentage, missing.type, var.with.missing){
-  fit.indices.MAR.minPat <-matrix( nrow = 12, ncol = 0)
+  fit.indices.MAR.minPat <-matrix( nrow = 28, ncol = 0)
   
   for(i in 1:length(pop.model.list)){
     if (var.with.missing == 2){
