@@ -395,7 +395,7 @@ all.fit.ts <- function(fitted.mod, dataset){
                                                    lavsamplestats = fit2@SampleStats, lavdata = fit2@Data, 
                                                    lavoptions = fit2@Options, lavimplied = fit2@implied,
                                                    lavh1 = fit2@h1, lavcache = fit2@Cache)[[1]]
-  dim(Wc)
+
  
   
   Uc <- Wc-Wc%*%deltabreve%*%solve(t(deltabreve)%*%Wc%*%deltabreve)%*%t(deltabreve)%*%Wc
@@ -408,7 +408,7 @@ all.fit.ts <- function(fitted.mod, dataset){
   
   
   rmsea.uncor <- lavInspect(fit2, "fit")["rmsea"]
-  rmsea.uncor 
+  
   
   if (Fc/dfh-c.ts.est/(dfh*n) < 0 ) { 
     rmsea.cor.ts.est <-  0} else {
@@ -446,9 +446,6 @@ all.fit.ts <- function(fitted.mod, dataset){
   #Cathy's note: This is the weight matrix of FIML but evaluated at TS estimates.   
   #I believe that lavimplied = fit2B@implied allows to me evaluate it at TS estimates. 
   
-  
-  
-  
   B1B.fiml.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1B@Model,
                                                                lavsamplestats = fit1B@SampleStats, 
                                                                lavdata = fit1B@Data,
@@ -471,22 +468,20 @@ all.fit.ts <- function(fitted.mod, dataset){
   #Cathy's note: Gamma is the estimate of the asymptotic covariance matrix of the satuarated model estimates. 
   #This asymptotic covariance matrix is calculated by a triple product similar to the one in the sandwich method
   deltabreveB <- lavInspect(fit2B, "delta")
-  dim(deltabreveB)
   
   WcB <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2B@Model,
                                                     lavsamplestats = fit2B@SampleStats, lavdata = fit2B@Data, 
                                                     lavoptions = fit2B@Options, lavimplied = fit2B@implied,
                                                     lavh1 = fit2B@h1, lavcache = fit2B@Cache)[[1]]
-  dim(WcB)
   
   
   UcB <- WcB-WcB%*%deltabreveB%*%solve(t(deltabreveB)%*%WcB%*%deltabreveB)%*%t(deltabreveB)%*%WcB
   
   cB.ts.est <- lav_matrix_trace(UcB%*%GammaB.ts.est)
-  cB.ts.est
+
   
   cB.fiml.est <- lav_matrix_trace(UcB%*%GammaB.fiml.est)
-  cB.fiml.est 
+
   
   
   
@@ -519,7 +514,7 @@ all.fit.ts <- function(fitted.mod, dataset){
   
   
   cfi.uncor <-lavInspect(fit2, "fit")["cfi"]
-  cfi.uncor
+
   
   is.null.vcov <- is.null(vcov(fit2))
   is.null.vcov.b <- is.null(vcov(fit2B))
@@ -565,7 +560,7 @@ all.fit.ts <- function(fitted.mod, dataset){
 ########## dataset: the dataset I am using
 ########### num.of.imp : the number of imputation rounds
 all.fit.mi <- function(fitted.mod, dataset, num.of.imp1){
-  imputeData.all <- mice(data=dataset, m=num.of.imp1, seed=123, method="norm")
+  imputeData.all <- mice(data=dataset, m=num.of.imp1, seed=123, method="norm", printFlag=F)
   
   
   rmsea.vector <- rep(NA,num.of.imp1)
@@ -578,10 +573,11 @@ all.fit.mi <- function(fitted.mod, dataset, num.of.imp1){
   for(i in 1:num.of.imp1){
     imputeData <- complete(imputeData.all,i)
     fit <- cfa(model=fitted.mod, data=imputeData, mimic="EQS")
-    rmsea.vector[i] <- lavInspect(fit, "fit")[c("rmsea")]
-    cfi.vector[i] <- lavInspect(fit, "fit")[c("cfi")]
-    fmin.vector[i] <- lavInspect(fit, "fit")[c("fmin")]*2
-    fminB.vector[i] <- lavInspect(fit, "fit")[c("baseline.chisq")]/nrow(imputeData)
+    fit.ind <- lavInspect(fit, "fit")[c("rmsea", "cfi", "fmin", "baseline.chisq", "df", "baseline.df")]
+    rmsea.vector[i] <- fit.ind[c("rmsea")]
+    cfi.vector[i] <- fit.ind[c("cfi")]
+    fmin.vector[i] <- fit.ind[c("fmin")]*2
+    fminB.vector[i] <- fit.ind[c("baseline.chisq")]/nrow(imputeData)
     is.converged.vector[i] <- lavInspect(fit, "converged")
     is.null.vcov.vector[i] <- is.null(vcov(fit))
   }
@@ -591,8 +587,8 @@ all.fit.mi <- function(fitted.mod, dataset, num.of.imp1){
   fminB <- mean(fminB.vector, na.rm=T)
   is.converged <- mean(is.converged.vector)
   is.null.vcov <- mean(is.null.vcov.vector)
-  dfh <- lavInspect(fit,"fit")["df"] 
-  dfB <- lavInspect(fit,"fit")["baseline.df"] 
+  dfh <- fit.ind["df"] 
+  dfB <- fit.ind["baseline.df"] 
   fit.indices.vector <-round(c(rmsea, cfi, fmin,fminB ,
                                is.converged, is.null.vcov,
                                dfh, dfB),8)
