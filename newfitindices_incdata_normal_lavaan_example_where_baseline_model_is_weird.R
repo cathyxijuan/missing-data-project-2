@@ -14,7 +14,7 @@ library(lavaan)
 #data1<-simuDataComplete[1:1000,] #N=1000
 
 load("simuDatawithMiss.RData") #this is N=1,000,000
-data1<-simuDatawithMiss[400:500,] #N=1000
+data1<-simuDatawithMiss[1:500,] #N=1000
 
 
 
@@ -25,8 +25,7 @@ f1 ~~ 1*f1
 '
 
 
-test <- all.fit.approx.indices(fitted.mod, data1)
-length(test)
+
 
 
   
