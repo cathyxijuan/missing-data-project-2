@@ -47,8 +47,6 @@ MCAR_4Var <- function(model, sample.nobs=1000000,  missing.percentage){
 }
 
 
-
-
 #Usage: put fit indices for a list of models into a matrix
 
 #Arguments:
@@ -58,24 +56,25 @@ MCAR_4Var <- function(model, sample.nobs=1000000,  missing.percentage){
 ##var.with.missing: the number of variables with missing data; it can be 2 or 4
 ##simu.num: number of simulation rounds
 fit.ind.matrix.MCAR.simu <- function(pop.model.list, fitted.mod, sample.nobs = 1000000, 
-                                missing.percentage, var.with.missing, simu.num=1000){
+                                     missing.percentage, var.with.missing, simu.num=1000,
+                                     num.of.imp = 20){
   
   fit.indices.list <- vector(mode="list", length=simu.num)
   for(j in 1:simu.num){
-    fit.indices.MCAR <-matrix( nrow = 28, ncol = 0)
-  
+    fit.indices.MCAR <-matrix( nrow = 8, ncol = 0)
+    
     for(i in 1:length(pop.model.list)){
       if (var.with.missing==2){ simuData <- MCAR_2Var(pop.model.list[[i]], sample.nobs, missing.percentage)
       } else { simuData <- MCAR_4Var(pop.model.list[[i]], sample.nobs, missing.percentage) }
-    fit.ind.vector <- all.fit.approx.indices(fitted.mod, dataset=simuData)
-    fit.indices.MCAR<- cbind(fit.indices.MCAR,fit.ind.vector)
-  }
-  names.part1 <- rep(paste("FC=",c("0","0.4", "0.8" ), sep=""), each=5)
-  names.part2 <-rep(paste("CR=", c("0", "0.1", "0.2", "0.3", "0.4"), sep=""),3)
-  colnames(fit.indices.MCAR) <-paste(names.part1, names.part2, sep=";")
-  fit.indices.MCAR <- round(fit.indices.MCAR, 8)
-  fit.indices.list[[j]] <- fit.indices.MCAR
-  print(j)
+      fit.ind.vector <- all.fit.mi(fitted.mod, dataset=simuData, num.of.imp1=num.of.imp)
+      fit.indices.MCAR<- cbind(fit.indices.MCAR,fit.ind.vector)
+    }
+    names.part1 <- rep(paste("FC=",c("0","0.4", "0.8" ), sep=""), each=5)
+    names.part2 <-rep(paste("CR=", c("0", "0.1", "0.2", "0.3", "0.4"), sep=""),3)
+    colnames(fit.indices.MCAR) <-paste(names.part1, names.part2, sep=";")
+    fit.indices.MCAR <- round(fit.indices.MCAR, 8)
+    fit.indices.list[[j]] <- fit.indices.MCAR
+    print(j)
   }
   fit.indices.list
   
@@ -85,28 +84,31 @@ fit.ind.matrix.MCAR.simu <- function(pop.model.list, fitted.mod, sample.nobs = 1
 
 set.seed(111)
 
-fitMCAR_20PerMiss_2VarMiss_2CR_DF_n200 <- 
+#####2 variables with missing data#####
+fitMCAR_20PerMiss_2VarMiss_2CR_DF_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                            missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 200)
-save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_n200 , file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_n200.RData")
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_MI_n200, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_MI_n200.RData")
 
 
-fitMCAR_50PerMiss_2VarMiss_2CR_DF_n200 <- 
+fitMCAR_50PerMiss_2VarMiss_2CR_DF_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                            missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 200)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_MI_n200, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_MI_n200.RData")
 
-save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_n200 , file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_n200.RData")
 
 
-fitMCAR_20PerMiss_4VarMiss_2CR_DF_n200 <- 
+#####4 variables with missing data#####
+
+
+
+fitMCAR_20PerMiss_4VarMiss_2CR_DF_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                            missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 200)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_MI_n200, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_MI_n200.RData")
 
-save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_n200 , file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_n200.RData")
 
-
-fitMCAR_50PerMiss_4VarMiss_2CR_DF_n200 <- 
+fitMCAR_50PerMiss_4VarMiss_2CR_DF_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                            missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 200)
-
-save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_n200 , file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_n200.RData")
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_MI_n200, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_MI_n200.RData")
