@@ -12,7 +12,7 @@ library(lavaan)
 
 
 load("simuDatawithMiss.RData") #this is N=1,000,000
-data1 <-simuDatawithMiss[1:200,] #N=1000
+data1 <-simuDatawithMiss[1:1000000,] #N=1000
 n <- nrow(data1)
 
 
@@ -152,7 +152,7 @@ WmB.fiml.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1B@Mode
 #Cathy's note: This is the weight matrix of FIML but evaluated at TS estimates.   
 #I believe that lavimplied = fit2B@implied allows to me evaluate it at TS estimates. 
 
-
+eigen(WmB.ts.est)$values
 
 
 B1B.fiml.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1B@Model,
@@ -185,9 +185,10 @@ WcB <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2B@Model,
                                                  lavh1 = fit2B@h1, lavcache = fit2B@Cache)[[1]]
 dim(WcB)
 
+eigen(WcB)$values
 
 UcB <- WcB-WcB%*%deltabreveB%*%solve(t(deltabreveB)%*%WcB%*%deltabreveB)%*%t(deltabreveB)%*%WcB
-
+eigen(UcB)
 cB.ts.est <- lav_matrix_trace(UcB%*%GammaB.ts.est)
 cB.ts.est
 
@@ -207,7 +208,7 @@ if (FcB-cB.ts.est < 0) {
   } else { if ((Fc-c.ts.est/n)/(FcB-cB.ts.est/n)>1 ){
     cfi.cor.ts.est <- 98
   } else{
-    cfi.cor.ts.est<-1-(Fc-c.ts.est/n)/(FcB-cB.ts.est/n) }
+    cfi.cor.ts.est<-1-(Fc-n)/(FcB-cB.ts.est/n) }
   }
 }
 
@@ -236,8 +237,8 @@ fit.indices.vector<- c(rmsea.cor.fiml.est, rmsea.cor.ts.est, rmsea.uncor,
         dfh, dfB, 
         c.ts.est, cB.ts.est, 
         c.fiml.est, cB.fiml.est)
-fit.indices.vector<- round(out, 8)
-names(out) <- c("rmsea.cor.fiml.est", "rmsea.cor.ts.est", "rmsea.uncor", 
+fit.indices.vector<- round(fit.indices.vector, 8)
+names(fit.indices.vector) <- c("rmsea.cor.fiml.est", "rmsea.cor.ts.est", "rmsea.uncor", 
            "cfi.cor.fiml.est", "cfi.cor.ts.est", "cfi.uncor", 
            "Fc", "FcB", 
            "dfh", "dfB", 

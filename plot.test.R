@@ -3,7 +3,12 @@ library(gridExtra)
 library(reshape2)
 library(dplyr)
 
-
+data <- read.csv("data_study1.csv")
+data
+data1 <- filter(data,Number_Of_CR=="Two Correlated Residuals"
+                & Missing_Mechanism=="  MCAR" 
+                & FC=="Factor Correlation = 0" )
+data1
 load("fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_n1000000.RData")
 load("fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_n1000000.RData")
 load("fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_n1000000.RData")
@@ -46,5 +51,14 @@ sf202 <-fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_n1000000["rmsea.uncorr.approx", 
 sf502 <-fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_n1000000["rmsea.uncorr.approx", 1:5]
 
 rmsea <- c(df02, df202 ,df502, df0, df20 ,df50, sf02, sf202 ,sf502, sf0, sf20 ,sf50)
+length(rmsea)
+data1$RMSEA <- rmsea
+nrow(data1)
 
-
+ggplot(data1, aes(x=Size_Of_CR, y=RMSEA)) + 
+  geom_line(aes(linetype=Percent_Missing, color=Percent_Missing)) + 
+  geom_point(aes(color=Percent_Missing)) +
+  facet_grid(Location_Of_Misfit~Number_of_Missing_Variables) +
+  xlab("Size of Correlated Residual (Degree of Misfit)") +
+  scale_y_continuous(limits = c(0, 0.19))+ 
+  theme_bw() 
