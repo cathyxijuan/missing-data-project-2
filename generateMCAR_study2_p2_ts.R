@@ -301,5 +301,3 @@ fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_TS_n1000000 <-
                             missing.percentage = 0.50, missing.type = "Max", var.with.missing = 6)
 save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_TS_n1000000 , file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_TS_n1000000.RData")
 
-
-

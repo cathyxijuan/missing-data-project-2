@@ -103,4 +103,4 @@ fitMCAR_50PerMiss_4VarMiss_2CR_DF_n1000000 <-
   fit.ind.matrix.MCAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                       missing.percentage = 0.50, var.with.missing = 4)
 save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_n1000000, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_n1000000.RData")
-warnings()
+

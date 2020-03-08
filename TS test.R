@@ -27,6 +27,7 @@ f1 ~~ 1*f1
 fit1<-cfa(fitted.mod,data=data1,mimic="EQS",estimator="ML",missing="FIML")
 Sigmatilde<-lavInspect(fit1,"sampstat")$cov #saturated model's cov matrix
 mutilde<-lavInspect(fit1,"sampstat")$mean #saturated model's mean structure
+vcov(fit1)
 
 #stage 2 
 fit2 <- cfa(fitted.mod, sample.cov=Sigmatilde, sample.mean = mutilde, sample.nobs = n)
@@ -153,6 +154,7 @@ WmB.fiml.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1B@Mode
 #I believe that lavimplied = fit2B@implied allows to me evaluate it at TS estimates. 
 
 eigen(WmB.ts.est)$values
+
 
 
 B1B.fiml.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1B@Model,
