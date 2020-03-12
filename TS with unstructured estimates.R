@@ -5,14 +5,13 @@
 #let's compare both mimic=EQS and default (no mimic, which probalby means Mplus)
 
 library(lavaan)
-#source("functions_missing_afis.R")
 #---------------------------------------------------------------------------------------#
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
 
 load("simuDatawithMiss.RData") #this is N=1,000,000
-data1 <-simuDatawithMiss[1:1000000,] #N=1000
+data1 <-simuDatawithMiss[1:1000,] 
 n <- nrow(data1)
 
 
@@ -34,21 +33,28 @@ fit2 <- cfa(fitted.mod, sample.cov=Sigmatilde, sample.mean = mutilde, sample.nob
 
 Fc<-lavInspect(fit2, "fit")["fmin"]*2 #lavaan halfs the fit finction
 
-fit1@Options$h1.information = "structured" 
-fit2@Options$h1.information = "structured" 
+fit1@Options$h1.information = "unstructured" 
+fit2@Options$h1.information = "unstructured" 
 #this is the default, so this line is not necessary, but keep here to remind
 Wm.ts.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1@Model,
-                                                 lavsamplestats = fit1@SampleStats, 
-                                                 lavdata = fit1@Data, 
-                                                 lavoptions = fit1@Options, 
-                                                 lavimplied = fit2@implied,
-                                                 lavh1 = fit2@h1, lavcache = fit1@Cache)[[1]]
+                                                        lavsamplestats = fit1@SampleStats, 
+                                                        lavdata = fit1@Data, 
+                                                        lavoptions = fit1@Options, 
+                                                        lavimplied = fit2@implied,
+                                                        lavh1 = fit2@h1, lavcache = fit1@Cache)[[1]]
 Wm.fiml.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1@Model,
-                                                 lavsamplestats = fit1@SampleStats, 
-                                                 lavdata = fit1@Data, 
-                                                 lavoptions = fit1@Options, 
-                                                 lavimplied = fit1@implied,
-                                                 lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
+                                                          lavsamplestats = fit1@SampleStats, 
+                                                          lavdata = fit1@Data, 
+                                                          lavoptions = fit1@Options, 
+                                                          lavimplied = fit1@implied,
+                                                          lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
+
+
+eigen(Wm.fiml.est)$values
+eigen(Wm.ts.est)$values
+
+
+
 
 #Cathy's note: This is the weight matrix of FIML but evaluated at TS estimates.   
 #I believe that lavimplied = fit2@implied allows to me evaluate it at TS estimates. 
@@ -62,31 +68,32 @@ Wm.fiml.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1@Model,
 
 
 B1.ts.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1@Model,
-                                                   lavsamplestats = fit1@SampleStats, 
-                                                   lavdata = fit1@Data,
-                                                   lavoptions = fit1@Options, 
-                                                   lavimplied = fit2@implied,
-                                                  lavh1 = fit2@h1, lavcache = fit1@Cache)[[1]]
-#Cathy's note: This is the first order information matrix of FIML but evaluated at TS estimates.   
-#I believe that lavimplied = fit2@implied allows to me evaluate it at TS estimates. 
-B1.fiml.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1@Model,
                                                           lavsamplestats = fit1@SampleStats, 
                                                           lavdata = fit1@Data,
                                                           lavoptions = fit1@Options, 
                                                           lavimplied = fit2@implied,
-                                                          lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
-
+                                                          lavh1 = fit2@h1, lavcache = fit1@Cache)[[1]]
+#Cathy's note: This is the first order information matrix of FIML but evaluated at TS estimates.   
+#I believe that lavimplied = fit2@implied allows to me evaluate it at TS estimates. 
+B1.fiml.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1@Model,
+                                                            lavsamplestats = fit1@SampleStats, 
+                                                            lavdata = fit1@Data,
+                                                            lavoptions = fit1@Options, 
+                                                            lavimplied = fit2@implied,
+                                                            lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
+solve(B1.ts.est)
 
 Wmi.ts.est <-solve(Wm.ts.est)
 Gamma.ts.est <- Wmi.ts.est %*% B1.ts.est %*% Wmi.ts.est  
-Wmi.fiml.est <-solve(Wm.fiml.est)
-Gamma.fiml.est <- Wmi.fiml.est %*% B1.fiml.est %*% Wmi.fiml.est  
+Wmi.fiml.est <-solve(Wm.fiml.est) #same as Inspect(fit1,"sampstat")$cov 
+Gamma.fiml.est <- Wmi.fiml.est %*% B1.fiml.est %*% Wmi.fiml.est  # Saturated model is always a correctly specified model. In this case, this triple product may not be necessary. 
 #Cathy's note: Gamma is the estimate of the asymptotic covariance matrix of the satuarated model estimates. 
 #This asymptotic covariance matrix is calculated by a triple product similar to the one in the sandwich method
 
-
-
-
+round(Gamma.fiml.est,3)
+round(Wmi.fiml.est,3)
+dim(Wmi.fiml.est)
+dim(Gamma.fiml.est)
 
 
 deltabreve <- lavInspect(fit2, "delta")
@@ -105,6 +112,7 @@ c.ts.est <- lav_matrix_trace(Uc%*%Gamma.ts.est)
 c.ts.est
 c.fiml.est <- lav_matrix_trace(Uc%*%Gamma.fiml.est)
 c.fiml.est
+round(Uc,8)
 dfh<-lavInspect(fit1,"fit")["df"]
 
 
@@ -136,39 +144,39 @@ dfB <- lavInspect(fit1B, "fit")["df"]
 fit2B <- lavaan:::lav_object_independence(fit2) 
 FcB<-lavInspect(fit2B, "fit")["fmin"]*2 #lavaan halfs the fit finction
 dfB<-lavInspect(fit1B,"fit")["df"]
-fit1B@Options$h1.information = "structured" 
-fit2B@Options$h1.information = "structured" 
+fit1B@Options$h1.information = "unstructured" 
+fit2B@Options$h1.information = "unstructured" 
 WmB.ts.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1B@Model,
-                                                 lavsamplestats = fit1B@SampleStats, 
-                                                 lavdata = fit1B@Data, 
-                                                 lavoptions = fit1B@Options, 
-                                                 lavimplied = fit2B@implied,
-                                                 lavh1 = fit2B@h1, lavcache = fit1B@Cache)[[1]]
+                                                         lavsamplestats = fit1B@SampleStats, 
+                                                         lavdata = fit1B@Data, 
+                                                         lavoptions = fit1B@Options, 
+                                                         lavimplied = fit2B@implied,
+                                                         lavh1 = fit2B@h1, lavcache = fit1B@Cache)[[1]]
 WmB.fiml.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1B@Model,
-                                                  lavsamplestats = fit1B@SampleStats, 
-                                                  lavdata = fit1B@Data, 
-                                                  lavoptions = fit1B@Options, 
-                                                  lavimplied = fit1B@implied,
-                                                  lavh1 = fit1B@h1, lavcache = fit1B@Cache)[[1]]
+                                                           lavsamplestats = fit1B@SampleStats, 
+                                                           lavdata = fit1B@Data, 
+                                                           lavoptions = fit1B@Options, 
+                                                           lavimplied = fit1B@implied,
+                                                           lavh1 = fit1B@h1, lavcache = fit1B@Cache)[[1]]
 #Cathy's note: This is the weight matrix of FIML but evaluated at TS estimates.   
 #I believe that lavimplied = fit2B@implied allows to me evaluate it at TS estimates. 
 
 eigen(WmB.ts.est)$values
-
+eigen(WmB.fiml.est)$values
 
 
 B1B.fiml.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1B@Model,
-                                                   lavsamplestats = fit1B@SampleStats, 
-                                                   lavdata = fit1B@Data,
-                                                   lavoptions = fit1B@Options, 
-                                                   lavimplied = fit1B@implied,
-                                                   lavh1 = fit2B@h1, lavcache = fit1B@Cache)[[1]]
-B1B.ts.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1B@Model,
                                                              lavsamplestats = fit1B@SampleStats, 
                                                              lavdata = fit1B@Data,
                                                              lavoptions = fit1B@Options, 
-                                                             lavimplied = fit2B@implied,
-                                                             lavh1 = fit1B@h1, lavcache = fit1B@Cache)[[1]]
+                                                             lavimplied = fit1B@implied,
+                                                             lavh1 = fit2B@h1, lavcache = fit1B@Cache)[[1]]
+B1B.ts.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1B@Model,
+                                                           lavsamplestats = fit1B@SampleStats, 
+                                                           lavdata = fit1B@Data,
+                                                           lavoptions = fit1B@Options, 
+                                                           lavimplied = fit2B@implied,
+                                                           lavh1 = fit1B@h1, lavcache = fit1B@Cache)[[1]]
 #Cathy's note: This is the first order information matrix of FIML but evaluated at TS estimates.   
 #I believe that lavimplied = fit2B@implied allows to me evaluate it at TS estimates. 
 
@@ -182,9 +190,9 @@ deltabreveB <- lavInspect(fit2B, "delta")
 dim(deltabreveB)
 
 WcB <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2B@Model,
-                                                 lavsamplestats = fit2B@SampleStats, lavdata = fit2B@Data, 
-                                                 lavoptions = fit2B@Options, lavimplied = fit2B@implied,
-                                                 lavh1 = fit2B@h1, lavcache = fit2B@Cache)[[1]]
+                                                  lavsamplestats = fit2B@SampleStats, lavdata = fit2B@Data, 
+                                                  lavoptions = fit2B@Options, lavimplied = fit2B@implied,
+                                                  lavh1 = fit2B@h1, lavcache = fit2B@Cache)[[1]]
 dim(WcB)
 
 eigen(WcB)$values
@@ -234,16 +242,16 @@ cfi.uncor <-lavInspect(fit2, "fit")["cfi"]
 cfi.uncor
 
 fit.indices.vector<- c(rmsea.cor.fiml.est, rmsea.cor.ts.est, rmsea.uncor, 
-        cfi.cor.fiml.est, cfi.cor.ts.est, cfi.uncor, 
-        Fc, FcB, 
-        dfh, dfB, 
-        c.ts.est, cB.ts.est, 
-        c.fiml.est, cB.fiml.est)
+                       cfi.cor.fiml.est, cfi.cor.ts.est, cfi.uncor, 
+                       Fc, FcB, 
+                       dfh, dfB, 
+                       c.ts.est, cB.ts.est, 
+                       c.fiml.est, cB.fiml.est)
 fit.indices.vector<- round(fit.indices.vector, 8)
 names(fit.indices.vector) <- c("rmsea.cor.fiml.est", "rmsea.cor.ts.est", "rmsea.uncor", 
-           "cfi.cor.fiml.est", "cfi.cor.ts.est", "cfi.uncor", 
-           "Fc", "FcB", 
-           "dfh", "dfB", 
-           "c.ts.est", "cB.ts.est", 
-           "c.fiml.est", "cB.fiml.est")
-fit.indices.vector
+                               "cfi.cor.fiml.est", "cfi.cor.ts.est", "cfi.uncor", 
+                               "Fc", "FcB", 
+                               "dfh", "dfB", 
+                               "c.ts.est", "cB.ts.est", 
+                               "c.fiml.est", "cB.fiml.est")
+round(fit.indices.vector,5)
