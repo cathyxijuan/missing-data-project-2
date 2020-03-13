@@ -1,7 +1,7 @@
 library(lavaan)
 source("functions.R")
-#source("Models_2CR_SF.R") #done
-#source("Models_1CR_SF.R")
+#source("Models_2CR_SF.R") #done at n=200 n=500
+source("Models_1CR_SF.R") #done at n=5
 #source("Models_1CR_DF.R")
 #source("Models_2CR_DF.R") #done 
 
@@ -85,16 +85,16 @@ fit.ind.matrix.MCAR.simu <- function(pop.model.list, fitted.mod, sample.nobs = 1
 set.seed(111)
 
 #####2 variables with missing data#####
-fitMCAR_20PerMiss_2VarMiss_2CR_SF_MI_n200 <- 
+fitMCAR_20PerMiss_2VarMiss_1CR_SF_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                            missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 200)
-save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_MI_n200, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_MI_n200.RData")
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_MI_n200, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_MI_n200.RData")
 
 
-fitMCAR_50PerMiss_2VarMiss_2CR_SF_MI_n200 <- 
+fitMCAR_50PerMiss_2VarMiss_1CR_SF_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                            missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 200)
-save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_MI_n200, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_MI_n200.RData")
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_MI_n200, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_MI_n200.RData")
 
 
 
@@ -102,13 +102,15 @@ save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_MI_n200, file="fitMCAR_50PerMiss_2VarMiss
 
 
 
-fitMCAR_20PerMiss_4VarMiss_2CR_SF_MI_n200 <- 
+fitMCAR_20PerMiss_4VarMiss_1CR_SF_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                            missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 200)
-save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_MI_n200, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_MI_n200.RData")
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_MI_n200, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_MI_n200.RData")
 
 
-fitMCAR_50PerMiss_4VarMiss_2CR_SF_MI_n200 <- 
+fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                            missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 200)
-save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_MI_n200, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_MI_n200.RData")
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n200, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n200.RData")
+
+

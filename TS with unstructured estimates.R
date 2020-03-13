@@ -11,7 +11,7 @@ library(lavaan)
 
 
 load("simuDatawithMiss.RData") #this is N=1,000,000
-data1 <-simuDatawithMiss[1:1000,] 
+data1 <-simuDatawithMiss[1:200,] 
 n <- nrow(data1)
 
 
@@ -98,7 +98,7 @@ dim(Gamma.fiml.est)
 
 deltabreve <- lavInspect(fit2, "delta")
 dim(deltabreve)
-
+fit2@Options$h1.information = "unstructured" 
 Wc <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2@Model,
                                                  lavsamplestats = fit2@SampleStats, lavdata = fit2@Data, 
                                                  lavoptions = fit2@Options, lavimplied = fit2@implied,
@@ -107,7 +107,10 @@ dim(Wc)
 Wc
 
 Uc <- Wc-Wc%*%deltabreve%*%solve(t(deltabreve)%*%Wc%*%deltabreve)%*%t(deltabreve)%*%Wc
+h3 <-(t(deltabreve)%*%Wc%*%deltabreve)*2
 
+h3[1:5, 1:5]
+h2[1:5, 1:5]
 c.ts.est <- lav_matrix_trace(Uc%*%Gamma.ts.est)
 c.ts.est
 c.fiml.est <- lav_matrix_trace(Uc%*%Gamma.fiml.est)
@@ -139,9 +142,9 @@ if (Fc/dfh-c.fiml.est/(dfh*n) < 0 ) {
 
 #Calculating CFI: 
 #fitting the baseline model 
-fit1B <-  lavaan:::lav_object_independence(fit1) 
+fit1B <-  lavaan:::lav_object_independence(fit1, se=T) 
 dfB <- lavInspect(fit1B, "fit")["df"]
-fit2B <- lavaan:::lav_object_independence(fit2) 
+fit2B <- lavaan:::lav_object_independence(fit2, se=T) 
 FcB<-lavInspect(fit2B, "fit")["fmin"]*2 #lavaan halfs the fit finction
 dfB<-lavInspect(fit1B,"fit")["df"]
 fit1B@Options$h1.information = "unstructured" 
@@ -205,38 +208,36 @@ cB.ts.est
 cB.fiml.est <- lav_matrix_trace(UcB%*%GammaB.fiml.est)
 cB.fiml.est 
 
+# GammaB.fiml.est[1:3, 1:3]
+# 
+# Omega[1:3, 1:3]
+# UcB[1:10, 1:10]
+# Q[1:10, 1:10]
 
-
-
-
-
-if (FcB-cB.ts.est < 0) {
-  cfi.cor.ts.est <- 99
-} else {
-  if ( Fc-c.ts.est/n < 0 ){
+if ( Fc-c.ts.est/n < 0 ){
     cfi.cor.ts.est  <- 1
   } else { if ((Fc-c.ts.est/n)/(FcB-cB.ts.est/n)>1 ){
     cfi.cor.ts.est <- 98
   } else{
-    cfi.cor.ts.est<-1-(Fc-n)/(FcB-cB.ts.est/n) }
+    cfi.cor.ts.est<-1-(Fc-c.ts.est/n)/(FcB-cB.ts.est/n) }
   }
-}
 
 
 
 
-if (FcB-cB.fiml.est < 0) {
-  cfi.cor.fiml.est <- 99
-} else {
-  if ( Fc-c.fiml.est/n < 0 ){
+
+
+if ( Fc-c.fiml.est/n < 0 ){
     cfi.cor.fiml.est  <- 1
   } else { if ((Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n)>1 ){
     cfi.cor.fiml.est <- 98
   } else{
     cfi.cor.fiml.est<-1-(Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n) }
-  }
 }
 
+
+
+1-(Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n)
 
 cfi.uncor <-lavInspect(fit2, "fit")["cfi"]
 cfi.uncor
@@ -255,3 +256,5 @@ names(fit.indices.vector) <- c("rmsea.cor.fiml.est", "rmsea.cor.ts.est", "rmsea.
                                "c.ts.est", "cB.ts.est", 
                                "c.fiml.est", "cB.fiml.est")
 round(fit.indices.vector,5)
+
+sqrt(Fc/2-c.fiml.est/(n))

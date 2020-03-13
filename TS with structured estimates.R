@@ -11,7 +11,7 @@ library(lavaan)
 
 
 load("simuDatawithMiss.RData") #this is N=1,000,000
-data1 <-simuDatawithMiss[1:1000,] 
+data1 <-simuDatawithMiss[1:500,] 
 n <- nrow(data1)
 
 
@@ -106,7 +106,15 @@ dim(Wc)
 Wc
 
 Uc <- Wc-Wc%*%deltabreve%*%solve(t(deltabreve)%*%Wc%*%deltabreve)%*%t(deltabreve)%*%Wc
+h2 <- (t(deltabreve)%*%(Wc)%*%deltabreve)*2
+h2[1:5, 1:5]
+H[1:5, 1:5]
+Wc[1:5, 1:5]*2
+dim(Wc)
+dim(H)
 
+fit2
+?lavInspect
 c.ts.est <- lav_matrix_trace(Uc%*%Gamma.ts.est)
 c.ts.est
 c.fiml.est <- lav_matrix_trace(Uc%*%Gamma.fiml.est)
@@ -117,7 +125,7 @@ dfh<-lavInspect(fit1,"fit")["df"]
 rmsea.uncor <- lavInspect(fit2, "fit")["rmsea"]
 rmsea.uncor 
 
-if (Fc/dfh-c.ts.est/(dfh*n) < 0 ) { 
+if (  Fc/dfh-c.ts.est/(dfh*n) < 0 ) { 
   rmsea.cor.ts.est <-  0} else {
     rmsea.cor.ts.est <-sqrt(Fc/dfh-c.ts.est/(dfh*n))
   }
@@ -208,9 +216,7 @@ cB.fiml.est
 
 
 
-if (FcB-cB.ts.est < 0) {
-  cfi.cor.ts.est <- 99
-} else {
+ 
   if ( Fc-c.ts.est/n < 0 ){
     cfi.cor.ts.est  <- 1
   } else { if ((Fc-c.ts.est/n)/(FcB-cB.ts.est/n)>1 ){
@@ -218,14 +224,12 @@ if (FcB-cB.ts.est < 0) {
   } else{
     cfi.cor.ts.est<-1-(Fc-n)/(FcB-cB.ts.est/n) }
   }
-}
 
 
 
 
-if (FcB-cB.fiml.est < 0) {
-  cfi.cor.fiml.est <- 99
-} else {
+
+
   if ( Fc-c.fiml.est/n < 0 ){
     cfi.cor.fiml.est  <- 1
   } else { if ((Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n)>1 ){
@@ -233,7 +237,7 @@ if (FcB-cB.fiml.est < 0) {
   } else{
     cfi.cor.fiml.est<-1-(Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n) }
   }
-}
+
 
 
 cfi.uncor <-lavInspect(fit2, "fit")["cfi"]

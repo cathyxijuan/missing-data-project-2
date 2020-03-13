@@ -1,6 +1,6 @@
 library(lavaan)
 source("functions.R")
-source("Models_WM.R")
+source("Models_WM.R") #done at n=200, 500
 
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
@@ -373,3 +373,4 @@ fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n500 <-
                            var.with.missing = 2)
 
 save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n500, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n500.RData")
+
