@@ -11,7 +11,7 @@ library(lavaan)
 
 
 load("simuDatawithMiss.RData") #this is N=1,000,000
-data1 <-simuDatawithMiss[1:500,] 
+data1 <-simuDatawithMiss[1:200,] # problems when n=100, 200, 500, 1000, 10000. Stabilize at n=100000
 n <- nrow(data1)
 
 
@@ -50,20 +50,13 @@ Wm.fiml.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1@Model,
                                                  lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
 
 
-eigen(Wm.fiml.est)$values
-eigen(Wm.ts.est)$values
-
 
 
 
 #Cathy's note: This is the weight matrix of FIML but evaluated at TS estimates.   
 #I believe that lavimplied = fit2@implied allows to me evaluate it at TS estimates. 
-#Cathy has checked that if we do fit1@Options$h1.information = "unstructured" , 
+#Cathy has checked that when we do fit1@Options$h1.information = "unstructured" , 
 #then lavimplied = fit2@implied or lavimplied = fit1@implied makes no difference. 
-
-
-
-
 
 
 
@@ -89,41 +82,35 @@ Wmi.fiml.est <-solve(Wm.fiml.est)
 Gamma.fiml.est <- Wmi.fiml.est %*% B1.fiml.est %*% Wmi.fiml.est  
 #Cathy's note: Gamma is the estimate of the asymptotic covariance matrix of the satuarated model estimates. 
 #This asymptotic covariance matrix is calculated by a triple product similar to the one in the sandwich method
-
+eigen(Wm.ts.est)$values
+eigen(Wm.fiml.est)$values
 
 
 
 
 
 deltabreve <- lavInspect(fit2, "delta")
-dim(deltabreve)
+
 
 Wc <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2@Model,
                                                  lavsamplestats = fit2@SampleStats, lavdata = fit2@Data, 
                                                  lavoptions = fit2@Options, lavimplied = fit2@implied,
                                                  lavh1 = fit2@h1, lavcache = fit2@Cache)[[1]]
-dim(Wc)
-Wc
+
 
 Uc <- Wc-Wc%*%deltabreve%*%solve(t(deltabreve)%*%Wc%*%deltabreve)%*%t(deltabreve)%*%Wc
-h2 <- (t(deltabreve)%*%(Wc)%*%deltabreve)*2
-h2[1:5, 1:5]
-H[1:5, 1:5]
-Wc[1:5, 1:5]*2
-dim(Wc)
-dim(H)
 
-fit2
-?lavInspect
+
+
 c.ts.est <- lav_matrix_trace(Uc%*%Gamma.ts.est)
-c.ts.est
+
 c.fiml.est <- lav_matrix_trace(Uc%*%Gamma.fiml.est)
-c.fiml.est
+
 dfh<-lavInspect(fit1,"fit")["df"]
 
 
 rmsea.uncor <- lavInspect(fit2, "fit")["rmsea"]
-rmsea.uncor 
+ 
 
 if (  Fc/dfh-c.ts.est/(dfh*n) < 0 ) { 
   rmsea.cor.ts.est <-  0} else {
@@ -166,10 +153,8 @@ WmB.fiml.est <- lavaan:::lav_model_h1_information_observed(lavmodel = fit1B@Mode
                                                   lavh1 = fit1B@h1, lavcache = fit1B@Cache)[[1]]
 #Cathy's note: This is the weight matrix of FIML but evaluated at TS estimates.   
 #I believe that lavimplied = fit2B@implied allows to me evaluate it at TS estimates. 
-
-eigen(WmB.ts.est)$values
-eigen(WmB.fiml.est)$values
-
+eigen(WmB.ts.est)$values #not positive definite 
+eigen(WmB.fiml.est)$values #not positive definite 
 
 B1B.fiml.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1B@Model,
                                                    lavsamplestats = fit1B@SampleStats, 
@@ -185,7 +170,8 @@ B1B.ts.est <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1B@Mode
                                                              lavh1 = fit1B@h1, lavcache = fit1B@Cache)[[1]]
 #Cathy's note: This is the first order information matrix of FIML but evaluated at TS estimates.   
 #I believe that lavimplied = fit2B@implied allows to me evaluate it at TS estimates. 
-
+eigen(B1B.fiml.est)$values
+eigen(B1B.ts.est)$values
 WmiB.ts.est<-solve(WmB.ts.est)
 GammaB.ts.est <- WmiB.ts.est %*% B1B.ts.est %*% WmiB.ts.est 
 WmiB.fiml.est<-solve(WmB.fiml.est)
@@ -193,18 +179,18 @@ GammaB.fiml.est <- WmiB.fiml.est %*% B1B.fiml.est %*% WmiB.fiml.est
 #Cathy's note: Gamma is the estimate of the asymptotic covariance matrix of the satuarated model estimates. 
 #This asymptotic covariance matrix is calculated by a triple product similar to the one in the sandwich method
 deltabreveB <- lavInspect(fit2B, "delta")
-dim(deltabreveB)
+
 
 WcB <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2B@Model,
                                                  lavsamplestats = fit2B@SampleStats, lavdata = fit2B@Data, 
                                                  lavoptions = fit2B@Options, lavimplied = fit2B@implied,
                                                  lavh1 = fit2B@h1, lavcache = fit2B@Cache)[[1]]
-dim(WcB)
 
-eigen(WcB)$values
 
 UcB <- WcB-WcB%*%deltabreveB%*%solve(t(deltabreveB)%*%WcB%*%deltabreveB)%*%t(deltabreveB)%*%WcB
-eigen(UcB)
+eigen(UcB)$values
+eigen(WcB)$values
+
 cB.ts.est <- lav_matrix_trace(UcB%*%GammaB.ts.est)
 cB.ts.est
 
@@ -216,27 +202,31 @@ cB.fiml.est
 
 
 
- 
-  if ( Fc-c.ts.est/n < 0 ){
-    cfi.cor.ts.est  <- 1
-  } else { if ((Fc-c.ts.est/n)/(FcB-cB.ts.est/n)>1 ){
+
+if ( (1-(Fc-c.ts.est/n)/(FcB-cB.ts.est/n))>1 ){
+  cfi.cor.ts.est <- 99
+} else{
+  if ( (1-(Fc-c.ts.est/n)/(FcB-cB.ts.est/n))<0 ){
     cfi.cor.ts.est <- 98
-  } else{
-    cfi.cor.ts.est<-1-(Fc-n)/(FcB-cB.ts.est/n) }
-  }
+  } else {
+    cfi.cor.ts.est<-1-(Fc-c.ts.est/n)/(FcB-cB.ts.est/n)
+  } 
+}
 
 
 
 
 
 
-  if ( Fc-c.fiml.est/n < 0 ){
-    cfi.cor.fiml.est  <- 1
-  } else { if ((Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n)>1 ){
+if (  (1-(Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n))>1 ){
+  cfi.cor.fiml.est <- 99
+} else{
+  if (  (1-(Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n))<0 ){
     cfi.cor.fiml.est <- 98
-  } else{
-    cfi.cor.fiml.est<-1-(Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n) }
-  }
+  } else {
+    cfi.cor.fiml.est<-1-(Fc-c.fiml.est/n)/(FcB-cB.fiml.est/n)
+  } 
+}
 
 
 
