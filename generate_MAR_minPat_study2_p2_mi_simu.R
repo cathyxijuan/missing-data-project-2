@@ -1,6 +1,6 @@
 library(lavaan)
 source("functions.R")
-source("Models_WM.R") #done at n=200, 500
+source("Models_WM.R") #done at n=200, 500， 1000
 
 
 #strong dependency
@@ -321,6 +321,14 @@ fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_MI_n1000 <-  fit.ind.matrix.MAR.simu(
 
 save(fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_MI_n1000, file="fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_MI_n1000.RData")
 
+
+
+
+
+
+
+
+
 fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_MI_n1000 <-  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
                                                                                fitted.mod=fitted.mod, 
                                                                                missing.percentage = 0.50, 
@@ -341,6 +349,8 @@ fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_MI_n1000 <-  fit.ind.matrix.MAR.simu(po
 
 save(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_MI_n1000, file="fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_MI_n1000.RData")
 
+
+
 fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_MI_n1000 <-  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
                                                                              fitted.mod=fitted.mod, 
                                                                              missing.percentage = 0.50, 
@@ -349,4 +359,5 @@ fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_MI_n1000 <-  fit.ind.matrix.MAR.simu(po
                                                                              var.with.missing = 6)
 
 save(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_MI_n1000 , file="fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_MI_n1000.RData")
+
 
