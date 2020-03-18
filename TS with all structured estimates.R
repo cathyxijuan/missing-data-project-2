@@ -97,8 +97,8 @@ Wc <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2@Model,
                                                  lavoptions = fit2@Options, lavimplied = fit2@implied,
                                                  lavh1 = fit2@h1, lavcache = fit2@Cache)[[1]]
 
-
-Uc <- Wc-Wc%*%deltabreve%*%solve(t(deltabreve)%*%Wc%*%deltabreve)%*%t(deltabreve)%*%Wc
+Wci <- solve(Wc)
+Uc <- Wci-Wci%*%deltabreve%*%solve(t(deltabreve)%*%Wci%*%deltabreve)%*%t(deltabreve)%*%Wci
 
 
 
@@ -185,11 +185,11 @@ WcB <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2B@Model,
                                                  lavsamplestats = fit2B@SampleStats, lavdata = fit2B@Data, 
                                                  lavoptions = fit2B@Options, lavimplied = fit2B@implied,
                                                  lavh1 = fit2B@h1, lavcache = fit2B@Cache)[[1]]
+WcBi <- solve(WcB)
 
-
-UcB <- WcB-WcB%*%deltabreveB%*%solve(t(deltabreveB)%*%WcB%*%deltabreveB)%*%t(deltabreveB)%*%WcB
+UcB <- WcBi-WcBi%*%deltabreveB%*%solve(t(deltabreveB)%*%WcBi%*%deltabreveB)%*%t(deltabreveB)%*%WcBi
 eigen(UcB)$values
-eigen(WcB)$values
+eigen(WcBi)$values
 
 cB.ts.est <- lav_matrix_trace(UcB%*%GammaB.ts.est)
 cB.ts.est
