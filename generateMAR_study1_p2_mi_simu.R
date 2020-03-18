@@ -1,9 +1,9 @@
 library(lavaan)
 source("functions.R")
-#source("Models_2CR_SF.R") #done 
-source("Models_1CR_SF.R") #done
-#source("Models_1CR_DF.R") #done
-#source("Models_2CR_DF.R") #done
+source("Models_2CR_SF.R")
+#source("Models_1CR_SF.R")
+#source("Models_1CR_DF.R")
+#source("Models_2CR_DF.R")
 
 ###MISSING ON x11-12 OR x9-12
 #strong dependency
@@ -15,7 +15,7 @@ source("Models_1CR_SF.R") #done
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 MARStrong_2Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
-  data <- simulateData(model, sample.nobs=sample.nobs, seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -36,7 +36,7 @@ MARStrong_2Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 MARWeak_2Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
-  data <- simulateData(model, sample.nobs=sample.nobs, seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -67,7 +67,7 @@ MARWeak_2Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 MARStrong_4Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
-  data <- simulateData(model, sample.nobs=sample.nobs, seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -94,7 +94,7 @@ MARStrong_4Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 MARWeak_4Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
-  data <- simulateData(model, sample.nobs=sample.nobs, seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -123,10 +123,13 @@ MARWeak_4Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 ##var.with.missing: the number of variables with missing data; it can be 2 or 4
-fit.ind.matrix.MAR <- function(pop.model.list, fitted.mod, sample.nobs = 1000000, 
-                               missing.percentage,missing.type, var.with.missing,
-                               num.of.imp = 1){
-  fit.indices.MAR <-matrix( nrow = 8, ncol = 0)
+##simu.num: number of simulation rounds
+fit.ind.matrix.MAR.simu <- function(pop.model.list, fitted.mod, sample.nobs = 1000000, 
+                                    missing.percentage,missing.type, var.with.missing, 
+                                    simu.num=1000, num.of.imp = 20){
+  
+  fit.indices.list <- vector(mode="list", length=simu.num)
+  for(j in 1:simu.num){fit.indices.MAR <-matrix( nrow = 8, ncol = 0)
   
   for(i in 1:length(pop.model.list)){
     if (var.with.missing == 2){
@@ -149,77 +152,90 @@ fit.ind.matrix.MAR <- function(pop.model.list, fitted.mod, sample.nobs = 1000000
   names.part1 <- rep(paste("FC=",c("0","0.4", "0.8" ), sep=""), each=5)
   names.part2 <-rep(paste("CR=", c("0", "0.1", "0.2", "0.3", "0.4"), sep=""),3)
   colnames(fit.indices.MAR) <-paste(names.part1, names.part2, sep=";")
-  fit.indices.MAR
+  fit.indices.MAR <- round( fit.indices.MAR, 8)
+  fit.indices.list[[j]] <- fit.indices.MAR
+  print(j)
+  }
+  
+  fit.indices.list
+  
 }
 
 
-
-
-
-
+set.seed(111)
 #####2 Variables with missing value#################
 
-fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_MI_n1000000 <-
-  fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                     missing.percentage = 0.20, missing.type = "strong", var.with.missing = 2)
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_MI_n200 <-
+  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+                          fitted.mod=fitted.mod, 
+                          missing.percentage = 0.20, missing.type = "strong",
+                          sample.nobs = 200,
+                          var.with.missing = 2)
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_MI_n200, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_MI_n200.RData")
 
 
-save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_MI_n1000000, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_MI_n1000000.RData")
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_MI_n200 <-
+  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+                          fitted.mod=fitted.mod, 
+                          missing.percentage = 0.50, missing.type = "strong",
+                          sample.nobs = 200,
+                          var.with.missing = 2)
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_MI_n200, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_MI_n200.RData")
 
 
-
-fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_MI_n1000000 <-
-  fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                     missing.percentage = 0.50, missing.type = "strong", var.with.missing = 2)
-
-save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_MI_n1000000, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_MI_n1000000.RData")
-
-
-fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_MI_n1000000 <-
-  fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                     missing.percentage = 0.20, missing.type = "weak", var.with.missing = 2)
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_MI_n200 <-
+  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+                          fitted.mod=fitted.mod, 
+                          missing.percentage = 0.20, missing.type = "weak",
+                          sample.nobs = 200,
+                          var.with.missing = 2)
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_MI_n200, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_MI_n200.RData")
 
 
-save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_MI_n1000000, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_MI_n1000000.RData")
-
-
-
-fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_MI_n1000000 <-
-  fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                     missing.percentage = 0.50, missing.type = "weak", var.with.missing = 2)
-
-save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_MI_n1000000, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_MI_n1000000.RData")
-
-
-
-#########4 Variables with Missing##############
-fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_MI_n1000000 <-
-  fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                     missing.percentage = 0.20, missing.type = "strong", var.with.missing = 2)
-
-
-save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_MI_n1000000, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_MI_n1000000.RData")
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_MI_n200 <-
+  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+                          fitted.mod=fitted.mod, 
+                          missing.percentage = 0.50, missing.type = "weak",
+                          sample.nobs = 200,
+                          var.with.missing = 2)
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_MI_n200, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_MI_n200.RData")
 
 
 
-fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_MI_n1000000 <-
-  fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                     missing.percentage = 0.50, missing.type = "strong", var.with.missing = 4)
-
-save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_MI_n1000000, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_MI_n1000000.RData")
+#######4 variables with missing data #######
 
 
-fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_MI_n1000000 <-
-  fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                     missing.percentage = 0.20, missing.type = "weak",var.with.missing = 4)
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_MI_n200 <-
+  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+                          fitted.mod=fitted.mod, 
+                          missing.percentage = 0.20, missing.type = "strong",
+                          sample.nobs = 200,
+                          var.with.missing = 4)
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_MI_n200, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_MI_n200.RData")
 
 
-save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_MI_n1000000, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_MI_n1000000.RData")
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_MI_n200 <-
+  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+                          fitted.mod=fitted.mod, 
+                          missing.percentage = 0.50, missing.type = "strong",
+                          sample.nobs = 200,
+                          var.with.missing = 4)
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_MI_n200, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_MI_n200.RData")
 
 
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_MI_n200 <-
+  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+                          fitted.mod=fitted.mod, 
+                          missing.percentage = 0.20, missing.type = "weak",
+                          sample.nobs = 200,
+                          var.with.missing = 4)
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_MI_n200, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_MI_n200.RData")
 
-fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_MI_n1000000 <-
-  fit.ind.matrix.MAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                     missing.percentage = 0.50, missing.type = "weak",var.with.missing = 4)
 
-save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_MI_n1000000, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_MI_n1000000.RData")
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_MI_n200 <-
+  fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+                          fitted.mod=fitted.mod, 
+                          missing.percentage = 0.50, missing.type = "weak",
+                          sample.nobs = 200,
+                          var.with.missing = 4)
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_MI_n200, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_MI_n200.RData")
