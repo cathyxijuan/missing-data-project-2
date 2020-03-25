@@ -1,6 +1,6 @@
 library(lavaan)
 source("functions.R")
-source("Models_WM.R")
+source("Models_WM.R") #done at n=200, 500
 
 
 
@@ -240,37 +240,37 @@ fit.ind.matrix.MAR.simu <- function(pop.model.list, fitted.mod, sample.nobs=1000
 
 set.seed(111)
 ############2 variables with missing data########
-fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
                                                                              fitted.mod=fitted.mod,
-                                                                             sample.nobs=200,
+                                                                             sample.nobs=1000,
                                                                              missing.percentage = 0.20,
                                                                              missing.type = "strong",
                                                                              var.with.missing = 2)
 
-save(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_IM_n500, file="fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_IM_n500.RData")
-fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_IM_n500 <- fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod,
-                                                                           sample.nobs=200,
+save(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_IM_n1000, file="fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_IM_n1000.RData")
+fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_IM_n1000 <- fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod,
+                                                                           sample.nobs=1000,
                                                                            missing.percentage = 0.50, missing.type = "strong",
                                                                            var.with.missing = 2)
-save(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_IM_n500, file="fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_IM_n500.RData")
+save(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_IM_n1000, file="fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_IM_n1000.RData")
 
 
 
-fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
+fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
                                                                            fitted.mod=fitted.mod, 
-                                                                           missing.percentage = 0.20, sample.nobs=200,
+                                                                           missing.percentage = 0.20, sample.nobs=1000,
                                                                            missing.type = "weak",
                                                                            var.with.missing = 2)
 
-save(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_IM_n500 , file="fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_IM_n500.RData")
+save(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_IM_n1000 , file="fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_IM_n1000.RData")
 
 
-fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=200,
+fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=1000,
                                                                            missing.percentage = 0.50, missing.type = "weak",
                                                                            var.with.missing = 2)
 
 
-save(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_IM_n500 , file="fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_IM_n500.RData")
+save(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_IM_n1000 , file="fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_IM_n1000.RData")
 
 
 
@@ -280,29 +280,29 @@ save(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_IM_n500 , file="fitMAR_Weak_maxPat
 #############4 variables missing ######################
 
 
-fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=200,
+fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=1000,
                                                                              missing.percentage = 0.20, missing.type = "strong",
                                                                              var.with.missing = 4)
-save(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_IM_n500 , file="fitMAR_maxPat_Strong_20PerMiss_4VarMiss_WM_IM_n500.RData")
-fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod,sample.nobs=200,
+save(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_IM_n1000 , file="fitMAR_maxPat_Strong_20PerMiss_4VarMiss_WM_IM_n1000.RData")
+fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod,sample.nobs=1000,
                                                                              missing.percentage = 0.50, missing.type = "strong",
                                                                              var.with.missing = 4)
-save(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_IM_n500, file="fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_IM_n500.RData")
+save(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_IM_n1000, file="fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_IM_n1000.RData")
 
 
 
-fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=200,
+fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=1000,
                                                                            missing.percentage = 0.20, missing.type = "weak",
                                                                            var.with.missing = 4)
 
-save(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_IM_n500 , file="fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_IM_n500.RData")
+save(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_IM_n1000 , file="fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_IM_n1000.RData")
 
 
-fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=200,
+fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=1000,
                                                                            missing.percentage = 0.50, missing.type = "weak",
                                                                            var.with.missing = 4)
 
-save(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_IM_n500, file="fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_IM_n500.RData")
+save(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_IM_n1000, file="fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_IM_n1000.RData")
 
 
 
@@ -313,27 +313,28 @@ save(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_IM_n500, file="fitMAR_Weak_maxPat_
 
 
 #################6 Variables with Missing Data##################################
-fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod,sample.nobs=200,
+fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod,sample.nobs=1000,
                                                                              missing.percentage = 0.20, missing.type = "strong",
                                                                              var.with.missing = 6)
-save(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_IM_n500 , file="fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_IM_n500.RData")
-fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod,sample.nobs=200,
+save(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_IM_n1000 , file="fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_IM_n1000.RData")
+fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod,sample.nobs=1000,
                                                                              missing.percentage = 0.50, missing.type = "strong",
                                                                              var.with.missing = 6)
-save(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_IM_n500, file="fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_IM_n500.RData")
+save(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_IM_n1000, file="fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_IM_n1000.RData")
 
 
 
-fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=200,
+fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=1000,
                                                                            missing.percentage = 0.20, missing.type = "weak",
                                                                            var.with.missing = 6)
 
-save(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_IM_n500 , file="fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_IM_n500.RData")
+save(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_IM_n1000 , file="fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_IM_n1000.RData")
 
 
-fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_IM_n500 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=200,
+fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_IM_n1000 <-   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, sample.nobs=1000,
                                                                            missing.percentage = 0.50, missing.type = "weak",
                                                                            var.with.missing = 6)
 
-save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_IM_n500,
-     file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_IM_n500.RData")
+save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_IM_n1000,
+     file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_IM_n1000.RData")
+

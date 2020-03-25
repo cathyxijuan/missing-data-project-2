@@ -161,7 +161,7 @@ all.fit.approx.indices <- function(fitted.mod, dataset){
   kb.obs <- sum(diag(WcmB.obs%*%WmBi%*%Ub%*%WmBi)) #Vika: oops, these matrices were switched in earlier code, now correct
   kb.obs.nonn <-sum(diag(Ub%*%WmBi%*%WcmB.obs%*%WmBi%*%Ub%*%GammaB)) #NEW, no longer assuming normality
   
-  kb.exp <- sum(diag(WcmB.exp%*%Wmi%*%U%*%Wmi)) #Vika: oops, these matrices were switched in earlier code, now correct
+  kb.exp <- sum(diag(WcmB.exp%*%Wmi%*%Ub%*%Wmi)) #Vika: oops, these matrices were switched in earlier code, now correct
   kb.exp.nonn <-sum(diag(Ub%*%Wmi%*%WcmB.exp%*%Wmi%*%Ub%*%GammaB)) #NEW, no longer assuming normality
   #--------------End Baseline Model----------------------------------------------------------------------------------#
   

@@ -164,6 +164,9 @@ MCARMaxPattern_6Var <- function(model, sample.nobs=1000000,  missing.percentage=
 
 
 
+#simuDatawithMiss <- MCARMinPattern_6Var(pop.mod2 , sample.nobs=1000000, missing.percentage=0.5)
+#save(simuDatawithMiss, file="simuDatawithMiss2.RData")
+
 
 #Usage: put fit indices for a list of models into a matrix
 
