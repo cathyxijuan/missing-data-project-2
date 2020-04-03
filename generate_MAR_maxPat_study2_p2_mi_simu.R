@@ -1,6 +1,6 @@
 library(lavaan)
 source("functions.R")
-source("Models_WM.R") #done at n=200, 500
+source("Models_WM.R") #done at n=200, 500, 1000
 
 
 
