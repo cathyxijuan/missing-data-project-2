@@ -1,18 +1,19 @@
-#Code for new fit indices with incomplete data, NORMAL AND NONNORMAL DATA 
-#install.packages("lavaan", repos = "http://www.da.ugent.be", type = "source") 
-#use development version (0.6-6.1508)
-
-#let's compare both mimic=EQS and default (no mimic, which probalby means Mplus)
 
 library(lavaan)
-#---------------------------------------------------------------------------------------#
+library(matrixcalc)
+
+#For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
+#For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
+
+load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
 
-load("simuDatawithMiss.RData") #this is N=1,000,000
-data1 <-simuDatawithMiss[1:1000,] # problem at n=100; stablize at n=200
-n <- nrow(data1)
+#load("simuDatawithMiss2.RData") # slighly misspecified 
+data1<-simuDatawithMiss[1:499,] 
+#For complete data, the population RMSEA and CFI are 0.04452902 and 0.9791809 respectively. 
+#For incomplete data, the population RMSEA and CFI are 0.03199867 and 0.9847884 respectively. 
 
 
 
