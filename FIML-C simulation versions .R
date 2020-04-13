@@ -270,7 +270,7 @@ cfi.obs.nonn_unstr<-1-(Fc-k.obs.nonn_unstr/n)/(FcB-kb.obs.nonn_unstr/n)
 
 #comparison
 RMSEA<-c(rmsea.fiml,rmsea, rmsea.obs_str,rmsea.obs.nonn_str,rmsea.exp_str,
-          rmsea.exp.nonn_str,rmsea.obs_unstr,rmsea.obs.nonn_unstr)
+         rmsea.exp.nonn_str,rmsea.obs_unstr,rmsea.obs.nonn_unstr)
 CFI <-c(cfi.fiml,cfi,cfi.obs_str,cfi.obs.nonn_str,cfi.exp_str,
         cfi.exp.nonn_str,cfi.obs_unstr,cfi.obs.nonn_unstr)
 pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 6)), is.positive.definite(x=round(Wcm.obs_str, 6)), 
@@ -282,38 +282,25 @@ pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 6)), is.positive.defini
 names(pos.def.weight) <- c("Wm_str", "Wcm.obs_str", "Wcm.exp_str", 
                            "Wcm.obs_unstr","Wm_unstr", "WmB_str", "WcmB.obs_str", "WcmB.exp_str" ) #check the positiveness of different weight matrices
 pos.def.weight
-Wm.pos.def <- c( NA, NA,
-                 pos.def.weight["Wm_str"], pos.def.weight["Wm_str"],
-                 pos.def.weight["Wm_str"], pos.def.weight["Wm_str"],
-                 pos.def.weight["Wm_unstr"], pos.def.weight["Wm_unstr"])
-Wcm.pos.def <- c( NA, NA,
-                  pos.def.weight["Wcm.obs_str"], pos.def.weight["Wcm.obs_str"],
-                  pos.def.weight["Wcm.exp_str"], pos.def.weight["Wcm.exp_str"],
-                  pos.def.weight["Wcm.obs_unstr"], pos.def.weight["Wcm.obs_unstr"])
-WmB.pos.def <- c( NA, NA,
-                  pos.def.weight["WmB_str"], pos.def.weight["WmB_str"],
-                  pos.def.weight["WmB_str"], pos.def.weight["WmB_str"],
-                  pos.def.weight["Wm_unstr"], pos.def.weight["Wm_unstr"])
-WcmB.pos.def <-  c( NA, NA,
-                    pos.def.weight["Wcm.obs_str"], pos.def.weight["Wcm.obs_str"],
-                    pos.def.weight["Wcm.exp_str"], pos.def.weight["Wcm.exp_str"],
-                    pos.def.weight["Wcm.obs_unstr"], pos.def.weight["Wcm.obs_unstr"])
+
+
+
 ks.per.n <-c(NA, NA, 
              k.obs_str/n,k.obs.nonn_str/n, 
              k.exp_str/n,k.exp.nonn_str/n,
              k.obs_unstr/n, k.obs.nonn_unstr/n)
 kbs.per.n <- c(NA, NA, 
-              kb.obs_str/n ,
-              kb.obs.nonn_str/n ,
-              kb.exp_str/n ,
-              kb.exp.nonn_str/n,
-              kb.obs_unstr/n,
-              kb.obs.nonn_unstr/n)
+               kb.obs_str/n ,
+               kb.obs.nonn_str/n ,
+               kb.exp_str/n ,
+               kb.exp.nonn_str/n,
+               kb.obs_unstr/n,
+               kb.obs.nonn_unstr/n)
 
 k.greater.than.zero <-c(T, T, 
-                   k.obs_str/n >0, k.obs.nonn_str/n>0, 
-                   k.exp_str/n >0, k.exp.nonn_str/n >0,
-                   k.obs_unstr/n >0, k.obs.nonn_unstr/n >0)
+                        k.obs_str/n >0, k.obs.nonn_str/n>0, 
+                        k.exp_str/n >0, k.exp.nonn_str/n >0,
+                        k.obs_unstr/n >0, k.obs.nonn_unstr/n >0)
 kb.greater.than.zero <-  c(T, T, 
                            kb.obs_str/n > 0 ,
                            kb.obs.nonn_str/n > 0 ,
@@ -328,17 +315,17 @@ kb.greater.than.k <- c(T, T,
                        kb.obs_unstr > k.obs_unstr, kb.obs.nonn_unstr > k.obs.nonn_unstr)
 
 Fc.greater.than.k.per.n <- c(T, T, 
-                              Fc > c(k.obs_str/n,k.obs.nonn_str/n, 
-                                     k.exp_str/n,k.exp.nonn_str/n,
-                                     k.obs_unstr/n, k.obs.nonn_unstr/n))
+                             Fc > c(k.obs_str/n,k.obs.nonn_str/n, 
+                                    k.exp_str/n,k.exp.nonn_str/n,
+                                    k.obs_unstr/n, k.obs.nonn_unstr/n))
 
 FcB.greater.than.kb.per.n <- c(T, T, 
                                FcB >  c(kb.obs_str/n ,
-                                          kb.obs.nonn_str/n ,
-                                          kb.exp_str/n ,
-                                          kb.exp.nonn_str/n,
-                                          kb.obs_unstr/n,
-                                          kb.obs.nonn_unstr/n))
+                                        kb.obs.nonn_str/n ,
+                                        kb.exp_str/n ,
+                                        kb.exp.nonn_str/n,
+                                        kb.obs_unstr/n,
+                                        kb.obs.nonn_unstr/n))
 
 cfi.less.than.one <- c(cfi.fiml,cfi,
                        cfi.obs_str,cfi.obs.nonn_str,
@@ -347,7 +334,7 @@ cfi.less.than.one <- c(cfi.fiml,cfi,
 
 
 cfi.greater.than.zero <- c(cfi.fiml,cfi,cfi.obs_str,cfi.obs.nonn_str,cfi.exp_str,
-                       cfi.exp.nonn_str,cfi.obs_unstr,cfi.obs.nonn_unstr) >0
+                           cfi.exp.nonn_str,cfi.obs_unstr,cfi.obs.nonn_unstr) >0
 
 cfi.checks <- cbind(k.greater.than.zero , 
                     kb.greater.than.zero, kb.greater.than.k, Fc.greater.than.k.per.n , 
@@ -357,9 +344,9 @@ cfi.checks <- cbind(k.greater.than.zero ,
 CFI.OK <- rowSums(cfi.checks)==7
 
 cfi.checks.small <- cbind(k.greater.than.zero , 
-                    kb.greater.than.zero,
-                    kb.greater.than.k, 
-                    FcB.greater.than.kb.per.n)
+                          kb.greater.than.zero,
+                          kb.greater.than.k, 
+                          FcB.greater.than.kb.per.n)
 
 CFI.OK.small <- rowSums(cfi.checks.small)==4
 
@@ -378,15 +365,14 @@ for(i in 1:len){
 
 
 results<-data.frame(RMSEA,CFI, RMSEA.2, CFI.2,  CFI.OK, CFI.OK.small,
-                     k.greater.than.zero , 
+                    k.greater.than.zero , 
                     kb.greater.than.zero, kb.greater.than.k, Fc.greater.than.k.per.n , 
                     FcB.greater.than.kb.per.n, FcB.greater.than.kb.per.n , 
-                    cfi.less.than.one , cfi.greater.than.zero, 
-                    Wm.pos.def ,Wcm.pos.def, WmB.pos.def, WcmB.pos.def)
+                    cfi.less.than.one , cfi.greater.than.zero)
 rownames(results)<-c("original.fiml","uncorr.fimlc",
-                 "corr.fimlc.obs_str","corr.fimlc.obs.nonn_str",
-                 "corr.fimlc.exp_str","corr.fimlc.exp.nonn_str",
-                 "corr.fimlc.obs_unstr","corr.fimlc.obs.nonn_unstr")
+                     "corr.fimlc.obs_str","corr.fimlc.obs.nonn_str",
+                     "corr.fimlc.exp_str","corr.fimlc.exp.nonn_str",
+                     "corr.fimlc.obs_unstr","corr.fimlc.obs.nonn_unstr")
 results
 
 
@@ -409,9 +395,11 @@ pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 6)),
 
 mod.converge <- c(inspect(fit1, "converged"), 
                   inspect(fit01, "converged"), 
-                inspect(fitc, "converged"),
-                 inspect(fitcB, "converged"))
+                  inspect(fitc, "converged"),
+                  inspect(fitcB, "converged"))
 
 model.matrices <- data.frame(pos.def.implied, pos.def.vcov, mod.converge)
 rownames(model.matrices) <- c("fit.str.incomp","fit.str.comp", "fit.base.incomp" , "fit.base.comp")
 model.matrices
+setwd("/Volumes/SP PHD U3/missing-data-project-2/FIML-C simulation results")
+save(model.matrices, file="model.matrices.RData")

@@ -23,7 +23,7 @@ f1 ~~ 1*f1
 
 
 
-fit1<-cfa(fitted.mod,data=data1,mimic="EQS",estimator="ML",missing="FIML")
+fit1<-cfa(fitted.mod,data=data1,estimator="ML",missing="FIML")
 Sigmatilde<-lavInspect(fit1,"sampstat")$cov #saturated model's cov matrix
 mutilde<-lavInspect(fit1,"sampstat")$mean #saturated model's mean structure
 vcov(fit1)
