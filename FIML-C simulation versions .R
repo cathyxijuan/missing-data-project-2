@@ -5,13 +5,13 @@ library(matrixcalc)
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
-load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
+#load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
 
-#load("simuDatawithMiss2.RData") # slighly misspecified 
-data1<-simuDatawithMiss[1:499,] 
+load("simuDatawithMiss2.RData") # slighly misspecified 
+data1<-simuDatawithMiss[100:500,] 
 #For complete data, the population RMSEA and CFI are 0.04452902 and 0.9791809 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.03199867 and 0.9847884 respectively. 
 
@@ -60,9 +60,9 @@ fitc <- sem(parTable(fit1), sample.cov = Sigmatilde,sample.mean=mutilde, sample.
 fitcB <- sem(parTable(fit01), sample.cov = Sigmatilde,sample.mean=mutilde, sample.nobs=n,
              information="observed",meanstructure=TRUE,sample.cov.rescale=FALSE,optim.method="none")
 
-Fc<-lavInspect(fitc, "fit")["fmin"]*2 #lavaan halfs the fit finction
-FcB<- lavInspect(fitcB, "fit")["fmin"]*2
 
+chisqc <-lavInspect(fitc, "fit")["chisq"]
+chisqcB <- lavInspect(fitcB, "fit")["chisq"]
 
 #--------------Main Model-----------------------------------------------------------------------------------------------#
 delta <- lavInspect(fit1, "delta") #model derivatives with col/row names labeled, (pstar+p)xq
@@ -192,7 +192,65 @@ kb.obs.nonn_unstr  <-sum(diag(Ub_unstr%*%Wmi_unstr%*%Wcm.obs_unstr%*%Wmi_unstr%*
 
 #--------------End Baseline Model----------------------------------------------------------------------------------#
 
+#adjustment term
+ks <-c(k.obs_str,k.obs.nonn_str, 
+       k.exp_str,k.exp.nonn_str,
+       k.obs_unstr, k.obs.nonn_unstr)
+kbs <- c(kb.obs_str ,
+         kb.obs.nonn_str ,
+         kb.exp_str ,
+         kb.exp.nonn_str,
+         kb.obs_unstr,
+         kb.obs.nonn_unstr)
 
+
+pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 6)), is.positive.definite(x=round(Wcm.obs_str, 6)), 
+                    is.positive.definite(x=round(Wcm.exp_str, 6)), is.positive.definite(x=round(Wcm.obs_unstr, 6)), 
+                    is.positive.definite(x=round(Wm_unstr, 6)),
+                    is.positive.definite(x=round(WmB_str, 6)), is.positive.definite(x=round(WcmB.obs_str, 6)), 
+                    is.positive.definite(x=round(WcmB.exp_str, 6)) )
+
+pos.def.implied <-c(is.positive.definite(x=round(inspect(fit1, "implied")$cov,6)), 
+                    is.positive.definite(x=round(inspect(fit01, "implied")$cov,6)),
+                    is.positive.definite(x=round(inspect(fitc, "implied")$cov,6)),
+                    is.positive.definite(x=round(inspect(fitcB, "implied")$cov,6)))
+
+
+pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 6)), 
+                  is.positive.definite(round(inspect(fit01, "vcov"), 6)), 
+                  is.positive.definite(round(inspect(fitc, "vcov"), 6)),
+                  is.positive.definite(round(inspect(fitcB, "vcov"), 6)))
+
+mod.converge <- c(inspect(fit1, "converged"), 
+                  inspect(fit01, "converged"), 
+                  inspect(fitc, "converged"),
+                  inspect(fitcB, "converged"))
+
+
+
+model.matrices <- c(pos.def.implied, pos.def.vcov, mod.converge)
+
+
+
+first.out <- c(rmsea.fiml, cfi.fiml, n, dfh, dfb, chisqc, chisqcB, ks, kbs, pos.def.weight, model.matrices)
+first.out <- round(first.out, 6)
+
+names(first.out) <- c("rmsea.fiml", "cfi.fiml", "n", "dfh", "dfb", "chisqc", "chisqcB","k.obs_str","k.obs.nonn_str", 
+                      "k.exp_str","k.exp.nonn_str",
+                      "k.obs_unstr", "k.obs.nonn_unstr", 
+                      "kb.obs_str" ,
+                      "kb.obs.nonn_str" ,
+                      "kb.exp_str" ,
+                      "kb.exp.nonn_str",
+                      "kb.obs_unstr",
+                      "kb.obs.nonn_unstr", "Wm_str", "Wcm.obs_str", "Wcm.exp_str", 
+                      "Wcm.obs_unstr","Wm_unstr", "WmB_str", "WcmB.obs_str", "WcmB.exp_str" , 
+                      "fit.str.incomp.pos.def.implied","fit.str.comp.pos.def.implied", 
+                      "fit.base.incomp.pos.def.implied" , "fit.base.comp.pos.def.implied", 
+                      "fit.str.incomp.pos.def.vcov","fit.str.comp.pos.def.vcov", 
+                      "fit.base.incomp.pos.def.vcov" , "fit.base.comp.pos.def.vcov", 
+                      "fit.str.incomp.mod.converge","fit.str.comp.mod.converge", 
+                      "fit.base.incomp.mod.converge" , "fit.base.comp.mod.converge")
 
 
 
@@ -202,77 +260,125 @@ kb.obs.nonn_unstr  <-sum(diag(Ub_unstr%*%Wmi_unstr%*%Wcm.obs_unstr%*%Wmi_unstr%*
 #--------New fit index versions without small sample corrections (equation 6 and 7 in the Overleaf document)------------#
 
 
-rmsea <-sqrt(Fc/dfh-1/n) 
-
-
-
+if (Fc/dfh-1/n < 0 ) { 
+  rmsea <-  0} else {
+    rmsea <-sqrt(Fc/dfh-1/n) 
+  }
 
 cfi<-1-(Fc-dfh/n)/(FcB-dfb/n)
-
-
-
 
 
 #recall Fc is the Fmin for the structured model; FcB is the Fmin for the baseline model
 
 #--------New fit index versions WITH small sample corrections (equation 8 and 9 in the Overleaf document)---------------#
+num.ver <- 6
+ks <-c(k.obs_str,k.obs.nonn_str, 
+       k.exp_str,k.exp.nonn_str,
+       k.obs_unstr, k.obs.nonn_unstr)
+kbs <- c(kb.obs_str ,
+         kb.obs.nonn_str ,
+         kb.exp_str ,
+         kb.exp.nonn_str,
+         kb.obs_unstr,
+         kb.obs.nonn_unstr)
+
 
 #Study these four RMSEAS
 
-rmsea.obs_str <-sqrt(Fc/dfh-k.obs_str/(dfh*n))
 
 
 
-rmsea.obs.nonn_str <-sqrt(Fc/dfh-k.obs.nonn_str/(dfh*n))
 
 
 
-rmsea.exp_str <-sqrt(Fc/dfh-k.exp_str/(dfh*n))
-
-
-
-rmsea.exp.nonn_str <-sqrt(Fc/dfh-k.exp.nonn_str/(dfh*n))
-
-
-
-rmsea.obs_unstr <-sqrt(Fc/dfh-k.obs_unstr/(dfh*n))
-
-
-
-rmsea.obs.nonn_unstr <-sqrt(Fc/dfh-k.obs.nonn_unstr/(dfh*n))
-
-
-
+rmsea.cor <- rep(0, 6)
+for(i in 1:6){
+  if(Fc/dfh-ks[i]/(dfh*n) < 0){
+    rmsea.cor[i] <- 0
+  } else {
+    rmsea.cor[i]<-sqrt(Fc/dfh-ks[i]/(dfh*n))
+  }
+}
 
 
 
 
 #Study these four CFIs
 
-
-cfi.obs_str<-1-(Fc-k.obs_str/n)/(FcB-kb.obs_str/n) 
-
-cfi.obs.nonn_str<-1-(Fc-k.obs.nonn_str/n)/(FcB-kb.obs.nonn_str/n) 
-
-cfi.exp_str<-1-(Fc-k.exp_str/n)/(FcB-kb.exp_str/n) 
-
-cfi.exp.nonn_str<-1-(Fc-k.exp.nonn_str/n)/(FcB-kb.exp.nonn_str/n) 
-
-cfi.obs_unstr<-1-(Fc-k.obs_unstr/n)/(FcB-kb.obs_unstr/n) 
-
-cfi.obs.nonn_unstr<-1-(Fc-k.obs.nonn_unstr/n)/(FcB-kb.obs.nonn_unstr/n) 
+cfi.cor <- rep(0, 6)
+for(i in 1:6){
+  cfi.cor[i] <- 1-(Fc-ks[i]/n)/(FcB-kbs[i]/n)
+}
 
 
+k.greater.than.zero <-ks>0
+kb.greater.than.zero <- kbs>0 
+
+kb.greater.than.k <-  ks < kbs
+
+
+
+Fc.greater.than.k.per.n <- Fc >ks/n
+
+
+
+FcB.greater.than.kb.per.n <-FcB > kbs/n
+
+
+
+#CFI.Final:
+cfi.checks.small <- cbind(k.greater.than.zero , 
+                          kb.greater.than.zero,
+                          FcB.greater.than.kb.per.n)
+
+cfi.OK.small <- rowSums(cfi.checks.small)==3
+
+
+cfi.inter <-cfi.cor
+
+
+for(i in 1:num.ver){
+  if(cfi.OK.small[i]==T){ 
+    if(Fc.greater.than.k.per.n[i]==F){
+      cfi.inter[i] <- 1
+    } 
+  } 
+}
+
+
+cfi.inter.2 <- cfi.inter
+for(i in 1:num.ver){
+  if (kb.greater.than.k[i]==F){
+    cfi.inter.2[i] <- 1-(Fc-kbs[i]/n)/(FcB-kbs[i]/n)
+  }
+}
+
+
+
+cfi.less.than.one <- cfi.inter.2 < 1
+cfi.greater.than.zero <- cfi.inter.2 > 0
+
+cfi.checks <- cbind(cfi.checks.small, 
+                    cfi.less.than.one , cfi.greater.than.zero)
+
+cfi.OK <- rowSums(cfi.checks)==5
+
+
+cfi.cor.final <-cfi.inter.2 # detect cases where the fitted models are perfect fit. 
+for(i in 1:num.ver){
+  if(cfi.OK[i]==F){ 
+    cfi.cor.final[i] <- NA
+  } 
+}
 
 
 #-------------Comparison of Proposed Indices-----------------------------------------------------------------------#
 
 
 #comparison
-RMSEA<-c(rmsea.fiml,rmsea, rmsea.obs_str,rmsea.obs.nonn_str,rmsea.exp_str,
-         rmsea.exp.nonn_str,rmsea.obs_unstr,rmsea.obs.nonn_unstr)
-CFI <-c(cfi.fiml,cfi,cfi.obs_str,cfi.obs.nonn_str,cfi.exp_str,
-        cfi.exp.nonn_str,cfi.obs_unstr,cfi.obs.nonn_unstr)
+rmsea.final<-c(rmsea.fiml,rmsea,rmsea.cor )
+cfi.raw <-c(cfi.fiml,cfi,cfi.cor)
+cfi.final <- c(cfi.fiml,cfi,cfi.cor.final)
 pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 6)), is.positive.definite(x=round(Wcm.obs_str, 6)), 
                     is.positive.definite(x=round(Wcm.exp_str, 6)), is.positive.definite(x=round(Wcm.obs_unstr, 6)), 
                     is.positive.definite(x=round(Wm_unstr, 6)),
@@ -281,104 +387,36 @@ pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 6)), is.positive.defini
 
 names(pos.def.weight) <- c("Wm_str", "Wcm.obs_str", "Wcm.exp_str", 
                            "Wcm.obs_unstr","Wm_unstr", "WmB_str", "WcmB.obs_str", "WcmB.exp_str" ) #check the positiveness of different weight matrices
+
+
+
+
+k.kb.check <-c(k.greater.than.zero , kb.greater.than.zero,kb.greater.than.k )
+Fc.FcB.check <- c(Fc.greater.than.k.per.n , FcB.greater.than.kb.per.n)     
+cfi.range.check <- c(cfi.less.than.one , cfi.greater.than.zero)
+   
 pos.def.weight
 
+ks.kbs <- c(ks, kbs)
+names(ks.kbs) <- c("k.obs_str","k.obs.nonn_str", 
+         "k.exp_str","k.exp.nonn_str",
+         "k.obs_unstr", "k.obs.nonn_unstr", 
+         "kb.obs_str" ,
+         "kb.obs.nonn_str" ,
+         "kb.exp_str" ,
+         "kb.exp.nonn_str",
+         "kb.obs_unstr",
+         "kb.obs.nonn_unstr")
+ks.kbs
+nam <- c("original.fiml","uncorr.fimlc",
+         "corr.fimlc.obs_str","corr.fimlc.obs.nonn_str",
+         "corr.fimlc.exp_str","corr.fimlc.exp.nonn_str",
+         "corr.fimlc.obs_unstr","corr.fimlc.obs.nonn_unstr")
 
+names(rmsea.final) <- nam
 
-ks.per.n <-c(NA, NA, 
-             k.obs_str/n,k.obs.nonn_str/n, 
-             k.exp_str/n,k.exp.nonn_str/n,
-             k.obs_unstr/n, k.obs.nonn_unstr/n)
-kbs.per.n <- c(NA, NA, 
-               kb.obs_str/n ,
-               kb.obs.nonn_str/n ,
-               kb.exp_str/n ,
-               kb.exp.nonn_str/n,
-               kb.obs_unstr/n,
-               kb.obs.nonn_unstr/n)
-
-k.greater.than.zero <-c(T, T, 
-                        k.obs_str/n >0, k.obs.nonn_str/n>0, 
-                        k.exp_str/n >0, k.exp.nonn_str/n >0,
-                        k.obs_unstr/n >0, k.obs.nonn_unstr/n >0)
-kb.greater.than.zero <-  c(T, T, 
-                           kb.obs_str/n > 0 ,
-                           kb.obs.nonn_str/n > 0 ,
-                           kb.exp_str/n > 0,
-                           kb.exp.nonn_str/n > 0,
-                           kb.obs_unstr/n > 0,
-                           kb.obs.nonn_unstr/n > 0 )
-
-kb.greater.than.k <- c(T, T, 
-                       kb.obs_str > k.obs_str,  kb.obs.nonn_str >  k.obs.nonn_str, 
-                       kb.exp_str > k.exp_str, kb.exp.nonn_str > k.exp.nonn_str, 
-                       kb.obs_unstr > k.obs_unstr, kb.obs.nonn_unstr > k.obs.nonn_unstr)
-
-Fc.greater.than.k.per.n <- c(T, T, 
-                             Fc > c(k.obs_str/n,k.obs.nonn_str/n, 
-                                    k.exp_str/n,k.exp.nonn_str/n,
-                                    k.obs_unstr/n, k.obs.nonn_unstr/n))
-
-FcB.greater.than.kb.per.n <- c(T, T, 
-                               FcB >  c(kb.obs_str/n ,
-                                        kb.obs.nonn_str/n ,
-                                        kb.exp_str/n ,
-                                        kb.exp.nonn_str/n,
-                                        kb.obs_unstr/n,
-                                        kb.obs.nonn_unstr/n))
-
-cfi.less.than.one <- c(cfi.fiml,cfi,
-                       cfi.obs_str,cfi.obs.nonn_str,
-                       cfi.exp_str,cfi.exp.nonn_str,
-                       cfi.obs_unstr,cfi.obs.nonn_unstr) <1
-
-
-cfi.greater.than.zero <- c(cfi.fiml,cfi,cfi.obs_str,cfi.obs.nonn_str,cfi.exp_str,
-                           cfi.exp.nonn_str,cfi.obs_unstr,cfi.obs.nonn_unstr) >0
-
-cfi.checks <- cbind(k.greater.than.zero , 
-                    kb.greater.than.zero, kb.greater.than.k, Fc.greater.than.k.per.n , 
-                    FcB.greater.than.kb.per.n, 
-                    cfi.less.than.one , cfi.greater.than.zero)
-
-CFI.OK <- rowSums(cfi.checks)==7
-
-cfi.checks.small <- cbind(k.greater.than.zero , 
-                          kb.greater.than.zero,
-                          kb.greater.than.k, 
-                          FcB.greater.than.kb.per.n)
-
-CFI.OK.small <- rowSums(cfi.checks.small)==4
-
-
-CFI.2 <-CFI # detect cases where the fitted models are perfect fit. 
-RMSEA.2 <- RMSEA 
-
-for(i in 1:len){
-  if(CFI.OK.small[i]==T){ 
-    if(Fc.greater.than.k.per.n[i]==F){
-      CFI.2[i] <- 1
-      RMSEA.2[i] <- 0
-    } 
-  } 
-}
-
-
-results<-data.frame(RMSEA,CFI, RMSEA.2, CFI.2,  CFI.OK, CFI.OK.small,
-                    k.greater.than.zero , 
-                    kb.greater.than.zero, kb.greater.than.k, Fc.greater.than.k.per.n , 
-                    FcB.greater.than.kb.per.n, FcB.greater.than.kb.per.n , 
-                    cfi.less.than.one , cfi.greater.than.zero)
-rownames(results)<-c("original.fiml","uncorr.fimlc",
-                     "corr.fimlc.obs_str","corr.fimlc.obs.nonn_str",
-                     "corr.fimlc.exp_str","corr.fimlc.exp.nonn_str",
-                     "corr.fimlc.obs_unstr","corr.fimlc.obs.nonn_unstr")
-results
-
-
-
-
-
+names(cfi.raw) <- nam
+names(cfi.final) <-nam
 
 
 
@@ -398,8 +436,22 @@ mod.converge <- c(inspect(fit1, "converged"),
                   inspect(fitc, "converged"),
                   inspect(fitcB, "converged"))
 
-model.matrices <- data.frame(pos.def.implied, pos.def.vcov, mod.converge)
-rownames(model.matrices) <- c("fit.str.incomp","fit.str.comp", "fit.base.incomp" , "fit.base.comp")
+
+
+model.matrices <- c(pos.def.implied, pos.def.vcov, mod.converge)
+names(model.matrices) <- c("fit.str.incomp.pos.def.implied","fit.str.comp.pos.def.implied", "fit.base.incomp.pos.def.implied" , "fit.base.comppos.def.implied", 
+                           "fit.str.incomp.pos.def.vcov","fit.str.comp.pos.def.vcov", "fit.base.incomp.pos.def.vcov" , "fit.base.comp.pos.def.vcov", 
+                           "fit.str.incomp.mod.converge","fit.str.comp.mod.converge", "fit.base.incomp.mod.converge" , "fit.base.comp.mod.converge")
 model.matrices
+
+
+
+
+
+
+
+
+
+
 setwd("/Volumes/SP PHD U3/missing-data-project-2/FIML-C simulation results")
 save(model.matrices, file="model.matrices.RData")

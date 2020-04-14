@@ -231,7 +231,6 @@ fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_MI_n1000 <-
                           var.with.missing = 4)
 save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_MI_n1000, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_MI_n1000.RData")
 
-
 fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_MI_n1000 <-
   fit.ind.matrix.MAR.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 

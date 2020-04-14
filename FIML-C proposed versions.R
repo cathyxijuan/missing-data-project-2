@@ -202,7 +202,10 @@ kb.obs.nonn_unstr  <-sum(diag(Ub_unstr%*%Wmi_unstr%*%Wcm.obs_unstr%*%Wmi_unstr%*
 #--------New fit index versions without small sample corrections (equation 6 and 7 in the Overleaf document)------------#
 
 
-rmsea <-sqrt(Fc/dfh-1/n) 
+if (Fc/dfh-1/n < 0 ) { 
+  rmsea <-  0} else {
+    rmsea <-sqrt(Fc/dfh-1/n) 
+  }
 
 
 
@@ -219,27 +222,41 @@ cfi<-1-(Fc-dfh/n)/(FcB-dfb/n)
 
 #Study these four RMSEAS
 
-rmsea.obs_str <-sqrt(Fc/dfh-k.obs_str/(dfh*n))
+if (Fc/dfh-k.obs_str/(dfh*n) < 0 ) { 
+  rmsea.obs_str <-  0} else {
+    rmsea.obs_str <-sqrt(Fc/dfh-k.obs_str/(dfh*n))
+  }
 
 
-
-rmsea.obs.nonn_str <-sqrt(Fc/dfh-k.obs.nonn_str/(dfh*n))
-
-
-
-rmsea.exp_str <-sqrt(Fc/dfh-k.exp_str/(dfh*n))
+if (Fc/dfh-k.obs.nonn_str/(dfh*n) < 0 ) { 
+  rmsea.obs.nonn_str <-  0} else {
+    rmsea.obs.nonn_str <-sqrt(Fc/dfh-k.obs.nonn_str/(dfh*n))
+  }
 
 
+if (Fc/dfh-k.exp_str/(dfh*n) < 0 ) { 
+  rmsea.exp_str <-  0} else {
+    rmsea.exp_str <-sqrt(Fc/dfh-k.exp_str/(dfh*n))
+  }
 
-rmsea.exp.nonn_str <-sqrt(Fc/dfh-k.exp.nonn_str/(dfh*n))
+if (Fc/dfh-k.exp.nonn_str/(dfh*n) < 0 ) { 
+  rmsea.exp.nonn_str <-  0} else {
+    rmsea.exp.nonn_str <-sqrt(Fc/dfh-k.exp.nonn_str/(dfh*n))
+  } 
 
 
+if (Fc/dfh-k.obs_unstr/(dfh*n) < 0 ) { 
+  rmsea.obs_unstr <-  0} else {
+    rmsea.obs_unstr <-sqrt(Fc/dfh-k.obs_unstr/(dfh*n))
+  }
 
-rmsea.obs_unstr <-sqrt(Fc/dfh-k.obs_unstr/(dfh*n))
+
+if (Fc/dfh-k.obs.nonn_unstr/(dfh*n) < 0 ) { 
+  rmsea.obs.nonn_unstr <-  0} else {
+    rmsea.obs.nonn_unstr <-sqrt(Fc/dfh-k.obs.nonn_unstr/(dfh*n))
+  }
 
 
-
-rmsea.obs.nonn_unstr <-sqrt(Fc/dfh-k.obs.nonn_unstr/(dfh*n))
 
 
 
@@ -269,9 +286,10 @@ cfi.obs.nonn_unstr<-1-(Fc-k.obs.nonn_unstr/n)/(FcB-kb.obs.nonn_unstr/n)
 
 
 #comparison
-RMSEA<-c(rmsea.fiml,rmsea, rmsea.obs_str,rmsea.obs.nonn_str,rmsea.exp_str,
+num.ver <- 8
+RMSEA.final<-c(rmsea.fiml,rmsea, rmsea.obs_str,rmsea.obs.nonn_str,rmsea.exp_str,
           rmsea.exp.nonn_str,rmsea.obs_unstr,rmsea.obs.nonn_unstr)
-CFI <-c(cfi.fiml,cfi,cfi.obs_str,cfi.obs.nonn_str,cfi.exp_str,
+CFI.raw <-c(cfi.fiml,cfi,cfi.obs_str,cfi.obs.nonn_str,cfi.exp_str,
         cfi.exp.nonn_str,cfi.obs_unstr,cfi.obs.nonn_unstr)
 pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 6)), is.positive.definite(x=round(Wcm.obs_str, 6)), 
                     is.positive.definite(x=round(Wcm.exp_str, 6)), is.positive.definite(x=round(Wcm.obs_unstr, 6)), 
@@ -340,44 +358,47 @@ FcB.greater.than.kb.per.n <- c(T, T,
                                           kb.obs_unstr/n,
                                           kb.obs.nonn_unstr/n))
 
-cfi.less.than.one <- c(cfi.fiml,cfi,
-                       cfi.obs_str,cfi.obs.nonn_str,
-                       cfi.exp_str,cfi.exp.nonn_str,
-                       cfi.obs_unstr,cfi.obs.nonn_unstr) <1
-
-
-cfi.greater.than.zero <- c(cfi.fiml,cfi,cfi.obs_str,cfi.obs.nonn_str,cfi.exp_str,
-                       cfi.exp.nonn_str,cfi.obs_unstr,cfi.obs.nonn_unstr) >0
-
-cfi.checks <- cbind(k.greater.than.zero , 
-                    kb.greater.than.zero, kb.greater.than.k, Fc.greater.than.k.per.n , 
-                    FcB.greater.than.kb.per.n, 
-                    cfi.less.than.one , cfi.greater.than.zero)
-
-CFI.OK <- rowSums(cfi.checks)==7
-
+#CFI.Final:
 cfi.checks.small <- cbind(k.greater.than.zero , 
-                    kb.greater.than.zero,
-                    kb.greater.than.k, 
-                    FcB.greater.than.kb.per.n)
+                          kb.greater.than.zero,
+                          kb.greater.than.k, 
+                          FcB.greater.than.kb.per.n)
 
 CFI.OK.small <- rowSums(cfi.checks.small)==4
 
 
-CFI.2 <-CFI # detect cases where the fitted models are perfect fit. 
-RMSEA.2 <- RMSEA 
+CFI.inter <-CFI.raw
 
-for(i in 1:len){
+
+for(i in 1:num.ver){
   if(CFI.OK.small[i]==T){ 
     if(Fc.greater.than.k.per.n[i]==F){
-      CFI.2[i] <- 1
-      RMSEA.2[i] <- 0
+      CFI.inter[i] <- 1
     } 
   } 
 }
 
 
-results<-data.frame(RMSEA,CFI, RMSEA.2, CFI.2,  CFI.OK, CFI.OK.small,
+cfi.less.than.one <- CFI.inter < 1
+cfi.greater.than.zero <- CFI.inter > 0
+
+cfi.checks <- cbind(cfi.checks.small, 
+                    cfi.less.than.one , cfi.greater.than.zero)
+
+CFI.OK <- rowSums(cfi.checks)==6
+
+
+CFI.final <-CFI.inter # detect cases where the fitted models are perfect fit. 
+for(i in 1:num.ver){
+  if(CFI.OK[i]==F){ 
+    CFI.final[i] <- NA
+  } 
+}
+
+###CFI.final ends
+
+
+results<-data.frame(RMSEA.final,CFI.raw, CFI.final,
                      k.greater.than.zero , 
                     kb.greater.than.zero, kb.greater.than.k, Fc.greater.than.k.per.n , 
                     FcB.greater.than.kb.per.n, FcB.greater.than.kb.per.n , 
