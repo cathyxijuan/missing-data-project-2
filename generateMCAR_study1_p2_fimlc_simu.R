@@ -92,8 +92,14 @@ fitMCAR_20PerMiss_2VarMiss_2CR_SF_n500_fimlc_compo <-
 
 
 setwd("/Volumes/SP PHD U3/missing-data-project-2/FIML-C simulation results")
-save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_n500 , file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_n500.RData")
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_n500_fimlc_compo , file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_n500_fimlc_compo.RData")
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
+
+
+
+
+
+
 
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_n500 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
