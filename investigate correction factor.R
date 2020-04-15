@@ -5,7 +5,7 @@ library(lavaan)
 
 
 load("simuDataComplete.RData") 
-data1 <-simuDataComplete
+data1 <-simuDataComplete[1:1000000,]
 n <- nrow(data1)
 
 
@@ -161,10 +161,10 @@ Wi.EQS.obs <-solve(W.EQS.obs)
 deltabreve.EQS.obs <- lavInspect(fit.EQS.obs, "delta")
 
 U.EQS.obs <- W.EQS.obs-
-  W.EQS.obs%*%deltabreve.EQS.obs%*%solve(t(deltabreve.EQS.obs)%*%W.EQS.obs%*%deltabreve.EQS.obs)%*%t(deltabreve.EQS.obs)%*%W.EQS.obs
+  W.EQS.obs%*%deltabreve.EQS.obs%*%lavTech(fit.EQS.obs, "inverted.information")%*%t(deltabreve.EQS.obs)%*%W.EQS.obs
 c.EQS.obs<- lav_matrix_trace(U.EQS.obs%*%Gamma.EQS.obs)/df
 c.EQS.obs  #-0.1431069
-
+solve(t(deltabreve.EQS.obs)%*%W.EQS.obs%*%deltabreve.EQS.obs)
 
 
 
@@ -230,3 +230,4 @@ c.manually <- c(c.Mplus.obs, c.Mplus.obs, c.EQS.obs, c.EQS.exp)#correction value
 result <- data.frame(c.software, c.manually)
 rownames(result) <- c("Mplus.obs", "Mplus.exp", "EQS.obs" , "EQS.exp")
 result
+
