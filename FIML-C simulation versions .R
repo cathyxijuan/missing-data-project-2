@@ -44,13 +44,10 @@ n <-nrow(data1)
 #pstar <-p*(p+1)/2 #number of unique elements in the covariance matrix=78   + 12=90
 #pstar+12-dfh  # number of parameters in the structured model=36
 
-Sigmahat<-fitted.values(fit1)$cov #Sigma-hat_H
-muhat<-fitted.values(fit1)$mean #mu-hat-H
+
 Sigmatilde<-lavInspect(fit1,"sampstat")$cov #Sigmatilde #please verify these are EM estimates
 mutilde<-lavInspect(fit1,"sampstat")$mean #Sigmatilde #please verify these are EM estimates
 
-SigmahatB<-fitted.values(fit01)$cov #Sigma-hat_B for independence model 
-muhatB<-fitted.values(fit01)$mean #mu-hat_B for independence model
 
 #---Yves' approach: take parameters of FIMl run, set optim.method="none" to prevent any further iterations---------# 
 
