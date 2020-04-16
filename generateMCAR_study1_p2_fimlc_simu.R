@@ -1,7 +1,7 @@
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 library(lavaan)
 source("functions.R")
-source("Models_2CR_SF.R") #doing  n=500
+source("Models_2CR_SF.R") #doing n=200; done  n=500
 #source("Models_1CR_SF.R")
 #source("Models_1CR_DF.R")
 #source("Models_2CR_DF.R") 
@@ -85,54 +85,90 @@ fit.components.simu <- function(pop.model.list, fitted.mod, sample.nobs = 100000
 
 
 set.seed(111)
-
-fitMCAR_0PerMiss_2CR_SF_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                      missing.percentage = 0, var.with.missing = 2, sample.nobs = 500)
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
-save(fitMCAR_0PerMiss_2CR_SF_fimlc_compo_n500, file="fitMCAR_0PerMiss_2CR_SF_fimlc_compo_n500.RData")
 
 
 
-
-fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n500 <- 
+fitMCAR_0PerMiss_2CR_SF_fimlc_compo_n200 <- 
   fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 500)
-fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n500[[500]]
-
-
+                      missing.percentage = 0, var.with.missing = 2, sample.nobs = 200)
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
-save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n500, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n500.RData")
-setwd("/Volumes/SP PHD U3/missing-data-project-2")
+save(fitMCAR_0PerMiss_2CR_SF_fimlc_compo_n200, file="fitMCAR_0PerMiss_2CR_SF_fimlc_compo_n200.RData")
+fitMCAR_0PerMiss_2CR_SF_fimlc_n200 <- fimlc.fit(fitMCAR_0PerMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_0PerMiss_2CR_SF_fimlc_n200, file="fitMCAR_0PerMiss_2CR_SF_fimlc_n200.RData")
+fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n200 <- fimlc.checks(fitMCAR_0PerMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n200, file="fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n200.RData")
 
 
 
-fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_compo_n500 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 500)
 
-save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_compo_n500 , 
-     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_compo_n500.RData")
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
+                           missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 200)
+setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200.RData")
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200 <- fimlc.fit(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200.RData")
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200 <- fimlc.checks(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200.RData")
+
+
+
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
+                           missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 200)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200 , 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200.RData")
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200 <- fimlc.fit(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200, 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200.RData")
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200 <- fimlc.checks(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200, 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200.RData")
+
+
+
 
 
 
 #####4 var with missing####
 
 
-fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_compo_n500 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 500)
-
-save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_compo_n500 , 
-     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_compo_n500.RData")
-
-
-fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n500 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 500)
-
-save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n500 , 
-     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n500.RData")
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
+                           missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 200)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200 , 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200.RData")
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200 <- fimlc.fit(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200, 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200.RData")
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200 <- fimlc.checks(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200, 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200.RData")
 
 
 
+
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
+                           missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 200)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200 , 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200.RData")
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200 <- fimlc.fit(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200, 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200.RData")
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200 <- fimlc.checks(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200, 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200.RData")
+
+
+
+####
+# vcov.pos <- matrix(NA,nrow=1000,ncol=15)
+# for(i in 1:1000){
+#   vcov.pos[i, ]<- fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200[[i]][c("fit.base.incomp.pos.def.vcov"), ]
+# }
+# sum(vcov.pos)
