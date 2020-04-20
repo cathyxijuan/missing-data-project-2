@@ -3,6 +3,7 @@ library("sjmisc")
 
 load("fitNoMissing_WM_new.RData")
 load("fitNoMissing_2CR_SF_new.RData")
+
 load(file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_n1000000.RData")
 load(file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_n1000000.RData")
 load(file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_n1000000.RData")
