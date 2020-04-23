@@ -1,6 +1,7 @@
 library(lavaan)
+setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_WM.R") #done at n=200, 500, 1000
+source("Models_WM.R") #redoing n=200; done at n=200, 500, 1000
 
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
@@ -9,8 +10,8 @@ source("Models_WM.R") #done at n=200, 500, 1000
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 #missing.percentage: vector specifying which columns are missing
-MCARMinPattern_2Var <- function(model, sample.nobs=1000000,  missing.percentage=0.5){
-  data <- simulateData(model, sample.nobs=sample.nobs,seed=111) 
+MCARMinPattern_2Var <- function(model, sample.nobs,  missing.percentage=0.5){
+  data <- simulateData(model, sample.nobs=sample.nobs) 
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -29,9 +30,9 @@ MCARMinPattern_2Var <- function(model, sample.nobs=1000000,  missing.percentage=
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 #missing.percentage: vector specifying which columns are missing
-MCARMaxPattern_2Var <- function(model, sample.nobs=1000000,  missing.percentage=.5){
+MCARMaxPattern_2Var <- function(model, sample.nobs,  missing.percentage=.5){
   missing.percentage <- missing.percentage
-  data <- simulateData(model, sample.nobs=sample.nobs, seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -51,9 +52,9 @@ MCARMaxPattern_2Var <- function(model, sample.nobs=1000000,  missing.percentage=
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 #missing.percentage: vector specifying which columns are missing
-MCARMaxPattern_2Var <- function(model, sample.nobs=1000000,  missing.percentage=.5){
+MCARMaxPattern_2Var <- function(model, sample.nobs,  missing.percentage=.5){
   missing.percentage <- missing.percentage
-  data <- simulateData(model, sample.nobs=sample.nobs, seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -77,8 +78,8 @@ MCARMaxPattern_2Var <- function(model, sample.nobs=1000000,  missing.percentage=
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 #missing.percentage: vector specifying which columns are missing
-MCARMinPattern_4Var <- function(model, sample.nobs=1000000,  missing.percentage){
-  data <- simulateData(model, sample.nobs=sample.nobs,seed=111)
+MCARMinPattern_4Var <- function(model, sample.nobs,  missing.percentage){
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -96,9 +97,9 @@ MCARMinPattern_4Var <- function(model, sample.nobs=1000000,  missing.percentage)
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 #missing.percentage: vector specifying which columns are missing
-MCARMaxPattern_4Var <- function(model, sample.nobs=1000000,  missing.percentage=.5){
+MCARMaxPattern_4Var <- function(model, sample.nobs,  missing.percentage=.5){
   missing.percentage <- missing.percentage
-  data <- simulateData(model, sample.nobs=sample.nobs, seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -124,8 +125,8 @@ MCARMaxPattern_4Var <- function(model, sample.nobs=1000000,  missing.percentage=
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 #missing.percentage: vector specifying which columns are missing
-MCARMinPattern_6Var <- function(model, sample.nobs=1000000,  missing.percentage){
-  data <- simulateData(model, sample.nobs=sample.nobs,seed=111)
+MCARMinPattern_6Var <- function(model, sample.nobs,  missing.percentage){
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -147,9 +148,9 @@ MCARMinPattern_6Var <- function(model, sample.nobs=1000000,  missing.percentage)
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 #missing.percentage: vector specifying which columns are missing
-MCARMaxPattern_6Var <- function(model, sample.nobs=1000000,  missing.percentage=.5){
+MCARMaxPattern_6Var <- function(model, sample.nobs,  missing.percentage=.5){
   missing.percentage <- missing.percentage
-  data <- simulateData(model, sample.nobs=sample.nobs, seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -173,12 +174,12 @@ MCARMaxPattern_6Var <- function(model, sample.nobs=1000000,  missing.percentage=
 #var.with.missing: the number of variables with missing data; it can be 2, 4, 6
 #simu.num: the number of simulation rounds
 ############ 
-fit.ind.matrix.MCAR.simu <- function(pop.model.list, fitted.mod, sample.nobs = 1000000,  
+fit.ind.matrix.MCAR.simu <- function(pop.model.list, fitted.mod, sample.nobs ,  
                                      missing.percentage, missing.type, var.with.missing, 
                                      simu.num = 1000, num.of.imp = 20){
   fit.indices.list <- vector(mode="list", length=simu.num)
   for(j in 1:simu.num){
-    fit.indices.MCAR <-matrix( nrow = 8, ncol = 0)
+    fit.indices.MCAR <-matrix( nrow = 6, ncol = 0)
     
     for(i in 1:length(pop.model.list)){
       if (var.with.missing == 2){
@@ -216,33 +217,50 @@ fit.ind.matrix.MCAR.simu <- function(pop.model.list, fitted.mod, sample.nobs = 1
 }
 
 set.seed(111)
+setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI")
 
 
+##### zero percent missing
+fitMCAR_0PerMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                           missing.percentage = 0, missing.type = "min", 
+                           var.with.missing = 2)
 
+fitMCAR_0PerMiss_WM_MI_n200[[1]]
+fitMCAR_0PerMiss_WM_MI_n200[[2]]
+apply(simplify2array(fitMCAR_0PerMiss_WM_MI_n200), 1:2, mean)-apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200), 1:2, mean)
+save(fitMCAR_0PerMiss_WM_MI_n200, file="fitMCAR_0PerMiss_WM_MI_n200.RData")
+######min pattern#####
 
 ##### 2 variables with missing data #######################
 
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.20, missing.type = "min", 
                            var.with.missing = 2)
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200[[1]] 
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200[[2]] 
+apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200), 1:2, mean)
+fitNoMissing_WM_new
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200.RData")
 
-save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n1000.RData")
 
 
 
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.50, missing.type = "min", 
                            var.with.missing = 2)
 
-save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200.RData")
 
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200), 1:2, mean)-apply(simplify2array(fitMCAR_0PerMiss_WM_MI_n200), 1:2, mean)
 
+pop2 <- rbind(fitNoMissing_WM_new,fitNoMissing_WM_new)
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200), 1:2, mean)[1:4,]-pop2
 
-
-
-
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200), 1:2, sd)
 
 
 
@@ -250,21 +268,21 @@ save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_50PerMi
 ##### 4 variables with missing data #######################
 
 
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.20, missing.type = "min", 
                            var.with.missing = 2)
 
-save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n200, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n200.RData")
 
 
 
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.50, missing.type = "min", 
                            var.with.missing = 2)
 
-save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200.RData")
 
 
 
@@ -276,21 +294,21 @@ save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_50PerMi
 
 ########### 6 variables with missing ##################
 
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.20, missing.type = "min", 
                            var.with.missing = 2)
 
-save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_n200, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_n200.RData")
 
 
 
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.50, missing.type = "min", 
                            var.with.missing = 2)
 
-save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200.RData")
 
 
 
@@ -304,21 +322,21 @@ save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n1000, file="fitMCAR_MinPat_50PerMi
 ################ MAX PATTERNS!! #####################
 
 ##### 2 variables with missing data #######################
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.20, missing.type = "Max", 
                            var.with.missing = 2)
 
-save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n1000, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n200, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n200.RData")
 
 
 
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.50, missing.type = "Max", 
                            var.with.missing = 2)
 
-save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_n1000, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_n200, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_n200.RData")
 
 
 
@@ -332,21 +350,21 @@ save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_n1000, file="fitMCAR_MaxPat_50PerMi
 ##### 4 variables with missing data #######################
 
 
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.20, missing.type = "Max", 
                            var.with.missing = 2)
 
-save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_n1000, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_n200, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_n200.RData")
 
 
 
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.50, missing.type = "Max", 
                            var.with.missing = 2)
 
-save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_n1000, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_n200, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_n200.RData")
 
 
 
@@ -358,19 +376,19 @@ save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_n1000, file="fitMCAR_MaxPat_50PerMi
 
 ########### 6 variables with missing ##################
 
-fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.20, missing.type = "Max", 
                            var.with.missing = 2)
 
-save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_n1000, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_n200, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_n200.RData")
 
 
 
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n1000 <- 
-  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =1000,
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n200 <- 
+  fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.50, missing.type = "Max", 
                            var.with.missing = 2)
 
-save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n1000, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n1000.RData")
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n200, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n200.RData")
 

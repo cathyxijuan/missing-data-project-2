@@ -1,6 +1,13 @@
 library(lavaan)
 library(mice)
 library(matrixcalc)
+load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_SF_new.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_DF_new.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_SF_new.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_DF_new.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_new.RData")
+
+
 ### Usage: making RMSEA table. It is a matrix containing fmin and RMSEA. 
 # Argument: fit.matrix : a matrix containing fmin and rmsea
 
@@ -50,41 +57,38 @@ cfi_table <- function(fit.matrix) {
 ########## dataset: the dataset I am using
 ########### num.of.imp : the number of imputation rounds
 all.fit.mi <- function(fitted.mod, dataset, num.of.imp1){
-  imputeData.all <- mice(data=dataset, m=num.of.imp1, seed=123, method="norm", printFlag=F)
+  
+  fit1<-cfa(model=fitted.mod,data=dataset,estimator="ML",missing="FIML") #normal data
+  
+  fiml.fit<-lavInspect(fit1,"fit")[c("rmsea","cfi")]  
+  
+  
+  
+  imputeData.all <- mice(data=dataset, m=num.of.imp1, method="norm", printFlag=F)
   
   
   rmsea.vector <- rep(NA,num.of.imp1)
   cfi.vector <- rep(NA, num.of.imp1)
-  fmin.vector <- rep(NA, num.of.imp1)
-  fminB.vector <- rep(NA, num.of.imp1)
   is.converged.vector <- rep(NA, num.of.imp1)
   is.null.vcov.vector <- rep(NA, num.of.imp1)
   
   for(i in 1:num.of.imp1){
     imputeData <- complete(imputeData.all,i)
-    fit <- cfa(model=fitted.mod, data=imputeData, mimic="EQS")
-    fit.ind <- lavInspect(fit, "fit")[c("rmsea", "cfi", "fmin", "baseline.chisq", "df", "baseline.df")]
+    fit <- cfa(model=fitted.mod, data=imputeData)
+    fit.ind <- lavInspect(fit, "fit")[c("rmsea", "cfi")]
     rmsea.vector[i] <- fit.ind[c("rmsea")]
     cfi.vector[i] <- fit.ind[c("cfi")]
-    fmin.vector[i] <- fit.ind[c("fmin")]*2
-    fminB.vector[i] <- fit.ind[c("baseline.chisq")]/nrow(imputeData)
     is.converged.vector[i] <- lavInspect(fit, "converged")
     is.null.vcov.vector[i] <- is.null(vcov(fit))
   }
   rmsea <- mean(rmsea.vector, na.rm=T)
   cfi <- mean(cfi.vector, na.rm=T)
-  fmin <-mean(fmin.vector, na.rm=T)
-  fminB <- mean(fminB.vector, na.rm=T)
   is.converged <- mean(is.converged.vector)
   is.null.vcov <- mean(is.null.vcov.vector)
-  dfh <- fit.ind["df"] 
-  dfB <- fit.ind["baseline.df"] 
-  fit.indices.vector <-round(c(rmsea, cfi, fmin,fminB ,
-                               is.converged, is.null.vcov,
-                               dfh, dfB),8)
-  names(fit.indices.vector) <- c("rmsea", "cfi", "fmin", "fminB",
-                                 "is.converged", "is.null.vcov", 
-                                 "dfh", "dfB")
+  fit.indices.vector <-round(c(rmsea, cfi, fiml.fit, 
+                               is.converged, is.null.vcov),8)
+  names(fit.indices.vector) <- c("rmsea.mi", "cfi.mi", "rmsea.fiml", "cfi.fiml",
+                                 "is.converged", "is.null.vcov")
   fit.indices.vector
 }
 

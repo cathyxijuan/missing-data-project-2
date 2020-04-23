@@ -2,8 +2,9 @@ library(lavaan)
 source("functions.R")
 #source("Models_2CR_SF.R") #done
 #source("Models_1CR_SF.R")#done
-#source("Models_1CR_DF.R") #done
+source("Models_1CR_DF.R") #done
 #source("Models_2CR_DF.R") # Done
+setwd("/Volumes/SP PHD U3/missing-data-project-2")
 
 ##MISSING IS ON x11 and x12 or x9-12.
 
@@ -78,30 +79,30 @@ fit.ind.matrix.MCAR <- function(pop.model.list, fitted.mod, sample.nobs = 100000
 }
 
 
-
-fitMCAR_20PerMiss_2VarMiss_1CR_SF_MI_n1000000 <- 
+setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI")
+fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000000 <- 
   fit.ind.matrix.MCAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                       missing.percentage = 0.20, var.with.missing = 2)
-save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_MI_n1000000, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_MI_n1000000.RData")
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000000, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000000.RData")
 
 
 
-fitMCAR_50PerMiss_2VarMiss_1CR_SF_MI_n1000000 <- 
+fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n1000000 <- 
   fit.ind.matrix.MCAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                       missing.percentage = 0.50, var.with.missing = 2)
-save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_MI_n1000000, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_MI_n1000000.RData")
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n1000000, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n1000000.RData")
 
 
 
-fitMCAR_20PerMiss_4VarMiss_1CR_SF_MI_n1000000 <- 
+fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n1000000 <- 
   fit.ind.matrix.MCAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                       missing.percentage = 0.20, var.with.missing = 4)
-save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_MI_n1000000, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_MI_n1000000.RData")
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n1000000, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n1000000.RData")
 
 
 
-fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n1000000 <- 
+fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n1000000 <- 
   fit.ind.matrix.MCAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                       missing.percentage = 0.50, var.with.missing = 4)
-save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n1000000, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n1000000.RData")
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n1000000, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n1000000.RData")
 

@@ -19,8 +19,8 @@ load("fitMCAR_20PerMiss_2VarMiss_2CR_SF_MI_n1000000.RData")
 load("fitMCAR_20PerMiss_2VarMiss_2CR_DF_MI_n1000000.RData")
 
 
-load("fitNoMissingShort_2CR_SF.RData")
-load("fitNoMissingShort_2CR_DF.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissingShort_2CR_SF.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissingShort_2CR_DF.RData")
 
 fitNoMissingShort_2CR_SF
 fitNoMissingShort_2CR_DF
