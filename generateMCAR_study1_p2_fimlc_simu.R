@@ -4,7 +4,7 @@ source("functions.R")
 #source("Models_2CR_SF.R") # done  n=200, 500, 1000
 #source("Models_1CR_SF.R") # done n=200, 500 1000
 #source("Models_1CR_DF.R")  # done n=200, 500 n=1000
-source("Models_2CR_DF.R")  # done n=500; n=200 Doing n=1000
+source("Models_2CR_DF.R")  # done n=500; n=200 Done n=1000
 
 ##MISSING IS ON x11 and x12 or x9-12.
 
