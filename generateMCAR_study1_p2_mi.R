@@ -1,10 +1,9 @@
 library(lavaan)
-source("functions.R")
-#source("Models_2CR_SF.R") #done
-#source("Models_1CR_SF.R")#done
-source("Models_1CR_DF.R") #done
-#source("Models_2CR_DF.R") # Done
-setwd("/Volumes/SP PHD U3/missing-data-project-2")
+source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
+#source("Models_2CR_SF.R") #
+#source("Models_1CR_SF.R")#
+source("Models_1CR_DF.R") #
+#source("Models_2CR_DF.R") # 
 
 ##MISSING IS ON x11 and x12 or x9-12.
 
@@ -61,7 +60,7 @@ MCAR_4Var <- function(model, sample.nobs=1000000,  missing.percentage){
 fit.ind.matrix.MCAR <- function(pop.model.list, fitted.mod, sample.nobs = 1000000, 
                                 missing.percentage, var.with.missing,
                                 num.of.imp = 1){
-  fit.indices.MCAR <-matrix( nrow = 8, ncol = 0)
+  fit.indices.MCAR <-matrix( nrow = 6, ncol = 0)
   
   for(i in 1:length(pop.model.list)){
     if (var.with.missing==2){ simuData <- MCAR_2Var(pop.model.list[[i]], sample.nobs, missing.percentage)
@@ -80,6 +79,8 @@ fit.ind.matrix.MCAR <- function(pop.model.list, fitted.mod, sample.nobs = 100000
 
 
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI")
+
+
 fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000000 <- 
   fit.ind.matrix.MCAR(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
                       missing.percentage = 0.20, var.with.missing = 2)

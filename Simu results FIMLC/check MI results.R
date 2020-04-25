@@ -1,15 +1,37 @@
 source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC results.R")
 
 
-fitNoMissing_2CR_SF_new
+fitNoMissing_2CR_SF_new_RMSEA <- rbind(fitNoMissing_2CR_SF_new[1,],
+                                       fitNoMissing_2CR_SF_new[1,], 
+                                       fitNoMissing_2CR_SF_new[1,], 
+                                       fitNoMissing_2CR_SF_new[1,], 
+                                       fitNoMissing_2CR_SF_new[1,], 
+                                       fitNoMissing_2CR_SF_new[1,], 
+                                       fitNoMissing_2CR_SF_new[1,], 
+                                       fitNoMissing_2CR_SF_new[1,])
+                                  
+                                       
 fitMCAR_0PerMiss_2CR_SF_fimlc_n200_mean <- 
   apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_n200), 1:2, mean)
+
+apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_n200), 1:2, mean)[1:8, ]-fitNoMissing_2CR_SF_new_RMSEA
+
 
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean <- 
   apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200), 1:2, mean)
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean <- 
   apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500), 1:2, mean)
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_mean <- 
+  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)
 
+apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean), 1:2, mean)[1:8, ]-fitNoMissing_2CR_SF_new_RMSEA
+apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean), 1:2, mean)[1:8, ]-fitNoMissing_2CR_SF_new_RMSEA
+apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_mean), 1:2, mean)[1:8, ]-fitNoMissing_2CR_SF_new_RMSEA
+
+
+
+
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean[1:8,]-fitNoMissing_2CR_SF_new_RMSEA
 
 rbind(fitNoMissing_2CR_SF_new[1, ],fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean[1:8,])
 rbind(fitNoMissing_2CR_SF_new[1, ],fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean[1:8,])
