@@ -8,9 +8,21 @@ load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_DF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_new.RData")
 
 
+load("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/fitMCAR_0PerMiss_1CR_SF_MI_n1000.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n500.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n500.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n500.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n500.RData")
+load("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/fitMCAR_0PerMiss_WM_MI_n500.RData")
+
+fitNoMissing_WM_new_m <- rbind(fitNoMissing_WM_new,fitNoMissing_WM_new)
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n500), 1:2, mean)[1:4, ]-fitNoMissing_WM_new_m 
 
 load("fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_MI_n1000.RData")
 load("fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_MI_n1000.RData")
+
+
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_MI_n1000
 
 load("fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n200.RData")
 load("fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n500.RData")
@@ -85,13 +97,5 @@ load("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/fitMAR_Strong_20
 load("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_MI_n500.RData")
 
 
-fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_MI_n200[[1]][1:2,]
-fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_MI_n200[[2]][1:2,]
 
-fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_MI_n200[[1]][1:2,]
-fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_MI_n200[[2]][1:2,]
-
-fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_MI_n500[[1]][1:2,]
-fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_MI_n500[[2]][1:2,]
-fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_MI_n500[[3]][1:2,]
 
