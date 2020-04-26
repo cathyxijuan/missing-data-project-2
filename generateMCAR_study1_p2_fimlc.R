@@ -3,7 +3,7 @@ library(lavaan)
 source("functions.R")
 #source("Models_2CR_SF.R") # DONE
 #source("Models_1CR_SF.R") # DONE
-source("Models_1CR_DF.R")  # 
+#source("Models_1CR_DF.R")  # done
 #source("Models_2CR_DF.R")  # done
 
 ##MISSING IS ON x11 and x12 or x9-12.

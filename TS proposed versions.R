@@ -81,9 +81,7 @@ Wc_unstr <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2@Model,
                                                  lavsamplestats = fit2@SampleStats, lavdata = fit2@Data, 
                                                  lavoptions = fit2@Options, lavimplied = fit2@implied,
                                                  lavh1 = fit2@h1, lavcache = fit2@Cache)[[1]]
-Wc_unstr[1:3, 1:3]
 
-Wm.unstr[1:3, 1:3]
 
 #####-----------structured---------
 fit2@Options$h1.information = "structured" 
@@ -105,7 +103,7 @@ Gamma <- Wmi.unstr %*% B1.unstr %*% Wmi.unstr
 #This asymptotic covariance matrix is calculated by a triple product similar to the one in the sandwich method
 
 Uc.unstr <- Wc_unstr-Wc_unstr%*%deltabreve%*%solve(t(deltabreve)%*%Wc_unstr%*%deltabreve)%*%t(deltabreve)%*%Wc_unstr
-Uc.str <- Wc_str-Wc_str%*%deltabreve%*%solve(t(deltabreve)%*%Wc_unstr%*%deltabreve)%*%t(deltabreve)%*%Wc_str
+Uc.str <- Wc_str-Wc_str%*%deltabreve%*%solve(t(deltabreve)%*%Wc_str%*%deltabreve)%*%t(deltabreve)%*%Wc_str
 
 c.unstr <- lav_matrix_trace(Uc.unstr%*%Gamma)
 
@@ -137,13 +135,39 @@ WcB_str <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2B@Model,
 
 
 UcB.unstr <- WcB_unstr-WcB_unstr%*%deltabreveB%*%solve(t(deltabreveB)%*%WcB_unstr%*%deltabreveB)%*%t(deltabreveB)%*%WcB_unstr
-UcB.str <- WcB_str-WcB_str%*%deltabreveB%*%solve(t(deltabreveB)%*%WcB_unstr%*%deltabreveB)%*%t(deltabreveB)%*%WcB_str
+UcB.str <- WcB_str-WcB_str%*%deltabreveB%*%solve(t(deltabreveB)%*%WcB_str%*%deltabreveB)%*%t(deltabreveB)%*%WcB_str
 
 cB.unstr <- lav_matrix_trace(UcB.unstr%*%Gamma)
 
 cB.str <- lav_matrix_trace(UcB.str%*%Gamma)
 
 
+c.cBs <- c(c.unstr, c.str, cB.unstr, cB.str)
+
+pos.def.weight <- c(is.positive.definite(x=round(Wm.unstr, 6)), 
+                    is.positive.definite(x=round(Wc_unstr, 6)), 
+                    is.positive.definite(x=round(Wc_str, 6)), 
+                    is.positive.definite(x=round(WcB_unstr, 6)), 
+                    is.positive.definite(x=round(WcB_str, 6)))
+
+pos.def.implied <-c(is.positive.definite(x=round(inspect(fit1, "implied")$cov,6)), 
+                    is.positive.definite(x=round(inspect(fit2, "implied")$cov,6)),
+                    is.positive.definite(x=round(inspect(fit1B, "implied")$cov,6)),
+                    is.positive.definite(x=round(inspect(fit2B, "implied")$cov,6)))
+
+
+pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 6)), 
+                  is.positive.definite(round(inspect(fit2, "vcov"), 6)), 
+                  is.positive.definite(round(inspect(fit1B, "vcov"), 6)),
+                  is.positive.definite(round(inspect(fit2B, "vcov"), 6)))
+
+mod.converge <- c(inspect(fit1, "converged"), 
+                  inspect(fit2, "converged"), 
+                  inspect(fit1B, "converged"),
+                  inspect(fit2B, "converged"))
+
+
+names(c.cBs) <- c("c.unstr", "c.str", "cB.unstr", "cB.str")
 
 
 ######### TS fit indices #####
@@ -183,4 +207,6 @@ CFI <- c(cfi.fiml, cfi.uncor, cfi.cor.str,
          cfi.cor.unstr)
 
 results <- data.frame(RMSEA, CFI)
+row.names(results) <- c("fiml", "uncor.ts", "cor.str.ts", 
+                        "cor.unstr.ts")
 results

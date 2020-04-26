@@ -1,15 +1,16 @@
 source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC results.R")
 
 
-fitNoMissing_2CR_SF_new_RMSEA <- rbind(fitNoMissing_2CR_SF_new[1,],
-                                       fitNoMissing_2CR_SF_new[1,], 
-                                       fitNoMissing_2CR_SF_new[1,], 
-                                       fitNoMissing_2CR_SF_new[1,], 
-                                       fitNoMissing_2CR_SF_new[1,], 
-                                       fitNoMissing_2CR_SF_new[1,], 
-                                       fitNoMissing_2CR_SF_new[1,], 
-                                       fitNoMissing_2CR_SF_new[1,])
-                                  
+fitNoMissing_2CR_SF_new_RMSEA <- matrix(rep(as.vector(fitNoMissing_2CR_SF_new[1,], mode = "numeric"), 8), 
+                                        nrow=8,
+                                        ncol=ncol(fitNoMissing_2CR_SF_new), 
+                                        byrow=T)
+
+fitNoMissing_2CR_SF_new_CFI <- matrix(rep(as.vector(fitNoMissing_2CR_SF_new[2,], mode = "numeric"), 8), 
+                                        nrow=8,
+                                        ncol=ncol(fitNoMissing_2CR_SF_new), 
+                                        byrow=T)
+
                                        
 fitMCAR_0PerMiss_2CR_SF_fimlc_n200_mean <- 
   apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_n200), 1:2, mean)
