@@ -28,11 +28,10 @@ fit1<-cfa(fitted.mod,data=data1,estimator="ML",missing="FIML")
 Sigmatilde<-lavInspect(fit1,"sampstat")$cov #saturated model's cov matrix
 mutilde<-lavInspect(fit1,"sampstat")$mean #saturated model's mean structure
 dfh<-lavInspect(fit1,"fit")["df"]
-
-
 #stage 2 
 fit2 <- cfa(fitted.mod, sample.cov=Sigmatilde, sample.mean = mutilde, sample.nobs = n)
-Fc<-lavInspect(fit2, "fit")["fmin"]*2 
+chisqc <- lavInspect(fit2, "fit")["chisq"]
+
 
 #####independence model###
 #stage 1
@@ -40,7 +39,7 @@ fit1B <-  lavaan:::lav_object_independence(fit1, se=T)
 dfB <- lavInspect(fit1B, "fit")["df"]
 #stage 2
 fit2B <- lavaan:::lav_object_independence(fit2, se=T) 
-FcB<-lavInspect(fit2B, "fit")["fmin"]*2
+chisqcB <- lavInspect(fit2B, "fit")["chisq"]
 
 #FIML verion
 rmsea.fiml <- lavInspect(fit1, "fit")["rmsea"]
@@ -142,6 +141,9 @@ cB.unstr <- lav_matrix_trace(UcB.unstr%*%Gamma)
 cB.str <- lav_matrix_trace(UcB.str%*%Gamma)
 
 
+
+
+######components out ########
 c.cBs <- c(c.unstr, c.str, cB.unstr, cB.str)
 
 pos.def.weight <- c(is.positive.definite(x=round(Wm.unstr, 6)), 
@@ -166,35 +168,58 @@ mod.converge <- c(inspect(fit1, "converged"),
                   inspect(fit1B, "converged"),
                   inspect(fit2B, "converged"))
 
+fit.ind <- c(rmsea.fiml,
+         cfi.fiml,
+         rmsea.uncor,
+         cfi.uncor)
 
-names(c.cBs) <- c("c.unstr", "c.str", "cB.unstr", "cB.str")
+dfs <- c(dfh,dfB)
+chis <- c(chisqc, chisqcB)
+
+
+first.out <- c(fit.ind, n, dfs, chis, c.cBs, pos.def.weight, pos.def.implied, pos.def.vcov, mod.converge )
+first.out <- round(first.out, 6)
+names(first.out) <- c("rmsea.fiml", "cfi.fiml","rmsea.uncor","cfi.uncor","n",
+                      "dfh", "dfB", "chisqc", "chisqcB","c.unstr", "c.str", "cB.unstr", "cB.str",
+                      "Wm.unstr.pos.def", "Wc_unstr.pos.def","Wc_str.pos.def", 
+                    "WcB_unstr.pos.def",   "WcB_str.pos.def", 
+                    "fit1.imp.pos.def",  "fit2.imp.pos.def",
+                    "fit1B.imp.pos.def",  "fit2B.imp.pos.def",
+                    "fit1.vcov.pos.def",  "fit2.vcov.pos.def",
+                    "fit1B.vcov.pos.def",  "fit2B.vcov.pos.def",
+                    "fit1.converge",  "fit2.converge",
+                    "fit1B.converge",  "fit2B.converge")
+
 
 
 ######### TS fit indices #####
 
 #RMSEA
+# 
+# if (Fc/dfh-c.unstr/(dfh*n) < 0 ) { 
+#   rmsea.cor.unstr <-  0} else {
+#     rmsea.cor.unstr <-sqrt(Fc/dfh-c.unstr/(dfh*n))
+#   }
 
-if (Fc/dfh-c.unstr/(dfh*n) < 0 ) { 
-  rmsea.cor.unstr <-  0} else {
-    rmsea.cor.unstr <-sqrt(Fc/dfh-c.unstr/(dfh*n))
-  }
-
-
-
-
+rmsea.cor.unstr <-sqrt((chisqc-c.unstr)/(dfh*n))
 
 
-if (Fc/dfh-c.str/(dfh*n) < 0 ) { 
-  rmsea.cor.str <-  0} else {
-    rmsea.cor.str <-sqrt(Fc/dfh-c.str/(dfh*n))
-  }
+
+
+# 
+# if (Fc/dfh-c.str/(dfh*n) < 0 ) { 
+#   rmsea.cor.str <-  0} else {
+#     rmsea.cor.str <-sqrt(Fc/dfh-c.str/(dfh*n))
+#   }
+
+rmsea.cor.str <-sqrt((chisqc-c.str)/(dfh*n))
 
 
 #CFI
-cfi.cor.unstr <- 1 - (Fc - c.unstr/n)/(FcB - cB.unstr/n)
-cfi.cor.str <- 1 - (Fc - c.str/n)/(FcB - cB.str/n)
 
 
+cfi.cor.unstr <- 1 - (chisqc - c.unstr)/(chisqcB - cB.unstr)
+cfi.cor.str <- 1 - (chisqc - c.str)/(chisqcB - cB.str)
 
 
 

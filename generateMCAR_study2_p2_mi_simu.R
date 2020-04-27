@@ -262,7 +262,7 @@ apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200), 1:2, mean)[1
 
 apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200), 1:2, sd)
 
-
+load(file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200.RData")
 
 
 ##### 4 variables with missing data #######################
@@ -275,6 +275,8 @@ fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n200 <-
 
 save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n200, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n200.RData")
 
+apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_n200), 1:2, mean)
+apply(simplify2array(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_n200), 1:2, mean)
 
 
 fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200 <- 

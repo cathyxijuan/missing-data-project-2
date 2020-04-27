@@ -1,7 +1,7 @@
 library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_WM.R") #
+source("Models_WM.R") #done n=500 
 
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
@@ -218,112 +218,112 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI")
 
 
 ##### zero percent missing
-fitMCAR_0PerMiss_WM_fimlc_compo_n500 <- 
-       fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_0PerMiss_WM_fimlc_compo_n200 <- 
+       fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0, missing.type = "min", 
                            var.with.missing = 2)
-fitMCAR_0PerMiss_WM_fimlc_n500 <-fimlc.fit(fitMCAR_0PerMiss_WM_fimlc_compo_n500)
-fitMCAR_0PerMiss_WM_fimlc_checks_n500 <-fimlc.checks(fitMCAR_0PerMiss_WM_fimlc_compo_n500)
-save(fitMCAR_0PerMiss_WM_fimlc_compo_n500, file="fitMCAR_0PerMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_0PerMiss_WM_fimlc_n500 , file="fitMCAR_0PerMiss_WM_fimlc_n500.RData")
-save(fitMCAR_0PerMiss_WM_fimlc_checks_n500, file="fitMCAR_0PerMiss_WM_fimlc_checks_n500.RData")
+fitMCAR_0PerMiss_WM_fimlc_n200 <-fimlc.fit(fitMCAR_0PerMiss_WM_fimlc_compo_n200)
+fitMCAR_0PerMiss_WM_fimlc_checks_n200 <-fimlc.checks(fitMCAR_0PerMiss_WM_fimlc_compo_n200)
+save(fitMCAR_0PerMiss_WM_fimlc_compo_n200, file="fitMCAR_0PerMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_0PerMiss_WM_fimlc_n200 , file="fitMCAR_0PerMiss_WM_fimlc_n200.RData")
+save(fitMCAR_0PerMiss_WM_fimlc_checks_n200, file="fitMCAR_0PerMiss_WM_fimlc_checks_n200.RData")
 
 
 #### min pattern##
 ##### 2 variables with missing data #######################
 
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                            missing.percentage = 0.20, missing.type = "min", 
                            var.with.missing = 2)
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200 )
 
  
-apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_checks_n200.RData")
 
 
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "min", 
                       var.with.missing = 2)
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n500, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_checks_n200.RData")
 
 
 
 ##### 4 variables with missing data #######################
 
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.20, missing.type = "min", 
                       var.with.missing = 4)
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
-apply(simplify2array(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n500, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_checks_n200.RData")
 
 
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "min", 
                       var.with.missing = 4)
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n500, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_checks_n200.RData")
 
 
 
 
 ##### 6 variables with missing data #######################
 
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.20, missing.type = "min", 
                       var.with.missing = 6)
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
-apply(simplify2array(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n500, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_checks_n200.RData")
 
 
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "min", 
                       var.with.missing = 6)
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n500, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_checks_n200.RData")
 
 
 
@@ -333,95 +333,95 @@ save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MinPa
 
 ##### 2 variables with missing data #######################
 
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.20, missing.type = "max", 
                       var.with.missing = 2)
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200 )
 
 
-apply(simplify2array(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_checks_n200.RData")
 
 
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "max", 
                       var.with.missing = 2)
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_checks_n200.RData")
 
 
 
 ##### 4 variables with missing data #######################
 
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.20, missing.type = "max", 
                       var.with.missing = 4)
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
-apply(simplify2array(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n500, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_checks_n200.RData")
 
 
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "max", 
                       var.with.missing = 4)
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_checks_n200.RData")
 
 
 
 
 ##### 6 variables with missing data #######################
 
-fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.20, missing.type = "max", 
                       var.with.missing = 6)
-fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
-apply(simplify2array(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n500, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n200.RData")
 
 
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500 <- 
-  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =500,
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "max", 
                       var.with.missing = 6)
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500 <- fimlc.fit(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500 )
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n500 <- fimlc.checks(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500 )
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 )
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 )
 
-apply(simplify2array(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500), 1:2, mean)[1:8,]
+apply(simplify2array(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200), 1:2, mean)[1:8,]
 fitNoMissing_WM_new
-save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n500.RData")
-save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500.RData")
-save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n500, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n500.RData")
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200.RData")
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200.RData")
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n200.RData")
