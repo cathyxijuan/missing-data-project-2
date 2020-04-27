@@ -313,7 +313,8 @@ fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200 <-
 save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200.RData")
 
 
-
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200), 1:2, mean)
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200), 1:2, mean)
 
 
 
@@ -331,7 +332,7 @@ fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n200 <-
 
 save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n200, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n200.RData")
 
-
+load(file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_n200.RData")
 
 fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_n200 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,

@@ -93,9 +93,80 @@ fitMCAR_0PerMiss_2CR_DF_ts_compo_n200 <-
                       missing.percentage = 0, var.with.missing = 2, sample.nobs = 200)
 fitMCAR_0PerMiss_2CR_DF_ts_n200 <- ts.fit(fitMCAR_0PerMiss_2CR_DF_ts_compo_n200)
 fitMCAR_0PerMiss_2CR_DF_ts_checks_n200 <- ts.checks(fitMCAR_0PerMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_0PerMiss_2CR_DF_ts_compo_n200, file="fitMCAR_0PerMiss_2CR_DF_ts_compo_n200.RData")
+save(fitMCAR_0PerMiss_2CR_DF_ts_n200, file="fitMCAR_0PerMiss_2CR_DF_ts_n200.RData")
+save(fitMCAR_0PerMiss_2CR_DF_ts_checks_n200, file="fitMCAR_0PerMiss_2CR_DF_ts_checks_n200.RData")
 
 apply(simplify2array(fitMCAR_0PerMiss_2CR_DF_ts_n200), 1:2, mean)
-row.names(fitMCAR_0PerMiss_2CR_DF_ts_compo_n200[[1]])
+fitNoMissing_2CR_DF_new
 
 
+
+
+
+
+#####2 var with missing####
+fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
+                      missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 200)
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_compo_n200, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_compo_n200.RData")
+fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200 <- ts.fit(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200.RData")
+fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_checks_n200 <- ts.checks(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_checks_n200, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_checks_n200.RData")
+
+
+
+fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
+                      missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 200)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_compo_n200 , 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_compo_n200.RData")
+fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200 <- ts.fit(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200, 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200.RData")
+fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_checks_n200 <- ts.checks(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_checks_n200, 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_checks_n200.RData")
+
+
+
+
+
+
+#####4 var with missing####
+
+
+fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
+                      missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 200)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_compo_n200 , 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_compo_n200.RData")
+fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n200 <- ts.fit(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n200, 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n200.RData")
+fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_checks_n200 <- ts.checks(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_checks_n200, 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_checks_n200.RData")
+
+
+
+
+fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_compo_n200 <- 
+  fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
+                      missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 200)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_compo_n200 , 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_compo_n200.RData")
+fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n200 <- ts.fit(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n200, 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n200.RData")
+fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_checks_n200 <- ts.checks(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_compo_n200)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_checks_n200, 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_checks_n200.RData")
+
+
+apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n200), 1:2, mean)-apply(simplify2array(fitMCAR_0PerMiss_2CR_DF_ts_n200), 1:2, mean)
 

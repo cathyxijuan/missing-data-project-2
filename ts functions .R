@@ -197,7 +197,6 @@ ts.components <- function(fitted.mod, dataset){
 
 fit.comp <- ts.components(fitted.mod,data1)
 
-fit.comp.l <- list(fit.comp)
 
 
 
