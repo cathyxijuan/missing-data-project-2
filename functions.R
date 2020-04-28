@@ -1,6 +1,6 @@
 library(lavaan)
 library(mice)
-library(matrixcalc)
+library(matrixNormal)
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_SF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_DF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_SF_new.RData")
@@ -274,14 +274,14 @@ fimlc.components <- function(fitted.mod, dataset){
            kb.obs.nonn_unstr)
 
   
-  pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 4)), 
-                      is.positive.definite(x=round(Wcm.obs_str,4)), 
-                      is.positive.definite(x=round(Wcm.exp_str, 4)), 
-                      is.positive.definite(x=round(Wcm.obs_unstr, 4)), 
-                      is.positive.definite(x=round(Wm_unstr, 3)),
-                      is.positive.definite(x=round(WmB_str, 4)), 
-                      is.positive.definite(x=round(WcmB.obs_str, 4)), 
-                      is.positive.definite(x=round(WcmB.exp_str, 4)) )
+  pos.def.weight <- c(is.positive.definite(round(Wm_str, 4)), 
+                      is.positive.definite(round(Wcm.obs_str,4)), 
+                      is.positive.definite(round(Wcm.exp_str, 4)), 
+                      is.positive.definite(round(Wcm.obs_unstr, 4)), 
+                      is.positive.definite(round(Wm_unstr, 4)),
+                      is.positive.definite(round(WmB_str, 4)), 
+                      is.positive.definite(round(WcmB.obs_str, 4)), 
+                      is.positive.definite(round(WcmB.exp_str, 4)) )
   
   pos.def.implied <- c(is.positive.definite(round(inspect(fit1, "vcov"), 4)), 
                        is.positive.definite(round(inspect(fit01, "vcov"), 4)), 
@@ -643,16 +643,16 @@ ts.components <- function(fitted.mod, dataset){
   ######components out ########
   c.cBs <- c(c.unstr, c.str, cB.unstr, cB.str)
   
-  pos.def.weight <- c(is.positive.definite(x=round(Wm.unstr, 4)), 
-                      is.positive.definite(x=round(Wc_unstr, 4)), 
-                      is.positive.definite(x=round(Wc_str, 4)), 
-                      is.positive.definite(x=round(WcB_unstr, 4)), 
-                      is.positive.definite(x=round(WcB_str, 4)))
+  pos.def.weight <- c(is.positive.definite(round(Wm.unstr, 4)), 
+                      is.positive.definite(round(Wc_unstr, 4)), 
+                      is.positive.definite(round(Wc_str, 4)), 
+                      is.positive.definite(round(WcB_unstr, 4)), 
+                      is.positive.definite(round(WcB_str, 4)))
   
-  pos.def.implied <-c(is.positive.definite(x=round(inspect(fit1, "implied")$cov,4)), 
-                      is.positive.definite(x=round(inspect(fit2, "implied")$cov,4)),
-                      is.positive.definite(x=round(inspect(fit1B, "implied")$cov,4)),
-                      is.positive.definite(x=round(inspect(fit2B, "implied")$cov,4)))
+  pos.def.implied <-c(is.positive.definite(round(inspect(fit1, "implied")$cov,4)), 
+                      is.positive.definite(round(inspect(fit2, "implied")$cov,4)),
+                      is.positive.definite(round(inspect(fit1B, "implied")$cov,4)),
+                      is.positive.definite(round(inspect(fit2B, "implied")$cov,4)))
   
   
   pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 4)), 

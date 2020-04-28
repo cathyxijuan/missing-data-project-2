@@ -417,6 +417,17 @@ fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200_200 <-
   fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "max", 
                       var.with.missing = 6, simu.num = 200)
+set.seed(435)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200_400 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 200)
+
+set.seed(76)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200_1000 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 600)
 
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200
 

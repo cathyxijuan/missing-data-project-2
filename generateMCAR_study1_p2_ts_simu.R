@@ -1,7 +1,7 @@
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 library(lavaan)
 source("functions.R")
-source("Models_2CR_SF.R") # DONG n=500
+source("Models_2CR_SF.R") # Done n=500
 #source("Models_1CR_SF.R") # 
 #source("Models_1CR_DF.R")  # 
 #source("Models_2CR_DF.R")  # done n=500 done n=200
