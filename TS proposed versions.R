@@ -5,15 +5,16 @@ library(matrixcalc)
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
-load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
+#load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
-#load("simuDatawithMiss2.RData") # slighly misspecified 
-data1<-simuDatawithMiss[300:1000,] 
-n <- nrow(data1)
+load("simuDatawithMiss2.RData") # slighly misspecified 
 #For complete data, the population RMSEA and CFI are 0.04452902 and 0.9791809 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.03199867 and 0.9847884 respectively. 
+data1<-simuDatawithMiss[300:1000,] 
+n <- nrow(data1)
+
 
 
 

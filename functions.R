@@ -274,22 +274,25 @@ fimlc.components <- function(fitted.mod, dataset){
            kb.obs.nonn_unstr)
 
   
-  pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 6)), is.positive.definite(x=round(Wcm.obs_str, 6)), 
-                      is.positive.definite(x=round(Wcm.exp_str, 6)), is.positive.definite(x=round(Wcm.obs_unstr, 6)), 
-                      is.positive.definite(x=round(Wm_unstr, 6)),
-                      is.positive.definite(x=round(WmB_str, 6)), is.positive.definite(x=round(WcmB.obs_str, 6)), 
-                      is.positive.definite(x=round(WcmB.exp_str, 6)) )
+  pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 4)), 
+                      is.positive.definite(x=round(Wcm.obs_str,4)), 
+                      is.positive.definite(x=round(Wcm.exp_str, 4)), 
+                      is.positive.definite(x=round(Wcm.obs_unstr, 4)), 
+                      is.positive.definite(x=round(Wm_unstr, 3)),
+                      is.positive.definite(x=round(WmB_str, 4)), 
+                      is.positive.definite(x=round(WcmB.obs_str, 4)), 
+                      is.positive.definite(x=round(WcmB.exp_str, 4)) )
   
-  pos.def.implied <- c(is.positive.definite(round(inspect(fit1, "vcov"), 6)), 
-                       is.positive.definite(round(inspect(fit01, "vcov"), 6)), 
-                       is.positive.definite(round(inspect(fitc, "vcov"), 6)),
-                       is.positive.definite(round(inspect(fitcB, "vcov"), 6)))
+  pos.def.implied <- c(is.positive.definite(round(inspect(fit1, "vcov"), 4)), 
+                       is.positive.definite(round(inspect(fit01, "vcov"), 4)), 
+                       is.positive.definite(round(inspect(fitc, "vcov"), 4)),
+                       is.positive.definite(round(inspect(fitcB, "vcov"), 4)))
   
   
-  pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 6)), 
-                    is.positive.definite(round(inspect(fit01, "vcov"), 6)), 
-                    is.positive.definite(round(inspect(fitc, "vcov"), 6)),
-                    is.positive.definite(round(inspect(fitcB, "vcov"), 6)))
+  pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 4)), 
+                    is.positive.definite(round(inspect(fit01, "vcov"), 4)), 
+                    is.positive.definite(round(inspect(fitc, "vcov"), 4)),
+                    is.positive.definite(round(inspect(fitcB, "vcov"), 4)))
   
   mod.converge <- c(inspect(fit1, "converged"), 
                     inspect(fit01, "converged"), 
@@ -640,22 +643,22 @@ ts.components <- function(fitted.mod, dataset){
   ######components out ########
   c.cBs <- c(c.unstr, c.str, cB.unstr, cB.str)
   
-  pos.def.weight <- c(is.positive.definite(x=round(Wm.unstr, 6)), 
-                      is.positive.definite(x=round(Wc_unstr, 6)), 
-                      is.positive.definite(x=round(Wc_str, 6)), 
-                      is.positive.definite(x=round(WcB_unstr, 6)), 
-                      is.positive.definite(x=round(WcB_str, 6)))
+  pos.def.weight <- c(is.positive.definite(x=round(Wm.unstr, 4)), 
+                      is.positive.definite(x=round(Wc_unstr, 4)), 
+                      is.positive.definite(x=round(Wc_str, 4)), 
+                      is.positive.definite(x=round(WcB_unstr, 4)), 
+                      is.positive.definite(x=round(WcB_str, 4)))
   
-  pos.def.implied <-c(is.positive.definite(x=round(inspect(fit1, "implied")$cov,6)), 
-                      is.positive.definite(x=round(inspect(fit2, "implied")$cov,6)),
-                      is.positive.definite(x=round(inspect(fit1B, "implied")$cov,6)),
-                      is.positive.definite(x=round(inspect(fit2B, "implied")$cov,6)))
+  pos.def.implied <-c(is.positive.definite(x=round(inspect(fit1, "implied")$cov,4)), 
+                      is.positive.definite(x=round(inspect(fit2, "implied")$cov,4)),
+                      is.positive.definite(x=round(inspect(fit1B, "implied")$cov,4)),
+                      is.positive.definite(x=round(inspect(fit2B, "implied")$cov,4)))
   
   
-  pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 6)), 
-                    is.positive.definite(round(inspect(fit2, "vcov"), 6)), 
-                    is.positive.definite(round(inspect(fit1B, "vcov"), 6)),
-                    is.positive.definite(round(inspect(fit2B, "vcov"), 6)))
+  pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 4)), 
+                    is.positive.definite(round(inspect(fit2, "vcov"), 4)), 
+                    is.positive.definite(round(inspect(fit1B, "vcov"), 4)),
+                    is.positive.definite(round(inspect(fit2B, "vcov"), 4)))
   
   mod.converge <- c(inspect(fit1, "converged"), 
                     inspect(fit2, "converged"), 

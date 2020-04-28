@@ -1,7 +1,7 @@
 library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_WM.R") #done n=500 
+source("Models_WM.R") #done n=500 doing 200
 
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
@@ -379,7 +379,7 @@ save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MaxPat
 save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200.RData")
 save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_checks_n200.RData")
 
-
+set.seed(100)
 fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n200 <- 
   fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "max", 
@@ -412,11 +412,14 @@ save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n200, file="fitMCAR_MaxPat
 save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200.RData")
 save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n200, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n200.RData")
 
-
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 <- 
+set.seed(45)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200_200 <- 
   fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
                       missing.percentage = 0.50, missing.type = "max", 
-                      var.with.missing = 6)
+                      var.with.missing = 6, simu.num = 200)
+
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200
+
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200 <- fimlc.fit(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 )
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n200 <- fimlc.checks(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n200 )
 
