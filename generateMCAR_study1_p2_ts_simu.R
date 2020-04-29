@@ -1,7 +1,7 @@
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 library(lavaan)
 source("functions.R")
-source("Models_2CR_SF.R") # Done n=500
+source("Models_2CR_SF.R") # doing n=1000 ; done n=200, Done n=500
 #source("Models_1CR_SF.R") # 
 #source("Models_1CR_DF.R")  # 
 #source("Models_2CR_DF.R")  # done n=500 done n=200
@@ -88,16 +88,16 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results TS")
 
 
 ###no missing####
-fitMCAR_0PerMiss_2CR_SF_ts_compo_n500 <- 
+fitMCAR_0PerMiss_2CR_SF_ts_compo_n1000 <- 
   fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                      missing.percentage = 0, var.with.missing = 2, sample.nobs = 500)
-fitMCAR_0PerMiss_2CR_SF_ts_n500 <- ts.fit(fitMCAR_0PerMiss_2CR_SF_ts_compo_n500)
-fitMCAR_0PerMiss_2CR_SF_ts_checks_n500 <- ts.checks(fitMCAR_0PerMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_0PerMiss_2CR_SF_ts_compo_n500, file="fitMCAR_0PerMiss_2CR_SF_ts_compo_n500.RData")
-save(fitMCAR_0PerMiss_2CR_SF_ts_n500, file="fitMCAR_0PerMiss_2CR_SF_ts_n500.RData")
-save(fitMCAR_0PerMiss_2CR_SF_ts_checks_n500, file="fitMCAR_0PerMiss_2CR_SF_ts_checks_n500.RData")
+                      missing.percentage = 0, var.with.missing = 2, sample.nobs = 1000)
+fitMCAR_0PerMiss_2CR_SF_ts_n1000 <- ts.fit(fitMCAR_0PerMiss_2CR_SF_ts_compo_n1000)
+fitMCAR_0PerMiss_2CR_SF_ts_checks_n1000 <- ts.checks(fitMCAR_0PerMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_0PerMiss_2CR_SF_ts_compo_n1000, file="fitMCAR_0PerMiss_2CR_SF_ts_compo_n1000.RData")
+save(fitMCAR_0PerMiss_2CR_SF_ts_n1000, file="fitMCAR_0PerMiss_2CR_SF_ts_n1000.RData")
+save(fitMCAR_0PerMiss_2CR_SF_ts_checks_n1000, file="fitMCAR_0PerMiss_2CR_SF_ts_checks_n1000.RData")
 
-apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_ts_n500), 1:2, mean)
+apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_ts_n1000), 1:2, mean)
 fitNoMissing_2CR_SF_new
 
 
@@ -106,33 +106,33 @@ fitNoMissing_2CR_SF_new
 
 
 #####2 var with missing####
-fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n500 <- 
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n1000 <- 
   fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                      missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 500)
-save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n500, 
-     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n500.RData")
-fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500 <- ts.fit(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500, 
-     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500.RData")
-fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n500 <- ts.checks(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n500, 
-     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n500.RData")
+                      missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 1000)
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n1000, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n1000.RData")
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000 <- ts.fit(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000.RData")
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n1000 <- ts.checks(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n1000, 
+     file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n1000.RData")
 
-apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500), 1:2, mean)
+apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000), 1:2, mean)
 fitNoMissing_2CR_SF_new
 
 
-fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n500 <- 
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n1000 <- 
   fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                      missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 500)
-save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n500 , 
-     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n500.RData")
-fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n500 <- ts.fit(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n500, 
-     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n500.RData")
-fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n500 <- ts.checks(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n500, 
-     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n500.RData")
+                      missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 1000)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n1000 , 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n1000.RData")
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000 <- ts.fit(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000, 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000.RData")
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n1000 <- ts.checks(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n1000, 
+     file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n1000.RData")
 
 
 
@@ -142,33 +142,33 @@ save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n500,
 #####4 var with missing####
 
 
-fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n500 <- 
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n1000 <- 
   fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                      missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 500)
-save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n500 , 
-     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n500.RData")
-fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n500 <- ts.fit(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n500, 
-     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n500.RData")
-fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_checks_n500 <- ts.checks(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_checks_n500, 
-     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_checks_n500.RData")
+                      missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 1000)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n1000 , 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n1000.RData")
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000 <- ts.fit(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000, 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000.RData")
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_checks_n1000 <- ts.checks(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_checks_n1000, 
+     file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_checks_n1000.RData")
 
 
 
 
-fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n500 <- 
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n1000 <- 
   fit.components.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                      missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 500)
-save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n500 , 
-     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n500.RData")
-fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500 <- ts.fit(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500, 
-     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500.RData")
-fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_checks_n500 <- ts.checks(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n500)
-save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_checks_n500, 
-     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_checks_n500.RData")
+                      missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 1000)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n1000 , 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n1000.RData")
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000 <- ts.fit(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000, 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000.RData")
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_checks_n1000 <- ts.checks(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_compo_n1000)
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_checks_n1000, 
+     file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_checks_n1000.RData")
 
 
-apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500), 1:2, mean)-apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_ts_n500), 1:2, mean)
+apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000), 1:2, mean)-apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_ts_n1000), 1:2, mean)
 fitNoMissing_2CR_SF_new

@@ -1,7 +1,7 @@
 library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_WM.R") #redoing n=500; redone n=200 (need to redo again..); done at n=200, 500, 1000
+source("Models_WM.R") # redone-redone n=200, 500 ; done at n=200, 500, 1000
 
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
@@ -397,12 +397,9 @@ save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n200, file="fitMCAR_MaxPat_50PerMis
 
 
 
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200), 1:2, sd)-apply(simplify2array(fitMCAR_0PerMiss_WM_MI_n200), 1:2, mean)
-
-load(file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200.RData")
 load(file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200.RData")
+load(file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200.RData")
 load(file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200.RData")
-
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200), 1:2, sd)
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200), 1:2, sd)
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200), 1:2, sd)
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_n200), 1:2, mean)
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200), 1:2, mean)
+apply(simplify2array(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_n200), 1:2, mean)
