@@ -1,3 +1,4 @@
+source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
 source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC results.R")
 nam <- c("rmsea.fiml", "rmsea.uncor.fimlc",
          "rmsea.cor.obs.nonn_str", "rmsea.cor.exp.nonn_str", "rmsea.cor.obs.nonn_unstr", 
@@ -17,40 +18,38 @@ fitNoMissing_2CR_SF_new_CFI <- matrix(rep(as.vector(fitNoMissing_2CR_SF_new[2,],
                                         byrow=T)
 
                                        
-fitMCAR_0PerMiss_2CR_SF_fimlc_n200_mean <- 
-  apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_n200), 1:2, mean)
+fitMCAR_0PerMiss_2CR_SF_fimlc_n200_mean <- list.mean(fitMCAR_0PerMiss_2CR_SF_fimlc_n200)[nam,]
 fitMCAR_0PerMiss_2CR_SF_fimlc_n500_mean <- 
-  apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_n500), 1:2, mean)
+  apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_n500), 1:2, mean)[nam,]
 fitMCAR_0PerMiss_2CR_SF_fimlc_n1000_mean <- 
-  apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_n1000), 1:2, mean)
+  apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_n1000), 1:2, mean)[nam,]
 
-fitMCAR_0PerMiss_2CR_SF_fimlc_n200_mean[1:2,] 
-fitMCAR_0PerMiss_2CR_SF_fimlc_n500_mean[1:2,] 
+
 
 
 
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200), 1:2, mean)
+  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200), 1:2, mean)[nam,]
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500), 1:2, mean)
+  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500), 1:2, mean)[nam,]
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)
+  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)[nam,]
 
 
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean <- 
-  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200), 1:2, mean)
+  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200), 1:2, mean)[nam,]
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean <- 
-  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500), 1:2, mean)
+  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500), 1:2, mean)[nam,]
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_mean <- 
-  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)
+  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)[nam,]
 
 
 fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200), 1:2, mean)
+  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200), 1:2, mean)[nam,]
 fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500), 1:2, mean)
+  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500), 1:2, mean)[nam,]
 fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)
+  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)[nam,]
 
 
 fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean <- 
@@ -99,6 +98,14 @@ write.csv(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_mean_rmsea_part,
           file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_mean_rmsea_part.csv" )
 write.csv(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_mean_cfi_part, 
           file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_mean_cfi_part.csv" )
+
+write.csv(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_mean_rmsea, 
+          file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_mean_rmsea.csv" )
+write.csv(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_mean_cfi, 
+          file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_mean_cfi.csv" )
+
+
+
 ##look at the differences###
 
 apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean), 1:2, mean)[1:8, ]-fitNoMissing_2CR_SF_new_RMSEA
@@ -116,3 +123,53 @@ fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_sd <-
   apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500), 1:2, sd)
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_sd
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_sd
+
+
+
+##### checks####
+options(max.print=1000000)
+fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n200_mean <- 
+  apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n200), 1:2, mean)
+fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n500_mean <- 
+  apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n500), 1:2, mean)
+fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n1000_mean <- 
+  apply(simplify2array(fitMCAR_0PerMiss_2CR_SF_fimlc_checks_n1000), 1:2, mean)
+
+
+
+
+
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200_mean <- 
+  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200), 1:2, mean)
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n500_mean <- 
+  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n500), 1:2, mean)
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n1000_mean <- 
+  apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_checks_n1000), 1:2, mean)
+
+
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200_mean <- 
+  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n200), 1:2, mean)
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n500_mean <- 
+  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n500), 1:2, mean)
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n1000_mean <- 
+  apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_checks_n1000), 1:2, mean)
+
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200_mean <- 
+  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200), 1:2, mean)
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n500_mean <- 
+  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n500), 1:2, mean)
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n1000_mean <- 
+  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_checks_n1000), 1:2, mean)
+
+
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200_mean <- 
+  apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200), 1:2, mean)
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n500_mean <- 
+  apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n500), 1:2, mean)
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n1000_mean <- 
+  apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n1000), 1:2, mean)
+
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks <- rbind(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n200_mean,
+                                                        fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n500_mean,
+                                                        fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks_n1000_mean)
+write.csv(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_checks.csv")

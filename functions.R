@@ -438,14 +438,21 @@ fimlc.fit <- function(components.list){
 
 ###Usage: produce all the checks for fimlc fit indices 
 #### Argument: components.list: a list of all the correction terms and various checks produced by the fimlc.component() function
-fimlc.checks <- function(components.list){
+fimlc.checks <- function(components.list, fit.list){
   len <- length(components.list)
   check.list <- vector(mode="list", length=len)
   
   for(i in 1:len){
-    cond <- components.list[[1]]
+    cond <- components.list[[i]]
+    cond.fit <- fit.list[[i]]
+    
+    cfi.equal.zero <- cond.fit[9:16,]==0
+    rownames(cfi.equal.zero) <- paste(rownames(cfi.equal.zero), "equal.zero", sep=".")
+    cfi.equal.one <-cond.fit[9:16,]==1
+    rownames(cfi.equal.one) <- paste(rownames(cfi.equal.one), "equal.one", sep=".")
     
     old.checks <- cond[20:39, ]
+    rownames(old.checks)[1:8]<-  paste(rownames(old.checks[1:8,]), "pos.def", sep=".")
     great.zero <- cond[8:19,] >0
     rownames(great.zero) <- paste(rownames(great.zero), "great.zero", sep=".")
     k.less.kb <- cond[8:13,] < cond[14:19, ] 
@@ -486,20 +493,24 @@ fimlc.checks <- function(components.list){
                                "k.obs.nonn_unstr.k.less.kb",
                                "k.obs.nonn_unstr.k.less.chi", 
                                "kb.obs.nonn_unstr.kb.less.chiB" ),]
-    cfi.ok.obs_str <- colSums(new.checks[1:5, ])==5
-    cfi.ok.obs.nonn_str <- colSums(new.checks[6:10, ])==5
-    cfi.ok.exp_str <- colSums(new.checks[11:15, ])==5
-    cfi.ok.exp.nonn_str <- colSums(new.checks[16:20, ])==5
-    cfi.ok.obs_unstr <- colSums(new.checks[21:25, ])==5
-    cfi.ok.obs.nonn_unstr <- colSums(new.checks[26:30, ])==5
-    cfi.checks <- rbind(cfi.ok.obs_str , 
-                        cfi.ok.obs.nonn_str , 
-                        cfi.ok.exp_str, 
-                        cfi.ok.exp.nonn_str, 
-                        cfi.ok.obs_unstr, 
-                        cfi.ok.obs.nonn_unstr )
+    cfi.obs_str.pass.5 <- colSums(new.checks[1:5, ])==5
+    cfi.obs.nonn_str.pass.5 <- colSums(new.checks[6:10, ])==5
+    cfi.exp_str.pass.5 <- colSums(new.checks[11:15, ])==5
+    cfi.exp.nonn_str.pass.5 <- colSums(new.checks[16:20, ])==5
+    cfi.obs_unstr.pass.5 <- colSums(new.checks[21:25, ])==5
+    cfi.obs.nonn_unstr.pass.5 <- colSums(new.checks[26:30, ])==5
     
-    all.checks <- rbind(old.checks, new.checks, cfi.checks)
+    cfi.checks <- rbind(cfi.obs_str.pass.5 , 
+                        cfi.obs.nonn_str.pass.5 , 
+                        cfi.exp_str.pass.5, 
+                        cfi.exp.nonn_str.pass.5, 
+                        cfi.obs_unstr.pass.5, 
+                        cfi.obs.nonn_unstr.pass.5 )
+    
+    
+    
+    
+    all.checks <- rbind(old.checks, new.checks, cfi.checks,cfi.equal.zero,cfi.equal.one)
     check.list[[i]] <- all.checks
   }
   check.list
@@ -793,4 +804,19 @@ ts.checks <- function(components.list){
 
 
 
+
+
+####Usage: find a matrix of means based on a list of matrices
+#Argument: lis: a list of matrices
+
+list.mean <- function(lis ){
+  apply(simplify2array(lis), 1:2, mean)
+}
+
+
+####Usage: find a matrix of sds based on a list of matrices
+#Argument: lis: a list of matrices
+list.sd <- function(lis ){
+  apply(simplify2array(lis), 1:2, sd)
+}
 
