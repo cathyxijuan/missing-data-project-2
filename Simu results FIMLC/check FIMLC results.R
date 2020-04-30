@@ -26,7 +26,9 @@ fitMCAR_0PerMiss_2CR_SF_fimlc_n1000_mean <-
 
 
 
+#### New Table#####
 
+###RMSEA###
 
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean <- 
   apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200), 1:2, mean)[nam,]
@@ -34,6 +36,12 @@ fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean <-
   apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500), 1:2, mean)[nam,]
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_mean <- 
   apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_mean_rmsea_part <- rbind(fitNoMissing_2CR_SF_new[1,11:15],
+                                                                 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean[1:8,11:15],
+                                                                 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean[1:8,11:15],
+                                                                 fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_mean[1:8,11:15])
+
 
 
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean <- 
@@ -43,13 +51,23 @@ fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean <-
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_mean <- 
   apply(simplify2array(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)[nam,]
 
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_mean_rmsea_part <- rbind(fitNoMissing_2CR_SF_new[1,11:15],
+                                                                 fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean[1:8,11:15],
+                                                                 fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_mean[1:8,11:15],
+                                                                 fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_mean[1:8,11:15])
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_mean_rmsea_part
 
-fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200), 1:2, mean)[nam,]
-fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500), 1:2, mean)[nam,]
-fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_mean <- 
-  apply(simplify2array(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)[nam,]
+fitMCAR_2VarMiss_2CR_SF_fimlc_mean_rmsea_part <- cbind(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_mean_rmsea_part,
+                                                       fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_mean_rmsea_part)
+
+colnames(fitMCAR_2VarMiss_2CR_SF_fimlc_mean_rmsea_part)<- rep(paste("CR=", c(0, 0.1, 0.2, 0.3, 0.4), sep="") ,2)
+fitMCAR_2VarMiss_2CR_SF_fimlc_mean_rmsea_part
+
+
+###CFI###
+
+##previous table
+
 
 
 fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean <- 
@@ -59,6 +77,8 @@ fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_mean <-
   apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n500), 1:2, mean)[nam,]
 fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_mean <- 
   apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000), 1:2, mean)[nam,]
+
+
 
 fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean <- rbind(fitNoMissing_2CR_SF_new["rmsea",] , 
                                                            fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean[1:8, ],
