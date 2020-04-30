@@ -260,6 +260,42 @@ ts.fit <- function(components.list){
 
 
 
+cond <- fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_compo_n1000 [[1]]
+cond.fit <-fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000 [[1]]
+cfi.equal.zero <- cond.fit[5:8,]==0
+rownames(cfi.equal.zero) <- paste(rownames(cfi.equal.zero), "equal.zero", sep=".")
+cfi.equal.one <-cond.fit[5:8,]==1
+rownames(cfi.equal.one) <- paste(rownames(cfi.equal.one), "equal.one", sep=".")
+
+
+
+old.checks <- cond[14:30, ]
+great.zero <- cond[10:13,] >0
+rownames(great.zero) <- paste(rownames(great.zero), "great.zero", sep=".")
+k.less.kb <- cond[10:11,] < cond[12:13, ] 
+rownames(k.less.kb) <- paste(rownames(k.less.kb), "c.less.kb" , sep=".")
+
+k.less.chi <- cond[10:11, ] < cond["chisqc", ]
+rownames(k.less.chi) <- paste(rownames(k.less.chi), "c.less.chi" , sep=".")
+kb.less.chiB <- cond[12:13, ] < cond["chisqcB", ]
+rownames(kb.less.chiB) <- paste(rownames(kb.less.chiB), "cB.less.chiB" , sep=".")
+new.checks <- rbind(great.zero, k.less.kb, k.less.chi, kb.less.chiB)
+new.checks <- new.checks[c("c.str.great.zero", 
+                           "cB.str.great.zero",
+                           "c.str.c.less.kb", 
+                           "c.str.c.less.chi",
+                           "cB.str.cB.less.chiB", 
+                           "c.unstr.great.zero", 
+                           "cB.unstr.great.zero",
+                           "c.unstr.c.less.kb", 
+                           "c.unstr.c.less.chi",
+                           "cB.unstr.cB.less.chiB"),]
+cfi.str.pass.5 <- colSums(new.checks[1:5, ])==5
+cfi.unstr.pass.5 <- colSums(new.checks[6:10, ])==5
+cfi.checks <- rbind(cfi.str.pass.5, 
+                    cfi.unstr.pass.5  )
+all.checks <- rbind(old.checks, new.checks, cfi.checks, cfi.equal.zero, cfi.equal.one)
+
 
 
 
@@ -273,7 +309,7 @@ ts.checks <- function(components.list){
   check.list <- vector(mode="list", length=len)
   
   for(i in 1:len){
-    cond <- components.list[[1]]
+    cond <- components.list[[i]]
     
     old.checks <- cond[14:30, ]
     great.zero <- cond[10:13,] >0

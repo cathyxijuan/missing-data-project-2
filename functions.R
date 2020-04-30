@@ -438,6 +438,7 @@ fimlc.fit <- function(components.list){
 
 ###Usage: produce all the checks for fimlc fit indices 
 #### Argument: components.list: a list of all the correction terms and various checks produced by the fimlc.component() function
+########## fit.list : a list of all the fit indices created by the fimlc.fit() function
 fimlc.checks <- function(components.list, fit.list){
   len <- length(components.list)
   check.list <- vector(mode="list", length=len)
@@ -763,12 +764,21 @@ ts.fit <- function(components.list){
 
 ###Usage: produce all the checks for fimlc fit indices 
 #### Argument: components.list: a list of all the correction terms and various checks produced by the ts.component() function
-ts.checks <- function(components.list){
+########## fit.list : list of fit indices created by ts.fit() function
+ts.checks <- function(components.list, fit.list){
   len <- length(components.list)
   check.list <- vector(mode="list", length=len)
   
   for(i in 1:len){
-    cond <- components.list[[1]]
+    cond <- components.list[[i]]
+    cond.fit <- fit.list[[i]]
+    
+    cfi.equal.zero <- cond.fit[5:8,]==0
+    rownames(cfi.equal.zero) <- paste(rownames(cfi.equal.zero), "equal.zero", sep=".")
+    cfi.equal.one <-cond.fit[5:8,]==1
+    rownames(cfi.equal.one) <- paste(rownames(cfi.equal.one), "equal.one", sep=".")
+    
+    
     
     old.checks <- cond[14:30, ]
     great.zero <- cond[10:13,] >0
@@ -791,11 +801,12 @@ ts.checks <- function(components.list){
                                "c.unstr.c.less.kb", 
                                "c.unstr.c.less.chi",
                                "cB.unstr.cB.less.chiB"),]
-    cfi.ok.str <- colSums(new.checks[1:5, ])==5
-    cfi.ok.unstr <- colSums(new.checks[6:10, ])==5
-    cfi.checks <- rbind(cfi.ok.str, 
-                        cfi.ok.unstr  )
-    all.checks <- rbind(old.checks, new.checks, cfi.checks)
+    cfi.str.pass.5 <- colSums(new.checks[1:5, ])==5
+    cfi.unstr.pass.5 <- colSums(new.checks[6:10, ])==5
+    cfi.checks <- rbind(cfi.str.pass.5, 
+                        cfi.unstr.pass.5  )
+    all.checks <- rbind(old.checks, new.checks, cfi.checks, cfi.equal.zero, cfi.equal.one)
+    
     
     check.list[[i]] <- all.checks
   }
