@@ -1,7 +1,7 @@
 library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_WM.R") #doing n=1000; done n=500, 200
+source("Models_WM.R") #done n=1000; done n=500, 200
 
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
