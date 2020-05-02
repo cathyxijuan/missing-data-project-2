@@ -1,7 +1,7 @@
 library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_2CR_SF.R") #   redoing:n=1000 ; redoing n=200 at a different file,which is this file;  done at n=200 n=500, 1000
+source("Models_2CR_SF.R") #   redoing:n=1000 ; redone n=200 at this file;  done at n=200 n=500, 1000
 #source("Models_1CR_SF.R") #  redone: n=200, 500, 1000    done at n= 200, 500, 1000
 #source("Models_1CR_DF.R") #   done at n=200, 500,1000
 #source("Models_2CR_DF.R") #   done at n=200 , 500, 1000

@@ -11,7 +11,7 @@ load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified
 
 
 #load("simuDatawithMiss2.RData") # slighly misspecified 
-data1<-simuDatawithMiss[1:499,] 
+data1<-simuDatawithMiss[1:200,] 
 #For complete data, the population RMSEA and CFI are 0.04452902 and 0.9791809 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.03199867 and 0.9847884 respectively. 
 
@@ -60,10 +60,21 @@ fitc <- sem(parTable(fit1), sample.cov = Sigmatilde,sample.mean=mutilde, sample.
 fitcB <- sem(parTable(fit01), sample.cov = Sigmatilde,sample.mean=mutilde, sample.nobs=n,
              information="observed",meanstructure=TRUE,sample.cov.rescale=FALSE,optim.method="none")
 
+out <- as.vector(inspect(fitc, "implied")$cov-inspect(fit1, "implied")$cov)
+length(out)
+
+pos.def.vcov
+
+
+lavInspect(fit1, "est")$lambda
+lavInspect(fitc, "est")$lambda
+
+
 Fc<-lavInspect(fitc, "fit")["fmin"]*2 #lavaan halfs the fit finction
 FcB<- lavInspect(fitcB, "fit")["fmin"]*2
 
-
+lavInspect(fitcB, "implied")
+lavInspect(fit01, "implied")
 #--------------Main Model-----------------------------------------------------------------------------------------------#
 delta <- lavInspect(fit1, "delta") #model derivatives with col/row names labeled, (pstar+p)xq
 #-------------structured------------------------#
@@ -421,7 +432,7 @@ pos.def.implied <- c(is.positive.definite(inspect(fit1, "implied")$cov),
                      is.positive.definite(inspect(fit01, "implied")$cov), 
                      is.positive.definite(inspect(fitc, "implied")$cov),
                      is.positive.definite(inspect(fitcB, "implied")$cov))
-
+inspect(fitc, "implied")$cov==inspect(fit1, "implied")$cov
 
 pos.def.vcov <- c(is.positive.definite(round(inspect(fit1, "vcov"), 6)), 
                   is.positive.definite(round(inspect(fit01, "vcov"), 6)), 
@@ -434,5 +445,5 @@ mod.converge <- c(inspect(fit1, "converged"),
                  inspect(fitcB, "converged"))
 
 model.matrices <- data.frame(pos.def.implied, pos.def.vcov, mod.converge)
-rownames(model.matrices) <- c("fit.str.incomp","fit.str.comp", "fit.base.incomp" , "fit.base.comp")
+rownames(model.matrices) <- c("fit.str.incomp","fit.base.incomp", "fit.str.comp" , "fit.base.comp")
 model.matrices

@@ -228,9 +228,9 @@ all.fit.fimlc <- function(fitted.mod, dataset){
                         "kb.obs_unstr",
                         "kb.obs.nonn_unstr", "Wm_str", "Wcm.obs_str", "Wcm.exp_str", 
                         "Wcm.obs_unstr","Wm_unstr", "WmB_str", "WcmB.obs_str", "WcmB.exp_str" , 
-                        "fit.str.incomp.pos.def.implied","fit.str.comp.pos.def.implied", "fit.base.incomp.pos.def.implied" , "fit.base.comppos.def.implied", 
-                        "fit.str.incomp.pos.def.vcov","fit.str.comp.pos.def.vcov", "fit.base.incomp.pos.def.vcov" , "fit.base.comp.pos.def.vcov", 
-                        "fit.str.incomp.mod.converge","fit.str.comp.mod.converge", "fit.base.incomp.mod.converge" , "fit.base.comp.mod.converge")
+                        "fit.str.incomp.pos.def.implied","fit.base.incomp.pos.def.implied", "fit.str.comp.pos.def.implied" , "fit.base.comp.pos.def.implied", 
+                        "fit.str.incomp.pos.def.vcov","fit.base.incomp.pos.def.vcov", "fit.str.comp.pos.def.vcov" , "fit.base.comp.pos.def.vcov", 
+                        "fit.str.incomp.mod.converge","fit.base.incomp.mod.converge", "fit.str.comp.mod.converge" , "fit.base.comp.mod.converge")
   
   first.out
 }
@@ -464,3 +464,119 @@ all.fit.ts <- function(fitted.mod, dataset){
                                  "c.fiml.est", "cB.fiml.est")
   fit.indices.vector
 }
+
+load("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_compo_n200.RData")
+cond <- fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_compo_n200[[1]]
+
+old.checks <- cond[c(20:27,28:29,32:33, 36:37), ]
+rownames(old.checks)[9:14] <- c("fit.str.pos.def.implied","fit.base.pos.def.implied",  
+                                "fit.str.pos.def.vcov","fit.base.pos.def.vcov",  
+                                "fit.str.mod.converge","fit.base.mod.converge")
+
+
+cond[c(20:27,28:29), ]
+
+
+
+
+
+
+
+#####checking model implied matrices
+
+
+
+fimlc.mod.imp <- function(fitted.mod, dataset){
+  fit1<-cfa(model=fitted.mod,data=dataset,mimic="EQS",estimator="ML",missing="FIML") #normal data, EQS
+ 
+  
+  fit01<- lavaan:::lav_object_independence(fit1, se=T) #independence model 
+
+  
+  #fits <- lavaan:::lav_object_unrestricted(fit1, se=T) #saturated model
+  
+  #---------------------------------------NEW FIT INDICES----------------------------------#
+  n <-nrow(dataset)
+  #p <-dim(data1)[2]
+  #pstar <-p*(p+1)/2 #number of unique elements in the covariance matrix=78   + 12=90
+  #pstar+12-dfh  # number of parameters in the structured model=36
+  
+  Sigmahat<-fitted.values(fit1)$cov #Sigma-hat_H
+  muhat<-fitted.values(fit1)$mean #mu-hat-H
+  Sigmatilde<-lavInspect(fit1,"sampstat")$cov #Sigmatilde #please verify these are EM estimates
+  mutilde<-lavInspect(fit1,"sampstat")$mean #Sigmatilde #please verify these are EM estimates
+  
+  SigmahatB<-fitted.values(fit01)$cov #Sigma-hat_B for independence model 
+  muhatB<-fitted.values(fit01)$mean #mu-hat_B for independence model
+  
+  #---Yves' approach: take parameters of FIMl run, set optim.method="none" to prevent any further iterations---------# 
+  
+  fitc <- sem(parTable(fit1), sample.cov = Sigmatilde,sample.mean=mutilde, sample.nobs=n,
+              information="observed",meanstructure=TRUE,sample.cov.rescale=FALSE,optim.method="none")
+  
+  fitcB <- sem(parTable(fit01), sample.cov = Sigmatilde,sample.mean=mutilde, sample.nobs=n,
+               information="observed",meanstructure=TRUE,sample.cov.rescale=FALSE,optim.method="none")
+  
+ # check.same <- sum(inspect(fitc, "implied")$cov==inspect(fit1, "implied")$cov)==144
+ out <-  as.vector(inspect(fitc, "implied")$cov-inspect(fit1, "implied")$cov)
+
+out
+}
+
+
+
+
+
+
+fimlc.mod.imp2 <- function(fitted.mod, dataset){
+  fit1<-cfa(model=fitted.mod,data=dataset,mimic="EQS",estimator="ML",missing="FIML") #normal data, EQS
+  
+  
+  fit01<- lavaan:::lav_object_independence(fit1, se=T) #independence model 
+  
+  
+  #fits <- lavaan:::lav_object_unrestricted(fit1, se=T) #saturated model
+  
+  #---------------------------------------NEW FIT INDICES----------------------------------#
+  n <-nrow(dataset)
+  #p <-dim(data1)[2]
+  #pstar <-p*(p+1)/2 #number of unique elements in the covariance matrix=78   + 12=90
+  #pstar+12-dfh  # number of parameters in the structured model=36
+  
+  Sigmahat<-fitted.values(fit1)$cov #Sigma-hat_H
+  muhat<-fitted.values(fit1)$mean #mu-hat-H
+  Sigmatilde<-lavInspect(fit1,"sampstat")$cov #Sigmatilde #please verify these are EM estimates
+  mutilde<-lavInspect(fit1,"sampstat")$mean #Sigmatilde #please verify these are EM estimates
+  
+  SigmahatB<-fitted.values(fit01)$cov #Sigma-hat_B for independence model 
+  muhatB<-fitted.values(fit01)$mean #mu-hat_B for independence model
+  
+  #---Yves' approach: take parameters of FIMl run, set optim.method="none" to prevent any further iterations---------# 
+  
+  fitc <- sem(parTable(fit1), sample.cov = Sigmatilde,sample.mean=mutilde, sample.nobs=n,
+              information="observed",meanstructure=TRUE,sample.cov.rescale=FALSE,optim.method="none")
+  
+  fitcB <- sem(parTable(fit01), sample.cov = Sigmatilde,sample.mean=mutilde, sample.nobs=n,
+               information="observed",meanstructure=TRUE,sample.cov.rescale=FALSE,optim.method="none")
+  
+  
+    
+    pos.def.implied <- c(is.positive.definite(inspect(fit1, "implied")$cov), 
+                         is.positive.definite(inspect(fit01, "implied")$cov), 
+                         is.positive.definite(inspect(fitc, "implied")$cov),
+                         is.positive.definite(inspect(fitcB, "implied")$cov))
+    names(pos.def.implied) <- c("fit.str.incomp.pos.def.implied","fit.base.incomp.pos.def.implied", 
+                                "fit.str.comp.pos.def.implied" , "fit.base.comp.pos.def.implied")
+    pos.def.implied
+
+}
+
+
+
+
+
+
+
+
+
+
