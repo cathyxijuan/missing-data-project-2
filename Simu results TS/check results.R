@@ -88,6 +88,8 @@ fitNoMissing_2CR_SF_new_CFI <- matrix(rep(as.vector(fitNoMissing_2CR_SF_new[2,11
                                       ncol=10, 
                                       byrow=T)
 dif <- round(abs(fitMCAR_4VarMiss_2CR_SF_ts_rmsea_part[-1,]-fitNoMissing_2CR_SF_new_RMSEA),4)
+
+abs(fitMCAR_4VarMiss_2CR_SF_ts_rmsea_part[-1,]-fitNoMissing_2CR_SF_new_RMSEA) <0.005
 which.min(dif[1:4,])
 apply(dif[1:4,], 2, which.min)
 apply(dif[5:8,], 2, which.min)
@@ -96,6 +98,9 @@ dif.cfi <-round(abs(fitMCAR_4VarMiss_2CR_SF_ts_cfi_part[-1,]-fitNoMissing_2CR_SF
 apply(dif.cfi[1:4,], 2, which.min)
 apply(dif.cfi[5:8,], 2, which.min)
 apply(dif.cfi[9:12,], 2, which.min)
+abs(fitMCAR_4VarMiss_2CR_SF_ts_cfi_part[-1,]-fitNoMissing_2CR_SF_new_CFI) <0.005
+
+
 ####checks###
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n200_mean <- 
   list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n200)
@@ -105,9 +110,26 @@ fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n1000_mean <-
   list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n1000)
 
 
-fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_mean <- rbind(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n200_mean,
-                                                          fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n500_mean,
-                                                          fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n1000_mean) 
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_mean <- rbind(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n200_mean[,11:15],
+                                                          fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n500_mean[,11:15],
+                                                          fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n1000_mean[,11:15]) 
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_mean
 
-write.csv(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_mean.csv")
+
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n200_mean <- 
+  list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n200)
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n500_mean <- 
+  list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n500)
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n1000_mean <- 
+  list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n1000)
+
+
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_mean <- rbind(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n200_mean[,11:15],
+                                                          fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n500_mean[,11:15],
+                                                          fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n1000_mean[,11:15]) 
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_mean
+
+fitMCAR_2VarMiss_2CR_SF_ts_checks_mean <- cbind(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_mean,
+                                                fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_mean)
+
+write.csv(fitMCAR_2VarMiss_2CR_SF_ts_checks_mean, file="fitMCAR_2VarMiss_2CR_SF_ts_checks_mean.csv")
