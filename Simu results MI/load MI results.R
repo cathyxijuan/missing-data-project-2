@@ -22,8 +22,8 @@ load("fitMCAR_0PerMiss_WM_MI_n500.RData")
 #study 1
 load("fitMCAR_0PerMiss_1CR_SF_MI_n1000.RData")
 load("fitMCAR_0PerMiss_2CR_SF_MI_n1000.RData")
-load("fitMCAR_0PerMiss_1CR_DF_MI_n1000.RData")
-load("fitMCAR_0PerMiss_2CR_DF_MI_n1000.RData")
+#load("fitMCAR_0PerMiss_1CR_DF_MI_n1000.RData")
+#load("fitMCAR_0PerMiss_2CR_DF_MI_n1000.RData")
 
 load("fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n200.RData")
 load("fitMCAR_50PerMiss_4VarMiss_2CR_SF_MI_n200.RData")
@@ -59,17 +59,23 @@ load("fitMCAR_20PerMiss_2VarMiss_2CR_SF_MI_n500.RData")
 load("fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n500.RData")
 load("fitMCAR_20PerMiss_2VarMiss_2CR_DF_MI_n500.RData")
 
-
-fitNoMissing_WM_new_m <- rbind(fitNoMissing_WM_new,fitNoMissing_WM_new)
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n500), 1:2, mean)[1:4, ]-fitNoMissing_WM_new_m 
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n500), 1:2, median)[1:4, ]-fitNoMissing_WM_new_m 
-load("fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_MI_n1000.RData")
-load("fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_MI_n1000.RData")
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200), 1:2, mean)[1:4, ]-fitNoMissing_WM_new_m 
-apply(simplify2array(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_n200), 1:2, median)[1:4, ]-fitNoMissing_WM_new_m 
-
-apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n500), 1:2, mean)[1:4, ]-rbind(fitNoMissing_1CR_SF_new,fitNoMissing_2CR_SF_new)
+load("fitMCAR_20PerMiss_4VarMiss_2CR_SF_MI_n1000.Rdata")
+load("fitMCAR_50PerMiss_4VarMiss_2CR_SF_MI_n1000.Rdata")
 
 
-apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n200), 1:2, mean)[1:4, ]-rbind(fitNoMissing_1CR_SF_new,fitNoMissing_2CR_SF_new)
-
+load("fitMCAR_50PerMiss_4VarMiss_1CR_SF_MI_n1000000.RData")
+load("fitMCAR_50PerMiss_4VarMiss_2CR_SF_MI_n1000000.RData")
+load("fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n1000000.RData")
+load("fitMCAR_50PerMiss_4VarMiss_2CR_DF_MI_n1000000.RData")
+load("fitMCAR_20PerMiss_4VarMiss_1CR_SF_MI_n1000000.RData")
+load("fitMCAR_20PerMiss_4VarMiss_2CR_SF_MI_n1000000.RData")
+load("fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n1000000.RData")
+load("fitMCAR_20PerMiss_4VarMiss_2CR_DF_MI_n1000000.RData")
+load("fitMCAR_50PerMiss_2VarMiss_1CR_SF_MI_n1000000.RData")
+load("fitMCAR_50PerMiss_2VarMiss_2CR_SF_MI_n1000000.RData")
+load("fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n1000000.RData")
+load("fitMCAR_50PerMiss_2VarMiss_2CR_DF_MI_n1000000.RData")
+load("fitMCAR_20PerMiss_2VarMiss_1CR_SF_MI_n1000000.RData")
+load("fitMCAR_20PerMiss_2VarMiss_2CR_SF_MI_n1000000.RData")
+load("fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000000.RData")
+load("fitMCAR_20PerMiss_2VarMiss_2CR_DF_MI_n1000000.RData")
