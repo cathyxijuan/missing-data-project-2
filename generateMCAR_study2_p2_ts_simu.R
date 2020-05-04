@@ -435,6 +435,124 @@ fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_200 <-
                       missing.percentage = 0.50, missing.type = "max", 
                       var.with.missing = 6, simu.num = 200)
 
+set.seed(9087)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_250 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+
+set.seed(123)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_300 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+
+set.seed(98)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_400 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 100)
+
+
+set.seed(3498)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_450 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+
+set.seed(233498)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_500 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+set.seed(7698)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_550 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+set.seed(2345)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_600 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+
+set.seed(555)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_650 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+set.seed(399)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_700 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+set.seed(80999)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_750 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+
+set.seed(765)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_800 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+
+set.seed(787)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_850 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+set.seed(76565)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_900 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+set.seed(09345)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_950 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+
+set.seed(7865430)
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_1000 <- 
+  fit.components.simu(pop.model.list=pop.mod,fitted.mod=fitted.mod,sample.nobs =200,
+                      missing.percentage = 0.50, missing.type = "max", 
+                      var.with.missing = 6, simu.num = 50)
+
+
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200 <- c(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_200,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_250,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_300,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_400,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_450,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_500,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_550,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_600,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_650,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_700,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_750,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_800,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_850,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_900,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_950,
+                                                        fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200_1000)
+
+
+
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n200<- ts.fit(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200)
 #load(file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_compo_n200.RData")
 #load(file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n200.RData")
