@@ -3,7 +3,7 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
 #source("Models_2CR_SF.R") #   redone:n=1000; redone n=200, n=500; 
 #source("Models_1CR_SF.R") #  redone: n=200, 500, 1000  
-#source("Models_1CR_DF.R") #   done at n=200, 500,1000
+#source("Models_1CR_DF.R") #  redoing n=500 in a different file;  done at n=200, 500,1000
 source("Models_2CR_DF.R") #  redoing n=500; redone n=1000; 
 ##MISSING IS ON x11 and x12 or x9-12.
 
