@@ -1,11 +1,5 @@
-source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
-source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC results.R")
-nam <- c("rmsea.fiml", "rmsea.uncor.fimlc",
-         "rmsea.cor.obs.nonn_str", "rmsea.cor.exp.nonn_str", "rmsea.cor.obs.nonn_unstr", 
-         "rmsea.cor.obs_str", "rmsea.cor.exp_str", "rmsea.cor.obs_unstr",
-         "cfi.fiml", "cfi.uncor.fimlc",
-         "cfi.cor.obs.nonn_str", "cfi.cor.exp.nonn_str", "cfi.cor.obs.nonn_unstr", 
-         "cfi.cor.obs_str", "cfi.cor.exp_str", "cfi.cor.obs_unstr")
+source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/compute FIMLC mean.R")
+
 
 fitNoMissing_2CR_SF_new_RMSEA <- matrix(rep(as.vector(fitNoMissing_2CR_SF_new[1,], mode = "numeric"), 8), 
                                         nrow=8,
