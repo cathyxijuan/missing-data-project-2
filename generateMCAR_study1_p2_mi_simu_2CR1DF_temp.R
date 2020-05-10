@@ -3,8 +3,8 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
 #source("Models_1CR_SF.R") #   redone:n=1000; redone n=200, n=500; 
 #source("Models_2CR_SF.R") #  redone: n=200, 500, 1000  
-source("Models_1CR_DF.R") #   redoing n=500  in this file; done at n=200, 500,1000
-#source("Models_2CR_DF.R") #  redoing n=200 in the main file ; redone n=1000;500 
+source("Models_1CR_DF.R") #   redoing n=1000 ; redone n=500 ; redone n=200; done at n=200, 500,1000
+#source("Models_2CR_DF.R") #   redone n= 200, 1000;500 
 ##MISSING IS ON x11 and x12 or x9-12.
 
 
@@ -89,29 +89,29 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI")
 
 ###no missing 
 
-fitMCAR_0PerMiss_1CR_DF_MI_n500 <- 
+fitMCAR_0PerMiss_1CR_DF_MI_n1000 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0, var.with.missing = 2, sample.nobs = 500)
-save(fitMCAR_0PerMiss_1CR_DF_MI_n500, file="fitMCAR_0PerMiss_1CR_DF_MI_n500.RData")
+                           missing.percentage = 0, var.with.missing = 2, sample.nobs = 1000)
+save(fitMCAR_0PerMiss_1CR_DF_MI_n1000, file="fitMCAR_0PerMiss_1CR_DF_MI_n1000.RData")
 
 
 
 
 
 #####2 variables with missing data#####
-fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n500 <- 
+fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 500)
-#fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n500[[1]]
-#fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n500[[2]]
-#apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n500), 1:2, sd)
-save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n500, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n500.RData")
+                           missing.percentage = 0.20, var.with.missing = 2, sample.nobs = 1000)
+#fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000[[1]]
+#fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000[[2]]
+#apply(simplify2array(fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000), 1:2, sd)
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_MI_n1000.RData")
 
 
-fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n500 <- 
+fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n1000 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 500)
-save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n500, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n500.RData")
+                           missing.percentage = 0.50, var.with.missing = 2, sample.nobs = 1000)
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n1000, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n1000.RData")
 
 
 
@@ -119,14 +119,14 @@ save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_MI_n500, file="fitMCAR_50PerMiss_2VarMiss
 
 
 
-fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n500 <- 
+fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n1000 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 500)
-save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n500, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n500.RData")
+                           missing.percentage = 0.20, var.with.missing = 4, sample.nobs = 1000)
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n1000, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_MI_n1000.RData")
 
 
-fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n500 <- 
+fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n1000 <- 
   fit.ind.matrix.MCAR.simu(pop.model.list=pop.mod, fitted.mod=fitted.mod, 
-                           missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 500)
-save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n500, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n500.RData")
+                           missing.percentage = 0.50, var.with.missing = 4, sample.nobs = 1000)
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n1000, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_MI_n1000.RData")
 
