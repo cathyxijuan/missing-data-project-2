@@ -3,8 +3,7 @@ source("/Volumes/SP PHD U3/missing-data-project-2/Simu results MI/load MI result
 nam <- c("rmsea.fiml", "rmsea.mi",
          "cfi.fiml", "cfi.mi", "is.converged", 
          "is.null.vcov")
-list.sd(fitMCAR_0PerMiss_1CR_SF_MI_n200)[nam,]
-list.sd(fitMCAR_20PerMiss_2VarMiss_1CR_SF_MI_n200)[nam,]
+
 
 #################### MCAR study 1  #############################
 
@@ -305,69 +304,3 @@ fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_n1000000_mean <- list.mean(fitMCAR_MaxPa
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n1000000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_n1000000)[nam,]
 
 
-####### checks ######
-#n200
-fitMCAR_0PerMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_0PerMiss_WM_MI_checks_n200)
-
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_checks_n200)
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_checks_n200)
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_checks_n200)
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_checks_n200)
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_checks_n200)
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_checks_n200)
-
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_checks_n200)
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_checks_n200)
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_checks_n200)
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_checks_n200)
-fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_checks_n200)
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_checks_n200_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_checks_n200)
-
-#n500
-fitMCAR_0PerMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_0PerMiss_WM_MI_checks_n500)
-
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_checks_n500)
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_checks_n500)
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_checks_n500)
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_checks_n500)
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_checks_n500)
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_checks_n500)
-
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_checks_n500)
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_checks_n500)
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_checks_n500)
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_checks_n500)
-fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_checks_n500)
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_checks_n500_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_checks_n500)
-
-#n1000
-fitMCAR_0PerMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_0PerMiss_WM_MI_checks_n1000)
-
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_checks_n1000)
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_checks_n1000)
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_checks_n1000)
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_checks_n1000)
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_checks_n1000)
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_checks_n1000)
-
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_checks_n1000)
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_checks_n1000)
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_checks_n1000)
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_checks_n1000)
-fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_checks_n1000)
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_checks_n1000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_checks_n1000)
-
-#n1000000
-fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_MI_checks_n1000000)
-
-fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_MI_checks_n1000000)
-fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_checks_n1000000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_MI_checks_n1000000)

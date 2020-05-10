@@ -1,6 +1,6 @@
 source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results TS")
-source("load results.R")
+source("compute TS means.R")
 
 
 fitNoMissing_2CR_SF_new
