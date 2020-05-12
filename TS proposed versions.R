@@ -2,8 +2,7 @@
 library(lavaan)
 library(matrixcalc)
 
-#For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
-#For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
+
 
 #load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 

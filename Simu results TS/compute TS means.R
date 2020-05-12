@@ -2,7 +2,6 @@ source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
 source("/Volumes/SP PHD U3/missing-data-project-2/Simu results TS/load TS results.R")
 
 
-
 #################### MCAR study 1  #############################
 
 ####fit#####
