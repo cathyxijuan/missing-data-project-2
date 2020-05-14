@@ -6,11 +6,7 @@ load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_DF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_SF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_DF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_new.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_SF_matrix.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_DF_matrix.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_SF_matrix.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_DF_matrix.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_matrix.RData")
+
 
 
 
@@ -961,15 +957,158 @@ bold <- function(x){
 
 #####Purpose: making TS tables for study 2
 
-ts.s2.table <- function(results, label.name="test", caption.before=" ", caption.after=" "){
-  rownam <- c("RMSEA FIML", "RMSEA TS w/o SSC", "RMSEA TS w/ SSC V1", "RMSEA TS w/ SSC V2",
-              "CFI FIML", "CFI TS w/o SSC", "CFI TS w/ SSC V1", "CFI TS w/ SSC V2")
-  colnam <- paste("FC=", c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.4, 0.2), sep="")
-  rownames(results) <- rownam
-  colnames(results) <- colnam
+ts.s2.table <- function(result.n200, result.n500, result.n1000, result.n1000000, 
+                        label.name="test", caption.before=" ", caption.after=" "){
+  
+  
   w.in.num <- 0.01
-  results_test <- bold.cond(results,abs(results) > w.in.num )
-  print(xtable(results_test, auto=T, label=label.name, 
-               caption=paste0(caption.before, " study 2 condition: ", caption.after)), 
-        sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top" )
+  rownam <- rep(c(" ","FIML", "TS w/o SSC", "TS w/ SSC V1", "TS w/ SSC V2"), 4)
+  colnam <- c(" ", paste("FC=", c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.4, 0.2), sep=""))
+  resultn200 <- result.n200
+  resultn500 <-  result.n500
+  resultn1000 <- result.n1000
+  resultn1000000 <-  result.n1000000
+  resultn200_r <- resultn200[1:4, ]
+  resultn500_r <- resultn500[1:4, ]
+  resultn1000_r <- resultn1000[1:4, ]
+  resultn1000000_r <- resultn1000000[1:4, ]
+  resultn200_c <- resultn200[5:8, ]
+  resultn500_c <- resultn500[5:8, ]
+  resultn1000_c <- resultn1000[5:8, ]
+  resultn1000000_c <- resultn1000000[5:8, ]
+  n200.nam <- c(rep(" ", 4), "n=200", rep(" ", 4))
+  n500.nam <- c(rep(" ", 4), "n=500", rep(" ", 4))
+  n1000.nam <- c(rep(" ", 4), "n=1000", rep(" ", 4))
+  n1000000.nam <- c(rep(" ", 4), "n=1000000", rep(" ", 4))
+  #RMSEA
+  result_r<-rbind(resultn200_r,resultn500_r,  resultn1000_r,resultn1000000_r )
+  
+  result_r_test <- bold.cond(result_r,abs(result_r) > w.in.num )
+  
+  rmsea.tab.pre <- rbind(n200.nam, result_r_test[1:4,],n500.nam, result_r_test[5:8,] , n1000.nam, result_r_test[9:12,], n1000000.nam, result_r_test[13:16,])
+  rmsea.tab.final <- cbind(rownam,rmsea.tab.pre)
+  
+  colnames(rmsea.tab.final) <- colnam
+  rmsea.tab.final 
+  
+  comment <- list(pos = list(0))
+  comment$pos[[1]] <- c(nrow( rmsea.tab.final ))
+  comment$command <-paste0("\\hline \n \\multicolumn{10}{l}",
+                           "{\\footnotesize{Note: Bold values are those with raw bias beyond $\\pm 0.01.$ TS=Two-stage;}} \\\\", 
+                           "\n \\multicolumn{10}{l}",
+                           "{\\footnotesize{FIML=Full information maximum likelihood; FC=Factor correlation; SSC=Small sample correction;}} \\\\",
+                           "\n \\multicolumn{10}{l}",
+                           "{\\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC verions 1-2.}} \\\\ \n")
+  
+  
+  print(xtable(rmsea.tab.final, auto=T, label=paste(label.name, "rmsea", sep="."), align="ll|lllllllll",
+               caption=paste0(caption.before, " RMSEA Comparing TS to FIML Method \\newline Simulation Study 2 Condition:  ", caption.after)), 
+        sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
+        hline.after = c(-1, 0, 5, 10,15), add.to.row=comment)
+  
+  result_c<-rbind(resultn200_c,resultn500_c,  resultn1000_c,resultn1000000_c )
+  
+  result_c_test <- bold.cond(result_c,abs(result_c) > w.in.num )
+  
+  
+  cfi.tab.pre <- rbind(n200.nam, result_c_test[1:4,],n500.nam, result_c_test[5:8,] , n1000.nam, result_c_test[9:12,], n1000000.nam, result_c_test[13:16,])
+  cfi.tab.final <- cbind(rownam,cfi.tab.pre)
+  
+  colnames(cfi.tab.final) <- colnam
+  cfi.tab.final 
+  
+  
+  print(xtable(cfi.tab.final, auto=T, label=paste(label.name, "cfi", sep="."), align="ll|lllllllll",
+               caption=paste0(caption.before, " CFI Comparing TS to FIML Method \\newline Simulation Study 2 Condition:  ", caption.after) ), 
+        sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
+        hline.after = c(-1, 0, 5, 10,15), add.to.row=comment )
+  
+}
+
+
+
+
+
+
+
+
+fimlc.s2.table <- function(result.n200, result.n500, result.n1000, result.n1000000, 
+                           label.name="test", caption.before=" ", caption.after=" "){
+  
+  w.in.num <- 0.01
+  rownam <- rep(c(" ","FIML", "FIML-C w/o SSC", 
+                  "FIML-C w/ SSC V1", "FIML-C w/ SSC V2",
+                  "FIML-C w/ SSC V3", "FIML-C w/ SSC V4",
+                  "FIML-C w/ SSC V5", "FIML-C w/ SSC V6"), 4)
+  colnam <- c(" ", paste("FC=", c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.4, 0.2), sep=""))
+  resultn200 <- result.n200
+  resultn500 <-  result.n500
+  resultn1000 <- result.n1000
+  resultn1000000 <-  result.n1000000
+  resultn200_r <- resultn200[1:8, ]
+  resultn500_r <- resultn500[1:8, ]
+  resultn1000_r <- resultn1000[1:8, ]
+  resultn1000000_r <- resultn1000000[1:8, ]
+  resultn200_c <- resultn200[9:16, ]
+  resultn500_c <- resultn500[9:16, ]
+  resultn1000_c <- resultn1000[9:16, ]
+  resultn1000000_c <- resultn1000000[9:16, ]
+  n200.nam <- c(rep(" ", 4), "n=200", rep(" ", 4))
+  n500.nam <- c(rep(" ", 4), "n=500", rep(" ", 4))
+  n1000.nam <- c(rep(" ", 4), "n=1000", rep(" ", 4))
+  n1000000.nam <- c(rep(" ", 4), "n=1000000", rep(" ", 4))
+  #RMSEA
+  result_r<-rbind(resultn200_r,resultn500_r,  resultn1000_r,resultn1000000_r )
+  
+  
+  result_r_test <- bold.cond(result_r,abs(result_r) > w.in.num )
+  length(n200.nam)
+  ncol(result_r_test)
+  
+  rmsea.tab.pre <- rbind(n200.nam, result_r_test[1:8,],
+                         n500.nam, result_r_test[9:16,] , 
+                         n1000.nam, result_r_test[17:24,], 
+                         n1000000.nam, result_r_test[25:32,])
+  rmsea.tab.final <- cbind(rownam,rmsea.tab.pre)
+  
+  colnames(rmsea.tab.final) <- colnam
+  rmsea.tab.final 
+  
+  comment <- list(pos = list(0))
+  comment$pos[[1]] <- c(nrow( rmsea.tab.final ))
+  comment$command <-paste0("\\hline \n \\multicolumn{10}{l}",
+                           "{\\footnotesize{Note: Bold values are those with raw bias beyond $\\pm 0.01.$ FIML=Full information maximum likelihood;}} \\\\", 
+                           "\n \\multicolumn{10}{l}",
+                           "{\\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\\\",
+                           "\n \\multicolumn{10}{l}",
+                           "{\\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\\\ \n")
+  
+  print(xtable(rmsea.tab.final, auto=T, label=paste(label.name, "rmsea", sep="."), align="ll|lllllllll",
+               caption=paste0(caption.before, " RMSEA Comparing FIML-C to FIML Method \\newline Simulation Study 2 Condition:  ", caption.after)), 
+        sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
+        hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
+  
+  
+  
+  
+  result_c<-rbind(resultn200_c,resultn500_c,  resultn1000_c,resultn1000000_c )
+  
+  result_c_test <- bold.cond(result_c,abs(result_c) > w.in.num )
+  
+  
+  cfi.tab.pre <- 
+    cfi.tab.pre <- rbind(n200.nam, result_c_test[1:8,],
+                         n500.nam, result_c_test[9:16,] , 
+                         n1000.nam, result_c_test[17:24,],
+                         n1000000.nam, result_c_test[25:32,])
+  cfi.tab.final <- cbind(rownam,cfi.tab.pre)
+  
+  colnames(cfi.tab.final) <- colnam
+  cfi.tab.final 
+  
+  
+  print(xtable(cfi.tab.final, auto=T, label=paste(label.name, "cfi", sep="."), align="ll|lllllllll",
+               caption=paste0(caption.before, " CFI Comparing FIML-C to FIML Method \\newline Simulation Study 2 Condition:  ", caption.after)), 
+        sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
+        hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
 }

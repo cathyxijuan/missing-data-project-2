@@ -37,7 +37,7 @@ MARStrong_2Var <- function(model, sample.nobs,  missing.percentage=0.5){
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 MARWeak_2Var <- function(model, sample.nobs,  missing.percentage=0.5){
-  data <- simulateData(model, sample.nobs=sample.nobs,seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -68,7 +68,7 @@ MARWeak_2Var <- function(model, sample.nobs,  missing.percentage=0.5){
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 MARStrong_4Var <- function(model, sample.nobs,  missing.percentage=0.5){
-  data <- simulateData(model, sample.nobs=sample.nobs,seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -95,7 +95,7 @@ MARStrong_4Var <- function(model, sample.nobs,  missing.percentage=0.5){
 #sample.nobs: numeric; sample size without missing data
 #missing.percentage: numeric; a proportion of missing data
 MARWeak_4Var <- function(model, sample.nobs,  missing.percentage=0.5){
-  data <- simulateData(model, sample.nobs=sample.nobs,seed=111)
+  data <- simulateData(model, sample.nobs=sample.nobs)
   simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
@@ -162,7 +162,7 @@ fit.components.simu<- function(pop.model.list, fitted.mod, sample.nobs,
   
 }
 
-set.seed(111)
+
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
 
 
