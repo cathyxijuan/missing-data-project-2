@@ -595,7 +595,7 @@ ts.components <- function(fitted.mod, dataset){
                                                            lavsamplestats = fit1@SampleStats, 
                                                            lavdata = fit1@Data,
                                                            lavoptions = fit1@Options, 
-                                                           lavimplied = fit2@implied,
+                                                           lavimplied = fit1@implied,
                                                            lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
   
   Wc_unstr <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2@Model,
@@ -933,3 +933,43 @@ fimlc.imp2 <- function(fitted.mod, dataset){
 }
 
 
+
+
+
+#########Functions related to latex table########
+
+###Purpose: Bold those that are true with a logical statement. 
+###Arguments:
+#### results: a matrix/dataframe with results 
+#### cond: a logical matrix with T or F that specifiy which elements to bold  
+bold.cond <- function(results, cond){
+  ifelse(cond==T,
+         paste("\\textbf{", formatC(results, dig=3, format="f"), "}"), 
+         formatC(results, dig=3, format="f"))
+}
+
+
+
+####Purpose: add bold font to latex table
+####Argument: x: element which we want to bold
+bold <- function(x){
+  paste("\\textbf{", x, "}")
+}
+
+
+
+
+#####Purpose: making TS tables for study 2
+
+ts.s2.table <- function(results, label.name="test", caption.before=" ", caption.after=" "){
+  rownam <- c("RMSEA FIML", "RMSEA TS w/o SSC", "RMSEA TS w/ SSC V1", "RMSEA TS w/ SSC V2",
+              "CFI FIML", "CFI TS w/o SSC", "CFI TS w/ SSC V1", "CFI TS w/ SSC V2")
+  colnam <- paste("FC=", c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.4, 0.2), sep="")
+  rownames(results) <- rownam
+  colnames(results) <- colnam
+  w.in.num <- 0.01
+  results_test <- bold.cond(results,abs(results) > w.in.num )
+  print(xtable(results_test, auto=T, label=label.name, 
+               caption=paste0(caption.before, " study 2 condition: ", caption.after)), 
+        sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top" )
+}

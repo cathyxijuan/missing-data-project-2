@@ -4,7 +4,7 @@ source("functions.R")
 #source("Models_2CR_SF.R") #
 #source("Models_1CR_SF.R") #
 #source("Models_1CR_DF.R") # done n=1000
-source("Models_2CR_DF.R") # doing n=1000
+source("Models_2CR_DF.R") # done n=1000, 500 ; doing n=200
 
 ###MISSING ON x11-12 OR x9-12
 #strong dependency
@@ -169,77 +169,77 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
 
 #####2 Variables with missing value#################
 
-fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000 <-
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200 <-
   fit.components.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 
                           missing.percentage = 0.20, missing.type = "strong",
-                          sample.nobs = 1000,
+                          sample.nobs = 200,
                           var.with.missing = 2)
-fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000 <-fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000 
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200 <-fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200 
 
-fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000 <-fimlc.fit(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000)
-fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000 <- fimlc.checks(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000,
-                                                                          fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000)
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n200 <-fimlc.fit(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200)
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200 <- fimlc.checks(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200,
+                                                                          fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n200)
 
-save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000.RData")
-save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000 , file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000.RData")
-save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000, 
-     file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000.RData")
-
-
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200.RData")
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n200 , file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n200.RData")
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200, 
+     file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200.RData")
 
 
 
 
-fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000 <-
+
+
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200 <-
   fit.components.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 
                           missing.percentage = 0.50, missing.type = "strong",
-                          sample.nobs = 1000,
+                          sample.nobs = 200,
                           var.with.missing = 2)
 
-fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000 <- fimlc.fit(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000)
-fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000 <- fimlc.checks(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000,
-                                                                          fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000)
-save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000.RData")
-save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000.RData")
-save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000.RData")
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n200 <- fimlc.fit(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200)
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200 <- fimlc.checks(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200,
+                                                                          fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n200)
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200.RData")
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n200, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n200.RData")
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200.RData")
 
 
 
 
-fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000 <-
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200 <-
   fit.components.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 
                           missing.percentage = 0.20, missing.type = "weak",
-                          sample.nobs = 1000,
+                          sample.nobs = 200,
                           var.with.missing = 2)
-fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000 <- fimlc.fit(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000)
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n200 <- fimlc.fit(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200)
 
-fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000 <- fimlc.checks(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000,
-                                                                        fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000)
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200 <- fimlc.checks(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200,
+                                                                        fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n200)
 
-save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000.RData")
-save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000.RData")
-save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000.RData")
-
-
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200.RData")
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n200, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n200.RData")
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200.RData")
 
 
 
-fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000 <-
+
+
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200 <-
   fit.components.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 
                           missing.percentage = 0.50, missing.type = "weak",
-                          sample.nobs = 1000,
+                          sample.nobs = 200,
                           var.with.missing = 2)
-fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000 <-fimlc.fit(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000)
-fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000 <-fimlc.checks(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000,
-                                                                      fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000)
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n200 <-fimlc.fit(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200)
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200 <-fimlc.checks(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200,
+                                                                      fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n200)
 
-save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n1000.RData")
-save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000.RData")
-save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000.RData")
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_compo_n200.RData")
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n200, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n200.RData")
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n200.RData")
 
 
 
@@ -250,69 +250,68 @@ save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_checks_n1000, file="fitMAR_Weak
 #######4 variables with missing data #######
 
 
-fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000 <-
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200 <-
   fit.components.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 
                           missing.percentage = 0.20, missing.type = "strong",
-                          sample.nobs = 1000,
+                          sample.nobs = 200,
                           var.with.missing = 4)
-fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000 <-fimlc.fit(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000)
-fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000 <-fimlc.checks(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000, 
-                                                                         fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000 )
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n200 <-fimlc.fit(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200)
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200 <-fimlc.checks(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200, 
+                                                                         fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n200 )
 
-save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000.RData")
-save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000.RData")
-save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000.RData")
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200.RData")
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n200, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n200.RData")
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200.RData")
 
 
-fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000 <-
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200 <-
   fit.components.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 
                           missing.percentage = 0.50, missing.type = "strong",
-                          sample.nobs = 1000,
+                          sample.nobs = 200,
                           var.with.missing = 4)
-fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000 <-fimlc.fit(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000)
-fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000 <-fimlc.checks(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000, 
-                                                                         fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000)
-save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000.RData")
-save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000.RData")
-save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000.RData")
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n200 <-fimlc.fit(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200)
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200 <-fimlc.checks(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200, 
+                                                                         fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n200)
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200.RData")
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n200, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n200.RData")
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200.RData")
 
 
 
 
 
 
-fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000 <-
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200 <-
   fit.components.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 
                           missing.percentage = 0.20, missing.type = "weak",
-                          sample.nobs = 1000,
+                          sample.nobs = 200,
                           var.with.missing = 4)
-fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000 <-fimlc.fit(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000)
-fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000 <-fimlc.checks(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000, 
-                                                                       fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000)
-save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000.RData")
-save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000.RData")
-save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000.RData")
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200 <-fimlc.fit(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200)
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200 <-fimlc.checks(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200, 
+                                                                       fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200)
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200.RData")
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200.RData")
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200.RData")
 
 
 
 
 
-fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000 <-
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200 <-
   fit.components.simu(pop.model.list=pop.mod, 
                           fitted.mod=fitted.mod, 
                           missing.percentage = 0.50, missing.type = "weak",
-                          sample.nobs = 1000,
+                          sample.nobs = 200,
                           var.with.missing = 4)
-fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000 <-fimlc.fit(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000)
-fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000 <- fimlc.checks(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000, 
-                                                                       fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000)
-save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n1000.RData")
-save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000.RData")
-save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000.RData")
-
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n200 <-fimlc.fit(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200)
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200 <- fimlc.checks(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200, 
+                                                                       fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n200)
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_compo_n200.RData")
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n200, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n200.RData")
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n200.RData")
 
 
 

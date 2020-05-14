@@ -140,12 +140,33 @@ summary(fit.sat)
 S.sat <- inspect(fit.sat, "cov.ov")
 Sigmatilde<-lavInspect(fit.sat,"sampstat")$cov #when converged, S.sat and sigmatilde are the same; when S.sat is not converged; they are not the same...not sure how sigmatilde is computed in that case. 
 mu.sat <- inspect(fit.sat, "mean.ov")
+
+
+#####My code######
 Omega <- inspect(fit.sat, "inverted.information.observed") # same as solve(inspect(fit.sat, "h1.information.observed"))
+#totally the same as our Wmi.unstr; our gamma (which is his Omega) involves a triple product; his method is only valid if the model is correctly specified! 
+#Another thing is that for everything else he did, he multiplied it by 2; but this one is not multiple by 2
+B1 <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit.sat@Model,
+                                             lavsamplestats = fit.sat@SampleStats, 
+                                             lavdata = fit.sat@Data,
+                                             lavoptions = fit.sat@Options, 
+                                             lavimplied = fit.sat@implied,
+                                             lavh1 = fit.sat@h1, lavcache = fit.sat@Cache)[[1]]
+Gamma <- Omega%*%B1%*%Omega
+###### End my code
 
 
-h0 <- inspect(fit.sat, "information.observed") #confirmed that these two are the same but then the order of the columns are NOT!! 
+###my code ##
+h0 <- inspect(fit.sat, "information.observed") #confirmed that these two are the same 
+h0[1:5, 1:5]
 h1 <- inspect(fit.sat, "h1.information.observed")
+h1[1:5, 1:5]
+###end my code###
+
+
 fitA <- cfa(MA, sample.cov=S.sat, sample.mean=mu.sat, sample.nobs=N, se="none") 
+
+
 
 
 
@@ -155,9 +176,12 @@ fitA <- cfa(MA, sample.cov=S.sat, sample.mean=mu.sat, sample.nobs=N, se="none")
 
 
 H <- inspect(fitA, "hessian")*2 #This one, he used the TS estimates;structured model; 
-#This is supposed to be the same as solve(t(deltabreve)%*%Wc%*%deltabreve)%*%t(deltabreve); but they are slightly different 
+#This is supposed to be the same as solve(t(deltabreveB)%*%WcB_str%*%deltabreveB); but they are slightly different 
+#solve(inspect(fitA, "hessian"))[1:3,1:3] #similar to solve(t(deltabreveB)%*%WcB_str%*%deltabreveB) but not the same 
 H.inv <- try(chol2inv(chol(H)), TRUE)
-p=12
+solve(inspect(fitA, "hessian"))[1:5,1:5]
+
+p = 12
 D <- lav_matrix_duplication(p) 
 output <- rep(NA, 3)
 
@@ -179,12 +203,11 @@ tx <- resid(fitA)$mean
 
 
 
-T1 <- 2*t(dxdm) %*% Sig.hat.inv %*% dxdm 
+T1 <-2*t(dxdm) %*% Sig.hat.inv %*% dxdm ##uses structured model estimates #change this to S.inv increased the adjustment term
 
 T2 <- t(dsdm) %*% lav_matrix_duplication_pre_post(S.inv%x% S.inv) %*% dsdm #saturated model's estimates; unstructured estimates
-T.tol <- T1+T2
-#If S.inv%x% S.inv is changed to Sig.hat.inv%x%Sig.hat.inv, then at n=200, 500, 1000, 10000, 100000, the c's are all negative... 
-
+T.tol <- T1+T2 #this is supposed to be the weight matrix, it is a mixtured of structured and saturated model estimates. 
+#T.tol is called T in his original code
 
 Delta <- lavaan:::computeDelta(fitA@Model)[[1]] #TS estimates #same as inspect(fitA, "delta")
 dim(Delta)
@@ -193,34 +216,67 @@ a2 <- p+pstar
 mu.dev <- Delta[1:p,]
 sigma.dev <- Delta[a1:a2,]
 
-W <- Sig.hat.inv %x% Sig.hat.inv #TS estimates 
+W <- (Sig.hat.inv %x% Sig.hat.inv) #TS estimates ; this is trying to get weight matrix ##THIS IS WHERE THE MAJOR MISTAKE!! NEED TO DIVIDE IT BY TWO
 DW <- lav_matrix_duplication_pre(W)
 tt <- tx %x% I.p + I.p %x% tx 
 
 #The following section of the code is very hard to read.
 K1a <- t(mu.dev) %*% Sig.hat.inv %*% dxdm
 K1b <- t(sigma.dev) %*% DW %*% tt %*% dxdm 
-K2 <-  t(sigma.dev) %*% lav_matrix_duplication_pre_post(W) %*% dsdm
-K <- -2*(K1a + K1b + K2)
+K2 <-  t(sigma.dev) %*% (lav_matrix_duplication_pre_post(W)) %*% dsdm 
+K <- -2*(K1a)-K1b - K2
 
 
-Q <- T.tol - t(K)%*% H.inv %*% K
 
+Q <- T.tol - t(K)%*% H.inv %*% K #T.tol uses a mixture of saturated and structured model estimates; K (particularly W matrix inside K) uses structured model estimates; H.inv probably uses structured model estimates? 
+#the weight matrix inside T.tol is different from the weight matrix inside K. 
 n <- inspect(fitA, "nobs")
-F.hat <- t(tx)%*%Sig.hat.inv%*%tx + log(det(Sig.hat)) - log(det(S)) + sum(diag(S%*%Sig.hat.inv)) - p #This is second stage's F
+F.hat <- t(tx)%*%Sig.hat.inv%*%tx + log(det(Sig.hat)) - log(det(S)) + sum(diag(S%*%Sig.hat.inv)) - p #This is second stage's F; this calculation is FINE! 
 Fbc <- F.hat - sum(diag(Q%*%Omega ))/(2*n)
 M.df <- fitmeasures(fitA, "df")
 RMSEA.BC <- sqrt(Fbc/M.df)
 RMSEA.BC
 
 
-#Writing RMSEA in our equation format 
-c<- sum(diag(Q%*%Omega ))/2
+
+#####my code ###
+fitA@Options$h1.information = "structured" 
+
+
+Wc_str <- lavaan:::lav_model_h1_information_observed(lavmodel = fitA@Model,
+                                                     lavsamplestats = fitA@SampleStats, lavdata = fitA@Data, 
+                                                     lavoptions = fitA@Options, lavimplied = fitA@implied,
+                                                     lavh1 =fitA@h1, lavcache = fitA@Cache)[[1]]
+
+
+
+Uc.str <- Wc_str-Wc_str%*%Delta%*%solve(t(Delta)%*%Wc_str%*%Delta)%*%t(Delta)%*%Wc_str
+Wc_str[1:5, 1:5]
+
+
+
+c<- sum(diag(Uc.str%*%Gamma))
 c #with Lai's method, the magnitute of c value is typically smaller than that of our method. 
-#The difference is coming the calculation of the Q matrix, which is the U matrix in our code. 
-
-rmsea.adj <- sqrt(F.hat/M.df-c/(n*M.df)) 
-rmsea.adj 
 
 
+
+
+RMSEA.BC2 <- sqrt(F.hat/M.df-c/(n*M.df)) 
+RMSEA.BC2
+
+
+####producing our c with as much as his matrices as possible
+
+c3<- sum(diag(Q%*%Omega))/2 #Omega is our Gamma; Q is the residual weight matrix
+c3 
+ ###THIS SHOWS THAT THE MAIN DIFFERENCE COMING FROM the calculation of Q!!!!!!!!!!!!
+RMSEA.BC3 <- sqrt(F.hat/M.df-c3/(n*M.df)) 
+RMSEA.BC3
+
+
+#compare lav_matrix_duplication_pre_post(W) with Wc_str
+dim(Wc_str)
+Wc_str[13:15, 13:15]
+lav_matrix_duplication_pre_post(W)[1:3, 1:3]/2
+#####end my code###
 

@@ -4,14 +4,14 @@ library(matrixcalc)
 
 
 
-#load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
+load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
-load("simuDatawithMiss2.RData") # slighly misspecified 
+#load("simuDatawithMiss2.RData") # slighly misspecified 
 #For complete data, the population RMSEA and CFI are 0.04452902 and 0.9791809 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.03199867 and 0.9847884 respectively. 
-data1<-simuDatawithMiss[300:1000,] 
+data1<-simuDatawithMiss[1:500,] 
 n <- nrow(data1)
 
 
@@ -25,6 +25,7 @@ f1 ~~ 1*f1
 #####hypothesized model#####
 #stage 1
 fit1<-cfa(fitted.mod,data=data1,estimator="ML",missing="FIML")
+fit1.sat <- lavaan:::lav_object_unrestricted(fit1, se=T) 
 Sigmatilde<-lavInspect(fit1,"sampstat")$cov #saturated model's cov matrix
 mutilde<-lavInspect(fit1,"sampstat")$mean #saturated model's mean structure
 dfh<-lavInspect(fit1,"fit")["df"]
@@ -73,8 +74,10 @@ B1.unstr <- lavaan:::lav_model_h1_information_firstorder(lavmodel = fit1@Model,
                                                             lavsamplestats = fit1@SampleStats, 
                                                             lavdata = fit1@Data,
                                                             lavoptions = fit1@Options, 
-                                                            lavimplied = fit2@implied,
+                                                            lavimplied = fit1@implied,
                                                             lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
+
+
 
 Wc_unstr <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2@Model,
                                                  lavsamplestats = fit2@SampleStats, lavdata = fit2@Data, 
@@ -96,6 +99,8 @@ Wc_str <- lavaan:::lav_model_h1_information_observed(lavmodel = fit2@Model,
 
 Wmi.unstr <-solve(Wm.unstr)
 Gamma <- Wmi.unstr %*% B1.unstr %*% Wmi.unstr  
+Gamma[1:5,1:5]
+
 
 # Saturated model is always a correctly specified model. In this case, this triple product may not be necessary; but in small samples, it may still be necessary.  
 #Cathy's note: Gamma is the estimate of the asymptotic covariance matrix of the satuarated model estimates. 
@@ -104,6 +109,11 @@ Gamma <- Wmi.unstr %*% B1.unstr %*% Wmi.unstr
 Uc.unstr <- Wc_unstr-Wc_unstr%*%deltabreve%*%solve(t(deltabreve)%*%Wc_unstr%*%deltabreve)%*%t(deltabreve)%*%Wc_unstr
 Uc.str <- Wc_str-Wc_str%*%deltabreve%*%solve(t(deltabreve)%*%Wc_str%*%deltabreve)%*%t(deltabreve)%*%Wc_str
 
+H<- (solve(t(deltabreve)%*%Wc_str%*%deltabreve))
+H[1:5,1:5]
+Wc_str[1:6, 1:6]*2
+Wc_unstr[1:6, 1:6]*2
+(t(deltabreve)%*%Wc_str)*2
 c.unstr <- lav_matrix_trace(Uc.unstr%*%Gamma)
 
 c.str <- lav_matrix_trace(Uc.str%*%Gamma)
@@ -145,6 +155,7 @@ cB.str <- lav_matrix_trace(UcB.str%*%Gamma)
 
 ######components out ########
 c.cBs <- c(c.unstr, c.str, cB.unstr, cB.str)
+c.cBs
 
 pos.def.weight <- c(is.positive.definite(x=round(Wm.unstr, 6)), 
                     is.positive.definite(x=round(Wc_unstr, 6)), 

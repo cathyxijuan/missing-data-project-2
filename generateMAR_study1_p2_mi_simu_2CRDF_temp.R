@@ -4,7 +4,7 @@ source("functions.R")
 #source("Models_2CR_SF.R") #
 #source("Models_1CR_SF.R") #
 #source("Models_1CR_DF.R") # doing n=1000 in the main file
-source("Models_2CR_DF.R") # doing n=1000
+source("Models_2CR_DF.R") # done n=1000 in this file
 
 ###MISSING ON x11-12 OR x9-12
 #strong dependency
