@@ -1,12 +1,20 @@
 source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
+source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC dif.R")
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
-#source("compute FIMLC means.R")
-#source("compute FIMLC dif.R")
 library(xtable)
 #options(scipen=999)
 
 sink("FIMLC LaTex Tables.txt")
 #Study 1 MCAR
+
+fimlc.s1.table(fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif ,
+               fitMCAR_0PerMiss_1CR_SF_fimlc_n500_dif ,
+               fitMCAR_0PerMiss_1CR_SF_fimlc_n1000_dif ,
+               fitMCAR_0PerMiss_1CR_SF_fimlc_n1000000_dif , 
+               label.name = "fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif ", 
+               caption.before = "Bias in", 
+               caption.after = "complete data.")
+
 
 fimlc.s1.table(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif,
                fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_dif,
@@ -177,6 +185,16 @@ fimlc.s1.table(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif,
 
 ###study 2 MCAR
 
+fimlc.s2.table(fitMCAR_0PerMiss_WM_fimlc_n200_dif, 
+               fitMCAR_0PerMiss_WM_fimlc_n500_dif,
+               fitMCAR_0PerMiss_WM_fimlc_n1000_dif, 
+               fitMCAR_0PerMiss_WM_fimlc_n1000000_dif, 
+               label.name = "fitMCAR_0PerMiss_WM_fimlc_n200_dif", 
+               caption.before = "Bias in", 
+               caption.after = "complete data.")
+
+
+
 
 fimlc.s2.table(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_dif, 
                fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500_dif,
@@ -254,6 +272,12 @@ fimlc.s2.table(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_dif,
 
 
 sink()
+
+
+
+
+
+
 
 
 

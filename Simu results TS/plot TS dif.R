@@ -13,7 +13,7 @@ library(ggsci)
 #############First Graph : Graphing study 1######
 
 ###RMSEA###
-row.num <- 1:4 #rows for rmsea
+row.num <- 1:4 #rows for rmzsea
 col.num <- 11:15 #col for FC=0.8
 ver.num <- 4
 sample.num <- 4
@@ -59,7 +59,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
 
 
 ####CFI###
-row.num <- 5:8#rows for cfi
+row.num <- 5:8 #rows for cfi
 cond.matrix1 <- fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif[row.num ,col.num]
 cond.matrix2 <- fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500_dif[row.num ,col.num]
 cond.matrix3 <- fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000_dif[row.num ,col.num]
@@ -185,7 +185,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   facet_grid(Sample_Size~Percentage_of_Missing) +
   xlab("Size of Factor Correlation (Degree of Misfit)") +
   scale_y_continuous(limits = c(-0.15, 0.15))+ 
-  theme_bw() + scale_color_jco()
+  theme_bw() + scale_color_jco()+scale_x_reverse()
 
 
 
@@ -193,7 +193,6 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
 
 ####CFI###
 row.num <- 5:8 #rows for cfi
-pop.val <- fitNoMissing_WM_new[2,col.num]
 cond.matrix1 <- fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n200_dif[row.num ,col.num]
 cond.matrix2 <- fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n500_dif[row.num ,col.num]
 cond.matrix3 <- fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n1000_dif[row.num ,col.num]
@@ -208,33 +207,26 @@ cond.matrix11 <- fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000_dif[row.num ,col.
 cond.matrix12 <- fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000000_dif[row.num ,col.num]
 
 
-cfi_wide <- rbind(pop.val,cond.matrix1, 
-                  pop.val, cond.matrix2, 
-                  pop.val, cond.matrix3, 
-                  pop.val, cond.matrix4, 
-                  pop.val, cond.matrix5, 
-                  pop.val, cond.matrix6,
-                  pop.val, cond.matrix7, 
-                  pop.val, cond.matrix8, 
-                  pop.val, cond.matrix9, 
-                  pop.val, cond.matrix10,
-                  pop.val, cond.matrix11,
-                  pop.val, cond.matrix12)
+cfi_wide <- rbind(cond.matrix1,  cond.matrix2, cond.matrix3,  cond.matrix4, 
+                  cond.matrix5,  cond.matrix6,cond.matrix7,  cond.matrix8, 
+                  cond.matrix9, cond.matrix10, cond.matrix11,cond.matrix12)
 
 colnames(cfi_wide) <-  c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2)
-
+rownames(cfi_wide)<-rep(c("FIML", 
+                            "TS  without SSC", 
+                            "TS with SSC V1",
+                            "TS with SSC V2"),12)
 row.names(cfi_wide)
 #View(cfi_wide)
 cfi_long <- melt(cfi_wide)
 nr <- nrow(cfi_long)
-colnames(cfi_long) <- c("Size_of_CR", "CFI")
-#View(cfi_long)
+colnames(cfi_long) <- c("Version","Size_of_CR", "CFI")
+head(cfi_long)
 
 cfi_long$Sample_Size <- as.factor(Sample_Size)
 
 cfi_long$Percentage_of_Missing <- as.factor(Percentage_of_Missing)
 
-cfi_long$Version <- as.factor(Version)
 cfi_long
 colnames(cfi_long)
 
@@ -244,5 +236,6 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   geom_point(aes(color=Version)) +
   facet_grid(Sample_Size~Percentage_of_Missing) +
   xlab("Size of Factor Correlation (Degree of Misfit)") +
-  scale_y_continuous(limits = c(0.4, 1))+ 
-  theme_bw() + scale_color_jco()
+  scale_y_continuous(limits = c(-0.25, 0.25))+ 
+  theme_bw() + scale_color_jco()+scale_x_reverse()
+
