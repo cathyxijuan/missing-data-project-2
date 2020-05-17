@@ -6,11 +6,7 @@ load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_SF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_DF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_new.RData")
 
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_SF_matrix.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_DF_matrix.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_SF_matrix.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_DF_matrix.RData")
-load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_matrix.RData")
+
 
 
 #################### MCAR study 1  #############################
@@ -24,19 +20,16 @@ load(file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n200.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200.RData")
 
-load(file="fitMCAR_0PerMiss_2CR_SF_ts_n200.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200.RData")
 
-load(file="fitMCAR_0PerMiss_1CR_DF_ts_n200.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n200.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n200.RData")
 
-load(file="fitMCAR_0PerMiss_2CR_DF_ts_n200.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n200.RData")
@@ -49,19 +42,16 @@ load(file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n500.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n500.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n500.RData")
 
-load(file="fitMCAR_0PerMiss_2CR_SF_ts_n500.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n500.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n500.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500.RData")
 
-load(file="fitMCAR_0PerMiss_1CR_DF_ts_n500.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n500.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n500.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n500.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n500.RData")
 
-load(file="fitMCAR_0PerMiss_2CR_DF_ts_n500.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n500.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n500.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n500.RData")
@@ -74,25 +64,23 @@ load(file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000.RData")
 
-load(file="fitMCAR_0PerMiss_2CR_SF_ts_n1000.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000.RData")
 
-load(file="fitMCAR_0PerMiss_1CR_DF_ts_n1000.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n1000.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n1000.RData")
 
-load(file="fitMCAR_0PerMiss_2CR_DF_ts_n1000.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000.RData")
 
 #n1000000
+load(file="fitMCAR_0PerMiss_1CR_SF_ts_n1000000.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000000.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000000.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000000.RData")
@@ -194,6 +182,7 @@ load(file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_compo_n1000.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_compo_n1000.RData")
 
 #n1000000
+load(file="fitMCAR_0PerMiss_1CR_SF_ts_compo_n1000000.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_compo_n1000000.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_compo_n1000000.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_compo_n1000000.RData")
@@ -293,11 +282,13 @@ load(file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_checks_n1000.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_checks_n1000.RData")
 
 #n1000000
+load(file="fitMCAR_0PerMiss_2CR_DF_ts_checks_n1000000.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_checks_n1000000.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_checks_n1000000.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_checks_n1000000.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_checks_n1000000.RData")
 
+load(file="fitMCAR_0PerMiss_2CR_SF_ts_checks_n1000000.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_checks_n1000000.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_checks_n1000000.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_checks_n1000000.RData")
@@ -377,6 +368,7 @@ load(file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000.RData")
 load(file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000.RData")
 
 #n1000000
+load(file="fitMCAR_0PerMiss_WM_ts_n1000000.RData")
 load(file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000000.RData")
 load(file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000000.RData")
 load(file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000000.RData")
@@ -516,6 +508,8 @@ load(file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_checks_n1000.RData")
 load(file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_checks_n1000.RData")
 
 #n1000000
+load(file="fitMCAR_0PerMiss_WM_ts_checks_n1000000.RData")
+
 load(file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_checks_n1000000.RData")
 load(file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_checks_n1000000.RData")
 load(file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_checks_n1000000.RData")
