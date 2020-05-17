@@ -2,7 +2,7 @@ library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
 #source("Models_2CR_SF.R") #done n=1000; done n=500, 200 
-source("Models_1CR_SF.R") # doing n=200
+source("Models_1CR_SF.R") # done n=200; doing n=500
 #source("Models_1CR_DF.R") # 
 #source("Models_2CR_DF.R") # done n=1000
 
@@ -169,80 +169,80 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results TS")
 
 #####2 Variables with missing value#################
 
-fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200 <-
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500 <-
   fit.components.simu(pop.model.list=pop.mod, 
                       fitted.mod=fitted.mod, 
                       missing.percentage = 0.20, missing.type = "strong",
-                      sample.nobs = 200,
+                      sample.nobs = 500,
                       var.with.missing = 2)
 
-fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200 <-fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200 
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500 <-fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500 
 
-fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n200 <-ts.fit(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200)
-fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_checks_n200 <- ts.checks(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200,
-                                                                           fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n200)
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n500 <-ts.fit(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500)
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_checks_n500 <- ts.checks(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500,
+                                                                           fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n500)
 
-save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200, 
-     file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200.RData")
-save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n200 ,
-     file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n200.RData")
-save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_checks_n200, 
-     file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_checks_n200.RData")
-
-
-list.mean(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n200)-fitNoMissing_1CR_SF_matrix
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500, 
+     file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500.RData")
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n500 ,
+     file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n500.RData")
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_checks_n500, 
+     file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_checks_n500.RData")
 
 
+list.mean(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n500)-fitNoMissing_1CR_SF_matrix
 
-fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200 <-
+
+
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500 <-
   fit.components.simu(pop.model.list=pop.mod, 
                       fitted.mod=fitted.mod, 
                       missing.percentage = 0.50, missing.type = "strong",
-                      sample.nobs = 200,
+                      sample.nobs = 500,
                       var.with.missing = 2)
 
-fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n200 <- ts.fit(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200)
-fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_checks_n200 <- ts.checks(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200,
-                                                                           fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n200)
-save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200.RData")
-save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n200, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n200.RData")
-save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_checks_n200, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_checks_n200.RData")
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n500 <- ts.fit(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500)
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_checks_n500 <- ts.checks(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500,
+                                                                           fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n500)
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500.RData")
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n500, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n500.RData")
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_checks_n500, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_checks_n500.RData")
 
 
 
 
-fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200 <-
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500 <-
   fit.components.simu(pop.model.list=pop.mod, 
                       fitted.mod=fitted.mod, 
                       missing.percentage = 0.20, missing.type = "weak",
-                      sample.nobs = 200,
+                      sample.nobs = 500,
                       var.with.missing = 2)
-fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n200 <- ts.fit(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200)
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n500 <- ts.fit(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500)
 
-fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_checks_n200 <- ts.checks(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200,
-                                                                         fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n200)
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_checks_n500 <- ts.checks(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500,
+                                                                         fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n500)
 
-save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n200.RData")
-save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n200, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n200.RData")
-save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_checks_n200, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_checks_n200.RData")
-
-
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_compo_n500.RData")
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n500, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n500.RData")
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_checks_n500, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_checks_n500.RData")
 
 
 
-fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200 <-
+
+
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500 <-
   fit.components.simu(pop.model.list=pop.mod, 
                       fitted.mod=fitted.mod, 
                       missing.percentage = 0.50, missing.type = "weak",
-                      sample.nobs = 200,
+                      sample.nobs = 500,
                       var.with.missing = 2)
-fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n200 <-ts.fit(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200)
-fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_checks_n200 <-ts.checks(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200,
-                                                                        fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n200)
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n500 <-ts.fit(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500)
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_checks_n500 <-ts.checks(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500,
+                                                                        fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n500)
 
-save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n200.RData")
-save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n200, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n200.RData")
-save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_checks_n200, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_checks_n200.RData")
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_compo_n500.RData")
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n500, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n500.RData")
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_checks_n500, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_checks_n500.RData")
 
 
 
@@ -253,68 +253,68 @@ save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_checks_n200, file="fitMAR_Weak_50P
 #######4 variables with missing data #######
 
 
-fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200 <-
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500 <-
   fit.components.simu(pop.model.list=pop.mod, 
                       fitted.mod=fitted.mod, 
                       missing.percentage = 0.20, missing.type = "strong",
-                      sample.nobs = 200,
+                      sample.nobs = 500,
                       var.with.missing = 4)
-fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n200 <-ts.fit(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200)
-fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_checks_n200 <-ts.checks(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200, 
-                                                                          fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n200 )
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n500 <-ts.fit(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500)
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_checks_n500 <-ts.checks(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500, 
+                                                                          fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n500 )
 
-save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200.RData")
-save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n200, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n200.RData")
-save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_checks_n200, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_checks_n200.RData")
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500.RData")
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n500, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n500.RData")
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_checks_n500, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_checks_n500.RData")
 
 
-fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200 <-
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500 <-
   fit.components.simu(pop.model.list=pop.mod, 
                       fitted.mod=fitted.mod, 
                       missing.percentage = 0.50, missing.type = "strong",
-                      sample.nobs = 200,
+                      sample.nobs = 500,
                       var.with.missing = 4)
-fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n200 <-ts.fit(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200)
-fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_checks_n200 <-ts.checks(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200, 
-                                                                          fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n200)
-save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200.RData")
-save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n200, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n200.RData")
-save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_checks_n200, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_checks_n200.RData")
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n500 <-ts.fit(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500)
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_checks_n500 <-ts.checks(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500, 
+                                                                          fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n500)
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500.RData")
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n500, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n500.RData")
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_checks_n500, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_checks_n500.RData")
 
 
 
 
 
 
-fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200 <-
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500 <-
   fit.components.simu(pop.model.list=pop.mod, 
                       fitted.mod=fitted.mod, 
                       missing.percentage = 0.20, missing.type = "weak",
-                      sample.nobs = 200,
+                      sample.nobs = 500,
                       var.with.missing = 4)
-fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n200 <-ts.fit(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200)
-fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_checks_n200 <-ts.checks(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200, 
-                                                                        fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n200)
-save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n200.RData")
-save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n200, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n200.RData")
-save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_checks_n200, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_checks_n200.RData")
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n500 <-ts.fit(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500)
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_checks_n500 <-ts.checks(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500, 
+                                                                        fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n500)
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_compo_n500.RData")
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n500, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n500.RData")
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_checks_n500, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_checks_n500.RData")
 
 
 
 
 
-fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200 <-
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500 <-
   fit.components.simu(pop.model.list=pop.mod, 
                       fitted.mod=fitted.mod, 
                       missing.percentage = 0.50, missing.type = "weak",
-                      sample.nobs = 200,
+                      sample.nobs = 500,
                       var.with.missing = 4)
-fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n200 <-ts.fit(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200)
-fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_checks_n200 <- ts.checks(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200, 
-                                                                         fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n200)
-save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n200.RData")
-save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n200, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n200.RData")
-save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_checks_n200, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_checks_n200.RData")
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n500 <-ts.fit(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500)
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_checks_n500 <- ts.checks(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500, 
+                                                                         fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n500)
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_compo_n500.RData")
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n500, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n500.RData")
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_checks_n500, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_checks_n500.RData")
 
 
 
