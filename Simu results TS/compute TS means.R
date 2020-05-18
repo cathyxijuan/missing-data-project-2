@@ -1,5 +1,6 @@
 source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
 source("/Volumes/SP PHD U3/missing-data-project-2/Simu results TS/load TS results.R")
+setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results TS/TS mean results")
 
 
 #################### MCAR study 1  #############################
@@ -12,23 +13,42 @@ fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n200_mean <- list.mean(fitMCAR_50PerMiss_2V
 fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200)
 fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200)
 
-fitMCAR_0PerMiss_2CR_SF_ts_n200_mean <- list.mean(fitMCAR_0PerMiss_2CR_SF_ts_n200)
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200)
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200)
 fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200)
 fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200)
 
-fitMCAR_0PerMiss_1CR_DF_ts_n200_mean <- list.mean(fitMCAR_0PerMiss_1CR_DF_ts_n200)
 fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200)
 fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200)
 fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n200_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n200)
 fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n200_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n200)
 
-fitMCAR_0PerMiss_2CR_DF_ts_n200_mean <- list.mean(fitMCAR_0PerMiss_2CR_DF_ts_n200)
 fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200)
 fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200)
 fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n200_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n200)
 fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n200_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n200)
+
+save(fitMCAR_0PerMiss_1CR_SF_ts_n200_mean, file="fitMCAR_0PerMiss_1CR_SF_ts_n200_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n200_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n200_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n200_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n200_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200_mean.RData")
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200_mean.RData")
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n200_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n200_mean.RData")
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n200_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n200_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n200_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n200_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n200_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n200_mean.RData") 
 
 #n500
 fitMCAR_0PerMiss_1CR_SF_ts_n500_mean <- list.mean(fitMCAR_0PerMiss_1CR_SF_ts_n500)
@@ -37,23 +57,44 @@ fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n500_mean <- list.mean(fitMCAR_50PerMiss_2V
 fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n500_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n500)
 fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n500_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n500)
 
-fitMCAR_0PerMiss_2CR_SF_ts_n500_mean <- list.mean(fitMCAR_0PerMiss_2CR_SF_ts_n500)
+
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500)
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n500_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n500)
 fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n500_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n500)
 fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500)
 
-fitMCAR_0PerMiss_1CR_DF_ts_n500_mean <- list.mean(fitMCAR_0PerMiss_1CR_DF_ts_n500)
 fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n500_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n500)
 fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n500_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n500)
 fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n500_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n500)
 fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n500_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n500)
 
-fitMCAR_0PerMiss_2CR_DF_ts_n500_mean <- list.mean(fitMCAR_0PerMiss_2CR_DF_ts_n500)
+
 fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n500_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n500)
 fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n500_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n500)
 fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n500_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n500)
 fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n500_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n500)
+
+save(fitMCAR_0PerMiss_1CR_SF_ts_n500_mean, file="fitMCAR_0PerMiss_1CR_SF_ts_n500_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n500_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n500_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n500_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n500_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n500_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n500_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n500_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n500_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n500_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n500_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n500_mean.RData")
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n500_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n500_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n500_mean.RData")
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n500_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n500_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n500_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n500_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n500_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n500_mean.RData")
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n500_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n500_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n500_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n500_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n500_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n500_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n500_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n500_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n500_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n500_mean.RData") 
 
 
 #n1000
@@ -63,25 +104,45 @@ fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000_mean <- list.mean(fitMCAR_50PerMiss_2
 fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000)
 fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000)
 
-fitMCAR_0PerMiss_2CR_SF_ts_n1000_mean <- list.mean(fitMCAR_0PerMiss_2CR_SF_ts_n1000)
 fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000)
 fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000)
 fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000)
 fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000)
 
-fitMCAR_0PerMiss_1CR_DF_ts_n1000_mean <- list.mean(fitMCAR_0PerMiss_1CR_DF_ts_n1000)
 fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000)
 fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000)
 fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n1000_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n1000)
 fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n1000_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n1000)
 
-fitMCAR_0PerMiss_2CR_DF_ts_n1000_mean <- list.mean(fitMCAR_0PerMiss_2CR_DF_ts_n1000)
 fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000)
 fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000)
 fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000)
 fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000)
 
+save(fitMCAR_0PerMiss_1CR_SF_ts_n1000_mean, file="fitMCAR_0PerMiss_1CR_SF_ts_n1000_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000_mean.RData")
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000_mean.RData")
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n1000_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n1000_mean.RData")
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n1000_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n1000_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000_mean.RData") 
+
 #n1000000
+fitMCAR_0PerMiss_1CR_SF_ts_n1000000_mean <- list.mean(fitMCAR_0PerMiss_1CR_SF_ts_n1000000)
 fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000000_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000000)
 fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000000_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000000)
 fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000000_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000000)
@@ -101,6 +162,28 @@ fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000000_mean <- list.mean(fitMCAR_20PerMis
 fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000000_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000000)
 fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000000_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000000)
 fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000000_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000000)
+
+save(fitMCAR_0PerMiss_1CR_SF_ts_n1000000_mean, file="fitMCAR_0PerMiss_1CR_SF_ts_n1000000_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000000_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000000_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000000_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000000_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000000_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000000_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000000_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000000_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000000_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000000_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000000_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000000_mean.RData")
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000000_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000000_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000000_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000000_mean.RData")
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000000_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000000_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000000_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000000_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n1000000_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_ts_n1000000_mean.RData")
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n1000000_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_ts_n1000000_mean.RData") 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000000_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000000_mean.RData") 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000000_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000000_mean.RData") 
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000000_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_ts_n1000000_mean.RData") 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000000_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n1000000_mean.RData") 
 
 
 ####checks#####
@@ -252,6 +335,22 @@ fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n200_mean <- list.mean(fitMCAR_MaxPat_50
 fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n200_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n200)
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n200_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n200)
 
+save(fitMCAR_0PerMiss_WM_ts_n200_mean, file="fitMCAR_0PerMiss_WM_ts_n200_mean.RData") 
+
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n200_mean, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n200_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n200_mean, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n200_mean.RData") 
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n200_mean, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n200_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n200_mean, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n200_mean.RData") 
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n200_mean, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n200_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n200_mean, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n200_mean.RData") 
+
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n200_mean, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n200_mean.RData")
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n200_mean, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n200_mean.RData")
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n200_mean, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n200_mean.RData") 
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n200_mean, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n200_mean.RData") 
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n200_mean, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n200_mean.RData")
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n200_mean, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n200_mean.RData")
+
 #n500
 fitMCAR_0PerMiss_WM_ts_n500_mean <- list.mean(fitMCAR_0PerMiss_WM_ts_n500)
 
@@ -268,6 +367,22 @@ fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n500_mean <- list.mean(fitMCAR_MaxPat_20
 fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n500_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n500)
 fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n500_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n500)
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n500_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n500)
+
+save(fitMCAR_0PerMiss_WM_ts_n500_mean, file="fitMCAR_0PerMiss_WM_ts_n500_mean.RData") 
+
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n500_mean, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n500_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n500_mean, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n500_mean.RData") 
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n500_mean, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n500_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n500_mean, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n500_mean.RData") 
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n500_mean, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n500_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n500_mean, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n500_mean.RData") 
+
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n500_mean, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n500_mean.RData")
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n500_mean, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n500_mean.RData")
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n500_mean, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n500_mean.RData") 
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n500_mean, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n500_mean.RData") 
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n500_mean, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n500_mean.RData")
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n500_mean, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n500_mean.RData")
 
 #n1000
 fitMCAR_0PerMiss_WM_ts_n1000_mean <- list.mean(fitMCAR_0PerMiss_WM_ts_n1000)
@@ -286,7 +401,24 @@ fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000_mean <- list.mean(fitMCAR_MaxPat_5
 fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000)
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000)
 
+save(fitMCAR_0PerMiss_WM_ts_n1000_mean, file="fitMCAR_0PerMiss_WM_ts_n1000_mean.RData") 
+
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000_mean, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000_mean, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000_mean.RData") 
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000_mean, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n1000_mean, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n1000_mean.RData") 
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n1000_mean, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n1000_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n1000_mean, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n1000_mean.RData") 
+
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n1000_mean, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n1000_mean.RData")
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n1000_mean, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n1000_mean.RData")
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n1000_mean, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n1000_mean.RData") 
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000_mean, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000_mean.RData") 
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000_mean, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000_mean.RData")
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000_mean, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000_mean.RData")
+
 #n1000000
+fitMCAR_0PerMiss_WM_ts_n1000000_mean <- list.mean(fitMCAR_0PerMiss_WM_ts_n1000000)
 fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000000_mean <- list.mean(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000000)
 fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000000_mean <- list.mean(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000000)
 fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000000_mean <- list.mean(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000000)
@@ -300,6 +432,22 @@ fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n1000000_mean <- list.mean(fitMCAR_MaxPa
 fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000000)
 fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000000_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000000)
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000000_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000000)
+
+save(fitMCAR_0PerMiss_WM_ts_n1000000_mean, file="fitMCAR_0PerMiss_WM_ts_n1000000_mean.RData") 
+
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000000_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000000_mean.RData") 
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000000_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n1000000_mean.RData") 
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n1000000_mean.RData") 
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n1000000_mean.RData") 
+
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n1000000_mean.RData")
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n1000000_mean.RData")
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n1000000_mean.RData") 
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000000_mean.RData") 
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000000_mean.RData")
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000000_mean, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000000_mean.RData")
 
 
 ####### checks ######
