@@ -1,4 +1,5 @@
-source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/compute FIMLC mean.R")
+#source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/compute FIMLC mean.R")
+#need to be updated
 library(dplyr)
 library(ggplot2)
 library(reshape2)

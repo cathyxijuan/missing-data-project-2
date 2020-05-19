@@ -1,6 +1,6 @@
 source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
-source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC dif.R")
-setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
+source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC/load FIMLC dif.R")
+setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/plot FIMLC")
 library(dplyr)
 library(ggplot2)
 library(reshape2)
