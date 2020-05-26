@@ -589,7 +589,7 @@ sink()
 ############# SD TABLES
 ############# SD TABLES
 ############# SD TABLES
-
+sink("FIMLC SD tables")
 fimlc.s1.sd.table(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_sd,
                   fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_sd,
                   fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_sd,
@@ -794,7 +794,7 @@ fimlc.s2.sd.table(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_sd,
                   label.name = "fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_sd", 
                   caption.before = "Empiricial Standard Deviation of the Estimate of ", 
                   caption.after = "MCAR, maximum pattern, four variables with missing data with 50\\% missing in each.")
-
+sink()
 
 
 
