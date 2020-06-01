@@ -1,8 +1,8 @@
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                   two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_sd.rmsea.fc0}
@@ -42,16 +42,16 @@
   FIML-C w/ SSC V5 & 0.007 & 0.008 & 0.006 & 0.006 & 0.005 & 0.007 & 0.008 & 0.006 & 0.006 & 0.005 & 0.007 & 0.008 & 0.005 & 0.009 & 0.006 \\ 
   FIML-C w/ SSC V6 & 0.007 & 0.008 & 0.006 & 0.006 & 0.006 & 0.007 & 0.008 & 0.006 & 0.006 & 0.006 & 0.007 & 0.008 & 0.005 & 0.005 & 0.006 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                   two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_sd.cfi.fc0}
@@ -91,16 +91,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.150 } & \textbf{ 0.221 } & \textbf{ 0.206 } & \textbf{ 0.184 } & \textbf{ 0.171 } & \textbf{ 0.174 } & \textbf{ 0.221 } & \textbf{ 0.170 } & \textbf{ 0.199 } & \textbf{ 0.163 } & \textbf{ 0.122 } & \textbf{ 0.195 } & \textbf{ 0.215 } & \textbf{ 0.176 } & \textbf{ 0.177 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.004 & 0.006 & 0.009 & 0.009 & 0.002 & 0.003 & 0.006 & 0.008 & 0.010 & 0.002 & 0.003 & 0.005 & 0.008 & 0.011 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor, 
                   two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_sd.rmsea.fc0}
@@ -140,16 +140,16 @@
   FIML-C w/ SSC V5 & 0.008 & 0.010 & 0.007 & 0.007 & 0.007 & 0.008 & 0.010 & 0.007 & 0.007 & 0.007 & 0.008 & 0.010 & 0.007 & 0.015 & 0.012 \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.010 & 0.007 & 0.007 & 0.007 & 0.008 & 0.010 & 0.007 & 0.007 & 0.007 & 0.008 & 0.010 & 0.007 & 0.007 & 0.008 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor, 
                   two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_sd.cfi.fc0}
@@ -189,16 +189,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.136 } & \textbf{ 0.189 } & \textbf{ 0.211 } & \textbf{ 0.187 } & \textbf{ 0.171 } & \textbf{ 0.153 } & \textbf{ 0.197 } & \textbf{ 0.190 } & \textbf{ 0.190 } & \textbf{ 0.180 } & \textbf{ 0.122 } & \textbf{ 0.196 } & \textbf{ 0.214 } & \textbf{ 0.185 } & \textbf{ 0.184 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.005 & 0.008 & 0.011 & 0.014 & 0.002 & 0.004 & 0.007 & 0.011 & 0.014 & 0.002 & 0.004 & 0.007 & 0.010 & 0.015 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                   two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_sd.rmsea.fc0}
@@ -238,16 +238,16 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.005 & 0.015 & \textbf{ 0.039 } & 0.007 & 0.006 & 0.005 & \textbf{ 0.028 } & \textbf{ 0.045 } & 0.007 & 0.006 & 0.005 & \textbf{ 0.056 } & \textbf{ 0.027 } \\ 
   FIML-C w/ SSC V6 & 0.007 & 0.006 & 0.005 & 0.005 & 0.004 & 0.007 & 0.006 & 0.005 & 0.005 & 0.004 & 0.007 & 0.006 & 0.005 & 0.005 & 0.004 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                   two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_sd.cfi.fc0}
@@ -287,16 +287,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.150 } & \textbf{ 0.193 } & \textbf{ 0.169 } & \textbf{ 0.151 } & \textbf{ 0.169 } & \textbf{ 0.174 } & \textbf{ 0.194 } & \textbf{ 0.182 } & \textbf{ 0.153 } & \textbf{ 0.163 } & \textbf{ 0.122 } & \textbf{ 0.180 } & \textbf{ 0.133 } & \textbf{ 0.177 } & \textbf{ 0.140 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.005 & 0.008 & 0.012 & 0.012 & 0.002 & 0.004 & 0.008 & 0.011 & 0.012 & 0.002 & 0.004 & 0.007 & 0.011 & 0.012 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                   two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_sd.rmsea.fc0}
@@ -336,16 +336,16 @@
   FIML-C w/ SSC V5 & 0.008 & 0.008 & 0.006 & 0.010 & \textbf{ 0.047 } & 0.008 & 0.008 & 0.006 & 0.010 & \textbf{ 0.044 } & 0.008 & 0.007 & 0.006 & \textbf{ 0.129 } & \textbf{ 0.073 } \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.008 & 0.006 & 0.006 & 0.006 & 0.008 & 0.008 & 0.006 & 0.006 & 0.005 & 0.008 & 0.007 & 0.006 & 0.006 & 0.006 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                   two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_sd.cfi.fc0}
@@ -385,16 +385,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.136 } & \textbf{ 0.180 } & \textbf{ 0.140 } & \textbf{ 0.152 } & \textbf{ 0.162 } & \textbf{ 0.153 } & \textbf{ 0.167 } & \textbf{ 0.167 } & \textbf{ 0.163 } & \textbf{ 0.163 } & \textbf{ 0.122 } & \textbf{ 0.199 } & \textbf{ 0.162 } & \textbf{ 0.156 } & \textbf{ 0.164 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.006 & 0.010 & 0.014 & 0.015 & 0.002 & 0.006 & 0.010 & 0.014 & 0.014 & 0.002 & 0.005 & 0.009 & 0.013 & 0.015 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                   four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_sd.rmsea.fc0}
@@ -434,16 +434,16 @@
   FIML-C w/ SSC V5 & 0.007 & 0.008 & 0.006 & 0.006 & 0.005 & 0.007 & 0.008 & 0.006 & 0.006 & 0.006 & 0.007 & 0.008 & 0.006 & 0.006 & 0.006 \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.008 & 0.006 & 0.006 & 0.006 & 0.008 & 0.008 & 0.006 & 0.006 & 0.006 & 0.008 & 0.008 & 0.006 & 0.005 & 0.006 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                   four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_sd.cfi.fc0}
@@ -483,16 +483,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.153 } & \textbf{ 0.193 } & \textbf{ 0.207 } & \textbf{ 0.211 } & \textbf{ 0.179 } & \textbf{ 0.162 } & \textbf{ 0.206 } & \textbf{ 0.180 } & \textbf{ 0.180 } & \textbf{ 0.199 } & \textbf{ 0.140 } & \textbf{ 0.193 } & \textbf{ 0.181 } & \textbf{ 0.194 } & \textbf{ 0.180 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.004 & 0.006 & 0.009 & 0.009 & 0.002 & 0.004 & 0.006 & 0.009 & 0.010 & 0.002 & 0.003 & 0.006 & 0.008 & 0.011 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                   four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_sd.rmsea.fc0}
@@ -532,16 +532,16 @@
   FIML-C w/ SSC V5 & 0.008 & 0.010 & 0.008 & 0.007 & 0.007 & 0.008 & 0.011 & 0.007 & 0.007 & 0.007 & 0.009 & 0.011 & 0.007 & 0.013 & 0.008 \\ 
   FIML-C w/ SSC V6 & 0.009 & 0.010 & 0.008 & 0.007 & 0.007 & 0.009 & 0.011 & 0.007 & 0.007 & 0.007 & 0.009 & 0.010 & 0.007 & 0.007 & 0.008 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                   four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_sd.cfi.fc0}
@@ -581,16 +581,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.165 } & \textbf{ 0.195 } & \textbf{ 0.213 } & \textbf{ 0.196 } & \textbf{ 0.222 } & \textbf{ 0.150 } & \textbf{ 0.200 } & \textbf{ 0.221 } & \textbf{ 0.179 } & \textbf{ 0.159 } & \textbf{ 0.170 } & \textbf{ 0.190 } & \textbf{ 0.209 } & \textbf{ 0.205 } & \textbf{ 0.156 } \\ 
   FIML-C w/ SSC V6 & 0.003 & 0.005 & 0.008 & 0.011 & 0.012 & 0.003 & 0.005 & 0.007 & 0.011 & 0.013 & 0.002 & 0.004 & 0.007 & 0.011 & 0.015 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                   four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_sd.rmsea.fc0}
@@ -630,16 +630,16 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.005 & \textbf{ 0.057 } & \textbf{ 0.038 } & 0.007 & 0.006 & 0.005 & \textbf{ 0.039 } & \textbf{ 0.035 } & 0.007 & 0.006 & 0.005 & \textbf{ 0.087 } & \textbf{ 0.021 } \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.006 & 0.005 & 0.005 & 0.004 & 0.008 & 0.006 & 0.005 & 0.005 & 0.004 & 0.008 & 0.006 & 0.005 & 0.005 & 0.004 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                   four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_sd.cfi.fc0}
@@ -679,16 +679,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.153 } & \textbf{ 0.225 } & \textbf{ 0.165 } & \textbf{ 0.161 } & \textbf{ 0.160 } & \textbf{ 0.162 } & \textbf{ 0.218 } & \textbf{ 0.177 } & \textbf{ 0.176 } & \textbf{ 0.159 } & \textbf{ 0.140 } & \textbf{ 0.201 } & \textbf{ 0.145 } & \textbf{ 0.153 } & \textbf{ 0.146 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.005 & 0.008 & 0.011 & 0.011 & 0.002 & 0.005 & 0.008 & 0.011 & 0.012 & 0.002 & 0.004 & 0.008 & 0.011 & 0.012 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                   four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_sd.rmsea.fc0}
@@ -728,16 +728,16 @@
   FIML-C w/ SSC V5 & 0.008 & 0.009 & 0.006 & \textbf{ 0.052 } & \textbf{ 0.049 } & 0.008 & 0.009 & 0.006 & \textbf{ 0.042 } & \textbf{ 0.074 } & 0.009 & 0.008 & 0.006 & \textbf{ 0.045 } & \textbf{ 0.038 } \\ 
   FIML-C w/ SSC V6 & 0.009 & 0.009 & 0.007 & 0.007 & 0.005 & 0.009 & 0.008 & 0.006 & 0.006 & 0.005 & 0.009 & 0.008 & 0.007 & 0.007 & 0.006 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                   four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_sd.cfi.fc0}
@@ -777,16 +777,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.165 } & \textbf{ 0.218 } & \textbf{ 0.198 } & \textbf{ 0.168 } & \textbf{ 0.169 } & \textbf{ 0.150 } & \textbf{ 0.220 } & \textbf{ 0.178 } & \textbf{ 0.187 } & \textbf{ 0.174 } & \textbf{ 0.170 } & \textbf{ 0.218 } & \textbf{ 0.161 } & \textbf{ 0.175 } & \textbf{ 0.176 } \\ 
   FIML-C w/ SSC V6 & 0.003 & 0.006 & 0.010 & 0.015 & 0.014 & 0.003 & 0.006 & 0.010 & 0.014 & 0.014 & 0.002 & 0.005 & 0.010 & 0.013 & 0.016 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                   two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_sd.rmsea.fc0}
@@ -826,16 +826,16 @@
   FIML-C w/ SSC V5 & 0.007 & 0.008 & 0.005 & 0.005 & 0.005 & 0.007 & 0.008 & 0.005 & 0.005 & 0.005 & 0.007 & 0.008 & 0.005 & 0.005 & 0.005 \\ 
   FIML-C w/ SSC V6 & 0.007 & 0.008 & 0.005 & 0.005 & 0.005 & 0.007 & 0.008 & 0.005 & 0.005 & 0.005 & 0.007 & 0.007 & 0.005 & 0.005 & 0.005 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                   two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_sd.cfi.fc0}
@@ -875,16 +875,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.150 } & \textbf{ 0.193 } & \textbf{ 0.195 } & \textbf{ 0.188 } & \textbf{ 0.181 } & \textbf{ 0.174 } & \textbf{ 0.223 } & \textbf{ 0.193 } & \textbf{ 0.156 } & \textbf{ 0.179 } & \textbf{ 0.122 } & \textbf{ 0.186 } & \textbf{ 0.180 } & \textbf{ 0.180 } & \textbf{ 0.167 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.003 & 0.005 & 0.008 & 0.009 & 0.002 & 0.003 & 0.006 & 0.008 & 0.009 & 0.002 & 0.003 & 0.005 & 0.008 & 0.010 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                   two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_sd.rmsea.fc0}
@@ -924,16 +924,16 @@
   FIML-C w/ SSC V5 & 0.008 & 0.009 & 0.006 & 0.005 & 0.005 & 0.008 & 0.009 & 0.006 & 0.005 & 0.005 & 0.008 & 0.009 & 0.006 & 0.005 & 0.006 \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.009 & 0.006 & 0.005 & 0.005 & 0.008 & 0.009 & 0.006 & 0.005 & 0.005 & 0.008 & 0.008 & 0.006 & 0.005 & 0.006 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                   two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_sd.cfi.fc0}
@@ -973,16 +973,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.136 } & \textbf{ 0.195 } & \textbf{ 0.195 } & \textbf{ 0.197 } & \textbf{ 0.182 } & \textbf{ 0.153 } & \textbf{ 0.206 } & \textbf{ 0.201 } & \textbf{ 0.215 } & \textbf{ 0.187 } & \textbf{ 0.122 } & \textbf{ 0.204 } & \textbf{ 0.210 } & \textbf{ 0.160 } & \textbf{ 0.173 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.004 & 0.006 & 0.008 & 0.009 & 0.002 & 0.004 & 0.006 & 0.008 & 0.009 & 0.002 & 0.004 & 0.006 & 0.008 & 0.010 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                   two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_sd.rmsea.fc0}
@@ -1022,16 +1022,16 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.005 & \textbf{ 0.045 } & \textbf{ 0.044 } & 0.007 & 0.006 & 0.005 & \textbf{ 0.031 } & \textbf{ 0.026 } & 0.007 & 0.006 & 0.005 & \textbf{ 0.035 } & 0.014 \\ 
   FIML-C w/ SSC V6 & 0.007 & 0.006 & 0.005 & 0.005 & 0.004 & 0.007 & 0.006 & 0.005 & 0.005 & 0.004 & 0.007 & 0.006 & 0.005 & 0.005 & 0.004 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                   two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_sd.cfi.fc0}
@@ -1071,16 +1071,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.150 } & \textbf{ 0.198 } & \textbf{ 0.157 } & \textbf{ 0.167 } & \textbf{ 0.162 } & \textbf{ 0.174 } & \textbf{ 0.201 } & \textbf{ 0.193 } & \textbf{ 0.168 } & \textbf{ 0.153 } & \textbf{ 0.122 } & \textbf{ 0.155 } & \textbf{ 0.165 } & \textbf{ 0.171 } & \textbf{ 0.131 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.005 & 0.007 & 0.011 & 0.010 & 0.002 & 0.004 & 0.007 & 0.010 & 0.010 & 0.002 & 0.004 & 0.007 & 0.010 & 0.011 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                   two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_sd.rmsea.fc0}
@@ -1120,16 +1120,16 @@
   FIML-C w/ SSC V5 & 0.008 & 0.006 & 0.005 & \textbf{ 0.024 } & \textbf{ 0.034 } & 0.008 & 0.007 & 0.005 & \textbf{ 0.047 } & \textbf{ 0.024 } & 0.008 & 0.007 & 0.005 & \textbf{ 0.035 } & 0.018 \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.006 & 0.005 & 0.005 & 0.004 & 0.008 & 0.007 & 0.005 & 0.004 & 0.004 & 0.008 & 0.006 & 0.005 & 0.005 & 0.004 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                   two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_sd.cfi.fc0}
@@ -1169,16 +1169,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.136 } & \textbf{ 0.179 } & \textbf{ 0.194 } & \textbf{ 0.161 } & \textbf{ 0.175 } & \textbf{ 0.153 } & \textbf{ 0.210 } & \textbf{ 0.138 } & \textbf{ 0.168 } & \textbf{ 0.158 } & \textbf{ 0.122 } & \textbf{ 0.199 } & \textbf{ 0.167 } & \textbf{ 0.162 } & \textbf{ 0.131 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.005 & 0.008 & 0.011 & 0.011 & 0.002 & 0.005 & 0.008 & 0.010 & 0.011 & 0.002 & 0.004 & 0.007 & 0.010 & 0.012 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                   four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_sd.rmsea.fc0}
@@ -1218,16 +1218,16 @@
   FIML-C w/ SSC V5 & 0.007 & 0.008 & 0.005 & 0.005 & 0.005 & 0.007 & 0.008 & 0.005 & 0.005 & 0.005 & 0.007 & 0.008 & 0.005 & 0.005 & 0.005 \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.008 & 0.005 & 0.005 & 0.005 & 0.008 & 0.008 & 0.005 & 0.005 & 0.005 & 0.008 & 0.007 & 0.005 & 0.005 & 0.005 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                   four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_sd.cfi.fc0}
@@ -1267,16 +1267,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.153 } & \textbf{ 0.211 } & \textbf{ 0.202 } & \textbf{ 0.188 } & \textbf{ 0.183 } & \textbf{ 0.162 } & \textbf{ 0.217 } & \textbf{ 0.211 } & \textbf{ 0.173 } & \textbf{ 0.173 } & \textbf{ 0.140 } & \textbf{ 0.216 } & \textbf{ 0.173 } & \textbf{ 0.198 } & \textbf{ 0.163 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.003 & 0.005 & 0.008 & 0.009 & 0.002 & 0.003 & 0.005 & 0.008 & 0.009 & 0.002 & 0.003 & 0.005 & 0.008 & 0.010 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:09 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                   four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_sd.rmsea.fc0}
@@ -1316,16 +1316,16 @@
   FIML-C w/ SSC V5 & 0.008 & 0.010 & 0.006 & 0.006 & 0.005 & 0.008 & 0.010 & 0.006 & 0.006 & 0.005 & 0.009 & 0.010 & 0.006 & 0.005 & 0.006 \\ 
   FIML-C w/ SSC V6 & 0.009 & 0.010 & 0.006 & 0.006 & 0.005 & 0.009 & 0.010 & 0.006 & 0.006 & 0.005 & 0.009 & 0.009 & 0.006 & 0.006 & 0.006 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:10 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                   four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_sd.cfi.fc0}
@@ -1365,16 +1365,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.165 } & \textbf{ 0.215 } & \textbf{ 0.217 } & \textbf{ 0.206 } & \textbf{ 0.200 } & \textbf{ 0.150 } & \textbf{ 0.202 } & \textbf{ 0.206 } & \textbf{ 0.198 } & \textbf{ 0.204 } & \textbf{ 0.170 } & \textbf{ 0.214 } & \textbf{ 0.186 } & \textbf{ 0.195 } & \textbf{ 0.184 } \\ 
   FIML-C w/ SSC V6 & 0.003 & 0.004 & 0.006 & 0.008 & 0.009 & 0.003 & 0.004 & 0.006 & 0.008 & 0.009 & 0.002 & 0.004 & 0.006 & 0.008 & 0.011 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:10 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                   four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_sd.rmsea.fc0}
@@ -1414,16 +1414,16 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.005 & \textbf{ 0.031 } & \textbf{ 0.023 } & 0.007 & 0.006 & 0.005 & \textbf{ 0.126 } & \textbf{ 0.029 } & 0.007 & 0.006 & 0.005 & \textbf{ 0.050 } & 0.014 \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.006 & 0.005 & 0.005 & 0.004 & 0.008 & 0.006 & 0.005 & 0.005 & 0.004 & 0.008 & 0.006 & 0.005 & 0.004 & 0.004 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:10 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                   four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_sd.cfi.fc0}
@@ -1463,16 +1463,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.153 } & \textbf{ 0.211 } & \textbf{ 0.166 } & \textbf{ 0.185 } & \textbf{ 0.150 } & \textbf{ 0.162 } & \textbf{ 0.201 } & \textbf{ 0.193 } & \textbf{ 0.153 } & \textbf{ 0.150 } & \textbf{ 0.140 } & \textbf{ 0.195 } & \textbf{ 0.175 } & \textbf{ 0.170 } & \textbf{ 0.138 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.004 & 0.007 & 0.011 & 0.010 & 0.002 & 0.004 & 0.007 & 0.011 & 0.011 & 0.002 & 0.004 & 0.007 & 0.010 & 0.011 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:10 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                   four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_sd.rmsea.fc0}
@@ -1512,16 +1512,16 @@
   FIML-C w/ SSC V5 & 0.008 & 0.007 & 0.005 & \textbf{ 0.120 } & \textbf{ 0.038 } & 0.008 & 0.007 & 0.005 & \textbf{ 0.071 } & \textbf{ 0.032 } & 0.009 & 0.007 & 0.005 & \textbf{ 0.096 } & \textbf{ 0.046 } \\ 
   FIML-C w/ SSC V6 & 0.009 & 0.007 & 0.005 & 0.005 & 0.004 & 0.009 & 0.007 & 0.005 & 0.005 & 0.004 & 0.009 & 0.007 & 0.005 & 0.005 & 0.004 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:10 2020
 \begin{sidewaystable}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                   four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_sd.cfi.fc0}
@@ -1561,16 +1561,16 @@
   FIML-C w/ SSC V5 & \textbf{ 0.165 } & \textbf{ 0.211 } & \textbf{ 0.188 } & \textbf{ 0.183 } & \textbf{ 0.183 } & \textbf{ 0.150 } & \textbf{ 0.205 } & \textbf{ 0.195 } & \textbf{ 0.179 } & \textbf{ 0.168 } & \textbf{ 0.170 } & \textbf{ 0.192 } & \textbf{ 0.201 } & \textbf{ 0.179 } & \textbf{ 0.172 } \\ 
   FIML-C w/ SSC V6 & 0.003 & 0.005 & 0.008 & 0.011 & 0.011 & 0.003 & 0.005 & 0.008 & 0.011 & 0.011 & 0.002 & 0.005 & 0.007 & 0.010 & 0.012 \\ 
    \hline 
- \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; CR=Correlated Residual;}} \\
  \multicolumn{16}{l}{\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{sidewaystable}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1607,17 +1607,17 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.007 & 0.015 & \textbf{ 0.054 } \\ 
   FIML-C w/ SSC V6 & 0.007 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:52 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1654,17 +1654,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.143 } & \textbf{ 0.194 } & \textbf{ 0.202 } & \textbf{ 0.213 } & \textbf{ 0.213 } & \textbf{ 0.201 } & \textbf{ 0.226 } & \textbf{ 0.234 } & \textbf{ 0.254 } \\ 
   FIML-C w/ SSC V6 & 0.001 & 0.005 & 0.010 & 0.015 & 0.018 & 0.022 & 0.024 & 0.024 & 0.022 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1701,17 +1701,17 @@
   FIML-C w/ SSC V5 & 0.008 & 0.006 & 0.006 & 0.007 & 0.006 & 0.006 & 0.010 & \textbf{ 0.029 } & \textbf{ 0.075 } \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.006 & 0.006 & 0.007 & 0.007 & 0.007 & 0.007 & 0.007 & 0.006 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1748,17 +1748,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.147 } & \textbf{ 0.208 } & \textbf{ 0.210 } & \textbf{ 0.228 } & \textbf{ 0.227 } & \textbf{ 0.215 } & \textbf{ 0.212 } & \textbf{ 0.238 } & \textbf{ 0.263 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.006 & 0.011 & 0.016 & 0.020 & 0.023 & 0.026 & 0.024 & 0.023 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1795,17 +1795,17 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & \textbf{ 0.020 } & \textbf{ 0.115 } \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.006 & 0.006 & 0.006 & 0.006 & 0.007 & 0.007 & 0.006 & 0.006 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1842,17 +1842,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.143 } & \textbf{ 0.229 } & \textbf{ 0.223 } & \textbf{ 0.230 } & \textbf{ 0.230 } & \textbf{ 0.230 } & \textbf{ 0.224 } & \textbf{ 0.238 } & \textbf{ 0.263 } \\ 
   FIML-C w/ SSC V6 & 0.001 & 0.006 & 0.010 & 0.015 & 0.019 & 0.023 & 0.025 & 0.024 & 0.023 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1889,17 +1889,17 @@
   FIML-C w/ SSC V5 & 0.008 & 0.007 & 0.007 & 0.007 & 0.007 & 0.007 & \textbf{ 0.021 } & \textbf{ 0.057 } & \textbf{ 0.200 } \\ 
   FIML-C w/ SSC V6 & 0.009 & 0.007 & 0.007 & 0.007 & 0.007 & 0.008 & 0.008 & 0.007 & 0.007 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1936,17 +1936,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.147 } & \textbf{ 0.238 } & \textbf{ 0.247 } & \textbf{ 0.244 } & \textbf{ 0.224 } & \textbf{ 0.256 } & \textbf{ 0.242 } & \textbf{ 0.273 } & \textbf{ 0.301 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.007 & 0.012 & 0.018 & 0.023 & 0.026 & 0.027 & 0.026 & 0.026 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1983,17 +1983,17 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.006 & 0.006 & 0.007 & 0.007 & 0.006 & \textbf{ 0.024 } & \textbf{ 0.074 } \\ 
   FIML-C w/ SSC V6 & 0.007 & 0.006 & 0.006 & 0.006 & 0.007 & 0.007 & 0.007 & 0.007 & 0.006 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2030,17 +2030,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.150 } & \textbf{ 0.231 } & \textbf{ 0.218 } & \textbf{ 0.217 } & \textbf{ 0.234 } & \textbf{ 0.224 } & \textbf{ 0.234 } & \textbf{ 0.242 } & \textbf{ 0.275 } \\ 
   FIML-C w/ SSC V6 & 0.001 & 0.006 & 0.011 & 0.015 & 0.020 & 0.023 & 0.026 & 0.026 & 0.023 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2077,17 +2077,17 @@
   FIML-C w/ SSC V5 & 0.009 & 0.009 & 0.008 & 0.008 & 0.008 & 0.011 & 0.014 & \textbf{ 0.048 } & \textbf{ 0.122 } \\ 
   FIML-C w/ SSC V6 & 0.010 & 0.008 & 0.008 & 0.008 & 0.009 & 0.009 & 0.009 & 0.009 & 0.008 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2124,17 +2124,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.140 } & \textbf{ 0.265 } & \textbf{ 0.232 } & \textbf{ 0.259 } & \textbf{ 0.252 } & \textbf{ 0.262 } & \textbf{ 0.263 } & \textbf{ 0.279 } & \textbf{ 0.314 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.008 & 0.014 & 0.020 & 0.027 & \textbf{ 0.031 } & \textbf{ 0.032 } & \textbf{ 0.032 } & 0.029 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2171,17 +2171,17 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.016 & \textbf{ 0.051 } \\ 
   FIML-C w/ SSC V6 & 0.007 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2218,17 +2218,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.133 } & \textbf{ 0.213 } & \textbf{ 0.208 } & \textbf{ 0.202 } & \textbf{ 0.229 } & \textbf{ 0.219 } & \textbf{ 0.226 } & \textbf{ 0.216 } & \textbf{ 0.247 } \\ 
   FIML-C w/ SSC V6 & 0.001 & 0.005 & 0.010 & 0.014 & 0.018 & 0.021 & 0.023 & 0.025 & 0.022 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2265,17 +2265,17 @@
   FIML-C w/ SSC V5 & 0.008 & 0.007 & 0.006 & 0.006 & 0.006 & 0.006 & 0.007 & 0.019 & \textbf{ 0.067 } \\ 
   FIML-C w/ SSC V6 & 0.009 & 0.007 & 0.006 & 0.006 & 0.007 & 0.007 & 0.007 & 0.007 & 0.006 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2312,17 +2312,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.125 } & \textbf{ 0.181 } & \textbf{ 0.200 } & \textbf{ 0.213 } & \textbf{ 0.202 } & \textbf{ 0.213 } & \textbf{ 0.210 } & \textbf{ 0.209 } & \textbf{ 0.242 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.006 & 0.011 & 0.015 & 0.020 & 0.024 & 0.025 & 0.025 & 0.023 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2359,17 +2359,17 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.010 & \textbf{ 0.093 } \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2406,17 +2406,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.153 } & \textbf{ 0.163 } & \textbf{ 0.217 } & \textbf{ 0.209 } & \textbf{ 0.200 } & \textbf{ 0.208 } & \textbf{ 0.203 } & \textbf{ 0.205 } & \textbf{ 0.225 } \\ 
   FIML-C w/ SSC V6 & 0.001 & 0.005 & 0.010 & 0.015 & 0.020 & 0.023 & 0.024 & 0.025 & 0.023 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2453,17 +2453,17 @@
   FIML-C w/ SSC V5 & 0.010 & 0.008 & 0.007 & 0.007 & 0.007 & 0.007 & 0.007 & \textbf{ 0.027 } & \textbf{ 0.037 } \\ 
   FIML-C w/ SSC V6 & 0.010 & 0.008 & 0.007 & 0.007 & 0.007 & 0.007 & 0.007 & 0.007 & 0.007 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2500,17 +2500,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.133 } & \textbf{ 0.209 } & \textbf{ 0.184 } & \textbf{ 0.178 } & \textbf{ 0.205 } & \textbf{ 0.202 } & \textbf{ 0.194 } & \textbf{ 0.194 } & \textbf{ 0.208 } \\ 
   FIML-C w/ SSC V6 & 0.003 & 0.007 & 0.012 & 0.018 & 0.022 & 0.025 & 0.026 & 0.025 & 0.024 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2547,17 +2547,17 @@
   FIML-C w/ SSC V5 & 0.007 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.006 & 0.011 & \textbf{ 0.029 } \\ 
   FIML-C w/ SSC V6 & 0.008 & 0.006 & 0.006 & 0.006 & 0.006 & 0.007 & 0.007 & 0.006 & 0.006 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2594,17 +2594,17 @@
   FIML-C w/ SSC V5 & \textbf{ 0.122 } & \textbf{ 0.205 } & \textbf{ 0.188 } & \textbf{ 0.199 } & \textbf{ 0.189 } & \textbf{ 0.213 } & \textbf{ 0.201 } & \textbf{ 0.186 } & \textbf{ 0.217 } \\ 
   FIML-C w/ SSC V6 & 0.002 & 0.006 & 0.010 & 0.015 & 0.020 & 0.023 & 0.024 & 0.024 & 0.022 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_sd.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2641,17 +2641,17 @@
   FIML-C w/ SSC V5 & 0.011 & 0.010 & 0.008 & 0.008 & 0.008 & 0.008 & 0.008 & 0.007 & 0.014 \\ 
   FIML-C w/ SSC V6 & 0.012 & 0.010 & 0.008 & 0.009 & 0.008 & 0.008 & 0.008 & 0.008 & 0.008 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.02.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:26:53 2020
+% Sat May 30 23:07:10 2020
 \begin{table}[ht]
 \centering
-\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Empirical Standard Error of the Estimate of  CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_sd.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -2688,7 +2688,7 @@
   FIML-C w/ SSC V5 & \textbf{ 0.104 } & \textbf{ 0.153 } & \textbf{ 0.161 } & \textbf{ 0.142 } & \textbf{ 0.167 } & \textbf{ 0.159 } & \textbf{ 0.182 } & \textbf{ 0.161 } & \textbf{ 0.162 } \\ 
   FIML-C w/ SSC V6 & 0.004 & 0.009 & 0.015 & 0.021 & 0.024 & 0.028 & 0.028 & 0.028 & 0.026 \\ 
    \hline 
- \multicolumn{10}{l}{\footnotesize{Bold values are those with raw bias beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
+ \multicolumn{10}{l}{\footnotesize{Bold values are those with standard errors beyond $\pm 0.03.$FIML=Full information maximum likelihood;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C=FIML-Corrected; FC=Factor correlation; SSC=Small sample correction;}} \\
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
