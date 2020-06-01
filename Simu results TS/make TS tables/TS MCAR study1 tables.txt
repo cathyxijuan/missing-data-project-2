@@ -1,0 +1,1142 @@
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: compete data.} 
+\label{fitMCAR_0PerMiss_1CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & -0.001 & -0.001 & -0.000 & 0.000 & \textbf{ 0.014 } & 0.000 & -0.001 & 0.000 & -0.000 & \textbf{ 0.016 } & 0.000 & -0.002 & -0.002 & -0.001 \\ 
+  TS w/o SSC & \textbf{ 0.015 } & -0.001 & -0.001 & -0.000 & 0.000 & \textbf{ 0.014 } & 0.000 & -0.001 & 0.000 & -0.000 & \textbf{ 0.016 } & 0.000 & -0.002 & -0.002 & -0.001 \\ 
+  TS w/ SSC V1 & \textbf{ 0.012 } & -0.005 & -0.006 & -0.005 & -0.004 & \textbf{ 0.011 } & -0.004 & -0.006 & -0.004 & -0.004 & \textbf{ 0.011 } & -0.005 & -0.007 & -0.005 & -0.005 \\ 
+  TS w/ SSC V2 & \textbf{ 0.015 } & -0.001 & -0.001 & -0.000 & 0.000 & \textbf{ 0.015 } & -0.000 & -0.001 & 0.000 & -0.000 & \textbf{ 0.016 } & 0.000 & -0.002 & -0.002 & -0.001 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.002 & -0.001 & -0.001 & -0.001 & 0.008 & -0.003 & -0.001 & -0.001 & -0.000 & 0.009 & -0.003 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/o SSC & 0.009 & -0.002 & -0.001 & -0.001 & -0.001 & 0.008 & -0.003 & -0.001 & -0.001 & -0.000 & 0.009 & -0.003 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/ SSC V1 & 0.008 & -0.003 & -0.002 & -0.002 & -0.002 & 0.007 & -0.004 & -0.002 & -0.002 & -0.002 & 0.007 & -0.004 & -0.002 & -0.002 & -0.002 \\ 
+  TS w/ SSC V2 & 0.009 & -0.002 & -0.001 & -0.001 & -0.001 & 0.008 & -0.003 & -0.001 & -0.001 & -0.000 & 0.009 & -0.003 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.002 & -0.001 & -0.000 & -0.000 & 0.006 & -0.002 & -0.001 & -0.000 & -0.000 & 0.005 & -0.001 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/o SSC & 0.006 & -0.002 & -0.001 & -0.000 & -0.000 & 0.006 & -0.002 & -0.001 & -0.000 & -0.000 & 0.005 & -0.001 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/ SSC V1 & 0.005 & -0.002 & -0.001 & -0.001 & -0.001 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 & 0.005 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/ SSC V2 & 0.006 & -0.002 & -0.001 & -0.000 & -0.000 & 0.006 & -0.002 & -0.001 & -0.000 & -0.000 & 0.005 & -0.001 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: compete data.} 
+\label{fitMCAR_0PerMiss_1CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.003 & -0.002 & -0.001 & -0.002 & -0.006 & -0.004 & -0.002 & -0.002 & -0.001 & -0.005 & -0.004 & -0.001 & 0.000 & 0.000 \\ 
+  TS w/o SSC & -0.006 & -0.003 & -0.002 & -0.001 & -0.002 & -0.006 & -0.004 & -0.002 & -0.002 & -0.001 & -0.005 & -0.004 & -0.001 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & -0.005 & -0.002 & 0.001 & 0.001 & 0.001 & -0.004 & -0.002 & 0.001 & 0.001 & 0.002 & -0.003 & -0.001 & 0.003 & 0.006 & 0.007 \\ 
+  TS w/ SSC V2 & -0.006 & -0.003 & -0.002 & -0.001 & -0.002 & -0.006 & -0.004 & -0.002 & -0.002 & -0.001 & -0.005 & -0.004 & -0.001 & 0.000 & 0.000 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & -0.001 & -0.000 & 0.000 & 0.001 & -0.002 & -0.000 & 0.000 & 0.000 & 0.000 & -0.002 & -0.000 & 0.000 & 0.001 & 0.001 \\ 
+  TS w/o SSC & -0.002 & -0.001 & -0.000 & 0.000 & 0.001 & -0.002 & -0.000 & 0.000 & 0.000 & 0.000 & -0.002 & -0.000 & 0.000 & 0.001 & 0.001 \\ 
+  TS w/ SSC V1 & -0.002 & -0.000 & 0.000 & 0.001 & 0.001 & -0.002 & 0.000 & 0.001 & 0.001 & 0.001 & -0.002 & 0.000 & 0.001 & 0.002 & 0.003 \\ 
+  TS w/ SSC V2 & -0.002 & -0.001 & -0.000 & 0.000 & 0.001 & -0.002 & -0.000 & 0.000 & 0.000 & 0.000 & -0.002 & -0.000 & 0.000 & 0.001 & 0.001 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & 0.000 & 0.000 & 0.001 \\ 
+  TS w/o SSC & -0.001 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & 0.000 & 0.000 & 0.001 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.001 & 0.001 & 0.000 & -0.001 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & 0.001 & 0.001 & 0.002 \\ 
+  TS w/ SSC V2 & -0.001 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & 0.000 & 0.000 & 0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/o SSC & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            two variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & 0.000 & -0.006 & -0.006 & -0.007 & \textbf{ 0.017 } & -0.001 & -0.007 & -0.007 & -0.006 & \textbf{ 0.015 } & -0.001 & -0.007 & -0.008 & -0.009 \\ 
+  TS w/o SSC & \textbf{ 0.022 } & 0.009 & 0.003 & 0.003 & 0.002 & \textbf{ 0.024 } & 0.007 & 0.003 & 0.003 & 0.002 & \textbf{ 0.023 } & 0.008 & 0.003 & 0.002 & 0.002 \\ 
+  TS w/ SSC V1 & \textbf{ 0.013 } & -0.001 & -0.007 & -0.005 & -0.006 & \textbf{ 0.014 } & -0.004 & -0.007 & -0.006 & -0.005 & \textbf{ 0.012 } & -0.005 & -0.008 & -0.006 & -0.005 \\ 
+  TS w/ SSC V2 & \textbf{ 0.016 } & 0.002 & -0.002 & 0.000 & -0.001 & \textbf{ 0.018 } & 0.001 & -0.002 & -0.001 & 0.000 & \textbf{ 0.016 } & 0.001 & -0.002 & -0.001 & -0.000 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.008 & -0.004 & -0.005 & -0.007 & -0.006 & 0.008 & -0.004 & -0.005 & -0.007 & -0.007 & 0.009 & -0.005 & -0.005 & -0.008 & -0.009 \\ 
+  TS w/o SSC & \textbf{ 0.013 } & 0.002 & 0.001 & 0.000 & 0.000 & \textbf{ 0.012 } & 0.002 & 0.001 & 0.001 & 0.000 & \textbf{ 0.013 } & 0.001 & 0.001 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.008 & -0.004 & -0.002 & -0.003 & -0.002 & 0.007 & -0.003 & -0.002 & -0.002 & -0.002 & 0.008 & -0.004 & -0.002 & -0.002 & -0.002 \\ 
+  TS w/ SSC V2 & 0.009 & -0.003 & -0.001 & -0.001 & -0.001 & 0.008 & -0.002 & -0.001 & -0.001 & -0.001 & 0.009 & -0.002 & -0.001 & -0.001 & -0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.004 & -0.005 & -0.006 & -0.006 & 0.006 & -0.004 & -0.005 & -0.007 & -0.007 & 0.006 & -0.004 & -0.005 & -0.008 & -0.009 \\ 
+  TS w/o SSC & 0.009 & 0.001 & 0.000 & 0.000 & 0.000 & 0.009 & 0.001 & 0.000 & -0.000 & -0.000 & 0.008 & 0.001 & 0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 & 0.006 & -0.002 & -0.002 & -0.002 & -0.002 & 0.005 & -0.002 & -0.001 & -0.002 & -0.001 \\ 
+  TS w/ SSC V2 & 0.006 & -0.001 & -0.001 & -0.000 & -0.000 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.002 & -0.004 & -0.006 & -0.006 & 0.000 & -0.002 & -0.004 & -0.006 & -0.006 & 0.000 & -0.002 & -0.005 & -0.008 & -0.008 \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            two variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.004 & 0.001 & 0.003 & 0.004 & -0.007 & -0.004 & 0.001 & 0.005 & 0.003 & -0.006 & -0.003 & 0.002 & 0.007 & 0.008 \\ 
+  TS w/o SSC & \textbf{ -0.010 } & -0.010 & -0.006 & -0.007 & -0.004 & \textbf{ -0.011 } & -0.009 & -0.007 & -0.005 & -0.005 & -0.009 & -0.008 & -0.006 & -0.005 & -0.004 \\ 
+  TS w/ SSC V1 & -0.005 & -0.004 & 0.001 & 0.002 & 0.004 & -0.006 & -0.003 & 0.002 & 0.004 & 0.003 & -0.004 & -0.001 & 0.004 & 0.006 & 0.009 \\ 
+  TS w/ SSC V2 & -0.007 & -0.006 & -0.002 & -0.003 & -0.000 & -0.008 & -0.005 & -0.002 & -0.001 & -0.002 & -0.006 & -0.004 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & 0.000 & 0.003 & 0.006 & 0.004 & -0.002 & -0.000 & 0.003 & 0.006 & 0.005 & -0.002 & 0.000 & 0.003 & 0.008 & 0.008 \\ 
+  TS w/o SSC & -0.003 & -0.002 & -0.002 & -0.001 & -0.001 & -0.003 & -0.003 & -0.002 & -0.002 & -0.001 & -0.003 & -0.002 & -0.002 & -0.001 & -0.002 \\ 
+  TS w/ SSC V1 & -0.002 & -0.000 & 0.001 & 0.002 & 0.001 & -0.002 & -0.000 & 0.001 & 0.002 & 0.002 & -0.002 & 0.000 & 0.001 & 0.003 & 0.003 \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & -0.000 & 0.000 & 0.000 & -0.002 & -0.001 & -0.000 & 0.000 & 0.001 & -0.002 & -0.001 & -0.000 & 0.000 & -0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.001 & 0.003 & 0.006 & 0.004 & -0.001 & 0.001 & 0.004 & 0.007 & 0.006 & -0.001 & 0.001 & 0.004 & 0.009 & 0.009 \\ 
+  TS w/o SSC & -0.002 & -0.001 & -0.001 & -0.001 & -0.001 & -0.002 & -0.001 & -0.000 & -0.000 & 0.000 & -0.001 & -0.001 & -0.001 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.000 & 0.001 & 0.000 & -0.001 & 0.000 & 0.001 & 0.001 & 0.002 & -0.001 & 0.000 & 0.001 & 0.002 & 0.003 \\ 
+  TS w/ SSC V2 & -0.001 & -0.000 & 0.000 & 0.000 & -0.000 & -0.001 & 0.000 & 0.001 & 0.001 & 0.001 & -0.001 & 0.000 & 0.000 & 0.001 & 0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.001 & 0.003 & 0.006 & 0.004 & 0.000 & 0.001 & 0.003 & 0.006 & 0.005 & 0.000 & 0.001 & 0.004 & 0.008 & 0.008 \\ 
+  TS w/o SSC & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            two variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & -0.002 & \textbf{ -0.013 } & \textbf{ -0.018 } & \textbf{ -0.018 } & \textbf{ 0.016 } & -0.002 & \textbf{ -0.013 } & \textbf{ -0.019 } & \textbf{ -0.020 } & \textbf{ 0.017 } & -0.002 & \textbf{ -0.015 } & \textbf{ -0.022 } & \textbf{ -0.027 } \\ 
+  TS w/o SSC & \textbf{ 0.043 } & \textbf{ 0.027 } & \textbf{ 0.017 } & \textbf{ 0.013 } & 0.010 & \textbf{ 0.045 } & \textbf{ 0.028 } & \textbf{ 0.018 } & \textbf{ 0.012 } & 0.009 & \textbf{ 0.046 } & \textbf{ 0.028 } & \textbf{ 0.016 } & \textbf{ 0.011 } & 0.007 \\ 
+  TS w/ SSC V1 & \textbf{ 0.017 } & 0.001 & -0.008 & -0.009 & -0.007 & \textbf{ 0.019 } & 0.000 & -0.007 & -0.008 & -0.008 & \textbf{ 0.018 } & -0.001 & -0.009 & -0.009 & -0.009 \\ 
+  TS w/ SSC V2 & \textbf{ 0.019 } & 0.005 & -0.001 & -0.000 & 0.000 & \textbf{ 0.021 } & 0.004 & -0.000 & -0.000 & -0.000 & \textbf{ 0.022 } & 0.005 & -0.002 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.007 & \textbf{ -0.014 } & \textbf{ -0.018 } & \textbf{ -0.019 } & 0.008 & -0.008 & \textbf{ -0.014 } & \textbf{ -0.019 } & \textbf{ -0.020 } & 0.009 & -0.008 & \textbf{ -0.015 } & \textbf{ -0.022 } & \textbf{ -0.026 } \\ 
+  TS w/o SSC & \textbf{ 0.026 } & \textbf{ 0.012 } & 0.006 & 0.004 & 0.003 & \textbf{ 0.025 } & \textbf{ 0.012 } & 0.007 & 0.004 & 0.003 & \textbf{ 0.026 } & \textbf{ 0.011 } & 0.006 & 0.004 & 0.002 \\ 
+  TS w/ SSC V1 & \textbf{ 0.011 } & -0.003 & -0.004 & -0.004 & -0.003 & 0.010 & -0.004 & -0.003 & -0.004 & -0.003 & 0.009 & -0.004 & -0.003 & -0.004 & -0.004 \\ 
+  TS w/ SSC V2 & \textbf{ 0.011 } & -0.001 & -0.001 & -0.001 & -0.001 & \textbf{ 0.011 } & -0.002 & -0.001 & -0.001 & -0.001 & \textbf{ 0.011 } & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.008 & \textbf{ -0.013 } & \textbf{ -0.018 } & \textbf{ -0.019 } & 0.006 & -0.008 & \textbf{ -0.013 } & \textbf{ -0.019 } & \textbf{ -0.020 } & 0.006 & -0.008 & \textbf{ -0.014 } & \textbf{ -0.022 } & \textbf{ -0.026 } \\ 
+  TS w/o SSC & \textbf{ 0.017 } & 0.006 & 0.003 & 0.002 & 0.001 & \textbf{ 0.017 } & 0.006 & 0.003 & 0.002 & 0.002 & \textbf{ 0.017 } & 0.006 & 0.003 & 0.001 & 0.001 \\ 
+  TS w/ SSC V1 & 0.007 & -0.003 & -0.002 & -0.002 & -0.002 & 0.007 & -0.003 & -0.002 & -0.002 & -0.002 & 0.006 & -0.003 & -0.002 & -0.002 & -0.003 \\ 
+  TS w/ SSC V2 & 0.007 & -0.002 & -0.001 & -0.001 & -0.001 & 0.007 & -0.002 & -0.001 & -0.001 & -0.000 & 0.007 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.006 & \textbf{ -0.012 } & \textbf{ -0.017 } & \textbf{ -0.018 } & 0.000 & -0.006 & \textbf{ -0.013 } & \textbf{ -0.018 } & \textbf{ -0.020 } & 0.000 & -0.007 & \textbf{ -0.014 } & \textbf{ -0.022 } & \textbf{ -0.025 } \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            two variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.007 & -0.004 & 0.005 & \textbf{ 0.015 } & \textbf{ 0.015 } & -0.007 & -0.004 & 0.006 & \textbf{ 0.016 } & \textbf{ 0.018 } & -0.007 & -0.004 & 0.007 & \textbf{ 0.021 } & \textbf{ 0.030 } \\ 
+  TS w/o SSC & \textbf{ -0.027 } & \textbf{ -0.027 } & \textbf{ -0.023 } & \textbf{ -0.022 } & \textbf{ -0.017 } & \textbf{ -0.028 } & \textbf{ -0.026 } & \textbf{ -0.024 } & \textbf{ -0.021 } & \textbf{ -0.017 } & \textbf{ -0.026 } & \textbf{ -0.025 } & \textbf{ -0.021 } & \textbf{ -0.019 } & \textbf{ -0.015 } \\ 
+  TS w/ SSC V1 & -0.009 & -0.007 & -0.000 & 0.004 & 0.005 & -0.010 & -0.006 & -0.000 & 0.005 & 0.007 & -0.008 & -0.005 & 0.003 & 0.009 & \textbf{ 0.014 } \\ 
+  TS w/ SSC V2 & -0.010 & -0.009 & -0.005 & -0.004 & -0.003 & \textbf{ -0.011 } & -0.008 & -0.005 & -0.004 & -0.003 & \textbf{ -0.010 } & -0.008 & -0.003 & -0.002 & -0.002 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & 0.001 & 0.009 & \textbf{ 0.018 } & \textbf{ 0.016 } & -0.002 & 0.001 & 0.009 & \textbf{ 0.019 } & \textbf{ 0.019 } & -0.002 & 0.001 & 0.009 & \textbf{ 0.022 } & \textbf{ 0.030 } \\ 
+  TS w/o SSC & -0.010 & -0.009 & -0.008 & -0.007 & -0.006 & -0.009 & -0.009 & -0.009 & -0.006 & -0.006 & -0.008 & -0.008 & -0.007 & -0.006 & -0.005 \\ 
+  TS w/ SSC V1 & -0.003 & -0.001 & 0.001 & 0.004 & 0.003 & -0.003 & -0.001 & 0.001 & 0.004 & 0.004 & -0.002 & -0.000 & 0.002 & 0.004 & 0.007 \\ 
+  TS w/ SSC V2 & -0.003 & -0.002 & -0.000 & 0.000 & -0.000 & -0.003 & -0.001 & -0.001 & 0.001 & -0.000 & -0.003 & -0.001 & -0.000 & 0.000 & -0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.002 & 0.009 & \textbf{ 0.018 } & \textbf{ 0.017 } & -0.001 & 0.002 & 0.009 & \textbf{ 0.019 } & \textbf{ 0.019 } & -0.001 & 0.002 & 0.010 & \textbf{ 0.023 } & \textbf{ 0.030 } \\ 
+  TS w/o SSC & -0.005 & -0.004 & -0.004 & -0.003 & -0.002 & -0.004 & -0.004 & -0.003 & -0.003 & -0.003 & -0.004 & -0.004 & -0.003 & -0.002 & -0.001 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.001 & 0.002 & 0.002 & -0.001 & 0.000 & 0.001 & 0.002 & 0.002 & -0.001 & 0.000 & 0.001 & 0.003 & 0.005 \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & 0.000 & 0.001 & 0.001 & -0.001 & -0.000 & 0.000 & 0.001 & 0.000 & -0.001 & -0.000 & 0.000 & 0.001 & 0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.002 & 0.009 & \textbf{ 0.017 } & \textbf{ 0.017 } & -0.000 & 0.002 & 0.009 & \textbf{ 0.019 } & \textbf{ 0.019 } & 0.000 & 0.002 & 0.010 & \textbf{ 0.023 } & \textbf{ 0.029 } \\ 
+  TS w/o SSC & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            two variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & -0.002 & -0.006 & -0.009 & \textbf{ -0.017 } & \textbf{ 0.017 } & -0.003 & -0.006 & -0.009 & \textbf{ -0.016 } & \textbf{ 0.015 } & -0.003 & -0.005 & -0.008 & \textbf{ -0.016 } \\ 
+  TS w/o SSC & \textbf{ 0.022 } & 0.006 & 0.003 & 0.001 & -0.003 & \textbf{ 0.024 } & 0.005 & 0.003 & 0.001 & -0.003 & \textbf{ 0.023 } & 0.006 & 0.003 & 0.002 & -0.003 \\ 
+  TS w/ SSC V1 & \textbf{ 0.013 } & -0.004 & -0.005 & -0.004 & -0.008 & \textbf{ 0.014 } & -0.006 & -0.005 & -0.005 & -0.007 & \textbf{ 0.012 } & -0.007 & -0.005 & -0.004 & -0.008 \\ 
+  TS w/ SSC V2 & \textbf{ 0.016 } & 0.000 & -0.001 & -0.000 & -0.004 & \textbf{ 0.018 } & -0.001 & -0.001 & -0.001 & -0.004 & \textbf{ 0.016 } & -0.001 & -0.001 & -0.000 & -0.004 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.008 & -0.004 & -0.005 & -0.009 & \textbf{ -0.016 } & 0.008 & -0.004 & -0.005 & -0.009 & \textbf{ -0.016 } & 0.009 & -0.004 & -0.005 & -0.008 & \textbf{ -0.016 } \\ 
+  TS w/o SSC & \textbf{ 0.013 } & 0.001 & 0.001 & -0.000 & -0.002 & \textbf{ 0.012 } & 0.002 & 0.001 & -0.000 & -0.002 & \textbf{ 0.013 } & 0.001 & 0.001 & 0.000 & -0.002 \\ 
+  TS w/ SSC V1 & 0.008 & -0.003 & -0.002 & -0.002 & -0.004 & 0.007 & -0.003 & -0.002 & -0.002 & -0.004 & 0.008 & -0.003 & -0.002 & -0.002 & -0.004 \\ 
+  TS w/ SSC V2 & 0.009 & -0.002 & -0.000 & -0.001 & -0.003 & 0.008 & -0.001 & -0.000 & -0.001 & -0.003 & 0.009 & -0.002 & -0.000 & -0.000 & -0.003 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.003 & -0.005 & -0.009 & \textbf{ -0.016 } & 0.006 & -0.003 & -0.005 & -0.009 & \textbf{ -0.016 } & 0.006 & -0.003 & -0.005 & -0.008 & \textbf{ -0.015 } \\ 
+  TS w/o SSC & 0.009 & 0.001 & 0.000 & -0.000 & -0.002 & 0.009 & 0.001 & 0.000 & -0.000 & -0.002 & 0.008 & 0.001 & 0.000 & -0.000 & -0.002 \\ 
+  TS w/ SSC V1 & 0.006 & -0.001 & -0.001 & -0.001 & -0.003 & 0.006 & -0.001 & -0.001 & -0.001 & -0.003 & 0.005 & -0.001 & -0.001 & -0.001 & -0.003 \\ 
+  TS w/ SSC V2 & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 & 0.006 & -0.001 & -0.000 & -0.001 & -0.002 & 0.006 & -0.001 & -0.000 & -0.001 & -0.002 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.002 & -0.005 & -0.009 & \textbf{ -0.016 } & 0.000 & -0.002 & -0.005 & -0.008 & \textbf{ -0.016 } & 0.000 & -0.002 & -0.004 & -0.007 & \textbf{ -0.015 } \\ 
+  TS w/o SSC & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            two variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.003 & 0.004 & \textbf{ 0.010 } & \textbf{ 0.031 } & -0.007 & -0.002 & 0.004 & \textbf{ 0.012 } & \textbf{ 0.029 } & -0.006 & -0.002 & 0.003 & 0.008 & \textbf{ 0.027 } \\ 
+  TS w/o SSC & \textbf{ -0.010 } & -0.009 & -0.005 & -0.005 & 0.008 & \textbf{ -0.011 } & -0.008 & -0.006 & -0.003 & 0.007 & -0.009 & -0.007 & -0.005 & -0.005 & 0.008 \\ 
+  TS w/ SSC V1 & -0.005 & -0.002 & 0.002 & 0.001 & \textbf{ 0.010 } & -0.006 & -0.001 & 0.002 & 0.005 & \textbf{ 0.012 } & -0.004 & 0.001 & 0.006 & 0.008 & \textbf{ 0.022 } \\ 
+  TS w/ SSC V2 & -0.007 & -0.004 & -0.001 & -0.001 & \textbf{ 0.011 } & -0.008 & -0.004 & -0.001 & 0.001 & 0.010 & -0.006 & -0.003 & -0.001 & -0.001 & \textbf{ 0.010 } \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & 0.001 & 0.005 & \textbf{ 0.013 } & \textbf{ 0.029 } & -0.002 & 0.001 & 0.005 & \textbf{ 0.012 } & \textbf{ 0.030 } & -0.002 & 0.001 & 0.004 & 0.009 & \textbf{ 0.026 } \\ 
+  TS w/o SSC & -0.003 & -0.002 & -0.002 & 0.000 & 0.005 & -0.003 & -0.002 & -0.002 & -0.000 & 0.006 & -0.003 & -0.002 & -0.002 & -0.001 & 0.006 \\ 
+  TS w/ SSC V1 & -0.002 & 0.000 & 0.001 & 0.002 & 0.006 & -0.002 & 0.000 & 0.001 & 0.002 & 0.008 & -0.002 & 0.001 & 0.002 & 0.003 & \textbf{ 0.012 } \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & -0.000 & 0.002 & 0.006 & -0.002 & -0.000 & 0.000 & 0.001 & 0.007 & -0.002 & -0.000 & -0.000 & 0.000 & 0.007 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.001 & 0.005 & \textbf{ 0.012 } & \textbf{ 0.029 } & -0.001 & 0.001 & 0.005 & \textbf{ 0.012 } & \textbf{ 0.029 } & -0.001 & 0.001 & 0.004 & 0.010 & \textbf{ 0.026 } \\ 
+  TS w/o SSC & -0.002 & -0.001 & -0.001 & -0.000 & 0.004 & -0.002 & -0.001 & -0.001 & 0.000 & 0.005 & -0.001 & -0.001 & -0.001 & 0.000 & 0.005 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.000 & 0.001 & 0.004 & -0.001 & 0.000 & 0.001 & 0.001 & 0.006 & -0.001 & 0.001 & 0.001 & 0.002 & 0.008 \\ 
+  TS w/ SSC V2 & -0.001 & 0.000 & 0.000 & 0.001 & 0.005 & -0.001 & 0.000 & 0.000 & 0.001 & 0.005 & -0.001 & 0.000 & 0.000 & 0.001 & 0.006 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.001 & 0.005 & \textbf{ 0.012 } & \textbf{ 0.030 } & 0.000 & 0.001 & 0.005 & \textbf{ 0.011 } & \textbf{ 0.029 } & 0.000 & 0.001 & 0.004 & 0.009 & \textbf{ 0.026 } \\ 
+  TS w/o SSC & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            two variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & -0.007 & \textbf{ -0.015 } & \textbf{ -0.026 } & \textbf{ -0.044 } & \textbf{ 0.016 } & -0.007 & \textbf{ -0.014 } & \textbf{ -0.025 } & \textbf{ -0.044 } & \textbf{ 0.017 } & -0.005 & \textbf{ -0.013 } & \textbf{ -0.021 } & \textbf{ -0.042 } \\ 
+  TS w/o SSC & \textbf{ 0.043 } & \textbf{ 0.022 } & \textbf{ 0.012 } & 0.007 & 0.002 & \textbf{ 0.045 } & \textbf{ 0.022 } & \textbf{ 0.013 } & 0.007 & 0.001 & \textbf{ 0.046 } & \textbf{ 0.023 } & \textbf{ 0.013 } & 0.008 & 0.000 \\ 
+  TS w/ SSC V1 & \textbf{ 0.017 } & -0.004 & -0.006 & -0.006 & -0.008 & \textbf{ 0.019 } & -0.004 & -0.005 & -0.006 & -0.008 & \textbf{ 0.018 } & -0.004 & -0.006 & -0.005 & -0.010 \\ 
+  TS w/ SSC V2 & \textbf{ 0.019 } & 0.001 & -0.000 & -0.001 & -0.004 & \textbf{ 0.021 } & 0.000 & 0.000 & -0.001 & -0.004 & \textbf{ 0.022 } & 0.002 & 0.000 & 0.000 & -0.005 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.008 & \textbf{ -0.015 } & \textbf{ -0.027 } & \textbf{ -0.045 } & 0.008 & -0.008 & \textbf{ -0.014 } & \textbf{ -0.026 } & \textbf{ -0.044 } & 0.009 & -0.007 & \textbf{ -0.012 } & \textbf{ -0.022 } & \textbf{ -0.041 } \\ 
+  TS w/o SSC & \textbf{ 0.026 } & 0.009 & 0.004 & 0.002 & -0.001 & \textbf{ 0.025 } & 0.009 & 0.005 & 0.002 & -0.001 & \textbf{ 0.026 } & 0.009 & 0.005 & 0.003 & -0.001 \\ 
+  TS w/ SSC V1 & \textbf{ 0.011 } & -0.003 & -0.003 & -0.003 & -0.005 & 0.010 & -0.003 & -0.002 & -0.003 & -0.005 & 0.009 & -0.004 & -0.002 & -0.002 & -0.005 \\ 
+  TS w/ SSC V2 & \textbf{ 0.011 } & -0.001 & -0.001 & -0.001 & -0.003 & \textbf{ 0.011 } & -0.002 & -0.000 & -0.001 & -0.003 & \textbf{ 0.011 } & -0.002 & 0.000 & -0.001 & -0.003 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.007 & \textbf{ -0.015 } & \textbf{ -0.027 } & \textbf{ -0.045 } & 0.006 & -0.007 & \textbf{ -0.015 } & \textbf{ -0.026 } & \textbf{ -0.044 } & 0.006 & -0.006 & \textbf{ -0.013 } & \textbf{ -0.021 } & \textbf{ -0.041 } \\ 
+  TS w/o SSC & \textbf{ 0.017 } & 0.004 & 0.002 & 0.001 & -0.001 & \textbf{ 0.017 } & 0.004 & 0.002 & 0.001 & -0.001 & \textbf{ 0.017 } & 0.004 & 0.002 & 0.001 & -0.001 \\ 
+  TS w/ SSC V1 & 0.007 & -0.001 & -0.002 & -0.002 & -0.003 & 0.007 & -0.001 & -0.002 & -0.002 & -0.003 & 0.006 & -0.001 & -0.001 & -0.001 & -0.003 \\ 
+  TS w/ SSC V2 & 0.007 & -0.001 & -0.001 & -0.001 & -0.002 & 0.007 & -0.001 & -0.001 & -0.001 & -0.002 & 0.007 & -0.001 & -0.000 & -0.000 & -0.002 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.007 & \textbf{ -0.014 } & \textbf{ -0.026 } & \textbf{ -0.045 } & 0.000 & -0.007 & \textbf{ -0.014 } & \textbf{ -0.025 } & \textbf{ -0.044 } & 0.000 & -0.006 & \textbf{ -0.012 } & \textbf{ -0.021 } & \textbf{ -0.041 } \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.001 & -0.000 & 0.000 & -0.000 & -0.000 & 0.001 & -0.000 & -0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            two variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.007 & -0.001 & \textbf{ 0.013 } & \textbf{ 0.038 } & \textbf{ 0.080 } & -0.007 & -0.001 & \textbf{ 0.012 } & \textbf{ 0.035 } & \textbf{ 0.079 } & -0.007 & -0.002 & 0.010 & \textbf{ 0.026 } & \textbf{ 0.071 } \\ 
+  TS w/o SSC & \textbf{ -0.027 } & \textbf{ -0.026 } & \textbf{ -0.021 } & \textbf{ -0.015 } & -0.001 & \textbf{ -0.028 } & \textbf{ -0.025 } & \textbf{ -0.022 } & \textbf{ -0.015 } & -0.000 & \textbf{ -0.026 } & \textbf{ -0.024 } & \textbf{ -0.020 } & \textbf{ -0.017 } & 0.001 \\ 
+  TS w/ SSC V1 & -0.009 & -0.005 & 0.002 & 0.005 & \textbf{ 0.012 } & -0.010 & -0.003 & 0.002 & 0.006 & \textbf{ 0.016 } & -0.008 & -0.002 & 0.006 & \textbf{ 0.010 } & \textbf{ 0.027 } \\ 
+  TS w/ SSC V2 & -0.010 & -0.007 & -0.003 & -0.000 & 0.010 & \textbf{ -0.011 } & -0.006 & -0.004 & -0.000 & \textbf{ 0.010 } & \textbf{ -0.010 } & -0.007 & -0.003 & -0.002 & \textbf{ 0.012 } \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & 0.003 & \textbf{ 0.015 } & \textbf{ 0.040 } & \textbf{ 0.082 } & -0.002 & 0.003 & \textbf{ 0.014 } & \textbf{ 0.037 } & \textbf{ 0.081 } & -0.002 & 0.002 & \textbf{ 0.010 } & \textbf{ 0.027 } & \textbf{ 0.072 } \\ 
+  TS w/o SSC & -0.010 & -0.009 & -0.007 & -0.004 & 0.003 & -0.009 & -0.009 & -0.008 & -0.004 & 0.004 & -0.008 & -0.008 & -0.008 & -0.005 & 0.004 \\ 
+  TS w/ SSC V1 & -0.003 & -0.000 & 0.002 & 0.004 & 0.008 & -0.003 & -0.000 & 0.001 & 0.005 & \textbf{ 0.010 } & -0.002 & 0.001 & 0.002 & 0.005 & \textbf{ 0.014 } \\ 
+  TS w/ SSC V2 & -0.003 & -0.001 & 0.000 & 0.002 & 0.007 & -0.003 & -0.001 & -0.001 & 0.002 & 0.008 & -0.003 & -0.001 & -0.001 & 0.000 & 0.008 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.004 & \textbf{ 0.015 } & \textbf{ 0.040 } & \textbf{ 0.083 } & -0.001 & 0.003 & \textbf{ 0.014 } & \textbf{ 0.038 } & \textbf{ 0.081 } & -0.001 & 0.003 & \textbf{ 0.011 } & \textbf{ 0.028 } & \textbf{ 0.072 } \\ 
+  TS w/o SSC & -0.005 & -0.004 & -0.003 & -0.001 & 0.004 & -0.004 & -0.004 & -0.003 & -0.001 & 0.004 & -0.004 & -0.004 & -0.003 & -0.002 & 0.004 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.001 & 0.003 & 0.006 & -0.001 & 0.000 & 0.001 & 0.003 & 0.007 & -0.001 & 0.000 & 0.001 & 0.002 & 0.010 \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & 0.001 & 0.002 & 0.006 & -0.001 & -0.000 & 0.001 & 0.002 & 0.006 & -0.001 & -0.000 & 0.000 & 0.000 & 0.006 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.004 & \textbf{ 0.015 } & \textbf{ 0.039 } & \textbf{ 0.083 } & -0.000 & 0.003 & \textbf{ 0.014 } & \textbf{ 0.037 } & \textbf{ 0.080 } & 0.000 & 0.003 & \textbf{ 0.011 } & \textbf{ 0.027 } & \textbf{ 0.072 } \\ 
+  TS w/o SSC & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            four variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & -0.001 & -0.006 & -0.006 & -0.008 & \textbf{ 0.015 } & -0.000 & -0.006 & -0.008 & -0.009 & \textbf{ 0.016 } & -0.001 & -0.006 & -0.009 & \textbf{ -0.011 } \\ 
+  TS w/o SSC & \textbf{ 0.028 } & \textbf{ 0.012 } & 0.008 & 0.006 & 0.004 & \textbf{ 0.028 } & \textbf{ 0.014 } & 0.008 & 0.005 & 0.004 & \textbf{ 0.029 } & \textbf{ 0.012 } & 0.008 & 0.004 & 0.003 \\ 
+  TS w/ SSC V1 & \textbf{ 0.013 } & -0.003 & -0.006 & -0.004 & -0.005 & \textbf{ 0.013 } & -0.002 & -0.006 & -0.006 & -0.004 & \textbf{ 0.013 } & -0.005 & -0.006 & -0.006 & -0.005 \\ 
+  TS w/ SSC V2 & \textbf{ 0.016 } & 0.001 & -0.001 & 0.001 & -0.001 & \textbf{ 0.017 } & 0.002 & -0.001 & -0.001 & -0.000 & \textbf{ 0.018 } & 0.001 & -0.001 & -0.002 & -0.001 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.004 & -0.005 & -0.007 & -0.008 & 0.009 & -0.004 & -0.005 & -0.008 & -0.009 & 0.008 & -0.004 & -0.006 & -0.009 & \textbf{ -0.010 } \\ 
+  TS w/o SSC & \textbf{ 0.016 } & 0.005 & 0.003 & 0.002 & 0.001 & \textbf{ 0.017 } & 0.005 & 0.003 & 0.001 & 0.001 & \textbf{ 0.016 } & 0.004 & 0.002 & 0.001 & 0.001 \\ 
+  TS w/ SSC V1 & 0.009 & -0.003 & -0.002 & -0.002 & -0.002 & 0.009 & -0.003 & -0.001 & -0.002 & -0.002 & 0.007 & -0.004 & -0.003 & -0.002 & -0.002 \\ 
+  TS w/ SSC V2 & 0.009 & -0.001 & -0.001 & -0.001 & -0.000 & 0.010 & -0.002 & -0.000 & -0.001 & -0.001 & 0.009 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.004 & -0.005 & -0.007 & -0.009 & 0.006 & -0.004 & -0.005 & -0.007 & -0.009 & 0.006 & -0.004 & -0.005 & -0.008 & -0.010 \\ 
+  TS w/o SSC & \textbf{ 0.012 } & 0.002 & 0.001 & 0.001 & 0.000 & \textbf{ 0.012 } & 0.002 & 0.001 & 0.001 & 0.000 & \textbf{ 0.011 } & 0.002 & 0.001 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/ SSC V2 & 0.007 & -0.002 & -0.001 & -0.000 & -0.001 & 0.007 & -0.002 & -0.001 & -0.000 & -0.001 & 0.006 & -0.001 & -0.000 & -0.001 & -0.000 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.002 & -0.005 & -0.007 & -0.008 & 0.000 & -0.002 & -0.005 & -0.007 & -0.008 & 0.000 & -0.002 & -0.005 & -0.008 & -0.009 \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            four variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.004 & -0.000 & 0.002 & 0.005 & -0.006 & -0.004 & 0.000 & 0.005 & 0.005 & -0.006 & -0.003 & 0.000 & 0.007 & 0.008 \\ 
+  TS w/o SSC & \textbf{ -0.014 } & \textbf{ -0.012 } & \textbf{ -0.012 } & \textbf{ -0.012 } & -0.008 & \textbf{ -0.013 } & \textbf{ -0.013 } & \textbf{ -0.011 } & -0.009 & -0.008 & \textbf{ -0.013 } & \textbf{ -0.011 } & \textbf{ -0.011 } & -0.007 & -0.006 \\ 
+  TS w/ SSC V1 & -0.006 & -0.003 & -0.000 & -0.000 & 0.002 & -0.005 & -0.003 & 0.001 & 0.004 & 0.002 & -0.005 & -0.001 & 0.002 & 0.008 & 0.009 \\ 
+  TS w/ SSC V2 & -0.007 & -0.005 & -0.003 & -0.004 & -0.001 & -0.007 & -0.006 & -0.003 & -0.001 & -0.002 & -0.007 & -0.005 & -0.003 & 0.000 & 0.000 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & -0.000 & 0.002 & 0.005 & 0.005 & -0.002 & -0.000 & 0.002 & 0.006 & 0.007 & -0.002 & 0.000 & 0.003 & 0.007 & 0.008 \\ 
+  TS w/o SSC & -0.005 & -0.005 & -0.004 & -0.003 & -0.003 & -0.005 & -0.004 & -0.004 & -0.003 & -0.002 & -0.004 & -0.004 & -0.003 & -0.002 & -0.002 \\ 
+  TS w/ SSC V1 & -0.002 & -0.001 & 0.000 & 0.001 & 0.000 & -0.002 & -0.000 & 0.000 & 0.002 & 0.002 & -0.002 & 0.000 & 0.002 & 0.003 & 0.004 \\ 
+  TS w/ SSC V2 & -0.003 & -0.001 & -0.000 & 0.000 & -0.000 & -0.003 & -0.001 & -0.001 & 0.001 & 0.001 & -0.002 & -0.001 & 0.000 & 0.001 & 0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.001 & 0.003 & 0.005 & 0.006 & -0.001 & 0.001 & 0.003 & 0.005 & 0.006 & -0.001 & 0.001 & 0.003 & 0.007 & 0.008 \\ 
+  TS w/o SSC & -0.003 & -0.002 & -0.002 & -0.001 & -0.001 & -0.002 & -0.002 & -0.001 & -0.001 & -0.001 & -0.002 & -0.002 & -0.002 & -0.001 & -0.001 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.000 & 0.001 & 0.001 & -0.001 & 0.000 & 0.001 & 0.001 & 0.001 & -0.001 & 0.000 & 0.001 & 0.002 & 0.002 \\ 
+  TS w/ SSC V2 & -0.001 & 0.000 & 0.000 & 0.000 & 0.001 & -0.001 & -0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & -0.000 & 0.001 & 0.000 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.001 & 0.003 & 0.005 & 0.005 & 0.000 & 0.001 & 0.003 & 0.005 & 0.006 & 0.000 & 0.001 & 0.003 & 0.006 & 0.007 \\ 
+  TS w/o SSC & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V1 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V2 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            four variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.017 } & -0.002 & \textbf{ -0.012 } & \textbf{ -0.020 } & \textbf{ -0.023 } & \textbf{ 0.016 } & -0.002 & \textbf{ -0.013 } & \textbf{ -0.020 } & \textbf{ -0.023 } & \textbf{ 0.017 } & -0.003 & \textbf{ -0.014 } & \textbf{ -0.022 } & \textbf{ -0.028 } \\ 
+  TS w/o SSC & \textbf{ 0.061 } & \textbf{ 0.043 } & \textbf{ 0.030 } & \textbf{ 0.022 } & \textbf{ 0.018 } & \textbf{ 0.060 } & \textbf{ 0.042 } & \textbf{ 0.030 } & \textbf{ 0.022 } & \textbf{ 0.018 } & \textbf{ 0.061 } & \textbf{ 0.041 } & \textbf{ 0.029 } & \textbf{ 0.020 } & \textbf{ 0.015 } \\ 
+  TS w/ SSC V1 & \textbf{ 0.021 } & 0.003 & -0.004 & -0.007 & -0.004 & \textbf{ 0.019 } & 0.002 & -0.005 & -0.006 & -0.003 & \textbf{ 0.019 } & -0.000 & -0.007 & -0.007 & -0.006 \\ 
+  TS w/ SSC V2 & \textbf{ 0.025 } & 0.008 & 0.002 & -0.000 & 0.001 & \textbf{ 0.024 } & 0.008 & 0.002 & 0.001 & 0.002 & \textbf{ 0.025 } & 0.007 & 0.001 & 0.000 & 0.000 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.007 & \textbf{ -0.014 } & \textbf{ -0.019 } & \textbf{ -0.023 } & 0.009 & -0.008 & \textbf{ -0.014 } & \textbf{ -0.020 } & \textbf{ -0.024 } & 0.009 & -0.007 & \textbf{ -0.015 } & \textbf{ -0.023 } & \textbf{ -0.028 } \\ 
+  TS w/o SSC & \textbf{ 0.035 } & \textbf{ 0.019 } & \textbf{ 0.012 } & 0.009 & 0.007 & \textbf{ 0.035 } & \textbf{ 0.019 } & \textbf{ 0.012 } & 0.008 & 0.007 & \textbf{ 0.036 } & \textbf{ 0.020 } & \textbf{ 0.011 } & 0.007 & 0.005 \\ 
+  TS w/ SSC V1 & \textbf{ 0.011 } & -0.003 & -0.003 & -0.003 & -0.002 & \textbf{ 0.011 } & -0.003 & -0.003 & -0.003 & -0.002 & \textbf{ 0.011 } & -0.003 & -0.004 & -0.003 & -0.003 \\ 
+  TS w/ SSC V2 & \textbf{ 0.012 } & -0.001 & -0.001 & -0.000 & -0.000 & \textbf{ 0.012 } & -0.002 & -0.001 & -0.001 & 0.000 & \textbf{ 0.013 } & -0.001 & -0.001 & -0.001 & -0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.008 & \textbf{ -0.013 } & \textbf{ -0.019 } & \textbf{ -0.022 } & 0.006 & -0.008 & \textbf{ -0.013 } & \textbf{ -0.020 } & \textbf{ -0.024 } & 0.006 & -0.008 & \textbf{ -0.015 } & \textbf{ -0.022 } & \textbf{ -0.028 } \\ 
+  TS w/o SSC & \textbf{ 0.025 } & \textbf{ 0.011 } & 0.006 & 0.004 & 0.003 & \textbf{ 0.024 } & \textbf{ 0.011 } & 0.006 & 0.004 & 0.003 & \textbf{ 0.024 } & \textbf{ 0.010 } & 0.005 & 0.003 & 0.002 \\ 
+  TS w/ SSC V1 & 0.008 & -0.002 & -0.002 & -0.002 & -0.001 & 0.007 & -0.002 & -0.001 & -0.002 & -0.001 & 0.007 & -0.003 & -0.002 & -0.002 & -0.002 \\ 
+  TS w/ SSC V2 & 0.008 & -0.002 & -0.001 & -0.001 & -0.000 & 0.008 & -0.002 & -0.000 & -0.001 & -0.000 & 0.008 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.006 & \textbf{ -0.013 } & \textbf{ -0.019 } & \textbf{ -0.022 } & 0.000 & -0.006 & \textbf{ -0.013 } & \textbf{ -0.019 } & \textbf{ -0.023 } & 0.000 & -0.007 & \textbf{ -0.014 } & \textbf{ -0.022 } & \textbf{ -0.027 } \\ 
+  TS w/o SSC & 0.001 & 0.000 & 0.000 & 0.000 & -0.000 & 0.001 & 0.000 & 0.000 & 0.000 & -0.000 & 0.001 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            four variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.009 & -0.005 & 0.002 & \textbf{ 0.013 } & \textbf{ 0.016 } & -0.008 & -0.005 & 0.003 & \textbf{ 0.013 } & \textbf{ 0.016 } & -0.008 & -0.004 & 0.004 & \textbf{ 0.017 } & \textbf{ 0.025 } \\ 
+  TS w/o SSC & \textbf{ -0.047 } & \textbf{ -0.045 } & \textbf{ -0.043 } & \textbf{ -0.036 } & \textbf{ -0.032 } & \textbf{ -0.044 } & \textbf{ -0.044 } & \textbf{ -0.041 } & \textbf{ -0.036 } & \textbf{ -0.033 } & \textbf{ -0.041 } & \textbf{ -0.039 } & \textbf{ -0.037 } & \textbf{ -0.033 } & \textbf{ -0.027 } \\ 
+  TS w/ SSC V1 & \textbf{ -0.013 } & -0.010 & -0.005 & 0.001 & -0.002 & \textbf{ -0.011 } & -0.008 & -0.004 & 0.001 & -0.001 & -0.008 & -0.005 & 0.001 & 0.007 & 0.010 \\ 
+  TS w/ SSC V2 & \textbf{ -0.014 } & \textbf{ -0.012 } & -0.009 & -0.005 & -0.005 & \textbf{ -0.013 } & \textbf{ -0.011 } & -0.008 & -0.005 & -0.006 & \textbf{ -0.012 } & -0.010 & -0.007 & -0.005 & -0.004 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.003 & 0.001 & 0.007 & \textbf{ 0.015 } & \textbf{ 0.018 } & -0.003 & 0.001 & 0.008 & \textbf{ 0.016 } & \textbf{ 0.019 } & -0.003 & 0.001 & 0.008 & \textbf{ 0.019 } & \textbf{ 0.026 } \\ 
+  TS w/o SSC & \textbf{ -0.017 } & \textbf{ -0.015 } & \textbf{ -0.015 } & \textbf{ -0.013 } & \textbf{ -0.012 } & \textbf{ -0.016 } & \textbf{ -0.015 } & \textbf{ -0.014 } & \textbf{ -0.013 } & \textbf{ -0.012 } & \textbf{ -0.015 } & \textbf{ -0.014 } & \textbf{ -0.013 } & \textbf{ -0.011 } & -0.010 \\ 
+  TS w/ SSC V1 & -0.004 & -0.001 & 0.000 & 0.001 & 0.000 & -0.004 & -0.001 & 0.001 & 0.002 & 0.001 & -0.003 & -0.001 & 0.002 & 0.004 & 0.005 \\ 
+  TS w/ SSC V2 & -0.004 & -0.002 & -0.001 & -0.001 & -0.001 & -0.004 & -0.002 & -0.001 & -0.000 & -0.001 & -0.004 & -0.002 & -0.000 & 0.000 & -0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.002 & 0.008 & \textbf{ 0.016 } & \textbf{ 0.018 } & -0.001 & 0.002 & 0.008 & \textbf{ 0.017 } & \textbf{ 0.019 } & -0.001 & 0.002 & 0.009 & \textbf{ 0.020 } & \textbf{ 0.026 } \\ 
+  TS w/o SSC & -0.008 & -0.008 & -0.007 & -0.006 & -0.006 & -0.008 & -0.008 & -0.007 & -0.006 & -0.005 & -0.007 & -0.007 & -0.006 & -0.005 & -0.004 \\ 
+  TS w/ SSC V1 & -0.002 & -0.000 & 0.000 & 0.001 & 0.000 & -0.002 & -0.000 & 0.000 & 0.002 & 0.001 & -0.001 & 0.000 & 0.002 & 0.003 & 0.003 \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & -0.000 & 0.001 & -0.000 & -0.002 & -0.000 & -0.000 & 0.000 & 0.000 & -0.002 & -0.000 & 0.001 & 0.001 & 0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.002 & 0.008 & \textbf{ 0.015 } & \textbf{ 0.018 } & 0.000 & 0.002 & 0.008 & \textbf{ 0.016 } & \textbf{ 0.019 } & 0.000 & 0.002 & 0.008 & \textbf{ 0.019 } & \textbf{ 0.025 } \\ 
+  TS w/o SSC & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V1 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V2 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            four variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & -0.006 & -0.007 & \textbf{ -0.012 } & \textbf{ -0.021 } & \textbf{ 0.015 } & -0.004 & -0.007 & \textbf{ -0.013 } & \textbf{ -0.021 } & \textbf{ 0.016 } & -0.004 & -0.007 & \textbf{ -0.013 } & \textbf{ -0.022 } \\ 
+  TS w/o SSC & \textbf{ 0.028 } & 0.009 & 0.006 & 0.003 & -0.002 & \textbf{ 0.028 } & \textbf{ 0.010 } & 0.006 & 0.002 & -0.002 & \textbf{ 0.029 } & 0.010 & 0.006 & 0.002 & -0.003 \\ 
+  TS w/ SSC V1 & \textbf{ 0.013 } & -0.007 & -0.004 & -0.005 & -0.008 & \textbf{ 0.013 } & -0.006 & -0.004 & -0.006 & -0.008 & \textbf{ 0.013 } & -0.007 & -0.005 & -0.005 & -0.009 \\ 
+  TS w/ SSC V2 & \textbf{ 0.016 } & -0.002 & 0.000 & -0.001 & -0.004 & \textbf{ 0.017 } & -0.000 & 0.000 & -0.002 & -0.004 & \textbf{ 0.018 } & -0.001 & 0.000 & -0.001 & -0.005 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.004 & -0.008 & \textbf{ -0.013 } & \textbf{ -0.020 } & 0.009 & -0.005 & -0.008 & \textbf{ -0.013 } & \textbf{ -0.020 } & 0.008 & -0.005 & -0.008 & \textbf{ -0.013 } & \textbf{ -0.020 } \\ 
+  TS w/o SSC & \textbf{ 0.016 } & 0.004 & 0.002 & 0.000 & -0.002 & \textbf{ 0.017 } & 0.004 & 0.002 & 0.001 & -0.002 & \textbf{ 0.016 } & 0.003 & 0.001 & 0.001 & -0.002 \\ 
+  TS w/ SSC V1 & 0.009 & -0.002 & -0.002 & -0.003 & -0.004 & 0.009 & -0.003 & -0.002 & -0.002 & -0.005 & 0.007 & -0.003 & -0.002 & -0.002 & -0.005 \\ 
+  TS w/ SSC V2 & 0.009 & -0.001 & -0.001 & -0.001 & -0.003 & 0.010 & -0.001 & -0.000 & -0.001 & -0.003 & 0.009 & -0.001 & -0.001 & -0.001 & -0.003 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.004 & -0.008 & \textbf{ -0.012 } & \textbf{ -0.019 } & 0.006 & -0.004 & -0.008 & \textbf{ -0.012 } & \textbf{ -0.019 } & 0.006 & -0.004 & -0.008 & \textbf{ -0.012 } & \textbf{ -0.020 } \\ 
+  TS w/o SSC & \textbf{ 0.012 } & 0.002 & 0.001 & 0.000 & -0.002 & \textbf{ 0.012 } & 0.002 & 0.001 & 0.000 & -0.002 & \textbf{ 0.011 } & 0.002 & 0.001 & 0.000 & -0.002 \\ 
+  TS w/ SSC V1 & 0.006 & -0.001 & -0.001 & -0.001 & -0.003 & 0.006 & -0.001 & -0.001 & -0.001 & -0.003 & 0.006 & -0.001 & -0.001 & -0.001 & -0.003 \\ 
+  TS w/ SSC V2 & 0.007 & -0.001 & -0.000 & -0.000 & -0.002 & 0.007 & -0.001 & -0.000 & -0.000 & -0.002 & 0.006 & -0.000 & -0.000 & -0.000 & -0.002 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.003 & -0.007 & \textbf{ -0.012 } & \textbf{ -0.017 } & 0.000 & -0.003 & -0.007 & \textbf{ -0.012 } & \textbf{ -0.017 } & 0.000 & -0.004 & -0.007 & \textbf{ -0.012 } & \textbf{ -0.017 } \\ 
+  TS w/o SSC & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            four variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.001 & 0.004 & \textbf{ 0.012 } & \textbf{ 0.029 } & -0.006 & -0.002 & 0.004 & \textbf{ 0.014 } & \textbf{ 0.028 } & -0.006 & -0.002 & 0.003 & \textbf{ 0.013 } & \textbf{ 0.030 } \\ 
+  TS w/o SSC & \textbf{ -0.014 } & \textbf{ -0.011 } & \textbf{ -0.011 } & -0.007 & 0.007 & \textbf{ -0.013 } & \textbf{ -0.012 } & \textbf{ -0.010 } & -0.004 & 0.006 & \textbf{ -0.013 } & \textbf{ -0.011 } & -0.010 & -0.005 & 0.008 \\ 
+  TS w/ SSC V1 & -0.006 & -0.001 & 0.001 & 0.001 & \textbf{ 0.011 } & -0.005 & -0.001 & 0.002 & 0.006 & \textbf{ 0.013 } & -0.005 & 0.000 & 0.005 & \textbf{ 0.011 } & \textbf{ 0.026 } \\ 
+  TS w/ SSC V2 & -0.007 & -0.003 & -0.003 & -0.000 & \textbf{ 0.012 } & -0.007 & -0.004 & -0.002 & 0.002 & \textbf{ 0.010 } & -0.007 & -0.004 & -0.002 & 0.001 & \textbf{ 0.012 } \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & 0.001 & 0.006 & \textbf{ 0.014 } & \textbf{ 0.024 } & -0.002 & 0.001 & 0.006 & \textbf{ 0.013 } & \textbf{ 0.025 } & -0.002 & 0.001 & 0.006 & \textbf{ 0.013 } & \textbf{ 0.025 } \\ 
+  TS w/o SSC & -0.005 & -0.004 & -0.003 & -0.001 & 0.005 & -0.005 & -0.004 & -0.003 & -0.001 & 0.006 & -0.004 & -0.003 & -0.002 & -0.002 & 0.005 \\ 
+  TS w/ SSC V1 & -0.002 & -0.000 & 0.001 & 0.002 & 0.007 & -0.002 & 0.000 & 0.001 & 0.002 & 0.009 & -0.002 & 0.001 & 0.003 & 0.004 & \textbf{ 0.012 } \\ 
+  TS w/ SSC V2 & -0.003 & -0.001 & 0.000 & 0.002 & 0.007 & -0.003 & -0.001 & -0.000 & 0.001 & 0.008 & -0.002 & -0.000 & 0.001 & 0.001 & 0.007 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.002 & 0.006 & \textbf{ 0.013 } & \textbf{ 0.023 } & -0.001 & 0.001 & 0.006 & \textbf{ 0.013 } & \textbf{ 0.023 } & -0.001 & 0.001 & 0.006 & \textbf{ 0.012 } & \textbf{ 0.024 } \\ 
+  TS w/o SSC & -0.003 & -0.002 & -0.001 & -0.000 & 0.005 & -0.002 & -0.002 & -0.001 & -0.001 & 0.004 & -0.002 & -0.002 & -0.001 & -0.001 & 0.004 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.001 & 0.001 & 0.006 & -0.001 & 0.000 & 0.001 & 0.001 & 0.006 & -0.001 & 0.000 & 0.001 & 0.001 & 0.008 \\ 
+  TS w/ SSC V2 & -0.001 & 0.000 & 0.000 & 0.001 & 0.006 & -0.001 & -0.000 & 0.000 & 0.000 & 0.005 & -0.001 & -0.000 & 0.000 & -0.000 & 0.005 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.002 & 0.006 & \textbf{ 0.012 } & \textbf{ 0.018 } & 0.000 & 0.001 & 0.006 & \textbf{ 0.012 } & \textbf{ 0.018 } & 0.000 & 0.001 & 0.006 & \textbf{ 0.012 } & \textbf{ 0.017 } \\ 
+  TS w/o SSC & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V1 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V2 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            four variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.017 } & -0.008 & \textbf{ -0.020 } & \textbf{ -0.035 } & \textbf{ -0.051 } & \textbf{ 0.016 } & -0.008 & \textbf{ -0.020 } & \textbf{ -0.034 } & \textbf{ -0.051 } & \textbf{ 0.017 } & -0.009 & \textbf{ -0.020 } & \textbf{ -0.033 } & \textbf{ -0.054 } \\ 
+  TS w/o SSC & \textbf{ 0.061 } & \textbf{ 0.036 } & \textbf{ 0.022 } & \textbf{ 0.012 } & 0.006 & \textbf{ 0.060 } & \textbf{ 0.036 } & \textbf{ 0.022 } & \textbf{ 0.013 } & 0.005 & \textbf{ 0.061 } & \textbf{ 0.035 } & \textbf{ 0.022 } & \textbf{ 0.014 } & 0.004 \\ 
+  TS w/ SSC V1 & \textbf{ 0.021 } & -0.001 & -0.005 & -0.008 & -0.009 & \textbf{ 0.019 } & -0.002 & -0.006 & -0.007 & -0.009 & \textbf{ 0.019 } & -0.006 & -0.007 & -0.006 & \textbf{ -0.011 } \\ 
+  TS w/ SSC V2 & \textbf{ 0.025 } & 0.004 & 0.001 & -0.002 & -0.004 & \textbf{ 0.024 } & 0.004 & 0.001 & -0.001 & -0.004 & \textbf{ 0.025 } & 0.002 & 0.001 & 0.000 & -0.005 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & \textbf{ -0.011 } & \textbf{ -0.021 } & \textbf{ -0.033 } & \textbf{ -0.050 } & 0.009 & \textbf{ -0.012 } & \textbf{ -0.021 } & \textbf{ -0.034 } & \textbf{ -0.050 } & 0.009 & \textbf{ -0.011 } & \textbf{ -0.021 } & \textbf{ -0.034 } & \textbf{ -0.052 } \\ 
+  TS w/o SSC & \textbf{ 0.035 } & \textbf{ 0.015 } & 0.008 & 0.004 & 0.001 & \textbf{ 0.035 } & \textbf{ 0.015 } & 0.008 & 0.005 & 0.001 & \textbf{ 0.036 } & \textbf{ 0.016 } & 0.008 & 0.005 & 0.000 \\ 
+  TS w/ SSC V1 & \textbf{ 0.011 } & -0.004 & -0.003 & -0.003 & -0.005 & \textbf{ 0.011 } & -0.004 & -0.003 & -0.003 & -0.005 & \textbf{ 0.011 } & -0.004 & -0.003 & -0.003 & -0.006 \\ 
+  TS w/ SSC V2 & \textbf{ 0.012 } & -0.002 & -0.000 & -0.001 & -0.003 & \textbf{ 0.012 } & -0.002 & -0.000 & -0.001 & -0.003 & \textbf{ 0.013 } & -0.001 & -0.001 & -0.001 & -0.003 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & \textbf{ -0.010 } & \textbf{ -0.020 } & \textbf{ -0.034 } & \textbf{ -0.049 } & 0.006 & \textbf{ -0.010 } & \textbf{ -0.020 } & \textbf{ -0.034 } & \textbf{ -0.050 } & 0.006 & \textbf{ -0.011 } & \textbf{ -0.021 } & \textbf{ -0.034 } & \textbf{ -0.052 } \\ 
+  TS w/o SSC & \textbf{ 0.025 } & 0.008 & 0.004 & 0.002 & -0.000 & \textbf{ 0.024 } & 0.008 & 0.004 & 0.002 & -0.001 & \textbf{ 0.024 } & 0.008 & 0.003 & 0.002 & -0.001 \\ 
+  TS w/ SSC V1 & 0.008 & -0.001 & -0.002 & -0.002 & -0.003 & 0.007 & -0.002 & -0.001 & -0.002 & -0.004 & 0.007 & -0.002 & -0.002 & -0.001 & -0.004 \\ 
+  TS w/ SSC V2 & 0.008 & -0.001 & -0.001 & -0.001 & -0.002 & 0.008 & -0.001 & -0.000 & -0.001 & -0.003 & 0.008 & -0.001 & -0.001 & -0.000 & -0.003 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.010 & \textbf{ -0.020 } & \textbf{ -0.033 } & \textbf{ -0.047 } & 0.000 & -0.010 & \textbf{ -0.020 } & \textbf{ -0.033 } & \textbf{ -0.048 } & 0.000 & -0.010 & \textbf{ -0.021 } & \textbf{ -0.033 } & \textbf{ -0.050 } \\ 
+  TS w/o SSC & 0.001 & -0.000 & -0.000 & -0.000 & -0.000 & 0.001 & -0.000 & -0.000 & -0.000 & -0.000 & 0.001 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            four variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.009 & -0.002 & \textbf{ 0.013 } & \textbf{ 0.040 } & \textbf{ 0.066 } & -0.008 & -0.002 & \textbf{ 0.014 } & \textbf{ 0.038 } & \textbf{ 0.066 } & -0.008 & -0.000 & \textbf{ 0.014 } & \textbf{ 0.036 } & \textbf{ 0.072 } \\ 
+  TS w/o SSC & \textbf{ -0.047 } & \textbf{ -0.044 } & \textbf{ -0.038 } & \textbf{ -0.024 } & -0.008 & \textbf{ -0.044 } & \textbf{ -0.042 } & \textbf{ -0.037 } & \textbf{ -0.026 } & -0.008 & \textbf{ -0.041 } & \textbf{ -0.038 } & \textbf{ -0.034 } & \textbf{ -0.027 } & -0.004 \\ 
+  TS w/ SSC V1 & \textbf{ -0.013 } & -0.008 & -0.001 & 0.008 & \textbf{ 0.012 } & \textbf{ -0.011 } & -0.005 & 0.001 & 0.009 & \textbf{ 0.017 } & -0.008 & -0.002 & 0.006 & \textbf{ 0.013 } & \textbf{ 0.034 } \\ 
+  TS w/ SSC V2 & \textbf{ -0.014 } & \textbf{ -0.011 } & -0.007 & 0.002 & \textbf{ 0.010 } & \textbf{ -0.013 } & -0.009 & -0.006 & -0.000 & \textbf{ 0.010 } & \textbf{ -0.012 } & -0.008 & -0.005 & -0.003 & \textbf{ 0.013 } \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.003 & 0.004 & \textbf{ 0.017 } & \textbf{ 0.040 } & \textbf{ 0.064 } & -0.003 & 0.004 & \textbf{ 0.017 } & \textbf{ 0.039 } & \textbf{ 0.064 } & -0.003 & 0.003 & \textbf{ 0.017 } & \textbf{ 0.038 } & \textbf{ 0.068 } \\ 
+  TS w/o SSC & \textbf{ -0.017 } & \textbf{ -0.015 } & \textbf{ -0.014 } & -0.008 & 0.001 & \textbf{ -0.016 } & \textbf{ -0.014 } & \textbf{ -0.013 } & -0.009 & 0.001 & \textbf{ -0.015 } & \textbf{ -0.014 } & \textbf{ -0.012 } & -0.009 & 0.002 \\ 
+  TS w/ SSC V1 & -0.004 & 0.000 & 0.001 & 0.004 & 0.009 & -0.004 & 0.001 & 0.002 & 0.004 & \textbf{ 0.010 } & -0.003 & 0.000 & 0.003 & 0.006 & \textbf{ 0.017 } \\ 
+  TS w/ SSC V2 & -0.004 & -0.001 & -0.001 & 0.002 & 0.008 & -0.004 & -0.001 & -0.000 & 0.001 & 0.008 & -0.004 & -0.001 & -0.000 & 0.000 & 0.008 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.004 & \textbf{ 0.018 } & \textbf{ 0.040 } & \textbf{ 0.062 } & -0.001 & 0.004 & \textbf{ 0.018 } & \textbf{ 0.039 } & \textbf{ 0.063 } & -0.001 & 0.004 & \textbf{ 0.017 } & \textbf{ 0.038 } & \textbf{ 0.067 } \\ 
+  TS w/o SSC & -0.008 & -0.008 & -0.006 & -0.003 & 0.002 & -0.008 & -0.007 & -0.006 & -0.003 & 0.003 & -0.007 & -0.007 & -0.005 & -0.004 & 0.004 \\ 
+  TS w/ SSC V1 & -0.002 & 0.000 & 0.001 & 0.003 & 0.006 & -0.002 & 0.000 & 0.001 & 0.003 & 0.008 & -0.001 & 0.001 & 0.002 & 0.003 & \textbf{ 0.012 } \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & 0.000 & 0.002 & 0.006 & -0.002 & -0.000 & 0.000 & 0.002 & 0.006 & -0.002 & -0.000 & 0.001 & 0.000 & 0.007 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.004 & \textbf{ 0.018 } & \textbf{ 0.039 } & \textbf{ 0.058 } & 0.000 & 0.004 & \textbf{ 0.017 } & \textbf{ 0.038 } & \textbf{ 0.059 } & 0.000 & 0.004 & \textbf{ 0.017 } & \textbf{ 0.038 } & \textbf{ 0.063 } \\ 
+  TS w/o SSC & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V2 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            two variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & 0.002 & -0.001 & 0.000 & -0.001 & \textbf{ 0.017 } & 0.001 & -0.001 & -0.000 & 0.001 & \textbf{ 0.015 } & 0.000 & -0.002 & -0.001 & -0.000 \\ 
+  TS w/o SSC & \textbf{ 0.022 } & 0.009 & 0.004 & 0.004 & 0.002 & \textbf{ 0.024 } & 0.008 & 0.005 & 0.003 & 0.003 & \textbf{ 0.023 } & 0.008 & 0.004 & 0.003 & 0.002 \\ 
+  TS w/ SSC V1 & \textbf{ 0.013 } & -0.002 & -0.005 & -0.004 & -0.005 & \textbf{ 0.014 } & -0.003 & -0.005 & -0.004 & -0.003 & \textbf{ 0.012 } & -0.004 & -0.007 & -0.004 & -0.004 \\ 
+  TS w/ SSC V2 & \textbf{ 0.016 } & 0.002 & -0.001 & 0.000 & -0.000 & \textbf{ 0.018 } & 0.002 & -0.001 & -0.000 & 0.001 & \textbf{ 0.016 } & 0.001 & -0.001 & -0.000 & 0.000 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.008 & -0.002 & -0.001 & -0.001 & -0.000 & 0.008 & -0.002 & -0.001 & -0.001 & -0.000 & 0.009 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/o SSC & \textbf{ 0.013 } & 0.002 & 0.001 & 0.001 & 0.001 & \textbf{ 0.012 } & 0.002 & 0.001 & 0.001 & 0.001 & \textbf{ 0.013 } & 0.002 & 0.001 & 0.001 & 0.000 \\ 
+  TS w/ SSC V1 & 0.008 & -0.003 & -0.002 & -0.002 & -0.002 & 0.007 & -0.003 & -0.002 & -0.002 & -0.002 & 0.008 & -0.004 & -0.002 & -0.002 & -0.002 \\ 
+  TS w/ SSC V2 & 0.009 & -0.002 & -0.001 & -0.001 & -0.000 & 0.008 & -0.002 & -0.001 & -0.001 & -0.000 & 0.009 & -0.002 & -0.001 & -0.000 & -0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.001 & -0.001 & -0.000 & -0.000 & 0.006 & -0.001 & -0.001 & -0.001 & -0.001 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/o SSC & 0.009 & 0.001 & 0.000 & 0.000 & 0.000 & 0.009 & 0.001 & 0.000 & -0.000 & -0.000 & 0.008 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 & 0.005 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/ SSC V2 & 0.006 & -0.001 & -0.001 & -0.000 & -0.000 & 0.006 & -0.002 & -0.001 & -0.001 & -0.001 & 0.006 & -0.002 & -0.000 & -0.001 & -0.000 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            two variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.005 & -0.003 & -0.005 & -0.003 & -0.007 & -0.005 & -0.003 & -0.003 & -0.005 & -0.006 & -0.004 & -0.002 & -0.003 & -0.005 \\ 
+  TS w/o SSC & \textbf{ -0.010 } & -0.009 & -0.007 & -0.008 & -0.005 & \textbf{ -0.011 } & -0.009 & -0.008 & -0.006 & -0.007 & -0.009 & -0.008 & -0.006 & -0.006 & -0.005 \\ 
+  TS w/ SSC V1 & -0.005 & -0.004 & 0.000 & 0.000 & 0.002 & -0.006 & -0.003 & 0.000 & 0.002 & 0.000 & -0.004 & -0.001 & 0.003 & 0.005 & 0.006 \\ 
+  TS w/ SSC V2 & -0.007 & -0.005 & -0.002 & -0.003 & -0.001 & -0.008 & -0.005 & -0.003 & -0.002 & -0.003 & -0.006 & -0.004 & -0.002 & -0.002 & -0.002 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & -0.001 & -0.001 & -0.002 & -0.003 & -0.002 & -0.001 & -0.001 & -0.002 & -0.003 & -0.002 & -0.001 & -0.001 & -0.002 & -0.003 \\ 
+  TS w/o SSC & -0.003 & -0.003 & -0.002 & -0.002 & -0.002 & -0.003 & -0.003 & -0.002 & -0.001 & -0.001 & -0.003 & -0.002 & -0.002 & -0.002 & -0.001 \\ 
+  TS w/ SSC V1 & -0.002 & -0.000 & 0.000 & 0.001 & 0.001 & -0.002 & -0.000 & 0.001 & 0.001 & 0.001 & -0.002 & 0.000 & 0.001 & 0.002 & 0.003 \\ 
+  TS w/ SSC V2 & -0.002 & -0.001 & -0.000 & 0.000 & -0.000 & -0.002 & -0.001 & 0.000 & 0.000 & 0.000 & -0.002 & -0.000 & -0.000 & -0.000 & 0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & -0.000 & -0.001 & -0.002 & -0.003 & -0.001 & -0.000 & -0.001 & -0.002 & -0.002 & -0.001 & -0.000 & -0.001 & -0.002 & -0.002 \\ 
+  TS w/o SSC & -0.002 & -0.001 & -0.001 & -0.001 & -0.001 & -0.002 & -0.001 & -0.001 & -0.000 & 0.000 & -0.001 & -0.001 & -0.001 & -0.000 & -0.000 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & 0.001 & 0.001 & 0.001 & -0.001 & 0.000 & 0.001 & 0.001 & 0.002 \\ 
+  TS w/ SSC V2 & -0.001 & -0.000 & 0.000 & -0.000 & 0.000 & -0.001 & 0.000 & 0.000 & 0.001 & 0.001 & -0.001 & 0.000 & 0.000 & 0.000 & 0.001 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.000 & -0.001 & -0.002 & -0.003 & 0.000 & -0.000 & -0.001 & -0.002 & -0.003 & 0.000 & -0.000 & -0.001 & -0.002 & -0.003 \\ 
+  TS w/o SSC & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            two variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & 0.001 & -0.001 & 0.000 & 0.001 & \textbf{ 0.016 } & 0.002 & -0.001 & -0.001 & 0.001 & \textbf{ 0.017 } & 0.001 & -0.001 & 0.000 & -0.002 \\ 
+  TS w/o SSC & \textbf{ 0.043 } & \textbf{ 0.028 } & \textbf{ 0.019 } & \textbf{ 0.015 } & \textbf{ 0.012 } & \textbf{ 0.045 } & \textbf{ 0.029 } & \textbf{ 0.019 } & \textbf{ 0.013 } & \textbf{ 0.012 } & \textbf{ 0.046 } & \textbf{ 0.028 } & \textbf{ 0.018 } & \textbf{ 0.013 } & 0.009 \\ 
+  TS w/ SSC V1 & \textbf{ 0.017 } & 0.002 & -0.004 & -0.003 & -0.003 & \textbf{ 0.019 } & 0.003 & -0.004 & -0.004 & -0.002 & \textbf{ 0.018 } & 0.000 & -0.005 & -0.003 & -0.004 \\ 
+  TS w/ SSC V2 & \textbf{ 0.019 } & 0.005 & 0.000 & 0.002 & 0.002 & \textbf{ 0.021 } & 0.006 & 0.001 & 0.001 & 0.002 & \textbf{ 0.022 } & 0.005 & -0.000 & 0.002 & 0.000 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.001 & -0.001 & -0.000 & -0.000 & 0.008 & -0.002 & -0.000 & -0.001 & -0.000 & 0.009 & -0.003 & -0.000 & -0.001 & -0.001 \\ 
+  TS w/o SSC & \textbf{ 0.026 } & \textbf{ 0.013 } & 0.007 & 0.005 & 0.004 & \textbf{ 0.025 } & \textbf{ 0.012 } & 0.007 & 0.004 & 0.004 & \textbf{ 0.026 } & \textbf{ 0.011 } & 0.007 & 0.004 & 0.003 \\ 
+  TS w/ SSC V1 & \textbf{ 0.011 } & -0.002 & -0.002 & -0.002 & -0.002 & 0.010 & -0.003 & -0.002 & -0.003 & -0.002 & 0.009 & -0.004 & -0.001 & -0.001 & -0.002 \\ 
+  TS w/ SSC V2 & \textbf{ 0.011 } & -0.001 & -0.001 & -0.000 & -0.000 & \textbf{ 0.011 } & -0.002 & -0.000 & -0.001 & 0.000 & \textbf{ 0.011 } & -0.002 & -0.000 & -0.000 & 0.000 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.001 & -0.000 & -0.000 & -0.001 & 0.006 & -0.001 & -0.001 & -0.000 & -0.000 & 0.006 & -0.001 & -0.000 & -0.001 & -0.001 \\ 
+  TS w/o SSC & \textbf{ 0.018 } & 0.006 & 0.003 & 0.002 & 0.001 & \textbf{ 0.018 } & 0.006 & 0.003 & 0.002 & 0.002 & \textbf{ 0.018 } & 0.006 & 0.003 & 0.002 & 0.001 \\ 
+  TS w/ SSC V1 & 0.008 & -0.002 & -0.001 & -0.001 & -0.002 & 0.007 & -0.002 & -0.001 & -0.001 & -0.001 & 0.007 & -0.002 & -0.001 & -0.001 & -0.001 \\ 
+  TS w/ SSC V2 & 0.008 & -0.002 & -0.000 & -0.000 & -0.001 & 0.007 & -0.002 & -0.001 & -0.000 & -0.000 & 0.007 & -0.001 & -0.000 & -0.000 & -0.000 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.001 \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 & -0.000 & -0.000 & 0.001 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, one correlated residual, misfit and missing data on the same factor,
+            two variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.007 & -0.006 & -0.005 & -0.009 & \textbf{ -0.010 } & -0.007 & -0.007 & -0.005 & -0.007 & \textbf{ -0.011 } & -0.007 & -0.006 & -0.005 & -0.008 & -0.009 \\ 
+  TS w/o SSC & \textbf{ -0.027 } & \textbf{ -0.027 } & \textbf{ -0.025 } & \textbf{ -0.024 } & \textbf{ -0.021 } & \textbf{ -0.028 } & \textbf{ -0.027 } & \textbf{ -0.025 } & \textbf{ -0.022 } & \textbf{ -0.021 } & \textbf{ -0.026 } & \textbf{ -0.025 } & \textbf{ -0.022 } & \textbf{ -0.022 } & \textbf{ -0.017 } \\ 
+  TS w/ SSC V1 & -0.009 & -0.008 & -0.003 & -0.002 & -0.001 & -0.010 & -0.008 & -0.002 & 0.001 & -0.001 & -0.008 & -0.005 & 0.001 & 0.003 & 0.007 \\ 
+  TS w/ SSC V2 & -0.010 & -0.009 & -0.005 & -0.006 & -0.005 & \textbf{ -0.011 } & -0.009 & -0.005 & -0.004 & -0.005 & \textbf{ -0.010 } & -0.008 & -0.004 & -0.005 & -0.003 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & -0.002 & -0.003 & -0.006 & -0.008 & -0.002 & -0.001 & -0.003 & -0.005 & -0.008 & -0.002 & -0.001 & -0.003 & -0.006 & -0.008 \\ 
+  TS w/o SSC & -0.010 & -0.010 & -0.008 & -0.008 & -0.007 & -0.009 & -0.009 & -0.009 & -0.006 & -0.007 & -0.008 & -0.008 & -0.008 & -0.007 & -0.006 \\ 
+  TS w/ SSC V1 & -0.003 & -0.002 & 0.001 & 0.001 & 0.001 & -0.003 & -0.001 & -0.000 & 0.002 & 0.001 & -0.002 & -0.000 & 0.001 & 0.002 & 0.003 \\ 
+  TS w/ SSC V2 & -0.003 & -0.002 & -0.000 & -0.001 & -0.000 & -0.003 & -0.001 & -0.001 & 0.001 & -0.001 & -0.003 & -0.001 & -0.001 & -0.001 & -0.001 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & -0.001 & -0.003 & -0.006 & -0.007 & -0.001 & -0.001 & -0.002 & -0.006 & -0.008 & -0.001 & -0.001 & -0.003 & -0.006 & -0.007 \\ 
+  TS w/o SSC & -0.005 & -0.004 & -0.004 & -0.004 & -0.002 & -0.005 & -0.004 & -0.004 & -0.003 & -0.003 & -0.004 & -0.004 & -0.004 & -0.003 & -0.002 \\ 
+  TS w/ SSC V1 & -0.002 & -0.000 & 0.000 & 0.001 & 0.002 & -0.001 & -0.000 & 0.001 & 0.001 & 0.001 & -0.001 & 0.000 & 0.000 & 0.001 & 0.002 \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & 0.000 & 0.000 & 0.001 & -0.002 & -0.000 & 0.000 & 0.000 & -0.000 & -0.001 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.001 & -0.003 & -0.006 & -0.008 & -0.000 & -0.001 & -0.003 & -0.006 & -0.008 & 0.000 & -0.001 & -0.003 & -0.006 & -0.008 \\ 
+  TS w/o SSC & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            two variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & -0.002 & -0.001 & -0.002 & -0.004 & \textbf{ 0.016 } & -0.001 & -0.001 & -0.001 & -0.004 & \textbf{ 0.016 } & -0.002 & -0.000 & -0.000 & -0.005 \\ 
+  TS w/o SSC & \textbf{ 0.023 } & 0.005 & 0.003 & 0.001 & -0.002 & \textbf{ 0.024 } & 0.005 & 0.003 & 0.001 & -0.002 & \textbf{ 0.023 } & 0.005 & 0.003 & 0.002 & -0.003 \\ 
+  TS w/ SSC V1 & \textbf{ 0.013 } & -0.005 & -0.005 & -0.005 & -0.007 & \textbf{ 0.013 } & -0.006 & -0.005 & -0.004 & -0.007 & \textbf{ 0.012 } & -0.007 & -0.005 & -0.004 & -0.008 \\ 
+  TS w/ SSC V2 & \textbf{ 0.017 } & -0.001 & -0.001 & -0.002 & -0.003 & \textbf{ 0.017 } & -0.001 & -0.001 & -0.001 & -0.004 & \textbf{ 0.017 } & -0.002 & -0.000 & 0.000 & -0.005 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.008 & -0.001 & -0.000 & -0.001 & -0.002 & 0.008 & -0.001 & -0.001 & -0.001 & -0.003 & 0.009 & -0.001 & -0.000 & -0.000 & -0.003 \\ 
+  TS w/o SSC & \textbf{ 0.013 } & 0.001 & 0.001 & -0.000 & -0.002 & \textbf{ 0.012 } & 0.002 & 0.001 & 0.000 & -0.002 & \textbf{ 0.013 } & 0.001 & 0.001 & 0.001 & -0.002 \\ 
+  TS w/ SSC V1 & 0.008 & -0.002 & -0.002 & -0.002 & -0.004 & 0.007 & -0.002 & -0.002 & -0.002 & -0.004 & 0.008 & -0.003 & -0.001 & -0.001 & -0.004 \\ 
+  TS w/ SSC V2 & 0.009 & -0.001 & -0.000 & -0.001 & -0.002 & 0.008 & -0.001 & -0.000 & -0.001 & -0.003 & 0.009 & -0.001 & -0.000 & -0.000 & -0.003 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 & 0.006 & -0.001 & -0.000 & -0.001 & -0.002 & 0.006 & -0.001 & -0.000 & -0.001 & -0.002 \\ 
+  TS w/o SSC & 0.009 & 0.001 & 0.000 & -0.000 & -0.002 & 0.009 & 0.001 & 0.000 & -0.000 & -0.002 & 0.008 & 0.001 & 0.000 & -0.000 & -0.002 \\ 
+  TS w/ SSC V1 & 0.006 & -0.001 & -0.001 & -0.001 & -0.002 & 0.006 & -0.001 & -0.001 & -0.001 & -0.003 & 0.005 & -0.001 & -0.001 & -0.001 & -0.003 \\ 
+  TS w/ SSC V2 & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 & 0.006 & -0.001 & -0.000 & -0.001 & -0.002 & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            two variables with missing data with 20\% missing in each.} 
+\label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.003 & -0.003 & -0.003 & 0.002 & -0.007 & -0.003 & -0.003 & -0.004 & 0.003 & -0.006 & -0.003 & -0.004 & -0.006 & 0.005 \\ 
+  TS w/o SSC & \textbf{ -0.010 } & -0.008 & -0.005 & -0.002 & 0.006 & \textbf{ -0.011 } & -0.008 & -0.006 & -0.004 & 0.007 & -0.009 & -0.007 & -0.006 & -0.005 & 0.008 \\ 
+  TS w/ SSC V1 & -0.006 & -0.001 & 0.002 & 0.003 & 0.008 & -0.006 & -0.001 & 0.002 & 0.003 & \textbf{ 0.012 } & -0.004 & 0.001 & 0.005 & 0.007 & \textbf{ 0.022 } \\ 
+  TS w/ SSC V2 & -0.007 & -0.003 & -0.001 & 0.002 & 0.009 & -0.007 & -0.003 & -0.001 & 0.000 & 0.010 & -0.006 & -0.003 & -0.002 & -0.002 & \textbf{ 0.011 } \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & -0.001 & -0.002 & -0.003 & -0.001 & -0.002 & -0.001 & -0.002 & -0.004 & -0.000 & -0.002 & -0.001 & -0.002 & -0.004 & -0.000 \\ 
+  TS w/o SSC & -0.003 & -0.002 & -0.002 & 0.000 & 0.005 & -0.003 & -0.002 & -0.001 & -0.000 & 0.006 & -0.003 & -0.002 & -0.002 & -0.001 & 0.005 \\ 
+  TS w/ SSC V1 & -0.002 & 0.000 & 0.001 & 0.002 & 0.005 & -0.002 & 0.000 & 0.001 & 0.002 & 0.007 & -0.002 & 0.001 & 0.001 & 0.003 & \textbf{ 0.011 } \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & 0.000 & 0.002 & 0.006 & -0.002 & -0.000 & 0.000 & 0.001 & 0.007 & -0.002 & -0.000 & -0.000 & -0.000 & 0.006 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & -0.001 & -0.002 & -0.005 & -0.003 & -0.001 & -0.000 & -0.002 & -0.004 & -0.002 & -0.001 & -0.000 & -0.002 & -0.004 & -0.001 \\ 
+  TS w/o SSC & -0.002 & -0.001 & -0.001 & -0.000 & 0.004 & -0.002 & -0.001 & -0.001 & 0.000 & 0.005 & -0.001 & -0.001 & -0.001 & -0.000 & 0.005 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.000 & 0.000 & 0.004 & -0.001 & 0.000 & 0.001 & 0.001 & 0.006 & -0.001 & 0.001 & 0.001 & 0.002 & 0.008 \\ 
+  TS w/ SSC V2 & -0.001 & 0.000 & 0.000 & 0.000 & 0.005 & -0.001 & 0.000 & 0.000 & 0.001 & 0.005 & -0.001 & 0.000 & 0.000 & 0.001 & 0.006 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.001 & -0.002 & -0.005 & -0.007 & 0.000 & -0.001 & -0.002 & -0.005 & -0.007 & 0.000 & -0.001 & -0.002 & -0.004 & -0.007 \\ 
+  TS w/o SSC & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of RMSEA comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            two variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200_dif.rmsea}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & 0.000 & 0.000 & 0.000 & -0.004 & \textbf{ 0.017 } & -0.000 & 0.000 & -0.001 & -0.004 & \textbf{ 0.015 } & -0.000 & -0.000 & 0.000 & -0.004 \\ 
+  TS w/o SSC & \textbf{ 0.045 } & \textbf{ 0.024 } & \textbf{ 0.014 } & 0.009 & 0.003 & \textbf{ 0.046 } & \textbf{ 0.023 } & \textbf{ 0.014 } & 0.008 & 0.003 & \textbf{ 0.044 } & \textbf{ 0.023 } & \textbf{ 0.013 } & 0.009 & 0.002 \\ 
+  TS w/ SSC V1 & \textbf{ 0.018 } & -0.001 & -0.003 & -0.003 & -0.007 & \textbf{ 0.019 } & -0.002 & -0.002 & -0.004 & -0.007 & \textbf{ 0.016 } & -0.004 & -0.004 & -0.003 & -0.007 \\ 
+  TS w/ SSC V2 & \textbf{ 0.021 } & 0.003 & 0.001 & 0.001 & -0.003 & \textbf{ 0.022 } & 0.002 & 0.002 & 0.000 & -0.003 & \textbf{ 0.020 } & 0.002 & 0.001 & 0.001 & -0.003 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.000 & -0.000 & -0.001 & -0.002 & 0.008 & -0.001 & -0.000 & -0.001 & -0.003 & 0.009 & -0.001 & 0.000 & -0.000 & -0.003 \\ 
+  TS w/o SSC & \textbf{ 0.026 } & 0.010 & 0.005 & 0.003 & -0.000 & \textbf{ 0.025 } & 0.009 & 0.005 & 0.002 & -0.000 & \textbf{ 0.026 } & 0.009 & 0.005 & 0.003 & -0.000 \\ 
+  TS w/ SSC V1 & \textbf{ 0.011 } & -0.001 & -0.002 & -0.002 & -0.004 & 0.010 & -0.002 & -0.001 & -0.003 & -0.004 & 0.009 & -0.003 & -0.001 & -0.002 & -0.004 \\ 
+  TS w/ SSC V2 & \textbf{ 0.011 } & -0.000 & -0.000 & -0.000 & -0.002 & \textbf{ 0.011 } & -0.001 & 0.000 & -0.001 & -0.003 & \textbf{ 0.011 } & -0.001 & 0.000 & -0.000 & -0.002 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.000 & -0.000 & -0.001 & -0.002 & 0.006 & -0.000 & -0.000 & -0.001 & -0.002 & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 \\ 
+  TS w/o SSC & \textbf{ 0.017 } & 0.005 & 0.002 & 0.001 & -0.001 & \textbf{ 0.017 } & 0.005 & 0.002 & 0.001 & -0.001 & \textbf{ 0.017 } & 0.005 & 0.002 & 0.001 & -0.001 \\ 
+  TS w/ SSC V1 & 0.007 & -0.001 & -0.001 & -0.001 & -0.003 & 0.007 & -0.001 & -0.001 & -0.001 & -0.003 & 0.006 & -0.001 & -0.001 & -0.001 & -0.003 \\ 
+  TS w/ SSC V2 & 0.007 & -0.001 & -0.000 & -0.001 & -0.002 & 0.007 & -0.000 & -0.000 & -0.001 & -0.002 & 0.007 & -0.000 & -0.000 & -0.000 & -0.002 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 \\ 
+  TS w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V1 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 \\ 
+  TS w/ SSC V2 & 0.000 & -0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & 0.000 & -0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Sun May 31 05:12:30 2020
+\begin{sidewaystable}[ht]
+\centering
+\caption{Average bias of the estimate of CFI comparing FIML with TS methods
+                              \newline Study 1 condition: MCAR, two correlated residuals, misfit and missing data on the same factor,
+            two variables with missing data with 50\% missing in each.} 
+\label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200_dif.cfi}
+\begingroup\footnotesize
+\begin{tabular}{lccccc|ccccc|ccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+   &   &   & FC=0 &   &   &   &   & FC=0.4 &   &   &   &   & FC=0.8 &   &   \\ 
+   \hline
+  &   &   & n=200 &   &   &   &   & n=200 &   &   &   &   & n=200 &   &   \\ 
+  FIML & -0.007 & -0.006 & -0.008 & \textbf{ -0.015 } & -0.009 & -0.008 & -0.006 & -0.009 & \textbf{ -0.012 } & -0.009 & -0.006 & -0.005 & -0.006 & \textbf{ -0.014 } & -0.008 \\ 
+  TS w/o SSC & \textbf{ -0.028 } & \textbf{ -0.027 } & \textbf{ -0.023 } & \textbf{ -0.019 } & -0.003 & \textbf{ -0.028 } & \textbf{ -0.026 } & \textbf{ -0.024 } & \textbf{ -0.016 } & -0.004 & \textbf{ -0.024 } & \textbf{ -0.023 } & \textbf{ -0.020 } & \textbf{ -0.018 } & -0.003 \\ 
+  TS w/ SSC V1 & -0.010 & -0.007 & -0.001 & -0.002 & 0.010 & -0.010 & -0.005 & -0.002 & 0.004 & \textbf{ 0.012 } & -0.007 & -0.002 & 0.004 & 0.007 & \textbf{ 0.022 } \\ 
+  TS w/ SSC V2 & \textbf{ -0.011 } & -0.008 & -0.004 & -0.004 & 0.008 & \textbf{ -0.011 } & -0.007 & -0.006 & -0.001 & 0.007 & -0.009 & -0.006 & -0.003 & -0.004 & 0.007 \\ 
+   \hline
+  &   &   & n=500 &   &   &   &   & n=500 &   &   &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & -0.003 & -0.006 & \textbf{ -0.013 } & \textbf{ -0.013 } & -0.002 & -0.002 & -0.007 & \textbf{ -0.011 } & \textbf{ -0.011 } & -0.002 & -0.002 & -0.006 & \textbf{ -0.012 } & \textbf{ -0.011 } \\ 
+  TS w/o SSC & -0.010 & -0.009 & -0.008 & -0.006 & 0.001 & -0.009 & -0.009 & -0.008 & -0.004 & 0.002 & -0.008 & -0.008 & -0.008 & -0.006 & 0.002 \\ 
+  TS w/ SSC V1 & -0.003 & -0.001 & 0.000 & 0.001 & 0.006 & -0.003 & -0.000 & 0.000 & 0.003 & 0.008 & -0.002 & 0.000 & 0.001 & 0.003 & \textbf{ 0.012 } \\ 
+  TS w/ SSC V2 & -0.003 & -0.001 & -0.000 & 0.000 & 0.005 & -0.003 & -0.001 & -0.001 & 0.002 & 0.007 & -0.003 & -0.001 & -0.001 & -0.000 & 0.006 \\ 
+   \hline
+  &   &   & n=1000 &   &   &   &   & n=1000 &   &   &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & -0.002 & -0.006 & \textbf{ -0.012 } & \textbf{ -0.014 } & -0.001 & -0.002 & -0.006 & \textbf{ -0.011 } & \textbf{ -0.013 } & -0.001 & -0.001 & -0.005 & \textbf{ -0.012 } & \textbf{ -0.012 } \\ 
+  TS w/o SSC & -0.005 & -0.004 & -0.003 & -0.002 & 0.003 & -0.004 & -0.004 & -0.003 & -0.002 & 0.003 & -0.004 & -0.004 & -0.003 & -0.003 & 0.003 \\ 
+  TS w/ SSC V1 & -0.001 & 0.000 & 0.000 & 0.001 & 0.005 & -0.001 & 0.000 & 0.001 & 0.002 & 0.006 & -0.001 & 0.000 & 0.001 & 0.002 & 0.008 \\ 
+  TS w/ SSC V2 & -0.002 & -0.000 & 0.000 & 0.001 & 0.005 & -0.001 & -0.000 & 0.000 & 0.001 & 0.005 & -0.001 & -0.000 & 0.000 & -0.000 & 0.005 \\ 
+   \hline
+  &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & -0.002 & -0.006 & \textbf{ -0.013 } & \textbf{ -0.019 } & -0.000 & -0.002 & -0.006 & \textbf{ -0.013 } & \textbf{ -0.019 } & 0.000 & -0.001 & -0.005 & \textbf{ -0.011 } & \textbf{ -0.018 } \\ 
+  TS w/o SSC & -0.000 & -0.000 & 0.000 & 0.000 & 0.000 & -0.000 & -0.000 & -0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & 0.000 \\ 
+  TS w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & -0.000 & 0.000 & 0.000 & -0.000 & 0.000 & -0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{16}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$TS=Two-stage; CR=Correlated Residual;}} \\
+ \multicolumn{16}{l}{\footnotesize{FC=Factor Correlation; SSC=Small sample correction;}} \\
+ \multicolumn{16}{l}{\footnotesize{TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\ 
+\end{tabular}
+\endgroup
+\end{sidewaystable}\clearpage
