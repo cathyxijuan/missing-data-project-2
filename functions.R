@@ -1009,7 +1009,7 @@ ts.s2.table <- function(result.n200, result.n500, result.n1000, result.n1000000,
   
   
   print(xtable(rmsea.tab.final, auto=T, label=paste(label.name, "rmsea", sep="."), align="llccccccccc",
-               caption=paste0(caption.before, " RMSEA Comparing TS to FIML Method \\newline Study 2 condition:  ", caption.after)), 
+               caption=paste0(caption.before, " RMSEA comparing FIML with TS methods \\newline Study 2 condition:  ", caption.after)), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 5, 10,15), add.to.row=comment)
   
@@ -1025,7 +1025,7 @@ ts.s2.table <- function(result.n200, result.n500, result.n1000, result.n1000000,
   
   
   print(xtable(cfi.tab.final, auto=T, label=paste(label.name, "cfi", sep="."), align="llccccccccc",
-               caption=paste0(caption.before, " CFI Comparing TS to FIML Method \\newline Study 2 condition:  ", caption.after) ), 
+               caption=paste0(caption.before, " CFI comparing FIML with TS methods \\newline Study 2 condition:  ", caption.after) ), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 5, 10,15), add.to.row=comment )
   
@@ -1097,7 +1097,7 @@ ts.s1.table <- function(result.n200, result.n500, result.n1000, result.n1000000,
   
   
   print(xtable(rmsea.tab.final, auto=T, label=paste(label.name, "rmsea", sep="."), align="llccccc|ccccc|ccccc",
-               caption=paste0(caption.before, " RMSEA Comparing TS to FIML Method
+               caption=paste0(caption.before, " RMSEA comparing FIML with TS methods
                               \\newline Study 1 condition: ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\footnotesize",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 1, 6, 11,16), add.to.row=comment, floating=T, floating.environment = "sidewaystable")
@@ -1121,7 +1121,7 @@ ts.s1.table <- function(result.n200, result.n500, result.n1000, result.n1000000,
   
   
   print(xtable(cfi.tab.final, auto=T, label=paste(label.name, "cfi", sep="."), align="llccccc|ccccc|ccccc",
-               caption=paste0(caption.before, " CFI Comparing TS to FIML Method
+               caption=paste0(caption.before, " CFI comparing FIML with TS methods
                               \\newline Study 1 condition: ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\footnotesize",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 1, 6, 11,16), add.to.row=comment, floating=T, floating.environment = "sidewaystable")
@@ -1193,7 +1193,7 @@ fimlc.s2.table <- function(result.n200, result.n500, result.n1000, result.n10000
                            "{\\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\\\ \n")
   
   print(xtable(rmsea.tab.final, auto=T, label=paste(label.name, "rmsea", sep="."), align="llccccccccc",
-               caption=paste0(caption.before, " RMSEA Comparing FIML-C to FIML Method \\newline Study 2 condition:  ", caption.after)), 
+               caption=paste0(caption.before, " RMSEA comparing FIML with FIML-C methods \\newline Study 2 condition:  ", caption.after)), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
   
@@ -1216,7 +1216,7 @@ fimlc.s2.table <- function(result.n200, result.n500, result.n1000, result.n10000
   
   
   print(xtable(cfi.tab.final, auto=T, label=paste(label.name, "cfi", sep="."), align="llccccccccc",
-               caption=paste0(caption.before, " CFI Comparing FIML-C to FIML Method \\newline Study 2 condition:  ", caption.after)), 
+               caption=paste0(caption.before, " CFI comparing FIML with FIML-C methods \\newline Study 2 condition:  ", caption.after)), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
 }
@@ -1322,19 +1322,19 @@ fimlc.s1.table <- function(result.n200, result.n500, result.n1000, result.n10000
                            "{\\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\\\ \n")
   
   print(xtable(rmsea.tab.final, auto=T, label=paste(label.name, "rmsea.fc0", sep="."), align="llccccc",
-               caption=paste0(caption.before, " RMSEA Comparing FIML-C to FIML Method 
+               caption=paste0(caption.before, " RMSEA comparing FIML with FIML-C methods 
                               \\newline Study 1 condition: factor correlation of 0, ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
   
   print(xtable(rmsea.tab.final2, auto=T, label=paste(label.name, "rmsea.fc0.4.", sep="."), align="llccccc",
-               caption=paste0(caption.before, " RMSEA Comparing FIML-C to FIML Method 
+               caption=paste0(caption.before, " RMSEA comparing FIML with FIML-C methods 
                               \\newline Study 1 condition: factor correlation of 0.4, ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
   
   print(xtable(rmsea.tab.final3, auto=T, label=paste(label.name, "rmsea.fc0.8.", sep="."), align="llccccc",
-               caption=paste0(caption.before, " RMSEA Comparing FIML-C to FIML Method 
+               caption=paste0(caption.before, " RMSEA comparing FIML with FIML-C methods 
                               \\newline Study 1 condition: factor correlation of 0.8, ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
@@ -1372,19 +1372,19 @@ fimlc.s1.table <- function(result.n200, result.n500, result.n1000, result.n10000
   
   
   print(xtable(cfi.tab.final, auto=T, label=paste(label.name, "cfi.fc0", sep="."), align="llccccc",
-               caption=paste0(caption.before, " CFI Comparing FIML-C to FIML Method 
+               caption=paste0(caption.before, " CFI comparing FIML with FIML-C methods 
                               \\newline Study 1 condition: factor correlation of 0, ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
   
   print(xtable(cfi.tab.final2, auto=T, label=paste(label.name, "cfi.fc0.4.", sep="."), align="llccccc",
-               caption=paste0(caption.before, " CFI Comparing FIML-C to FIML Method 
+               caption=paste0(caption.before, " CFI comparing FIML with FIML-C methods 
                               \\newline Study 1 condition: factor correlation of 0.4, ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
   
   print(xtable(cfi.tab.final3, auto=T, label=paste(label.name, "cfi.fc0.8.", sep="."), align="llccccc",
-               caption=paste0(caption.before, " CFI Comparing FIML-C to FIML Method 
+               caption=paste0(caption.before, " CFI comparing FIML with FIML-C methods 
                               \\newline Study 1 condition: factor correlation of 0.8, ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 0, 9, 18,27), add.to.row=comment)
@@ -1467,7 +1467,7 @@ ts.s2.sd.table <- function(result.n200.20per, result.n500.20per, result.n1000.20
   
   
   print(xtable(tab.final_r, auto=T, label=paste(label.name, "rmsea", sep="."), align="llccccccccc",
-               caption=paste0(caption.before, " RMSEA Comparing TS to FIML Method \\newline Study 2 condition:  ", caption.after)), 
+               caption=paste0(caption.before, " RMSEA comparing FIML with TS methods \\newline Study 2 condition:  ", caption.after)), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 1, 6, 11, 16, 17, 22, 27), add.to.row=comment)
   #######cfi
@@ -1494,7 +1494,7 @@ ts.s2.sd.table <- function(result.n200.20per, result.n500.20per, result.n1000.20
   
   
   print(xtable(tab.final_c, auto=T, label=paste(label.name, "cfi", sep="."), align="llccccccccc",
-               caption=paste0(caption.before, " CFI Comparing TS to FIML Method \\newline Study 2 condition:  ", caption.after)), 
+               caption=paste0(caption.before, " CFI comparing FIML with TS methods \\newline Study 2 condition:  ", caption.after)), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 1, 6, 11, 16, 17, 22, 27), add.to.row=comment)
 }
@@ -1591,7 +1591,7 @@ ts.s1.sd.table <- function(result.n200.20per, result.n500.20per, result.n1000.20
   
   
   print(xtable(tab.final_r, auto=T, label=paste(label.name, "rmsea", sep="."), align="llccccc|ccccc|ccccc",
-               caption=paste0(caption.before, " RMSEA Comparing TS to FIML Method
+               caption=paste0(caption.before, " RMSEA comparing FIML with TS methods
                               \\newline Study 1 condition: ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\footnotesize",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 1, 2,  7, 12,17, 18, 23,28), add.to.row=comment, floating=T, floating.environment = "sidewaystable")
@@ -1625,7 +1625,7 @@ ts.s1.sd.table <- function(result.n200.20per, result.n500.20per, result.n1000.20
                            "{\\footnotesize{CR=Correlated Residual; FC=Factor Correlation; SSC=Small sample correction;TS w/o SSC=TS without SSC; TS w/ SSC V1-V2=TS with SSC versions 1-2.}} \\\\ \n")
   
   print(xtable(tab.final_c, auto=T, label=paste(label.name, "cfi", sep="."), align="llccccc|ccccc|ccccc",
-               caption=paste0(caption.before, " CFI Comparing TS to FIML Method
+               caption=paste0(caption.before, " CFI comparing FIML with TS methods
                               \\newline Study 1 condition: ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\footnotesize",  caption.placement = "top", include.rownames = F,
         hline.after =c(-1, 1, 2,  7, 12,17, 18, 23,28), add.to.row=comment, floating=T, floating.environment = "sidewaystable")
@@ -1641,8 +1641,8 @@ fimlc.s2.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
                               caption.after=" ",
                               w.in.num.r = 0.02,
                               w.in.num.c = 0.03,
-                              bold.note.r="Bold values are those with raw bias beyond $\\pm 0.02.$",
-                              bold.note.c="Bold values are those with raw bias beyond $\\pm 0.03.$"){
+                              bold.note.r="Bold values are those with standard errors beyond $\\pm 0.02.$",
+                              bold.note.c="Bold values are those with standard errors beyond $\\pm 0.03.$"){
   
   rownam <- rep(c(" ","FIML", "FIML-C w/o SSC", 
                   "FIML-C w/ SSC V1", "FIML-C w/ SSC V2",
@@ -1689,7 +1689,7 @@ fimlc.s2.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
                            "{\\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\\\ \n")
   
   print(xtable(rmsea.tab.final, auto=T, label=paste(label.name, "rmsea", sep="."), align="llccccccccc",
-               caption=paste0(caption.before, " RMSEA Comparing FIML-C to FIML Method \\newline Study 2 condition:  ", caption.after)), 
+               caption=paste0(caption.before, " RMSEA comparing FIML with FIML-C methods \\newline Study 2 condition:  ", caption.after)), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 9, 18), add.to.row=comment)
 ##CFI
@@ -1714,7 +1714,7 @@ fimlc.s2.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
                            "{\\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\\\ \n")
   
   print(xtable(cfi.tab.final, auto=T, label=paste(label.name, "cfi", sep="."), align="llccccccccc",
-               caption=paste0(caption.before, " CFI Comparing FIML-C to FIML Method \\newline Study 2 condition:  ", caption.after)), 
+               caption=paste0(caption.before, " CFI comparing FIML with FIML-C methods \\newline Study 2 condition:  ", caption.after)), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 9, 18), add.to.row=comment)
 }
@@ -1732,8 +1732,8 @@ fimlc.s1.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
                               caption.after=" ",
                               w.in.num.r = 0.02,
                               w.in.num.c = 0.03,
-                              bold.note.r="Bold values are those with raw bias beyond $\\pm 0.02.$",
-                              bold.note.c="Bold values are those with raw bias beyond $\\pm 0.03.$"){ 
+                              bold.note.r="Bold values are those with standard errors beyond $\\pm 0.02.$",
+                              bold.note.c="Bold values are those with standard errors beyond $\\pm 0.03.$"){ 
   rownam <-c(" ", rep(c(" ","FIML", "FIML-C w/o SSC", 
                         "FIML-C w/ SSC V1", "FIML-C w/ SSC V2",
                         "FIML-C w/ SSC V3", "FIML-C w/ SSC V4",
@@ -1780,7 +1780,7 @@ fimlc.s1.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
                            "{\\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\\\ \n")
   
   print(xtable(rmsea.tab.final, auto=T, label=paste(label.name, "rmsea.fc0", sep="."),  align="llccccc|ccccc|ccccc",
-               caption=paste0(caption.before, " RMSEA Comparing FIML-C to FIML Method 
+               caption=paste0(caption.before, " RMSEA comparing FIML with FIML-C methods 
                               \\newline Study 1 condition: factor correlation of 0, ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 1, 10, 19), add.to.row=comment, floating=T, floating.environment = "sidewaystable")
@@ -1807,7 +1807,7 @@ fimlc.s1.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
                            "{\\footnotesize{SSC=Small sample correction; FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\\\ \n")
   
   print(xtable(cfi.tab.final, auto=T, label=paste(label.name, "cfi.fc0", sep="."), align="llccccc|ccccc|ccccc",
-               caption=paste0(caption.before, " CFI Comparing FIML-C to FIML Method 
+               caption=paste0(caption.before, " CFI comparing FIML with FIML-C methods 
                               \\newline Study 1 condition: factor correlation of 0, ", caption.after)),
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F,
         hline.after = c(-1, 1, 10, 19), add.to.row=comment, floating=T, floating.environment = "sidewaystable")

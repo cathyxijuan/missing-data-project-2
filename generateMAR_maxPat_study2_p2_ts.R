@@ -2,7 +2,7 @@ library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 
 source("functions.R")
-source("Models_WM.R") # 
+source("Models_WM.R") #  done 
 
 
 

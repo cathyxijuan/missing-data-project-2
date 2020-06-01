@@ -139,19 +139,18 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
 ######## Third graph: Graphing study 2###########
 
 ###RMSEA###
-cond1 <- fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_sd
-cond2 <-fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500_sd
-cond3 <- fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_sd
-cond4 <-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500_sd
-cond5 <- fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_sd
-cond6 <- fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500_sd
+
+cond1 <- fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_sd
+cond2 <-fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500_sd
+cond3 <- fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_sd
+cond4 <- fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500_sd
 row.num <- 1:8 #rows for rmsea
 col.num <- 1:9
 ver.num <- 8
 sample.num <- 2
-missing.num <- 3
+missing.num <- 2
 misfit.num <- length(col.num)
-cond.num <- 6
+cond.num <- 4
 col.name <- c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2)
 row.name <- rep(c("FIML", 
                   "FIML-C  without SSC", 
@@ -168,12 +167,10 @@ cond.matrix2 <- cond2[row.num ,col.num]
 cond.matrix3 <- cond3[row.num ,col.num]
 cond.matrix4 <- cond4[row.num ,col.num]
 
-cond.matrix5 <- cond5[row.num ,col.num]
-cond.matrix6 <- cond6[row.num ,col.num]
 
 
-rmsea_wide<- rbind(cond.matrix1,  cond.matrix2, cond.matrix3,  cond.matrix4, 
-                   cond.matrix5,  cond.matrix6)
+
+rmsea_wide<- rbind(cond.matrix1,  cond.matrix2, cond.matrix3,  cond.matrix4)
 colnames(rmsea_wide) <-  col.name
 rownames(rmsea_wide)<-row.name
 head(rmsea_wide)
@@ -186,8 +183,7 @@ head(rmsea_long)
 Sample_Size <- rep(rep(rep(c("n= 200", "n= 500"), each=ver.num),missing.num),misfit.num)
 length(Sample_Size)
 rmsea_long$Sample_Size <- as.factor(Sample_Size)
-Percentage_of_Missing <- rep(rep(c(" Two variables with missing",
-                                   "Four variables with missing",
+Percentage_of_Missing <- rep(rep(c("Four variables with missing",
                                    "Six variables with missing"), each=ver.num*sample.num),misfit.num)
 length(Percentage_of_Missing)
 
@@ -205,7 +201,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   xlab("Size of Factor Correlation (Degree of Misfit)") +
   scale_y_continuous(limits = c(0, 0.1))+ 
   theme_bw() + scale_color_jco()+scale_x_reverse()+
-  scale_shape_manual(values=seq(1,9))
+  scale_shape_manual(values=seq(1,9))+theme(legend.position = "none")
 
 
 
@@ -216,7 +212,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   xlab("Size of Factor Correlation (Degree of Misfit)") +
   scale_y_continuous(limits = c(0, 0.8))+ 
   theme_bw() + scale_color_jco()+scale_x_reverse()+
-  scale_shape_manual(values=seq(1,9))
+  scale_shape_manual(values=seq(1,9))+theme(legend.position = "none")
 
 
 
@@ -230,12 +226,9 @@ cond.matrix2 <- cond2[row.num ,col.num]
 cond.matrix3 <- cond3[row.num ,col.num]
 cond.matrix4 <- cond4[row.num ,col.num]
 
-cond.matrix5 <- cond5[row.num ,col.num]
-cond.matrix6 <-cond6[row.num ,col.num]
 
 
-cfi_wide <- rbind(cond.matrix1,  cond.matrix2, cond.matrix3,  cond.matrix4, 
-                  cond.matrix5,  cond.matrix6)
+cfi_wide <- rbind(cond.matrix1,  cond.matrix2, cond.matrix3,  cond.matrix4)
 
 colnames(cfi_wide) <-  col.name
 rownames(cfi_wide)<-row.name

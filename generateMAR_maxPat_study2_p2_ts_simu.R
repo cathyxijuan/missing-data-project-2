@@ -1,7 +1,7 @@
 library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_WM.R") # done n=200 doing n=500
+source("Models_WM.R") # done n=200 doing n=500, 1000
 
 
 
@@ -253,7 +253,7 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results TS")
 fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                     fitted.mod=fitted.mod, 
                                                                                     missing.percentage = 0.20, 
-                                                                                    sample.nobs=200,
+                                                                                    sample.nobs=500,
                                                                                     missing.type = "strong",
                                                                                     var.with.missing = 2)
 
@@ -273,7 +273,7 @@ save(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_ts_checks_n500, file="fitMAR_Str
 fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                     fitted.mod=fitted.mod, 
                                                                                     missing.percentage = 0.50, 
-                                                                                    sample.nobs=200,
+                                                                                    sample.nobs=500,
                                                                                     missing.type = "strong",
                                                                                     var.with.missing = 2)
 fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_ts_n500 <- 
@@ -295,7 +295,7 @@ save(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_ts_checks_n500, file="fitMAR_Str
 fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                   fitted.mod=fitted.mod, 
                                                                                   missing.percentage = 0.20, 
-                                                                                  sample.nobs=200,
+                                                                                  sample.nobs=500,
                                                                                   missing.type = "weak",
                                                                                   var.with.missing = 2)
 
@@ -315,7 +315,7 @@ save(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_ts_checks_n500, file="fitMAR_Weak_
 fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                   fitted.mod=fitted.mod, 
                                                                                   missing.percentage = 0.50, 
-                                                                                  sample.nobs=200,
+                                                                                  sample.nobs=500,
                                                                                   missing.type = "weak",
                                                                                   var.with.missing = 2)
 
@@ -336,7 +336,7 @@ save(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_ts_checks_n500 , file="fitMAR_Weak
 fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                     fitted.mod=fitted.mod, 
                                                                                     missing.percentage = 0.20, 
-                                                                                    sample.nobs=200,
+                                                                                    sample.nobs=500,
                                                                                     missing.type = "strong",
                                                                                     var.with.missing = 4)
 
@@ -357,7 +357,7 @@ save(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_ts_checks_n500, file="fitMAR_Str
 fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                     fitted.mod=fitted.mod, 
                                                                                     missing.percentage = 0.50, 
-                                                                                    sample.nobs=200,
+                                                                                    sample.nobs=500,
                                                                                     missing.type = "strong",
                                                                                     var.with.missing = 4)
 fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_ts_n500 <- 
@@ -379,7 +379,7 @@ save(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_ts_checks_n500, file="fitMAR_Str
 fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                   fitted.mod=fitted.mod, 
                                                                                   missing.percentage = 0.20, 
-                                                                                  sample.nobs=200,
+                                                                                  sample.nobs=500,
                                                                                   missing.type = "weak",
                                                                                   var.with.missing = 4)
 
@@ -399,7 +399,7 @@ save(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_ts_checks_n500, file="fitMAR_Weak_
 fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                   fitted.mod=fitted.mod, 
                                                                                   missing.percentage = 0.50, 
-                                                                                  sample.nobs=200,
+                                                                                  sample.nobs=500,
                                                                                   missing.type = "weak",
                                                                                   var.with.missing = 4)
 
@@ -424,7 +424,7 @@ save(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_ts_checks_n500 ,
 fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                     fitted.mod=fitted.mod, 
                                                                                     missing.percentage = 0.20, 
-                                                                                    sample.nobs=200,
+                                                                                    sample.nobs=500,
                                                                                     missing.type = "strong",
                                                                                     var.with.missing = 6)
 
@@ -445,7 +445,7 @@ save(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_ts_checks_n500, file="fitMAR_Str
 fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                     fitted.mod=fitted.mod, 
                                                                                     missing.percentage = 0.50, 
-                                                                                    sample.nobs=200,
+                                                                                    sample.nobs=500,
                                                                                     missing.type = "strong",
                                                                                     var.with.missing = 6)
 fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_n500 <- 
@@ -467,7 +467,7 @@ save(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_checks_n500, file="fitMAR_Str
 fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                   fitted.mod=fitted.mod, 
                                                                                   missing.percentage = 0.20, 
-                                                                                  sample.nobs=200,
+                                                                                  sample.nobs=500,
                                                                                   missing.type = "weak",
                                                                                   var.with.missing = 6)
 
@@ -487,13 +487,11 @@ save(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_ts_checks_n500, file="fitMAR_Weak_
 fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_compo_n500 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                   fitted.mod=fitted.mod, 
                                                                                   missing.percentage = 0.50, 
-                                                                                  sample.nobs=200,
+                                                                                  sample.nobs=500,
                                                                                   missing.type = "weak",
                                                                                   var.with.missing = 6)
 
 
-fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_compo_n500 <- c(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_compo_n500_600 , 
-                                                            fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_compo_n500_1000)
 
 fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n500 <- ts.fit(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_compo_n500 )
 fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_checks_n500 <-ts.checks(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_compo_n500, 
@@ -504,3 +502,5 @@ save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n500 ,
      file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n500.RData")
 save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_checks_n500 , 
      file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_checks_n500.RData")
+
+

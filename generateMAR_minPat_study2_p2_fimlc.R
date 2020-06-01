@@ -219,8 +219,8 @@ fit.components.simu <- function(pop.model.list, fitted.mod, sample.nobs,
   
 }
 
-set.seed(111)
-setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
+
+#setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
 
 
 
@@ -434,6 +434,8 @@ fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000000 <-
 fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_checks_n1000000 <- 
   fimlc.checks(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_compo_n1000000 ,
                fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000000)
+
+
 save(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_compo_n1000000, file="fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_compo_n1000000.RData")
 save(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000000 , file="fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000000.RData")
 save(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_checks_n1000000, file="fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_checks_n1000000.RData")
