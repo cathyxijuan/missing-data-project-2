@@ -428,7 +428,7 @@ fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_compo_n1000000 <-  fit.componen
                                                                                     sample.nobs=1000000,
                                                                                     missing.type = "strong",
                                                                                     var.with.missing = 6)
-fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000000 <- 
+<- 
   fimlc.fit(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_compo_n1000000 )
 
 fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_checks_n1000000 <- 
