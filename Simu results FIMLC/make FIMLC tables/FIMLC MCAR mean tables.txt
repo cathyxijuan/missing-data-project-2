@@ -1,8 +1,8 @@
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, complete data.} 
 \label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .rmsea.fc0}
 \begingroup\small
@@ -59,10 +59,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, complete data.} 
 \label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .rmsea.fc0.4.}
 \begingroup\small
@@ -119,10 +119,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, complete data.} 
 \label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .rmsea.fc0.8.}
 \begingroup\small
@@ -179,10 +179,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, complete data.} 
 \label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .cfi.fc0}
 \begingroup\small
@@ -239,10 +239,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, complete data.} 
 \label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .cfi.fc0.4.}
 \begingroup\small
@@ -299,10 +299,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, complete data.} 
 \label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .cfi.fc0.8.}
 \begingroup\small
@@ -359,10 +359,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0}
@@ -420,10 +420,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -481,10 +481,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -542,10 +542,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0}
@@ -603,10 +603,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0.4.}
@@ -664,10 +664,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0.8.}
@@ -725,10 +725,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0}
@@ -786,10 +786,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -847,10 +847,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -908,10 +908,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0}
@@ -969,10 +969,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0.4.}
@@ -1030,10 +1030,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0.8.}
@@ -1091,10 +1091,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:44 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0}
@@ -1152,10 +1152,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -1213,10 +1213,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -1274,10 +1274,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0}
@@ -1335,10 +1335,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0.4.}
@@ -1396,10 +1396,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0.8.}
@@ -1457,10 +1457,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0}
@@ -1518,10 +1518,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -1579,10 +1579,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -1640,10 +1640,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0}
@@ -1701,10 +1701,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0.4.}
@@ -1762,10 +1762,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0.8.}
@@ -1823,10 +1823,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0}
@@ -1884,10 +1884,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -1945,10 +1945,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -2006,10 +2006,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0}
@@ -2067,10 +2067,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0.4.}
@@ -2128,10 +2128,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0.8.}
@@ -2189,10 +2189,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0}
@@ -2250,10 +2250,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -2311,10 +2311,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -2372,10 +2372,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0}
@@ -2433,10 +2433,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0.4.}
@@ -2494,10 +2494,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_mean.cfi.fc0.8.}
@@ -2555,10 +2555,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0}
@@ -2616,10 +2616,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -2677,10 +2677,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -2738,10 +2738,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0}
@@ -2799,10 +2799,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0.4.}
@@ -2860,10 +2860,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0.8.}
@@ -2921,10 +2921,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0}
@@ -2982,10 +2982,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -3043,10 +3043,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -3104,10 +3104,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0}
@@ -3165,10 +3165,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0.4.}
@@ -3226,10 +3226,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_mean.cfi.fc0.8.}
@@ -3287,10 +3287,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0}
@@ -3348,10 +3348,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -3409,10 +3409,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -3470,10 +3470,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0}
@@ -3531,10 +3531,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0.4.}
@@ -3592,10 +3592,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0.8.}
@@ -3653,10 +3653,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0}
@@ -3714,10 +3714,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -3775,10 +3775,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -3836,10 +3836,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0}
@@ -3897,10 +3897,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0.4.}
@@ -3958,10 +3958,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0.8.}
@@ -4019,10 +4019,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0}
@@ -4080,10 +4080,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -4141,10 +4141,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -4202,10 +4202,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0}
@@ -4263,10 +4263,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0.4.}
@@ -4324,10 +4324,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0.8.}
@@ -4385,10 +4385,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0}
@@ -4446,10 +4446,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -4507,10 +4507,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -4568,10 +4568,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0}
@@ -4629,10 +4629,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0.4.}
@@ -4690,10 +4690,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0.8.}
@@ -4751,10 +4751,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0}
@@ -4812,10 +4812,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -4873,10 +4873,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -4934,10 +4934,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0}
@@ -4995,10 +4995,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0.4.}
@@ -5056,10 +5056,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0.8.}
@@ -5117,10 +5117,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0}
@@ -5178,10 +5178,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -5239,10 +5239,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -5300,10 +5300,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0}
@@ -5361,10 +5361,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0.4.}
@@ -5422,10 +5422,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_mean.cfi.fc0.8.}
@@ -5483,10 +5483,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0}
@@ -5544,10 +5544,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -5605,10 +5605,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:45 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -5666,10 +5666,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0}
@@ -5727,10 +5727,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0.4.}
@@ -5788,10 +5788,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0.8.}
@@ -5849,10 +5849,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0}
@@ -5910,10 +5910,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0.4.}
@@ -5971,10 +5971,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.rmsea.fc0.8.}
@@ -6032,10 +6032,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0}
@@ -6093,10 +6093,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0.4.}
@@ -6154,10 +6154,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_mean.cfi.fc0.8.}
@@ -6215,10 +6215,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  complete data.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  complete data.} 
 \label{fitMCAR_0PerMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6272,10 +6272,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  complete data.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  complete data.} 
 \label{fitMCAR_0PerMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6329,10 +6329,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6386,10 +6386,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6443,10 +6443,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6500,10 +6500,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6557,10 +6557,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6614,10 +6614,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6671,10 +6671,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6728,10 +6728,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6785,10 +6785,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6842,10 +6842,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6899,10 +6899,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -6956,10 +6956,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7013,10 +7013,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7070,10 +7070,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7127,10 +7127,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7184,10 +7184,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7241,10 +7241,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7298,10 +7298,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7355,10 +7355,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7412,10 +7412,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7469,10 +7469,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7526,10 +7526,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7583,10 +7583,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of RMSEA Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of RMSEA Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_mean.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -7640,10 +7640,10 @@
 \endgroup
 \end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Fri May 29 02:23:46 2020
+% Sat May 30 23:07:09 2020
 \begin{table}[ht]
 \centering
-\caption{Average Estimate of CFI Comparing FIML-C to FIML Method \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Average Estimate of CFI Comparing FIML with FIML-C Methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_mean.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
