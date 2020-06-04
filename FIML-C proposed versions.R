@@ -5,16 +5,19 @@ library(matrixcalc)
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
-load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
+load("simuDataMARStrongmin.RData")
+
+#load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
-head(simuDatawithMiss, 100)
+#head(simuDatawithMiss, 100)
 
 #load("simuDatawithMiss2.RData") # slighly misspecified 
-data1<-simuDatawithMiss[1:200,] 
 #For complete data, the population RMSEA and CFI are 0.04452902 and 0.9791809 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.03199867 and 0.9847884 respectively. 
 
+
+data1<-simuDataMARStrongmin[1:1000,] 
 
 
 fitted.mod <- '     
@@ -28,14 +31,14 @@ f1 ~~ 1*f1
 
 
 fit1<-cfa(fitted.mod,data=data1,estimator="ML",missing="FIML") #normal data
-
+Fm <- lavInspect(fit1, "fit")["fmin"]*2
 rmsea.fiml<-lavInspect(fit1,"fit")["rmsea"]  
 cfi.fiml<-lavInspect(fit1,"fit")["cfi"] 
 dfh<-lavInspect(fit1,"fit")["df"]
 
 fit01<- lavaan:::lav_object_independence(fit1, se=T) #independence model 
 dfb<-lavInspect(fit01,"fit")["df"]
-
+Fmb <- lavInspect(fit01, "fit")["fmin"]*2
 #fits <- lavaan:::lav_object_unrestricted(fit1, se=T) #saturated model
 
 #---------------------------------------NEW FIT INDICES----------------------------------#
@@ -62,13 +65,13 @@ fitcB <- sem(parTable(fit01), sample.cov = Sigmatilde,sample.mean=mutilde, sampl
 
 out <- as.vector(inspect(fitc, "implied")$cov-inspect(fit1, "implied")$cov)
 length(out)
-
-pos.def.vcov
-
-
 lavInspect(fit1, "est")$lambda
 lavInspect(fitc, "est")$lambda
 
+p <- 12
+
+F.hat <- t(mutilde-muhat)%*%solve(Sigmahat)%*%(mutilde-muhat) + log(det(Sigmahat)) - log(det(Sigmatilde)) + sum(diag(Sigmatilde%*%solve(Sigmahat))) - p
+F.hat
 
 Fc<-lavInspect(fitc, "fit")["fmin"]*2 #lavaan halfs the fit finction
 FcB<- lavInspect(fitcB, "fit")["fmin"]*2

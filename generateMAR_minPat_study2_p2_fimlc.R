@@ -137,7 +137,8 @@ MARStrong_6Var <- function(model, sample.nobs,  missing.percentage=0.5){
 
 
 
-
+#simuDataMARStrongmin <- MARStrong_6Var(pop.mod9, sample.nobs=1000000, missing.percentage=0.5)
+#save(simuDataMARStrongmin, file="simuDataMARStrongmin.RData")
 
 
 
