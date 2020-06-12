@@ -14,7 +14,7 @@ ts.s1.table(fitMCAR_0PerMiss_1CR_SF_ts_n200_dif,
             fitMCAR_0PerMiss_1CR_SF_ts_n1000_dif,
             fitMCAR_0PerMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_0PerMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "compete data.")
 
 ts.s1.table(fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif,
@@ -22,7 +22,7 @@ ts.s1.table(fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif,
             fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000_dif,
             fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -33,7 +33,7 @@ ts.s1.table(fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n200_dif,
             fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000_dif,
             fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_50PerMiss_2VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -42,7 +42,7 @@ ts.s1.table(fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif,
             fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000_dif,
             fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -53,7 +53,7 @@ ts.s1.table(fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200_dif,
             fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000_dif,
             fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_50PerMiss_2VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -63,7 +63,7 @@ ts.s1.table(fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200_dif,
             fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000_dif,
             fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_20PerMiss_4VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, one correlated residual, misfit and missing data on the same factor,
             four variables with missing data with 20\\% missing in each.")
 
@@ -74,7 +74,7 @@ ts.s1.table(fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200_dif,
             fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000_dif,
             fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_50PerMiss_4VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, one correlated residual, misfit and missing data on the same factor,
             four variables with missing data with 50\\% missing in each.")
 
@@ -83,7 +83,7 @@ ts.s1.table(fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200_dif,
             fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000_dif,
             fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_20PerMiss_4VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, two correlated residuals, misfit and missing data on the same factor,
             four variables with missing data with 20\\% missing in each.")
 
@@ -94,7 +94,7 @@ ts.s1.table(fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif,
             fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000_dif,
             fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMCAR_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, two correlated residuals, misfit and missing data on the same factor,
             four variables with missing data with 50\\% missing in each.")
 
@@ -104,7 +104,7 @@ ts.s1.table(fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200_dif,
             fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000_dif,
             fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n1000000_dif,
             label.name = "fitMCAR_20PerMiss_2VarMiss_1CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -115,7 +115,7 @@ ts.s1.table(fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200_dif,
             fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000_dif,
             fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n1000000_dif,
             label.name = "fitMCAR_50PerMiss_2VarMiss_1CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 ts.s1.table(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif,
@@ -123,7 +123,7 @@ ts.s1.table(fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif,
             fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000_dif,
             fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n1000000_dif,
             label.name = "fitMCAR_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -134,7 +134,7 @@ ts.s1.table(fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200_dif,
             fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000_dif,
             fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n1000000_dif,
             label.name = "fitMCAR_50PerMiss_2VarMiss_2CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 sink()
@@ -151,7 +151,7 @@ ts.s2.table(fitMCAR_0PerMiss_WM_ts_n200_dif,
             fitMCAR_0PerMiss_WM_ts_n1000_dif,
             fitMCAR_0PerMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_0PerMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "complete data.")
 
 
@@ -160,7 +160,7 @@ ts.s2.table(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, small number of patterns, two variables with missing data with 20\\% missing in each.")
 
 
@@ -169,7 +169,7 @@ ts.s2.table(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, small number of patterns, two variables with missing data with 50\\% missing in each.")
 
 
@@ -178,7 +178,7 @@ ts.s2.table(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, small number of patterns, four variables with missing data with 20\\% missing in each.")
 
 
@@ -187,7 +187,7 @@ ts.s2.table(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "MCAR, small number of patterns, four variables with missing data with 50\\% missing in each.")
 
 
@@ -196,7 +196,7 @@ ts.s2.table(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, small number of patterns, six variables with missing data with 20\\% missing in each.")
 
 
@@ -205,7 +205,7 @@ ts.s2.table(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, small number of patterns, six variables with missing data with 50\\% missing in each.")
 
 
@@ -216,7 +216,7 @@ ts.s2.table(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, large number of patterns, two variables with missing data with 20\\% missing in each.")
 
 
@@ -225,7 +225,7 @@ ts.s2.table(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, large number of patterns, two variables with missing data with 50\\% missing in each.")
 
 
@@ -234,7 +234,7 @@ ts.s2.table(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, large number of patterns, four variables with missing data with 20\\% missing in each.")
 
 
@@ -243,7 +243,7 @@ ts.s2.table(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, large number of patterns, four variables with missing data with 50\\% missing in each.")
 
 ts.s2.table(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
@@ -251,7 +251,7 @@ ts.s2.table(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, large number of patterns, six variables with missing data with 20\\% missing in each.")
 
 
@@ -260,7 +260,7 @@ ts.s2.table(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "MCAR, large number of patterns, six variables with missing data with 50\\% missing in each.")
 
 
@@ -281,7 +281,7 @@ ts.s1.table(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif,
             fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n1000_dif,
             fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -292,7 +292,7 @@ ts.s1.table(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n200_dif,
             fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n1000_dif,
             fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -301,7 +301,7 @@ ts.s1.table(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif,
             fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_ts_n1000_dif,
             fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -312,7 +312,7 @@ ts.s1.table(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_ts_n200_dif,
             fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_ts_n1000_dif,
             fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -322,7 +322,7 @@ ts.s1.table(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n200_dif,
             fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n1000_dif,
             fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, one correlated residual, misfit and missing data on the same factor,
             four variables with missing data with 20\\% missing in each.")
 
@@ -333,7 +333,7 @@ ts.s1.table(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n200_dif,
             fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n1000_dif,
             fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, one correlated residual, misfit and missing data on the same factor,
             four variables with missing data with 50\\% missing in each.")
 
@@ -342,7 +342,7 @@ ts.s1.table(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_ts_n200_dif,
             fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_ts_n1000_dif,
             fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, two correlated residuals, misfit and missing data on the same factor,
             four variables with missing data with 20\\% missing in each.")
 
@@ -353,7 +353,7 @@ ts.s1.table(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif,
             fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_ts_n1000_dif,
             fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, two correlated residuals, misfit and missing data on the same factor,
             four variables with missing data with 50\\% missing in each.")
 
@@ -363,7 +363,7 @@ ts.s1.table(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_ts_n200_dif,
             fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_ts_n1000_dif,
             fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -374,7 +374,7 @@ ts.s1.table(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_ts_n200_dif,
             fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_ts_n1000_dif,
             fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 ts.s1.table(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif,
@@ -382,7 +382,7 @@ ts.s1.table(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif,
             fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_ts_n1000_dif,
             fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -392,7 +392,7 @@ ts.s1.table(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_ts_n200_dif,
             fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_ts_n1000_dif,
             fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_ts_n1000000_dif,
             label.name = "fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -402,7 +402,7 @@ ts.s1.table(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif,
             fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n1000_dif,
             fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -413,7 +413,7 @@ ts.s1.table(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n200_dif,
             fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n1000_dif,
             fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -422,7 +422,7 @@ ts.s1.table(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif,
             fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_ts_n1000_dif,
             fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -433,7 +433,7 @@ ts.s1.table(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_ts_n200_dif,
             fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_ts_n1000_dif,
             fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -443,7 +443,7 @@ ts.s1.table(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n200_dif,
             fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n1000_dif,
             fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, one correlated residual, misfit and missing data on the same factor,
             four variables with missing data with 20\\% missing in each.")
 
@@ -454,7 +454,7 @@ ts.s1.table(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n200_dif,
             fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n1000_dif,
             fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, one correlated residual, misfit and missing data on the same factor,
             four variables with missing data with 50\\% missing in each.")
 
@@ -463,7 +463,7 @@ ts.s1.table(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_ts_n200_dif,
             fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_ts_n1000_dif,
             fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, two correlated residuals, misfit and missing data on the same factor,
             four variables with missing data with 20\\% missing in each.")
 
@@ -474,7 +474,7 @@ ts.s1.table(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif,
             fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_ts_n1000_dif,
             fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, two correlated residuals, misfit and missing data on the same factor,
             four variables with missing data with 50\\% missing in each.")
 
@@ -484,7 +484,7 @@ ts.s1.table(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_ts_n200_dif,
             fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_ts_n1000_dif,
             fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -495,7 +495,7 @@ ts.s1.table(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_ts_n200_dif,
             fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_ts_n1000_dif,
             fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, one correlated residual, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -504,7 +504,7 @@ ts.s1.table(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif,
             fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_ts_n1000_dif,
             fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 20\\% missing in each.")
 
@@ -514,7 +514,7 @@ ts.s1.table(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_ts_n200_dif,
             fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_ts_n1000_dif,
             fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_ts_n1000000_dif,
             label.name = "fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, two correlated residuals, misfit and missing data on the same factor,
             two variables with missing data with 50\\% missing in each.")
 
@@ -547,7 +547,7 @@ ts.s2.table(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, small number of patterns, two variables with missing data with 20\\% missing in each.")
 
 
@@ -556,7 +556,7 @@ ts.s2.table(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, small number of patterns, two variables with missing data with 50\\% missing in each.")
 
 
@@ -565,7 +565,7 @@ ts.s2.table(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, small number of patterns, four variables with missing data with 20\\% missing in each.")
 
 
@@ -574,7 +574,7 @@ ts.s2.table(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "weak MAR, small number of patterns, four variables with missing data with 50\\% missing in each.")
 
 
@@ -583,7 +583,7 @@ ts.s2.table(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, small number of patterns, six variables with missing data with 20\\% missing in each.")
 
 
@@ -592,7 +592,7 @@ ts.s2.table(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, small number of patterns, six variables with missing data with 50\\% missing in each.")
 
 
@@ -603,7 +603,7 @@ ts.s2.table(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, large number of patterns, two variables with missing data with 20\\% missing in each.")
 
 
@@ -612,7 +612,7 @@ ts.s2.table(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, large number of patterns, two variables with missing data with 50\\% missing in each.")
 
 
@@ -621,7 +621,7 @@ ts.s2.table(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, large number of patterns, four variables with missing data with 20\\% missing in each.")
 
 
@@ -630,7 +630,7 @@ ts.s2.table(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, large number of patterns, four variables with missing data with 50\\% missing in each.")
 
 ts.s2.table(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
@@ -638,7 +638,7 @@ ts.s2.table(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, large number of patterns, six variables with missing data with 20\\% missing in each.")
 
 
@@ -647,7 +647,7 @@ ts.s2.table(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "weak MAR, large number of patterns, six variables with missing data with 50\\% missing in each.")
 
 
@@ -660,7 +660,7 @@ ts.s2.table(fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, small number of patterns, two variables with missing data with 20\\% missing in each.")
 
 
@@ -669,7 +669,7 @@ ts.s2.table(fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, small number of patterns, two variables with missing data with 50\\% missing in each.")
 
 
@@ -678,7 +678,7 @@ ts.s2.table(fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, small number of patterns, four variables with missing data with 20\\% missing in each.")
 
 
@@ -687,7 +687,7 @@ ts.s2.table(fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of",
+            caption.before = "Empirical bias of the estimate of",
             caption.after = "strong MAR, small number of patterns, four variables with missing data with 50\\% missing in each.")
 
 
@@ -696,7 +696,7 @@ ts.s2.table(fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, small number of patterns, six variables with missing data with 20\\% missing in each.")
 
 
@@ -705,7 +705,7 @@ ts.s2.table(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, small number of patterns, six variables with missing data with 50\\% missing in each.")
 
 
@@ -716,7 +716,7 @@ ts.s2.table(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, large number of patterns, two variables with missing data with 20\\% missing in each.")
 
 
@@ -725,7 +725,7 @@ ts.s2.table(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, large number of patterns, two variables with missing data with 50\\% missing in each.")
 
 
@@ -734,7 +734,7 @@ ts.s2.table(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, large number of patterns, four variables with missing data with 20\\% missing in each.")
 
 
@@ -743,7 +743,7 @@ ts.s2.table(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, large number of patterns, four variables with missing data with 50\\% missing in each.")
 
 ts.s2.table(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
@@ -751,7 +751,7 @@ ts.s2.table(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, large number of patterns, six variables with missing data with 20\\% missing in each.")
 
 
@@ -760,12 +760,21 @@ ts.s2.table(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_n200_dif,
             fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_n1000_dif,
             fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_n1000000_dif,
             label.name="fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_n200_dif",
-            caption.before = "Average bias of the estimate of", 
+            caption.before = "Empirical bias of the estimate of", 
             caption.after = "strong MAR, large number of patterns, six variables with missing data with 50\\% missing in each.")
 
 
 
 sink()
+
+
+
+
+
+
+
+
+
 
 
 
