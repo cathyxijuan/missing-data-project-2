@@ -1,0 +1,725 @@
+source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
+source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC/load FIMLC results.R")
+setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/FIMLC rmse results")
+nam <- c("rmsea.fiml", "rmsea.uncor.fimlc",
+         "rmsea.cor.obs.nonn_str", "rmsea.cor.exp.nonn_str", "rmsea.cor.obs.nonn_unstr", 
+         "rmsea.cor.obs_str", "rmsea.cor.exp_str", "rmsea.cor.obs_unstr",
+         "cfi.fiml", "cfi.uncor.fimlc",
+         "cfi.cor.obs.nonn_str", "cfi.cor.exp.nonn_str", "cfi.cor.obs.nonn_unstr", 
+         "cfi.cor.obs_str", "cfi.cor.exp_str", "cfi.cor.obs_unstr")
+
+
+
+#################### MCAR study 1  #############################
+
+####fit#####
+#n200
+
+fitMCAR_0PerMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_0PerMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMCAR_0PerMiss_1CR_SF_fimlc_n200_rmse, file="fitMCAR_0PerMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse.RData" )
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+
+
+#n500
+fitMCAR_0PerMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_0PerMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMCAR_0PerMiss_1CR_SF_fimlc_n500_rmse, file="fitMCAR_0PerMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse.RData" )
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+
+#n1000
+fitMCAR_0PerMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_0PerMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMCAR_0PerMiss_1CR_SF_fimlc_n1000_rmse, file="fitMCAR_0PerMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+
+
+
+
+
+
+
+######################## MCAR study 2 #################################
+
+####### fit ######
+#n200
+fitMCAR_0PerMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_0PerMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+
+save(fitMCAR_0PerMiss_WM_fimlc_n200_rmse, file="fitMCAR_0PerMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" )
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" )
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+
+
+#n500
+fitMCAR_0PerMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_0PerMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+
+save(fitMCAR_0PerMiss_WM_fimlc_n500_rmse, file="fitMCAR_0PerMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" )
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" )
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+
+
+
+#n1000
+fitMCAR_0PerMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_0PerMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+
+save(fitMCAR_0PerMiss_WM_fimlc_n1000_rmse, file="fitMCAR_0PerMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" )
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" )
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################### MAR Strong study 1  #############################
+
+####fit#####
+#n200
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse.RData" )
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+
+
+#n500
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse.RData" )
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+
+#n1000
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+
+
+
+
+
+
+
+#################### MAR Weak study 1  #############################
+
+####fit#####
+#n200
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n200,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n200,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n200,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n200,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse.RData" )
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_rmse.RData" ) 
+
+
+#n500
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n500,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n500,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n500,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n500,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n500_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n500_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse.RData" )
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n500_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n500_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n500_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n500_rmse.RData" ) 
+
+#n1000
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000,fitNoMissing_1CR_SF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000,fitNoMissing_2CR_SF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000,fitNoMissing_1CR_DF_matrix)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse <- rmse(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000,fitNoMissing_2CR_DF_matrix)[nam,]
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n1000_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n1000_rmse.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n1000_rmse.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000_rmse.RData" ) 
+
+
+
+
+
+
+
+######################## Weak MAR study 2 #################################
+
+####### fit ######
+#n200
+fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+
+fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]-fitNoMissing_WM_matrix
+
+save(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" )
+save(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+
+save(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" )
+save(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+
+
+#n500
+fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+
+fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+
+save(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" )
+save(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+
+save(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" )
+save(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+
+
+
+#n1000
+fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+
+fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+
+save(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" )
+save(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+
+save(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" )
+save(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+
+
+
+######################## Strong MAR study 2 #################################
+
+####### fit ######
+#n200
+fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+
+fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n200,fitNoMissing_WM_matrix)[nam,]
+
+save(fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" )
+save(fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+
+save(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" )
+save(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse, file="fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n200_rmse.RData" ) 
+
+
+#n500
+fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+
+fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n500,fitNoMissing_WM_matrix)[nam,]
+
+save(fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" )
+save(fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+
+save(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" )
+save(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse, file="fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n500_rmse.RData" ) 
+
+
+
+#n1000
+fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+
+fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse <- rmse(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n1000,fitNoMissing_WM_matrix)[nam,]
+
+save(fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_minPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_minPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" )
+save(fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+
+save(fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_maxPat_20PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" )
+save(fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_maxPat_50PerMiss_2VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_maxPat_20PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_maxPat_50PerMiss_4VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+save(fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse, file="fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_fimlc_n1000_rmse.RData" ) 
+
+
+
