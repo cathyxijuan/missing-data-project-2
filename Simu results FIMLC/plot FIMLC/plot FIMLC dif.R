@@ -622,6 +622,8 @@ ggplot(rmsea_long, aes(x=Size_of_CF, y=RMSEA, group=Version)) +
   scale_shape_manual(values=seq(1,9))+theme(legend.position = "none")
 
 
+750+3725+5875
+
 
 
 ####CFI###

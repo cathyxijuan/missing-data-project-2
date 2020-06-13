@@ -840,6 +840,22 @@ list.sd <- function(lis ){
 
 
 
+####Usage: root mean square error for our simulation results 
+#Argument: simu.list: a list of matrices from our small sample simulation studies
+########## pop.matrix: a matrix of population values from our previous paper. 
+           
+
+rmse <- function(simu.list, pop.matrix){
+  to.array <- simplify2array(simu.list)
+  subtr.pop <- sweep(to.array, 1:2, pop.matrix)
+  sqr.dif  <- subtr.pop ^2
+  exp.val <- apply( sqr.dif, 1:2, mean)
+  sqrt.val  <- sqrt(exp.val)
+  sqrt.val 
+  
+}
+
+
 
 
 

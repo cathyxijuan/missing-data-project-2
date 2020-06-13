@@ -1,10 +1,16 @@
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
+load("fitNoMissing_2CR_SF_matrix.RData")
+load("fitNoMissing_2CR_DF_matrix.RData")
+load("fitNoMissing_1CR_SF_matrix.RData")
+load("fitNoMissing_1CR_DF_matrix.RData")
+load("fitNoMissing_WM_matrix.RData")
 
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_SF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_2CR_DF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_SF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_1CR_DF_new.RData")
 load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_new.RData")
+
 
 
 #################### MCAR study 1  #############################

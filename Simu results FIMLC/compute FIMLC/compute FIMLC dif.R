@@ -19,6 +19,7 @@ nam <- c("rmsea.fiml", "rmsea.uncor.fimlc",
 
 ####fit#####
 #n200
+
 fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif <- list.mean(fitMCAR_0PerMiss_1CR_SF_fimlc_n200)[nam,]-fitNoMissing_1CR_SF_matrix
 fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif <- list.mean(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200)[nam,]-fitNoMissing_1CR_SF_matrix
 fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif <- list.mean(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200)[nam,]-fitNoMissing_1CR_SF_matrix
