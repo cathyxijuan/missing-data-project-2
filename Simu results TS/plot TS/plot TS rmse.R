@@ -42,7 +42,7 @@ row.num <- 1:4 #rows for rmsea
 col.num <- 1:5 #col for FC=0
 ver.num <- 4
 sample.num <- 3
-missing.num <- 2
+graph.col.num <- 2
 misfit.num <- length(col.num)
 cond.num <- 6
 row.name <-rep(c("FIML", 
@@ -71,7 +71,7 @@ nr
 colnames(rmsea_long) <- c("Version", "Size_of_CR", "RMSEA")
 head(rmsea_long)
 Sample_Size <- rep(rep(rep(c("n= 200", "n= 500", "n=1000"), 
-                           each=ver.num),missing.num),misfit.num)
+                           each=ver.num),graph.col.num),misfit.num)
 length(Sample_Size)
 rmsea_long$Sample_Size <- as.factor(Sample_Size)
 Percentage_of_Missing <- rep(rep(c("Different Factors (DF)","Same Factor (SF)"), each=ver.num*sample.num),misfit.num)
@@ -179,11 +179,18 @@ cond6 <- fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_ts_n1000_rmse
 # cond5 <- fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n500_rmse
 # cond6 <- fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_ts_n1000_rmse
 
+cond1 <- fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n200_rmse
+cond2 <- fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n500_rmse
+cond3 <-fitMCAR_MinPat_50PerMiss_6VarMiss_WM_ts_n1000_rmse
+cond4 <-fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_ts_n200_rmse
+cond5 <- fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_ts_n500_rmse
+cond6 <- fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_ts_n1000_rmse
+
 row.num <- 1:4 #rows for rmsea
 col.num <- 1:9
 ver.num <- 4
 sample.num <- 3
-missing.num <- 2
+graph.col.num <- 2
 misfit.num <- length(col.num)
 cond.num <- 6
 col.name <- c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2)
@@ -213,18 +220,15 @@ nr
 colnames(rmsea_long) <- c("Version","Size_of_CR", "RMSEA")
 head(rmsea_long)
 
-Sample_Size <- rep(rep(rep(c("n= 200", "n= 500", "n=1000"), each=ver.num),missing.num),misfit.num)
+Sample_Size <- rep(rep(rep(c("n= 200", "n= 500", "n=1000"), each=ver.num),graph.col.num),misfit.num)
 length(Sample_Size)
 rmsea_long$Sample_Size <- as.factor(Sample_Size)
-Percentage_of_Missing <- rep(rep(c( "Four variables with missing",
-                                    "Six variables with missing"), each=ver.num*sample.num),misfit.num)
+Percentage_of_Missing <- rep(rep(c( "MCAR",
+                                    "Weak MAR"), each=ver.num*sample.num),misfit.num)
 length(Percentage_of_Missing)
 
 rmsea_long$Percentage_of_Missing <- as.factor(Percentage_of_Missing)
 
-
-rmsea_long
-colnames(rmsea_long)
 
 
 
@@ -233,7 +237,16 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   geom_point(aes(color=Version, shape = Version)) +
   facet_grid(Sample_Size~Percentage_of_Missing) +
   xlab("Size of Factor Correlation (Degree of Misfit)") +
-  scale_y_continuous(limits = c(0, 0.15))+ 
+  scale_y_continuous(limits = c(0, 0.1))+ 
+  theme_bw() + scale_color_jco()+scale_x_reverse()+
+  scale_shape_manual(values=seq(1,9))+theme(legend.position = "none")
+
+ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) + 
+  geom_line(aes(linetype=Version, color=Version)) + 
+  geom_point(aes(color=Version, shape = Version)) +
+  facet_grid(Sample_Size~Percentage_of_Missing) +
+  xlab("Size of Factor Correlation (Degree of Misfit)") +
+  scale_y_continuous(limits = c(0, 0.065))+ 
   theme_bw() + scale_color_jco()+scale_x_reverse()+
   scale_shape_manual(values=seq(1,9))+theme(legend.position = "none")
 
@@ -276,13 +289,20 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   geom_point(aes(color=Version, shape = Version)) +
   facet_grid(Sample_Size~Percentage_of_Missing) +
   xlab("Size of Factor Correlation (Degree of Misfit)") +
-  scale_y_continuous(limits = c(0, 0.25))+ 
+  scale_y_continuous(limits = c(0, 0.2))+ 
   theme_bw() + scale_color_jco()+scale_x_reverse()+
   scale_shape_manual(values=seq(1,9))
 
 
 
-
+ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) + 
+  geom_line(aes(linetype=Version, color=Version)) + 
+  geom_point(aes(color=Version, shape = Version)) +
+  facet_grid(Sample_Size~Percentage_of_Missing) +
+  xlab("Size of Factor Correlation (Degree of Misfit)") +
+  scale_y_continuous(limits = c(0, 0.1))+ 
+  theme_bw() + scale_color_jco()+scale_x_reverse()+
+  scale_shape_manual(values=seq(1,9))
 
 
 
