@@ -526,3 +526,5 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   scale_y_continuous(limits = c(0.2, 1))+
   theme_bw()  +scale_shape_manual(values=shape.pat)+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
+54*9.8813
+0.01158*55
