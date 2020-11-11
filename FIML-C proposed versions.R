@@ -1,23 +1,22 @@
 
 library(lavaan)
-library(matrixcalc)
 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
-load("simuDataMARStrongmin.RData")
+#load("simuDataMARStrongmin.RData")
 
 #load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 #head(simuDatawithMiss, 100)
 
-#load("simuDatawithMiss2.RData") # slighly misspecified 
+load("simuDatawithMiss2.RData") # slighly misspecified 
 #For complete data, the population RMSEA and CFI are 0.04452902 and 0.9791809 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.03199867 and 0.9847884 respectively. 
 
 
-data1<-simuDataMARStrongmin[1:1000,] 
+data1<-simuDatawithMiss[1:2000,] 
 
 
 fitted.mod <- '     

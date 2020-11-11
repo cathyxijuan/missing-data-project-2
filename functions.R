@@ -827,14 +827,14 @@ ts.checks <- function(components.list, fit.list){
 #Argument: lis: a list of matrices
 
 list.mean <- function(lis ){
-  apply(simplify2array(lis), 1:2, mean)
+  apply(simplify2array(lis), 1:2, mean, na.rm = T)
 }
 
 
 ####Usage: find a matrix of sds based on a list of matrices
 #Argument: lis: a list of matrices
 list.sd <- function(lis ){
-  apply(simplify2array(lis), 1:2, sd)
+  apply(simplify2array(lis), 1:2, sd, na.rm=T)
 }
 
 
@@ -843,13 +843,13 @@ list.sd <- function(lis ){
 ####Usage: root mean square error for our simulation results 
 #Argument: simu.list: a list of matrices from our small sample simulation studies
 ########## pop.matrix: a matrix of population values from our previous paper. 
-           
+
 
 rmse <- function(simu.list, pop.matrix){
   to.array <- simplify2array(simu.list)
   subtr.pop <- sweep(to.array, 1:2, pop.matrix)
   sqr.dif  <- subtr.pop ^2
-  exp.val <- apply( sqr.dif, 1:2, mean)
+  exp.val <- apply( sqr.dif, 1:2, mean, na.rm=T)
   sqrt.val  <- sqrt(exp.val)
   sqrt.val 
   
@@ -1063,7 +1063,7 @@ ts.s1.table <- function(result.n200, result.n500, result.n1000, result.n1000000,
   resultn500 <-  result.n500
   resultn1000 <- result.n1000
   resultn1000000 <-  result.n1000000
-
+  
   rownam <- c(" ", rep(c(" ","FIML", "TS w/o SSC", "TS w/ SSC V1", "TS w/ SSC V2"), 4))
   colnam <- c(" ", rep(paste("CR=", c(0, 0.1, 0.2, 0.3, 0.4), sep=""),3))
   resultn200_r <- resultn200[1:4, ]
@@ -1251,7 +1251,7 @@ fimlc.s2.table <- function(result.n200, result.n500, result.n1000, result.n10000
 fimlc.s1.table <- function(result.n200, result.n500, result.n1000, result.n1000000, 
                            label.name="test", caption.before=" ", caption.after=" ",  w.in.num = 0.01, 
                            bold.note="Bold values are those with raw bias beyond $\\pm 0.01.$"){
-
+  
   rownam <- rep(c(" ","FIML", "FIML-C w/o SSC", 
                   "FIML-C w/ SSC V1", "FIML-C w/ SSC V2",
                   "FIML-C w/ SSC V3", "FIML-C w/ SSC V4",
@@ -1487,7 +1487,7 @@ ts.s2.sd.table <- function(result.n200.20per, result.n500.20per, result.n1000.20
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 1, 6, 11, 16, 17, 22, 27), add.to.row=comment)
   #######cfi
-
+  
   result_c_test <-rbind( bold.cond(resultn200.20per_c,abs(resultn200.20per_c) >w.in.num.c ), 
                          bold.cond(resultn500.20per_c,abs(resultn500.20per_c) >w.in.num.c),
                          bold.cond(resultn1000.20per_c,abs(resultn1000.20per_c)>w.in.num.c ), 
@@ -1708,7 +1708,7 @@ fimlc.s2.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
                caption=paste0(caption.before, " RMSEA comparing FIML with FIML-C methods \\newline Study 2 condition:  ", caption.after)), 
         sanitize.text.function=function(x){x}, size="\\small",  caption.placement = "top", include.rownames = F, 
         hline.after = c(-1, 0, 9, 18), add.to.row=comment)
-##CFI
+  ##CFI
   
   result_c<-rbind(resultn200_c,resultn500_c,  resultn1000_c)
   
@@ -1776,9 +1776,9 @@ fimlc.s1.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
   
   #RMSEA
   result_r<-rbind(resultn200_r,resultn500_r,  resultn1000_r )
-
+  
   result_r_test <- bold.cond(result_r,abs(result_r) > w.in.num.r )
-
+  
   rmsea.tab.pre <- rbind(fc.nam, n200.nam, result_r_test[1:8,],
                          n500.nam, result_r_test[9:16,] ,
                          n1000.nam, result_r_test[17:24,])
@@ -1829,6 +1829,140 @@ fimlc.s1.sd.table <- function(result.n200, result.n500, result.n1000,label.name=
         hline.after = c(-1, 1, 10, 19), add.to.row=comment, floating=T, floating.environment = "sidewaystable")
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Purpose: combine results to do regression analysis 
+#Arguments: fimlc.fit:  data frame for fimlc result
+#           ts.fit : data frame for ts result
+#           mech: character for missing mechanism 
+#           place: character for missing place
+#           per.mis: numeric for percentage of missing
+#           num.var.miss: numeric for the number of variables with missing
+#           num.cor: numeric for the number of correlated residuals 
+#           samp: numeric for sample size 
+s1.comb <- function(fimlc.fit, ts.fit, 
+                    mech, place,
+                    per.miss, num.var.miss, num.cor, samp){
+  fimlc.nam <- c( "rmsea.fiml"  ,             "rmsea.uncor.fimlc"  ,      "rmsea.cor.obs.nonn_str"   ,"rmsea.cor.exp.nonn_str"  ,
+                  "rmsea.cor.obs.nonn_unstr" ,"rmsea.cor.obs_str"    ,   "rmsea.cor.exp_str" ,       "rmsea.cor.obs_unstr"   ,  
+                  "cfi.fiml"         ,        "cfi.uncor.fimlc"  ,        "cfi.cor.obs.nonn_str"  ,   "cfi.cor.exp.nonn_str"  , 
+                  "cfi.cor.obs.nonn_unstr" ,  "cfi.cor.obs_str"     ,     "cfi.cor.exp_str"   , "cfi.cor.obs_unstr" )
+  ts.nam <- c("rmsea.uncor"   ,  "rmsea.cor.str","rmsea.cor.unstr", 
+              "cfi.uncor"   ,  "cfi.cor.str","cfi.cor.unstr")
+  combine.nam <- c("rmsea.fiml",    "rmsea.uncor.fimlc" ,       "rmsea.cor.obs.nonn_str" ,  "rmsea.cor.exp.nonn_str"  ,
+                   "rmsea.cor.obs.nonn_unstr", "rmsea.cor.obs_str" ,    "rmsea.cor.exp_str" ,      "rmsea.cor.obs_unstr"  ,
+                   "rmsea.uncor"   ,  "rmsea.cor.str","rmsea.cor.unstr", 
+                   "cfi.fiml"          ,       "cfi.uncor.fimlc"  ,        "cfi.cor.obs.nonn_str"   ,  "cfi.cor.exp.nonn_str" ,   
+                   "cfi.cor.obs.nonn_unstr"  , "cfi.cor.obs_str"    ,      "cfi.cor.exp_str" ,         "cfi.cor.obs_unstr" ,
+                   "cfi.uncor"   ,  "cfi.cor.str","cfi.cor.unstr")
+  
+  
+  comb <- rbind(fimlc.fit[fimlc.nam, ], ts.fit[ts.nam,])[combine.nam,]
+  
+  rownames(comb) <- rep(c("FIML", 
+                          "FIML-C V0", 
+                          "FIML-C V1",
+                          "FIML-C V2",
+                          "FIML-C V3",
+                          "FIML-C V4",
+                          "FIML-C V5",
+                          "FIML-C V6", 
+                          "TS V0", 
+                          "TS V1", 
+                          "TS V2"),2)
+  rmsea <- melt(comb[1:11,])
+  rmsea[,3] <- round(rmsea[,3],6)
+  cfi <- melt(comb[12:22,])
+  cfi[,3] <- round(cfi[,3],6)
+  fit.ind <- cbind(rmsea[,3] , cfi[,c(3,1)])
+  colnames(fit.ind) <-  c("rmsea", "cfi", "version")
+  fact.cor <- rep(c(0, 0.4, 0.8), each=nrow(fit.ind)/3)
+  fit.ind$fac.corr <- fact.cor
+  cor.res <- rep(c(0, 0.1, 0.2, 0.3, 0.4), each=11, times=3)
+  fit.ind$cor.resi <- cor.res
+  fit.ind[,c("mech", "place")] <-cbind(rep(mech, nrow(fit.ind)), rep(place, nrow(fit.ind)) )  
+  fit.ind[,c("per.miss", "num.var.miss", "num.cor", "samp")] <- cbind(rep(per.miss, nrow(fit.ind)), 
+                                                                      rep(num.var.miss, nrow(fit.ind)), 
+                                                                      rep(num.cor, nrow(fit.ind)),  
+                                                                      rep(samp, nrow(fit.ind))    ) 
+  fit.ind
+}
+
+
+
+
+
+
+#Purpose: combine results to do regression analysis 
+#Arguments: fimlc.fit:  data frame for fimlc result
+#           ts.fit : data frame for ts result
+#           mech: character for missing mechanism 
+#           pattern: character for pattern number
+#           per.mis: numeric for percentage of missing
+#           num.var.miss: numeric for the number of variables with missing
+#           samp: numeric for sample size 
+
+s2.comb <- function(fimlc.fit, ts.fit,
+                    mech,  pattern,
+                    per.miss, num.var.miss,  samp){
+  fimlc.nam <- c( "rmsea.fiml"  ,             "rmsea.uncor.fimlc"  ,      "rmsea.cor.obs.nonn_str"   ,"rmsea.cor.exp.nonn_str"  ,
+                  "rmsea.cor.obs.nonn_unstr" ,"rmsea.cor.obs_str"    ,   "rmsea.cor.exp_str" ,       "rmsea.cor.obs_unstr"   ,  
+                  "cfi.fiml"         ,        "cfi.uncor.fimlc"  ,        "cfi.cor.obs.nonn_str"  ,   "cfi.cor.exp.nonn_str"  , 
+                  "cfi.cor.obs.nonn_unstr" ,  "cfi.cor.obs_str"     ,     "cfi.cor.exp_str"   , "cfi.cor.obs_unstr" )
+  ts.nam <- c("rmsea.uncor"   ,  "rmsea.cor.str","rmsea.cor.unstr", 
+              "cfi.uncor"   ,  "cfi.cor.str","cfi.cor.unstr")
+  combine.nam <- c("rmsea.fiml",    "rmsea.uncor.fimlc" ,       "rmsea.cor.obs.nonn_str" ,  "rmsea.cor.exp.nonn_str"  ,
+                   "rmsea.cor.obs.nonn_unstr", "rmsea.cor.obs_str" ,    "rmsea.cor.exp_str" ,      "rmsea.cor.obs_unstr"  ,
+                   "rmsea.uncor"   ,  "rmsea.cor.str","rmsea.cor.unstr", 
+                   "cfi.fiml"          ,       "cfi.uncor.fimlc"  ,        "cfi.cor.obs.nonn_str"   ,  "cfi.cor.exp.nonn_str" ,   
+                   "cfi.cor.obs.nonn_unstr"  , "cfi.cor.obs_str"    ,      "cfi.cor.exp_str" ,         "cfi.cor.obs_unstr" ,
+                   "cfi.uncor"   ,  "cfi.cor.str","cfi.cor.unstr")
+  
+  
+  comb <- rbind(fimlc.fit[fimlc.nam, ], ts.fit[ts.nam,])[combine.nam,]
+  
+  rownames(comb) <- rep(c("FIML", 
+                          "FIML-C V0", 
+                          "FIML-C V1",
+                          "FIML-C V2",
+                          "FIML-C V3",
+                          "FIML-C V4",
+                          "FIML-C V5",
+                          "FIML-C V6", 
+                          "TS V0", 
+                          "TS V1", 
+                          "TS V2"),2)
+  rmsea <- melt(comb[1:11,])
+  rmsea[,3] <- round(rmsea[,3],6)
+  cfi <- melt(comb[12:22,])
+  cfi[,3] <- round(cfi[,3],6)
+  fit.ind <- cbind(rmsea[,3] , cfi[,c(3,1)])
+  colnames(fit.ind) <-  c("rmsea", "cfi", "version")
+  fact.cor <-rep(c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2), each=nrow(fit.ind)/9)
+  fit.ind$fac.corr <- fact.cor
+  fit.ind[,c("mech",  "pattern")] <-cbind( rep(mech, nrow(fit.ind)),  rep(pattern, nrow(fit.ind)) )  
+  fit.ind[,c("per.miss", "num.var.miss",  "samp")] <- cbind(rep(per.miss, nrow(fit.ind)), 
+                                                            rep(num.var.miss, nrow(fit.ind)),   
+                                                            rep(samp, nrow(fit.ind))) 
+  fit.ind
+  
+  
+}
 
 
 
