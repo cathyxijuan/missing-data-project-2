@@ -30,7 +30,7 @@ library(ggsci)
 
 
 
-####Study 1 
+####Study 1 #Figure 7
 
 cond1 <- fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse[fimlc.nam, ]
 cond2 <- fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse[fimlc.nam, ]
@@ -111,6 +111,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   geom_point(aes(color=Version, shape=Version),size=2) +
   facet_grid(Sample_Size~Missing_Var) +
   xlab("Size of Correlated Residual (Degree of Misfit)") +
+  ylab("RMSE in RMSEA")+
   scale_y_continuous(limits = c(0, 0.04))+ scale_color_manual(values=color.pat)+
   theme_bw() +  scale_shape_manual(values=shape.pat)+theme(legend.position = "none")+
   scale_linetype_manual(values=line.pat)
@@ -150,6 +151,7 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   geom_point(aes(color=Version, shape = Version), size=2) +
   facet_grid(Sample_Size~Missing_Var) +
   xlab("Size of Correlated Residual (Degree of Misfit)") +
+  ylab("RMSE in CFI")+
   theme_bw() +  
   scale_y_continuous(limits = c(0, 0.04))+  scale_shape_manual(values=shape.pat)+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
@@ -168,7 +170,7 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
 
 
 
-###Study 2   
+###Study 2    #Figure 8
 
 
 
@@ -199,7 +201,7 @@ cond9 <- fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_ts_n1000_rmse[ts.nam, ]
 cond10 <- fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n200_rmse[ts.nam, ]
 cond11 <- fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n500_rmse[ts.nam, ]
 cond12 <-fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n1000_rmse[ts.nam, ]
-
+0.20687858-0.08676215
 
 co1 <- rbind(cond1, cond7)[combine.nam, ]
 co2<- rbind(cond2, cond8)[combine.nam, ]
@@ -249,6 +251,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   geom_point(aes(color=Version, shape=Version), size=2) +
   facet_grid(Sample_Size~Var_Missing) +scale_x_reverse()+
   xlab("Size of Factor Correlation (Degree of Misfit)") +
+  ylab("RMSE in RMSEA")+
   scale_y_continuous(limits = c(0, 0.05))+  theme_bw() + 
   scale_shape_manual(values=shape.pat)+theme(legend.position = "none")+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
@@ -291,6 +294,7 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   geom_point(aes(color=Version, shape = Version), size=2) +
   facet_grid(Sample_Size~Var_Missing) +scale_x_reverse()+
   xlab("Size of Factor Correlation (Degree of Misfit)") +
+  ylab("RMSE in CFI")+
   scale_y_continuous(limits = c(0, 0.2))+theme_bw() +   scale_shape_manual(values=shape.pat)+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
 
@@ -300,5 +304,9 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   geom_point(aes(color=Version, shape = Version), size=2) +
   facet_grid(Sample_Size~Var_Missing) +scale_x_reverse()+
   xlab("Size of Factor Correlation (Degree of Misfit)") +
+  ylab("RMSE in CFI")+
   scale_y_continuous(limits = c(0, 0.3))+theme_bw() +   scale_shape_manual(values=shape.pat)+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
+
+
+0.15567325- 0.07315811

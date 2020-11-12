@@ -164,6 +164,13 @@ cond11 <- fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_ts_n1000000_mean[ts.nam,]
 cond12 <- fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_ts_n1000000_mean[ts.nam,]
 
 
+cond13 <- fitMCAR_50PerMiss_4VarMiss_2CR_DF_MI_n1000000[c("rmsea.mi", "cfi.mi"),]
+cond14<- fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_MI_n1000000[c("rmsea", "cfi"),]
+cond15 <- fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_MI_n1000000[c("rmsea", "cfi"),]
+cond16 <- fitMCAR_50PerMiss_4VarMiss_2CR_SF_MI_n1000000[c("rmsea.mi", "cfi.mi"),]
+cond17 <- fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_MI_n1000000[c("rmsea", "cfi"),]
+cond18 <- fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_MI_n1000000[c("rmsea", "cfi"),]
+
 co1 <- rbind(cond1, cond7)[combine.nam, ]
 co2<- rbind(cond2, cond8)[combine.nam, ]
 co3 <- rbind(cond3, cond9)[combine.nam, ]
@@ -252,6 +259,13 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   scale_y_continuous(limits = c(0.6, 1))+ 
   theme_bw()+scale_shape_manual(values=shape.pat)+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
+
+
+
+
+
+
+
 
 
 

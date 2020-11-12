@@ -25,7 +25,8 @@ library(ggsci)
 
 
 
-####Study 1 
+####Study 1 Not in the paper
+
 
 cond1 <- fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_rmse[fimlc.nam, ]
 cond2 <- fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n500_rmse[fimlc.nam, ]
@@ -96,6 +97,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   geom_point(aes(color=Version, shape=Version)) +
   facet_grid(Sample_Size~Missing_Var) +
   xlab("Size of Correlated Residual (Degree of Misfit)") +
+  ylab("RMSE in RMSEA")+
   scale_y_continuous(limits = c(0, 0.2))+ scale_color_manual(values=color.pat)+
   theme_bw() +  scale_shape_manual(values=seq(1,11))+theme(legend.position = "none")+
   scale_linetype_manual(values=1:11)
@@ -138,7 +140,7 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   geom_point(aes(color=Version, shape = Version)) +
   facet_grid(Sample_Size~Missing_Var) +
   xlab("Size of Correlated Residual (Degree of Misfit)") +
-  theme_bw() +  
+  theme_bw() +    ylab("RMSE in CFI")+
   scale_y_continuous(limits = c(0, 0.31))+  scale_shape_manual(values=seq(1,11))+
   scale_linetype_manual(values=1:11)+ scale_color_manual(values=color.pat)
 
@@ -229,6 +231,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   geom_point(aes(color=Version, shape=Version)) +
   facet_grid(Sample_Size~Var_Missing) +scale_x_reverse()+
   xlab("Size of Factor Correlation (Degree of Misfit)") +
+  ylab("RMSE in RMSEA")+
   scale_y_continuous(limits = c(0, 0.8))+  theme_bw() + 
   scale_shape_manual(values=seq(1,11))+theme(legend.position = "none")+
   scale_linetype_manual(values=1:11)+ scale_color_manual(values=color.pat)
@@ -269,6 +272,6 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   geom_line(aes(linetype=Version, color=Version)) + 
   geom_point(aes(color=Version, shape = Version)) +
   facet_grid(Sample_Size~Var_Missing) +scale_x_reverse()+
-  xlab("Size of Factor Correlation (Degree of Misfit)") +
+  xlab("Size of Factor Correlation (Degree of Misfit)") +  ylab("RMSE in CFI")+
   scale_y_continuous(limits = c(0, 0.42))+theme_bw() +   scale_shape_manual(values=seq(1,11))+
   scale_linetype_manual(values=1:11)+ scale_color_manual(values=color.pat)

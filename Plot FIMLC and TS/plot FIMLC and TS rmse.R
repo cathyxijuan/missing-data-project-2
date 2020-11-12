@@ -9,6 +9,10 @@ library(ggsci)
 
 
 
+
+
+
+
 fimlc.nam <- c("rmsea.fiml", "rmsea.cor.obs_unstr",
                "cfi.fiml", "cfi.cor.obs_unstr")
 ts.nam <- c("rmsea.cor.unstr", "cfi.cor.unstr")

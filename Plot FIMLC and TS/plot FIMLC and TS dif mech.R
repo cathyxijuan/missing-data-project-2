@@ -36,7 +36,7 @@ library(dplyr)
 library(ggplot2)
 library(reshape2)
 library(ggsci)
-###Study 1
+###Study 1 Figure 3
 
 cond1 <- fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif[fimlc.nam, ]
 cond2 <- fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_dif[fimlc.nam, ]
@@ -124,7 +124,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   facet_grid(Sample_Size~Col_Var_Missing) +
   xlab("Size of Correlated Residual (Degree of Misfit)") +
   scale_y_continuous(limits = c(-0.1, 0.1))+  theme_bw() + 
-  scale_shape_manual(values=shape.pat)+
+  scale_shape_manual(values=shape.pat)+ylab("Bias in RMSEA")+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
 
 
@@ -168,7 +168,7 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   facet_grid(Sample_Size~Col_Var_Missing) +
   xlab("Size of Correlated Residual (Degree of Misfit)") +
   scale_y_continuous(limits = c(-0.12, 0.12))+theme_bw() +   
-  scale_shape_manual(values=shape.pat)+
+  scale_shape_manual(values=shape.pat)+ylab("Bias in CFI")+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
 
 

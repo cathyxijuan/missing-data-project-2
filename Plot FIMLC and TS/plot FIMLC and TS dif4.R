@@ -1,7 +1,6 @@
 source("/Volumes/SP PHD U3/missing-data-project-2/functions.R")
 source("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC/load FIMLC/load FIMLC dif.R")
 source("/Volumes/SP PHD U3/missing-data-project-2/Simu results TS/load TS/load TS dif.R")
-
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Plot FIMLC and TS")
 fimlc.nam <- row.names(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif)
 ts.nam <- c("rmsea.uncor"   ,  "rmsea.cor.str","rmsea.cor.unstr", 
@@ -12,13 +11,13 @@ combine.nam <- c("rmsea.cor.obs.nonn_unstr",  "rmsea.cor.obs_unstr"  ,
                  "cfi.cor.str","cfi.cor.unstr")
 color.pat <- c("magenta" , 
                "steelblue2", 
-               "chocolate4", "darkcyan")
+               "tan3", "darkcyan", "red2")
 
-shape.pat <- c(0,8, 2, 5)
+shape.pat <- c(0,8, 2, 5, 3)
 
 line.pat <- c("solid", 
               "longdash", 
-              "dotdash", "solid")
+              "dotdash", "solid", "longdash")
 library(dplyr)
 library(ggplot2)
 library(reshape2)
@@ -28,7 +27,11 @@ library(ggsci)
 
 
 
-####Study 1 for figure 5
+####Study 1 for figure 5 transcript revision
+
+complete1 <- fit_0PerMiss_2CR_ts_n200_dif[c("rmsea.fiml", "cfi.fiml"), ]
+complete2 <- fit_0PerMiss_2CR_ts_n500_dif[c("rmsea.fiml", "cfi.fiml"),]
+complete3 <- fit_0PerMiss_2CR_ts_n1000_dif[c("rmsea.fiml", "cfi.fiml"),] 
 
 
 cond1 <- fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif[fimlc.nam, ]
@@ -45,7 +48,7 @@ cond10 <- fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_ts_n200_dif[ts.nam, ]
 cond11 <- fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_ts_n500_dif[ts.nam, ]
 cond12 <- fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_ts_n1000_dif[ts.nam,]
 
-
+#############################################################################
 cond1 <- fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif[fimlc.nam, ]
 cond2 <- fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n500_dif[fimlc.nam, ]
 cond3 <- fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n1000_dif[fimlc.nam, ]
@@ -60,7 +63,7 @@ cond10 <- fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_ts_n200_dif[ts.nam, ]
 cond11 <- fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_ts_n500_dif[ts.nam, ]
 cond12 <- fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_ts_n1000_dif[ts.nam, ]
 
-
+#############################################################################
 
 co1 <- rbind(cond1, cond7)[combine.nam, ]
 co2<- rbind(cond2, cond8)[combine.nam, ]
@@ -69,10 +72,17 @@ co4<- rbind(cond4, cond10)[combine.nam, ]
 co5 <- rbind(cond5, cond11)[combine.nam, ]
 co6 <- rbind(cond6, cond12)[combine.nam, ]
 
+co1 <-rbind(co1[1:4,], rmsea.complete=complete1[1,],co1[5:8,], cfi.complete=complete1[2,])
+co2<-rbind(co2[1:4,], rmsea.complete=complete2[1,],co2[5:8,], cfi.complete=complete2[2,])
+co3 <- rbind(co3[1:4,], rmsea.complete=complete3[1,],co3[5:8,], cfi.complete=complete3[2,])
+co4<- rbind(co4[1:4,], rmsea.complete=complete1[1,],co4[5:8,], cfi.complete=complete1[2,])
+co5 <-rbind(co5[1:4,], rmsea.complete=complete2[1,],co5[5:8,], cfi.complete=complete2[2,])
+co6 <-rbind(co6[1:4,], rmsea.complete=complete3[1,],co6[5:8,], cfi.complete=complete3[2,])
 
-row.num <- 1:4 #rows for rmsea
-col.num <- 1:5 #col for FC=0
-ver.num <- 4
+
+row.num <- 1:5 #rows for rmsea
+col.num <- 6:10 #col for FC=0.4
+ver.num <- 5
 sample.num <- 3
 var.missing.num <- 2
 misfit.num <- length(col.num)
@@ -80,7 +90,7 @@ cond.num <- 6
 row.name <- rep(c("FIML-C V3",
                   "FIML-C V6", 
                   "TS V1", 
-                  "TS V2"),cond.num)
+                  "TS V2", "Complete \nData"),cond.num)
 col.name <- c(0, 0.1, 0.2, 0.3, 0.4)
 
 cond.matrix1 <- co1[row.num ,col.num]
@@ -119,7 +129,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
 
 
 ####CFI###
-row.num <- 5:8 #rows for cfi
+row.num <- 6:10 #rows for cfi
 cond.matrix1 <- co1[row.num ,col.num]
 cond.matrix2 <- co2[row.num ,col.num]
 cond.matrix3 <- co3[row.num ,col.num]
@@ -176,7 +186,9 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
 
 ###Study 2 for figure 6
 
-
+complete1 <- fit_0PerMiss_WM_ts_n200_dif[c("rmsea.fiml", "cfi.fiml"), ]
+complete2 <- fit_0PerMiss_WM_ts_n500_dif[c("rmsea.fiml", "cfi.fiml"),]
+complete3 <- fit_0PerMiss_WM_ts_n1000_dif[c("rmsea.fiml", "cfi.fiml"),] 
 
 cond1 <- fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n200_dif[fimlc.nam, ]
 cond2 <- fitMAR_Strong_maxPat_20PerMiss_6VarMiss_WM_fimlc_n500_dif[fimlc.nam, ]
@@ -192,7 +204,7 @@ cond10 <- fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_n200_dif[ts.nam, ]
 cond11 <- fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_n500_dif[ts.nam, ]
 cond12 <-fitMAR_Strong_maxPat_50PerMiss_6VarMiss_WM_ts_n1000_dif[ts.nam, ]
 
-
+#############################################################################
 cond1 <- fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n200_dif[fimlc.nam, ]
 cond2 <- fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n500_dif[fimlc.nam, ]
 cond3 <- fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_fimlc_n1000_dif[fimlc.nam, ]
@@ -206,7 +218,7 @@ cond9 <- fitMAR_Strong_minPat_20PerMiss_6VarMiss_WM_ts_n1000_dif[ts.nam, ]
 cond10 <- fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n200_dif[ts.nam, ]
 cond11 <- fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n500_dif[ts.nam, ]
 cond12 <-fitMAR_Strong_minPat_50PerMiss_6VarMiss_WM_ts_n1000_dif[ts.nam, ]
-
+#############################################################################
 
 co1 <- rbind(cond1, cond7)[combine.nam, ]
 co2<- rbind(cond2, cond8)[combine.nam, ]
@@ -215,10 +227,16 @@ co4<- rbind(cond4, cond10)[combine.nam, ]
 co5 <- rbind(cond5, cond11)[combine.nam, ]
 co6 <- rbind(cond6, cond12)[combine.nam, ]
 
+co1 <-rbind(co1[1:4,], rmsea.complete=complete1[1,],co1[5:8,], cfi.complete=complete1[2,])
+co2<-rbind(co2[1:4,], rmsea.complete=complete2[1,],co2[5:8,], cfi.complete=complete2[2,])
+co3 <- rbind(co3[1:4,], rmsea.complete=complete3[1,],co3[5:8,], cfi.complete=complete3[2,])
+co4<- rbind(co4[1:4,], rmsea.complete=complete1[1,],co4[5:8,], cfi.complete=complete1[2,])
+co5 <-rbind(co5[1:4,], rmsea.complete=complete2[1,],co5[5:8,], cfi.complete=complete2[2,])
+co6 <-rbind(co6[1:4,], rmsea.complete=complete3[1,],co6[5:8,], cfi.complete=complete3[2,])
 
-row.num <- 1:4 #rows for rmsea
-col.num <- 1:9 #col for FC=0
-ver.num <- 4
+row.num <- 1:5 #rows for rmsea
+col.num <- 1:9 
+ver.num <- 5
 sample.num <- 3
 missing.num <- 2
 misfit.num <- length(col.num)
@@ -226,7 +244,7 @@ cond.num <- 6
 row.name <- rep(c("FIML-C V3",
                   "FIML-C V6", 
                   "TS V1", 
-                  "TS V2"),cond.num)
+                  "TS V2", "Complete \nData"),cond.num)
 col.name <- c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2)
 
 cond.matrix1 <- co1[row.num ,col.num]
@@ -265,7 +283,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
 
 
 ####CFI###
-row.num <- 5:8 #rows for cfi
+row.num <- 6:10 #rows for cfi
 cond.matrix1 <- co1[row.num ,col.num]
 cond.matrix2 <- co2[row.num ,col.num]
 cond.matrix3 <- co3[row.num ,col.num]

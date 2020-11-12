@@ -6,19 +6,16 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2/Plot FIMLC and TS")
 fimlc.nam <- row.names(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif)
 ts.nam <- c("rmsea.uncor"   ,  "rmsea.cor.str","rmsea.cor.unstr", 
             "cfi.uncor"   ,  "cfi.cor.str","cfi.cor.unstr")
-combine.nam <- c("rmsea.cor.obs.nonn_unstr",  "rmsea.cor.obs_unstr"  ,
-                 "rmsea.cor.str","rmsea.cor.unstr", 
-                 "cfi.cor.obs.nonn_unstr"  ,  "cfi.cor.obs_unstr" ,
-                 "cfi.cor.str","cfi.cor.unstr")
-color.pat <- c("magenta" , 
-               "steelblue2", 
-               "chocolate4", "darkcyan")
+combine.nam <- c("rmsea.fiml",    "rmsea.cor.obs.nonn_unstr",  "rmsea.cor.unstr", 
+                 "cfi.fiml",    "cfi.cor.obs.nonn_unstr",  "cfi.cor.unstr")
+color.pat <- c("forestgreen","magenta" , 
+               "steelblue2")
 
 shape.pat <- c(0,8, 2, 5)
 
 line.pat <- c("solid", 
               "longdash", 
-              "dotdash", "solid")
+              "dotdash")
 library(dplyr)
 library(ggplot2)
 library(reshape2)
@@ -70,16 +67,15 @@ co5 <- rbind(cond5, cond11)[combine.nam, ]
 co6 <- rbind(cond6, cond12)[combine.nam, ]
 
 
-row.num <- 1:4 #rows for rmsea
+row.num <- 1:3 #rows for rmsea
 col.num <- 1:5 #col for FC=0
-ver.num <- 4
+ver.num <- 3
 sample.num <- 3
 var.missing.num <- 2
 misfit.num <- length(col.num)
 cond.num <- 6
-row.name <- rep(c("FIML-C V3",
-                  "FIML-C V6", 
-                  "TS V1", 
+row.name <- rep(c("FIML",
+                  "FIML-C V3", 
                   "TS V2"),cond.num)
 col.name <- c(0, 0.1, 0.2, 0.3, 0.4)
 
@@ -110,7 +106,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   facet_grid(Sample_Size~Missing_Var) +
   xlab("Size of Correlated Residual (Degree of Misfit)") +  
   ylab("Bias in RMSEA") +
-  scale_y_continuous(limits = c(-0.03, 0.03))+ scale_color_manual(values=color.pat)+
+  scale_y_continuous(limits = c(-0.06, 0.06))+ scale_color_manual(values=color.pat)+
   theme_bw() +  scale_shape_manual(values=shape.pat)+theme(legend.position = "none")+
   scale_linetype_manual(values=line.pat)
 
@@ -119,7 +115,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
 
 
 ####CFI###
-row.num <- 5:8 #rows for cfi
+row.num <- 4:6 #rows for cfi
 cond.matrix1 <- co1[row.num ,col.num]
 cond.matrix2 <- co2[row.num ,col.num]
 cond.matrix3 <- co3[row.num ,col.num]
@@ -154,7 +150,7 @@ ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) +
   xlab("Size of Correlated Residual (Degree of Misfit)") +
   ylab("Bias in CFI") +
   theme_bw() +  
-  scale_y_continuous(limits = c(-0.02, 0.02))+  scale_shape_manual(values=shape.pat)+
+  scale_y_continuous(limits = c(-0.08, 0.08))+  scale_shape_manual(values=shape.pat)+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
 
 
@@ -216,16 +212,15 @@ co5 <- rbind(cond5, cond11)[combine.nam, ]
 co6 <- rbind(cond6, cond12)[combine.nam, ]
 
 
-row.num <- 1:4 #rows for rmsea
+row.num <- 1:3 #rows for rmsea
 col.num <- 1:9 #col for FC=0
-ver.num <- 4
+ver.num <- 3
 sample.num <- 3
 missing.num <- 2
 misfit.num <- length(col.num)
 cond.num <- 6
-row.name <- rep(c("FIML-C V3",
-                  "FIML-C V6", 
-                  "TS V1", 
+row.name <- rep(c("FIML-C",
+                  "FIML-C V3", 
                   "TS V2"),cond.num)
 col.name <- c(1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2)
 
@@ -257,7 +252,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
   facet_grid(Sample_Size~Var_Missing) +scale_x_reverse()+
   xlab("Size of Factor Correlation (Degree of Misfit)") +
   ylab("Bias in RMSEA") +
-  scale_y_continuous(limits = c(-0.04, 0.04))+  theme_bw() + 
+  scale_y_continuous(limits = c(-0.1, 0.1))+  theme_bw() + 
   scale_shape_manual(values=shape.pat)+theme(legend.position = "none")+
   scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
 
@@ -265,7 +260,7 @@ ggplot(rmsea_long, aes(x=Size_of_CR, y=RMSEA, group=Version)) +
 
 
 ####CFI###
-row.num <- 5:8 #rows for cfi
+row.num <- 4:6 #rows for cfi
 cond.matrix1 <- co1[row.num ,col.num]
 cond.matrix2 <- co2[row.num ,col.num]
 cond.matrix3 <- co3[row.num ,col.num]
@@ -294,16 +289,6 @@ cfi_long$Var_Missing <- as.factor(Var_Missing)
 cfi_long
 colnames(cfi_long)
 
-
-ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) + 
-  geom_line(aes(linetype=Version, color=Version)) + 
-  geom_point(aes(color=Version, shape = Version)) +
-  facet_grid(Sample_Size~Var_Missing) +scale_x_reverse()+
-  xlab("Size of Factor Correlation (Degree of Misfit)") +
-  ylab("Bias in CFI") +
-  scale_y_continuous(limits = c(-0.075, 0.075))+theme_bw() +   
-  scale_shape_manual(values=shape.pat)+
-  scale_linetype_manual(values=line.pat)+ scale_color_manual(values=color.pat)
 
 
 ggplot(cfi_long, aes(x=Size_of_CR, y=CFI, group=Version)) + 

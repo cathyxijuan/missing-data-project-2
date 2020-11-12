@@ -11,6 +11,8 @@ combine.nam <- c("rmsea.fiml",    "rmsea.uncor.fimlc" ,       "rmsea.cor.obs.non
                  "cfi.fiml"          ,       "cfi.uncor.fimlc"  ,        "cfi.cor.obs.nonn_str"   ,  "cfi.cor.exp.nonn_str" ,   
                  "cfi.cor.obs.nonn_unstr"  , "cfi.cor.obs_str"    ,      "cfi.cor.exp_str" ,         "cfi.cor.obs_unstr" ,
                  "cfi.uncor"   ,  "cfi.cor.str","cfi.cor.unstr")
+
+
 color.pat <- c("royalblue2", "gold2", 
                "red3","darkorchid3", "magenta" , 
                "springgreen4",  "cyan3", "steelblue2", 
