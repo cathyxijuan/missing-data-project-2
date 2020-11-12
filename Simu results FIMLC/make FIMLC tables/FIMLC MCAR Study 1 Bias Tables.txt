@@ -1,10 +1,10 @@
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif .rmsea.fc0}
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0, one correlated residual, complete data.} 
+\label{fit_0PerMiss_1CR_fimlc_n200_dif .rmsea.fc0}
 \begingroup\small
 \begin{tabular}{lccccc}
   \hline
@@ -57,14 +57,14 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0.4, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif .rmsea.fc0.4.}
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0.4, one correlated residual, complete data.} 
+\label{fit_0PerMiss_1CR_fimlc_n200_dif .rmsea.fc0.4.}
 \begingroup\small
 \begin{tabular}{lccccc}
   \hline
@@ -117,14 +117,14 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0.8, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif .rmsea.fc0.8.}
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0.8, one correlated residual, complete data.} 
+\label{fit_0PerMiss_1CR_fimlc_n200_dif .rmsea.fc0.8.}
 \begingroup\small
 \begin{tabular}{lccccc}
   \hline
@@ -177,14 +177,14 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif .cfi.fc0}
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0, one correlated residual, complete data.} 
+\label{fit_0PerMiss_1CR_fimlc_n200_dif .cfi.fc0}
 \begingroup\small
 \begin{tabular}{lccccc}
   \hline
@@ -237,14 +237,14 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0.4, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif .cfi.fc0.4.}
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0.4, one correlated residual, complete data.} 
+\label{fit_0PerMiss_1CR_fimlc_n200_dif .cfi.fc0.4.}
 \begingroup\small
 \begin{tabular}{lccccc}
   \hline
@@ -297,14 +297,14 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0.8, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_dif .cfi.fc0.8.}
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0.8, one correlated residual, complete data.} 
+\label{fit_0PerMiss_1CR_fimlc_n200_dif .cfi.fc0.8.}
 \begingroup\small
 \begin{tabular}{lccccc}
   \hline
@@ -357,12 +357,372 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0, two correlated residuals, complete data.} 
+\label{fit_0PerMiss_2CR_fimlc_n200_dif .rmsea.fc0}
+\begingroup\small
+\begin{tabular}{lccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+  \hline
+  &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.015 } & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/o SSC & \textbf{ 0.015 } & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V1 & \textbf{ 0.012 } & -0.006 & -0.004 & -0.004 & -0.006 \\ 
+  FIML-C w/ SSC V2 & \textbf{ 0.012 } & -0.005 & -0.004 & -0.007 & -0.007 \\ 
+  FIML-C w/ SSC V3 & \textbf{ 0.015 } & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V4 & \textbf{ 0.015 } & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V5 & 0.003 & \textbf{ -0.020 } & \textbf{ -0.021 } & -0.007 & -0.005 \\ 
+  FIML-C w/ SSC V6 & \textbf{ 0.015 } & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+   \hline
+  &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/o SSC & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V1 & 0.008 & -0.002 & -0.001 & -0.002 & -0.004 \\ 
+  FIML-C w/ SSC V2 & 0.008 & -0.002 & -0.001 & -0.003 & -0.004 \\ 
+  FIML-C w/ SSC V3 & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V4 & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V5 & 0.006 & -0.004 & -0.004 & 0.000 & -0.007 \\ 
+  FIML-C w/ SSC V6 & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+   \hline
+  &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.000 & -0.001 & -0.001 & -0.002 \\ 
+  FIML-C w/o SSC & 0.006 & -0.000 & -0.001 & -0.001 & -0.002 \\ 
+  FIML-C w/ SSC V1 & 0.005 & -0.001 & -0.001 & -0.001 & -0.002 \\ 
+  FIML-C w/ SSC V2 & 0.005 & -0.001 & -0.001 & -0.002 & -0.002 \\ 
+  FIML-C w/ SSC V3 & 0.006 & -0.000 & -0.001 & -0.000 & -0.002 \\ 
+  FIML-C w/ SSC V4 & 0.006 & -0.000 & -0.001 & -0.001 & -0.002 \\ 
+  FIML-C w/ SSC V5 & 0.005 & -0.001 & -0.002 & -0.001 & -0.004 \\ 
+  FIML-C w/ SSC V6 & 0.006 & -0.000 & -0.001 & -0.001 & -0.002 \\ 
+   \hline
+  &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V3 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V4 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V5 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V6 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{6}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
+ \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
+\end{tabular}
+\endgroup
+\end{table}
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Wed Nov 11 04:35:53 2020
+\begin{table}[ht]
+\centering
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0.4, two correlated residuals, complete data.} 
+\label{fit_0PerMiss_2CR_fimlc_n200_dif .rmsea.fc0.4.}
+\begingroup\small
+\begin{tabular}{lccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+  \hline
+  &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.014 } & -0.002 & -0.000 & -0.001 & -0.004 \\ 
+  FIML-C w/o SSC & \textbf{ 0.014 } & -0.002 & -0.000 & -0.001 & -0.004 \\ 
+  FIML-C w/ SSC V1 & \textbf{ 0.012 } & -0.006 & -0.004 & -0.004 & -0.007 \\ 
+  FIML-C w/ SSC V2 & \textbf{ 0.012 } & -0.005 & -0.004 & -0.006 & -0.008 \\ 
+  FIML-C w/ SSC V3 & \textbf{ 0.015 } & -0.001 & -0.000 & -0.001 & -0.004 \\ 
+  FIML-C w/ SSC V4 & \textbf{ 0.014 } & -0.002 & -0.000 & -0.001 & -0.004 \\ 
+  FIML-C w/ SSC V5 & 0.003 & \textbf{ -0.020 } & \textbf{ -0.021 } & \textbf{ -0.011 } & -0.008 \\ 
+  FIML-C w/ SSC V6 & \textbf{ 0.014 } & -0.002 & -0.000 & -0.001 & -0.004 \\ 
+   \hline
+  &   &   & n=500 &   &   \\ 
+  FIML & 0.008 & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/o SSC & 0.008 & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V1 & 0.007 & -0.003 & -0.002 & -0.002 & -0.004 \\ 
+  FIML-C w/ SSC V2 & 0.008 & -0.002 & -0.001 & -0.003 & -0.004 \\ 
+  FIML-C w/ SSC V3 & 0.008 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V4 & 0.008 & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V5 & 0.006 & -0.005 & -0.004 & -0.002 & -0.008 \\ 
+  FIML-C w/ SSC V6 & 0.008 & -0.002 & -0.000 & -0.001 & -0.003 \\ 
+   \hline
+  &   &   & n=1000 &   &   \\ 
+  FIML & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 \\ 
+  FIML-C w/o SSC & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 \\ 
+  FIML-C w/ SSC V1 & 0.006 & -0.001 & -0.001 & -0.001 & -0.002 \\ 
+  FIML-C w/ SSC V2 & 0.006 & -0.001 & -0.001 & -0.001 & -0.002 \\ 
+  FIML-C w/ SSC V3 & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 \\ 
+  FIML-C w/ SSC V4 & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 \\ 
+  FIML-C w/ SSC V5 & 0.005 & -0.002 & -0.002 & -0.001 & -0.004 \\ 
+  FIML-C w/ SSC V6 & 0.006 & -0.001 & -0.000 & -0.000 & -0.002 \\ 
+   \hline
+  &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V3 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V4 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V5 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V6 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{6}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
+ \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
+\end{tabular}
+\endgroup
+\end{table}
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Wed Nov 11 04:35:53 2020
+\begin{table}[ht]
+\centering
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0.8, two correlated residuals, complete data.} 
+\label{fit_0PerMiss_2CR_fimlc_n200_dif .rmsea.fc0.8.}
+\begingroup\small
+\begin{tabular}{lccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+  \hline
+  &   &   & n=200 &   &   \\ 
+  FIML & \textbf{ 0.016 } & -0.001 & -0.000 & -0.001 & -0.005 \\ 
+  FIML-C w/o SSC & \textbf{ 0.016 } & -0.001 & -0.000 & -0.001 & -0.005 \\ 
+  FIML-C w/ SSC V1 & \textbf{ 0.012 } & -0.006 & -0.004 & -0.004 & -0.008 \\ 
+  FIML-C w/ SSC V2 & \textbf{ 0.014 } & -0.003 & -0.003 & -0.007 & \textbf{ -0.012 } \\ 
+  FIML-C w/ SSC V3 & \textbf{ 0.016 } & -0.000 & -0.000 & -0.001 & -0.004 \\ 
+  FIML-C w/ SSC V4 & \textbf{ 0.016 } & -0.001 & -0.000 & -0.001 & -0.005 \\ 
+  FIML-C w/ SSC V5 & 0.003 & \textbf{ -0.019 } & \textbf{ -0.022 } & -0.003 & \textbf{ -0.011 } \\ 
+  FIML-C w/ SSC V6 & \textbf{ 0.016 } & -0.001 & -0.000 & -0.001 & -0.005 \\ 
+   \hline
+  &   &   & n=500 &   &   \\ 
+  FIML & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/o SSC & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V1 & 0.008 & -0.002 & -0.001 & -0.002 & -0.004 \\ 
+  FIML-C w/ SSC V2 & 0.008 & -0.002 & -0.001 & -0.003 & -0.005 \\ 
+  FIML-C w/ SSC V3 & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V4 & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V5 & 0.006 & -0.004 & -0.004 & -0.001 & -0.004 \\ 
+  FIML-C w/ SSC V6 & 0.009 & -0.001 & -0.000 & -0.001 & -0.003 \\ 
+   \hline
+  &   &   & n=1000 &   &   \\ 
+  FIML & 0.005 & -0.000 & -0.000 & -0.000 & -0.002 \\ 
+  FIML-C w/o SSC & 0.005 & -0.000 & -0.000 & -0.000 & -0.002 \\ 
+  FIML-C w/ SSC V1 & 0.005 & -0.001 & -0.001 & -0.001 & -0.002 \\ 
+  FIML-C w/ SSC V2 & 0.005 & -0.001 & -0.001 & -0.001 & -0.003 \\ 
+  FIML-C w/ SSC V3 & 0.005 & -0.000 & -0.000 & -0.000 & -0.002 \\ 
+  FIML-C w/ SSC V4 & 0.005 & -0.000 & -0.000 & -0.000 & -0.002 \\ 
+  FIML-C w/ SSC V5 & 0.005 & -0.001 & -0.002 & -0.001 & -0.001 \\ 
+  FIML-C w/ SSC V6 & 0.005 & -0.000 & -0.000 & -0.000 & -0.002 \\ 
+   \hline
+  &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V3 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V4 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V5 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V6 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{6}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
+ \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
+\end{tabular}
+\endgroup
+\end{table}
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Wed Nov 11 04:35:53 2020
+\begin{table}[ht]
+\centering
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0, two correlated residuals, complete data.} 
+\label{fit_0PerMiss_2CR_fimlc_n200_dif .cfi.fc0}
+\begingroup\small
+\begin{tabular}{lccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+  \hline
+  &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.002 & -0.001 & 0.001 & 0.009 \\ 
+  FIML-C w/o SSC & -0.006 & -0.002 & -0.001 & 0.001 & 0.009 \\ 
+  FIML-C w/ SSC V1 & -0.005 & -0.001 & 0.000 & 0.001 & 0.007 \\ 
+  FIML-C w/ SSC V2 & -0.005 & -0.003 & -0.005 & -0.006 & -0.010 \\ 
+  FIML-C w/ SSC V3 & -0.006 & -0.003 & -0.002 & 0.001 & 0.008 \\ 
+  FIML-C w/ SSC V4 & -0.006 & -0.002 & -0.001 & 0.001 & 0.009 \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.019 } & \textbf{ -0.040 } & \textbf{ -0.061 } & \textbf{ -0.064 } & \textbf{ -0.039 } \\ 
+  FIML-C w/ SSC V6 & -0.006 & -0.002 & -0.001 & 0.001 & 0.009 \\ 
+   \hline
+  &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & -0.000 & 0.000 & 0.001 & 0.007 \\ 
+  FIML-C w/o SSC & -0.002 & -0.000 & 0.000 & 0.001 & 0.007 \\ 
+  FIML-C w/ SSC V1 & -0.002 & 0.000 & 0.000 & 0.001 & 0.006 \\ 
+  FIML-C w/ SSC V2 & -0.002 & -0.001 & -0.002 & -0.001 & -0.000 \\ 
+  FIML-C w/ SSC V3 & -0.002 & -0.000 & 0.000 & 0.001 & 0.006 \\ 
+  FIML-C w/ SSC V4 & -0.002 & -0.000 & 0.000 & 0.001 & 0.007 \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.037 } & \textbf{ -0.076 } & \textbf{ -0.044 } & \textbf{ -0.055 } & \textbf{ -0.019 } \\ 
+  FIML-C w/ SSC V6 & -0.002 & -0.000 & 0.000 & 0.001 & 0.007 \\ 
+   \hline
+  &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.000 & 0.001 & 0.001 & 0.004 \\ 
+  FIML-C w/o SSC & -0.001 & 0.000 & 0.001 & 0.001 & 0.004 \\ 
+  FIML-C w/ SSC V1 & -0.001 & 0.000 & 0.001 & 0.000 & 0.004 \\ 
+  FIML-C w/ SSC V2 & -0.001 & -0.000 & -0.000 & -0.000 & 0.001 \\ 
+  FIML-C w/ SSC V3 & -0.001 & -0.000 & 0.001 & 0.001 & 0.004 \\ 
+  FIML-C w/ SSC V4 & -0.001 & 0.000 & 0.001 & 0.001 & 0.004 \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.019 } & \textbf{ -0.033 } & \textbf{ -0.039 } & \textbf{ -0.041 } & \textbf{ -0.017 } \\ 
+  FIML-C w/ SSC V6 & -0.001 & 0.000 & 0.001 & 0.001 & 0.004 \\ 
+   \hline
+  &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V3 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V4 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V5 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V6 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{6}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
+ \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
+\end{tabular}
+\endgroup
+\end{table}
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Wed Nov 11 04:35:53 2020
+\begin{table}[ht]
+\centering
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0.4, two correlated residuals, complete data.} 
+\label{fit_0PerMiss_2CR_fimlc_n200_dif .cfi.fc0.4.}
+\begingroup\small
+\begin{tabular}{lccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+  \hline
+  &   &   & n=200 &   &   \\ 
+  FIML & -0.006 & -0.002 & -0.001 & 0.000 & 0.008 \\ 
+  FIML-C w/o SSC & -0.006 & -0.002 & -0.001 & 0.000 & 0.008 \\ 
+  FIML-C w/ SSC V1 & -0.005 & -0.001 & 0.001 & 0.002 & 0.009 \\ 
+  FIML-C w/ SSC V2 & -0.006 & -0.004 & -0.009 & \textbf{ -0.015 } & \textbf{ -0.023 } \\ 
+  FIML-C w/ SSC V3 & -0.006 & -0.003 & -0.001 & -0.000 & 0.008 \\ 
+  FIML-C w/ SSC V4 & -0.006 & -0.002 & -0.001 & 0.000 & 0.008 \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.016 } & \textbf{ -0.039 } & \textbf{ -0.050 } & \textbf{ -0.065 } & \textbf{ -0.039 } \\ 
+  FIML-C w/ SSC V6 & -0.006 & -0.002 & -0.001 & 0.000 & 0.008 \\ 
+   \hline
+  &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & 0.000 & 0.000 & 0.001 & 0.007 \\ 
+  FIML-C w/o SSC & -0.002 & 0.000 & 0.000 & 0.001 & 0.007 \\ 
+  FIML-C w/ SSC V1 & -0.002 & 0.000 & 0.001 & 0.001 & 0.007 \\ 
+  FIML-C w/ SSC V2 & -0.002 & -0.001 & -0.003 & -0.004 & -0.004 \\ 
+  FIML-C w/ SSC V3 & -0.002 & -0.000 & 0.000 & 0.001 & 0.007 \\ 
+  FIML-C w/ SSC V4 & -0.002 & 0.000 & 0.000 & 0.001 & 0.007 \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.031 } & \textbf{ -0.080 } & \textbf{ -0.041 } & \textbf{ -0.037 } & \textbf{ -0.022 } \\ 
+  FIML-C w/ SSC V6 & -0.002 & 0.000 & 0.000 & 0.001 & 0.007 \\ 
+   \hline
+  &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & 0.000 & 0.000 & 0.000 & 0.005 \\ 
+  FIML-C w/o SSC & -0.001 & 0.000 & 0.000 & 0.000 & 0.005 \\ 
+  FIML-C w/ SSC V1 & -0.001 & 0.000 & 0.001 & 0.000 & 0.005 \\ 
+  FIML-C w/ SSC V2 & -0.001 & -0.000 & -0.001 & -0.002 & -0.001 \\ 
+  FIML-C w/ SSC V3 & -0.001 & 0.000 & 0.000 & 0.000 & 0.005 \\ 
+  FIML-C w/ SSC V4 & -0.001 & 0.000 & 0.000 & 0.000 & 0.005 \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.031 } & \textbf{ -0.054 } & \textbf{ -0.033 } & \textbf{ -0.040 } & \textbf{ -0.017 } \\ 
+  FIML-C w/ SSC V6 & -0.001 & 0.000 & 0.000 & 0.000 & 0.005 \\ 
+   \hline
+  &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V3 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V4 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V5 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V6 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{6}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
+ \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
+\end{tabular}
+\endgroup
+\end{table}
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Wed Nov 11 04:35:53 2020
+\begin{table}[ht]
+\centering
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
+                              \newline Study 1 condition: factor correlation of 0.8, two correlated residuals, complete data.} 
+\label{fit_0PerMiss_2CR_fimlc_n200_dif .cfi.fc0.8.}
+\begingroup\small
+\begin{tabular}{lccccc}
+  \hline
+  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
+  \hline
+  &   &   & n=200 &   &   \\ 
+  FIML & -0.005 & -0.003 & -0.001 & 0.001 & \textbf{ 0.011 } \\ 
+  FIML-C w/o SSC & -0.005 & -0.003 & -0.001 & 0.001 & \textbf{ 0.011 } \\ 
+  FIML-C w/ SSC V1 & -0.004 & 0.000 & 0.004 & 0.008 & \textbf{ 0.021 } \\ 
+  FIML-C w/ SSC V2 & -0.008 & -0.010 & \textbf{ -0.026 } & \textbf{ -0.047 } & \textbf{ -0.064 } \\ 
+  FIML-C w/ SSC V3 & -0.006 & -0.003 & -0.001 & 0.000 & \textbf{ 0.010 } \\ 
+  FIML-C w/ SSC V4 & -0.005 & -0.003 & -0.001 & 0.001 & \textbf{ 0.011 } \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.015 } & \textbf{ -0.048 } & \textbf{ -0.056 } & \textbf{ -0.065 } & \textbf{ -0.034 } \\ 
+  FIML-C w/ SSC V6 & -0.005 & -0.003 & -0.001 & 0.001 & \textbf{ 0.011 } \\ 
+   \hline
+  &   &   & n=500 &   &   \\ 
+  FIML & -0.002 & -0.000 & -0.000 & 0.001 & 0.006 \\ 
+  FIML-C w/o SSC & -0.002 & -0.000 & -0.000 & 0.001 & 0.006 \\ 
+  FIML-C w/ SSC V1 & -0.002 & 0.001 & 0.001 & 0.003 & \textbf{ 0.010 } \\ 
+  FIML-C w/ SSC V2 & -0.002 & -0.002 & -0.008 & \textbf{ -0.014 } & \textbf{ -0.018 } \\ 
+  FIML-C w/ SSC V3 & -0.002 & -0.000 & -0.000 & 0.001 & 0.006 \\ 
+  FIML-C w/ SSC V4 & -0.002 & -0.000 & -0.000 & 0.001 & 0.006 \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.032 } & \textbf{ -0.050 } & \textbf{ -0.044 } & \textbf{ -0.058 } & \textbf{ -0.025 } \\ 
+  FIML-C w/ SSC V6 & -0.002 & -0.000 & -0.000 & 0.001 & 0.006 \\ 
+   \hline
+  &   &   & n=1000 &   &   \\ 
+  FIML & -0.001 & -0.000 & 0.000 & 0.000 & 0.004 \\ 
+  FIML-C w/o SSC & -0.001 & -0.000 & 0.000 & 0.000 & 0.004 \\ 
+  FIML-C w/ SSC V1 & -0.001 & 0.000 & 0.001 & 0.001 & 0.006 \\ 
+  FIML-C w/ SSC V2 & -0.001 & -0.001 & -0.003 & -0.007 & -0.007 \\ 
+  FIML-C w/ SSC V3 & -0.001 & -0.000 & 0.000 & -0.000 & 0.004 \\ 
+  FIML-C w/ SSC V4 & -0.001 & -0.000 & 0.000 & 0.000 & 0.004 \\ 
+  FIML-C w/ SSC V5 & \textbf{ -0.019 } & \textbf{ -0.041 } & \textbf{ -0.044 } & \textbf{ -0.029 } & \textbf{ -0.027 } \\ 
+  FIML-C w/ SSC V6 & -0.001 & -0.000 & 0.000 & 0.000 & 0.004 \\ 
+   \hline
+  &   &   & n=1000000 &   &   \\ 
+  FIML & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/o SSC & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V1 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V2 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V3 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V4 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V5 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+  FIML-C w/ SSC V6 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\ 
+   \hline 
+ \multicolumn{6}{l}{\footnotesize{Note:Bold values are those with raw bias beyond $\pm 0.01.$}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
+ \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
+ \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
+\end{tabular}
+\endgroup
+\end{table}
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Wed Nov 11 04:35:53 2020
+\begin{table}[ht]
+\centering
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0}
@@ -418,12 +778,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor,
                                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -479,12 +839,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor,
                                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -540,12 +900,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0}
@@ -601,12 +961,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor,
                                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0.4.}
@@ -662,12 +1022,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor,
                                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0.8.}
@@ -723,12 +1083,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0}
@@ -784,12 +1144,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -845,12 +1205,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -906,12 +1266,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0}
@@ -967,12 +1327,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0.4.}
@@ -1028,12 +1388,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0.8.}
@@ -1089,12 +1449,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0}
@@ -1150,12 +1510,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -1211,12 +1571,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -1272,12 +1632,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0}
@@ -1333,12 +1693,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0.4.}
@@ -1394,12 +1754,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:53 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0.8.}
@@ -1455,12 +1815,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0}
@@ -1516,12 +1876,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -1577,12 +1937,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -1638,12 +1998,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0}
@@ -1699,12 +2059,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0.4.}
@@ -1760,12 +2120,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0.8.}
@@ -1821,12 +2181,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0}
@@ -1882,12 +2242,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -1943,12 +2303,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -2004,12 +2364,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0}
@@ -2065,12 +2425,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0.4.}
@@ -2126,12 +2486,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0.8.}
@@ -2187,12 +2547,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0}
@@ -2248,12 +2608,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -2309,12 +2669,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -2370,12 +2730,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0}
@@ -2431,12 +2791,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0.4.}
@@ -2492,12 +2852,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on the same factor, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n200_dif.cfi.fc0.8.}
@@ -2553,12 +2913,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0}
@@ -2614,12 +2974,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -2675,12 +3035,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -2736,12 +3096,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0}
@@ -2797,12 +3157,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0.4.}
@@ -2858,12 +3218,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0.8.}
@@ -2919,12 +3279,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0}
@@ -2980,12 +3340,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -3041,12 +3401,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -3102,12 +3462,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0}
@@ -3163,12 +3523,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0.4.}
@@ -3224,12 +3584,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on the same factor,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n200_dif.cfi.fc0.8.}
@@ -3285,12 +3645,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0}
@@ -3346,12 +3706,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -3407,12 +3767,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -3468,12 +3828,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0}
@@ -3529,12 +3889,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0.4.}
@@ -3590,12 +3950,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0.8.}
@@ -3651,12 +4011,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0}
@@ -3712,12 +4072,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -3773,12 +4133,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -3834,12 +4194,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0}
@@ -3895,12 +4255,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0.4.}
@@ -3956,12 +4316,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on different factors, 
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0.8.}
@@ -4017,12 +4377,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0}
@@ -4078,12 +4438,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -4139,12 +4499,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -4200,12 +4560,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0}
@@ -4261,12 +4621,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0.4.}
@@ -4322,12 +4682,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0.8.}
@@ -4383,12 +4743,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0}
@@ -4444,12 +4804,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -4505,12 +4865,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -4566,12 +4926,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0}
@@ -4627,12 +4987,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0.4.}
@@ -4688,12 +5048,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0.8.}
@@ -4749,12 +5109,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0}
@@ -4810,12 +5170,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -4871,12 +5231,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -4932,12 +5292,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0}
@@ -4993,12 +5353,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0.4.}
@@ -5054,12 +5414,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0.8.}
@@ -5115,12 +5475,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0}
@@ -5176,12 +5536,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -5237,12 +5597,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -5298,12 +5658,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0}
@@ -5359,12 +5719,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0.4.}
@@ -5420,12 +5780,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, one correlated residual,  misfit and missing data on different factors, 
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n200_dif.cfi.fc0.8.}
@@ -5481,12 +5841,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0}
@@ -5542,12 +5902,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -5603,12 +5963,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -5664,12 +6024,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0}
@@ -5725,12 +6085,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0.4.}
@@ -5786,12 +6146,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0.8.}
@@ -5847,12 +6207,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0}
@@ -5908,12 +6268,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0.4.}
@@ -5969,12 +6329,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.rmsea.fc0.8.}
@@ -6030,12 +6390,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0}
@@ -6091,12 +6451,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.4, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0.4.}
@@ -6152,12 +6512,12 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:40:38 2020
+% Wed Nov 11 04:35:54 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods 
                               \newline Study 1 condition: factor correlation of 0.8, MCAR, two correlated residuals, misfit and missing data on different factors,
                four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n200_dif.cfi.fc0.8.}
@@ -6213,4 +6573,4 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}

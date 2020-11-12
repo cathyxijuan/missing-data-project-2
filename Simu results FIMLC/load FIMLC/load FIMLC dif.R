@@ -1,10 +1,11 @@
 setwd("/Volumes/SP PHD U3/missing-data-project-2/Simu results FIMLC")
 
 file.list <- list.files(path="FIMLC dif results", full.names=TRUE)
-
+length(file.list)
 for(i in 1:length(file.list)){
   load(file.list[i])
 }
+
 
 # round(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n500_dif, 2)
 # 

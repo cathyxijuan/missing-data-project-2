@@ -1,365 +1,5 @@
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
-\begin{table}[ht]
-\centering
-\caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .rmsea.fc0}
-\begingroup\small
-\begin{tabular}{lccccc}
-  \hline
-  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
-  \hline
-  &   &   & n=200 &   &   \\ 
-  FIML & 0.015 & 0.021 & 0.043 & 0.067 & 0.086 \\ 
-  FIML-C w/o SSC & 0.015 & 0.021 & 0.043 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V1 & 0.012 & 0.018 & 0.039 & 0.063 & 0.082 \\ 
-  FIML-C w/ SSC V2 & 0.012 & 0.018 & 0.040 & 0.064 & 0.083 \\ 
-  FIML-C w/ SSC V3 & 0.015 & 0.021 & 0.043 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V4 & 0.015 & 0.021 & 0.043 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V5 & 0.003 & 0.006 & 0.024 & 0.050 & 0.067 \\ 
-  FIML-C w/ SSC V6 & 0.015 & 0.021 & 0.043 & 0.067 & 0.086 \\ 
-   \hline
-  &   &   & n=500 &   &   \\ 
-  FIML & 0.009 & 0.019 & 0.043 & 0.067 & 0.085 \\ 
-  FIML-C w/o SSC & 0.009 & 0.019 & 0.043 & 0.067 & 0.085 \\ 
-  FIML-C w/ SSC V1 & 0.008 & 0.019 & 0.043 & 0.065 & 0.084 \\ 
-  FIML-C w/ SSC V2 & 0.008 & 0.019 & 0.043 & 0.066 & 0.084 \\ 
-  FIML-C w/ SSC V3 & 0.009 & 0.020 & 0.044 & 0.067 & 0.085 \\ 
-  FIML-C w/ SSC V4 & 0.009 & 0.019 & 0.043 & 0.067 & 0.085 \\ 
-  FIML-C w/ SSC V5 & 0.006 & 0.016 & 0.041 & 0.064 & 0.081 \\ 
-  FIML-C w/ SSC V6 & 0.009 & 0.019 & 0.043 & 0.067 & 0.085 \\ 
-   \hline
-  &   &   & n=1000 &   &   \\ 
-  FIML & 0.006 & 0.020 & 0.043 & 0.067 & 0.086 \\ 
-  FIML-C w/o SSC & 0.006 & 0.020 & 0.043 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V1 & 0.005 & 0.020 & 0.043 & 0.066 & 0.085 \\ 
-  FIML-C w/ SSC V2 & 0.005 & 0.020 & 0.043 & 0.067 & 0.085 \\ 
-  FIML-C w/ SSC V3 & 0.006 & 0.020 & 0.043 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V4 & 0.006 & 0.020 & 0.043 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V5 & 0.005 & 0.019 & 0.042 & 0.066 & 0.084 \\ 
-  FIML-C w/ SSC V6 & 0.006 & 0.020 & 0.043 & 0.067 & 0.086 \\ 
-   \hline
-  &   &   & n=1000000 &   &   \\ 
-  FIML & 0.000 & 0.022 & 0.044 & 0.067 & 0.086 \\ 
-  FIML-C w/o SSC & 0.000 & 0.022 & 0.044 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V1 & 0.000 & 0.022 & 0.044 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V2 & 0.000 & 0.022 & 0.044 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V3 & 0.000 & 0.022 & 0.044 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V4 & 0.000 & 0.022 & 0.044 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V5 & 0.000 & 0.022 & 0.044 & 0.067 & 0.086 \\ 
-  FIML-C w/ SSC V6 & 0.000 & 0.022 & 0.044 & 0.067 & 0.086 \\ 
-   \hline 
- \multicolumn{6}{l}{\footnotesize{Note: }} \\
- \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
- \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
- \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
- \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
-\end{tabular}
-\endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
-\begin{table}[ht]
-\centering
-\caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0.4, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .rmsea.fc0.4.}
-\begingroup\small
-\begin{tabular}{lccccc}
-  \hline
-  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
-  \hline
-  &   &   & n=200 &   &   \\ 
-  FIML & 0.014 & 0.022 & 0.043 & 0.069 & 0.089 \\ 
-  FIML-C w/o SSC & 0.014 & 0.022 & 0.043 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V1 & 0.012 & 0.019 & 0.040 & 0.066 & 0.086 \\ 
-  FIML-C w/ SSC V2 & 0.012 & 0.019 & 0.040 & 0.066 & 0.085 \\ 
-  FIML-C w/ SSC V3 & 0.015 & 0.023 & 0.044 & 0.070 & 0.089 \\ 
-  FIML-C w/ SSC V4 & 0.014 & 0.022 & 0.043 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V5 & 0.003 & 0.007 & 0.024 & 0.052 & 0.069 \\ 
-  FIML-C w/ SSC V6 & 0.014 & 0.022 & 0.043 & 0.069 & 0.089 \\ 
-   \hline
-  &   &   & n=500 &   &   \\ 
-  FIML & 0.008 & 0.019 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/o SSC & 0.008 & 0.019 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V1 & 0.007 & 0.018 & 0.043 & 0.068 & 0.088 \\ 
-  FIML-C w/ SSC V2 & 0.008 & 0.018 & 0.043 & 0.068 & 0.088 \\ 
-  FIML-C w/ SSC V3 & 0.008 & 0.019 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V4 & 0.008 & 0.019 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V5 & 0.006 & 0.016 & 0.041 & 0.066 & 0.085 \\ 
-  FIML-C w/ SSC V6 & 0.008 & 0.019 & 0.044 & 0.069 & 0.089 \\ 
-   \hline
-  &   &   & n=1000 &   &   \\ 
-  FIML & 0.006 & 0.020 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/o SSC & 0.006 & 0.020 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V1 & 0.006 & 0.020 & 0.044 & 0.068 & 0.089 \\ 
-  FIML-C w/ SSC V2 & 0.006 & 0.020 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V3 & 0.006 & 0.020 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V4 & 0.006 & 0.020 & 0.044 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V5 & 0.005 & 0.019 & 0.043 & 0.068 & 0.088 \\ 
-  FIML-C w/ SSC V6 & 0.006 & 0.020 & 0.044 & 0.069 & 0.089 \\ 
-   \hline
-  &   &   & n=1000000 &   &   \\ 
-  FIML & 0.000 & 0.022 & 0.045 & 0.069 & 0.089 \\ 
-  FIML-C w/o SSC & 0.000 & 0.022 & 0.045 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V1 & 0.000 & 0.022 & 0.045 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V2 & 0.000 & 0.022 & 0.045 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V3 & 0.000 & 0.022 & 0.045 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V4 & 0.000 & 0.022 & 0.045 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V5 & 0.000 & 0.022 & 0.045 & 0.069 & 0.089 \\ 
-  FIML-C w/ SSC V6 & 0.000 & 0.022 & 0.045 & 0.069 & 0.089 \\ 
-   \hline 
- \multicolumn{6}{l}{\footnotesize{Note: }} \\
- \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
- \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
- \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
- \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
-\end{tabular}
-\endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
-\begin{table}[ht]
-\centering
-\caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0.8, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .rmsea.fc0.8.}
-\begingroup\small
-\begin{tabular}{lccccc}
-  \hline
-  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
-  \hline
-  &   &   & n=200 &   &   \\ 
-  FIML & 0.016 & 0.023 & 0.046 & 0.075 & 0.104 \\ 
-  FIML-C w/o SSC & 0.016 & 0.023 & 0.046 & 0.075 & 0.104 \\ 
-  FIML-C w/ SSC V1 & 0.012 & 0.019 & 0.042 & 0.071 & 0.101 \\ 
-  FIML-C w/ SSC V2 & 0.014 & 0.021 & 0.043 & 0.071 & 0.099 \\ 
-  FIML-C w/ SSC V3 & 0.016 & 0.024 & 0.047 & 0.075 & 0.105 \\ 
-  FIML-C w/ SSC V4 & 0.016 & 0.023 & 0.046 & 0.075 & 0.104 \\ 
-  FIML-C w/ SSC V5 & 0.003 & 0.008 & 0.027 & 0.059 & 0.085 \\ 
-  FIML-C w/ SSC V6 & 0.016 & 0.023 & 0.046 & 0.075 & 0.104 \\ 
-   \hline
-  &   &   & n=500 &   &   \\ 
-  FIML & 0.009 & 0.021 & 0.047 & 0.075 & 0.105 \\ 
-  FIML-C w/o SSC & 0.009 & 0.021 & 0.047 & 0.075 & 0.105 \\ 
-  FIML-C w/ SSC V1 & 0.008 & 0.019 & 0.046 & 0.074 & 0.103 \\ 
-  FIML-C w/ SSC V2 & 0.008 & 0.020 & 0.046 & 0.074 & 0.103 \\ 
-  FIML-C w/ SSC V3 & 0.009 & 0.021 & 0.047 & 0.075 & 0.105 \\ 
-  FIML-C w/ SSC V4 & 0.009 & 0.021 & 0.047 & 0.075 & 0.105 \\ 
-  FIML-C w/ SSC V5 & 0.006 & 0.017 & 0.044 & 0.072 & 0.100 \\ 
-  FIML-C w/ SSC V6 & 0.009 & 0.021 & 0.047 & 0.075 & 0.105 \\ 
-   \hline
-  &   &   & n=1000 &   &   \\ 
-  FIML & 0.005 & 0.022 & 0.047 & 0.076 & 0.105 \\ 
-  FIML-C w/o SSC & 0.005 & 0.022 & 0.047 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V1 & 0.005 & 0.021 & 0.047 & 0.075 & 0.104 \\ 
-  FIML-C w/ SSC V2 & 0.005 & 0.022 & 0.047 & 0.075 & 0.104 \\ 
-  FIML-C w/ SSC V3 & 0.005 & 0.022 & 0.047 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V4 & 0.005 & 0.022 & 0.047 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V5 & 0.005 & 0.021 & 0.046 & 0.074 & 0.103 \\ 
-  FIML-C w/ SSC V6 & 0.005 & 0.022 & 0.047 & 0.076 & 0.105 \\ 
-   \hline
-  &   &   & n=1000000 &   &   \\ 
-  FIML & 0.000 & 0.023 & 0.048 & 0.076 & 0.105 \\ 
-  FIML-C w/o SSC & 0.000 & 0.023 & 0.048 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V1 & 0.000 & 0.023 & 0.048 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V2 & 0.000 & 0.023 & 0.048 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V3 & 0.000 & 0.023 & 0.048 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V4 & 0.000 & 0.023 & 0.048 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V5 & 0.000 & 0.023 & 0.048 & 0.076 & 0.105 \\ 
-  FIML-C w/ SSC V6 & 0.000 & 0.023 & 0.048 & 0.076 & 0.105 \\ 
-   \hline 
- \multicolumn{6}{l}{\footnotesize{Note: }} \\
- \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
- \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
- \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
- \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
-\end{tabular}
-\endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
-\begin{table}[ht]
-\centering
-\caption{Average estimate of CFI comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .cfi.fc0}
-\begingroup\small
-\begin{tabular}{lccccc}
-  \hline
-  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
-  \hline
-  &   &   & n=200 &   &   \\ 
-  FIML & 0.994 & 0.991 & 0.976 & 0.948 & 0.926 \\ 
-  FIML-C w/o SSC & 0.994 & 0.991 & 0.976 & 0.948 & 0.926 \\ 
-  FIML-C w/ SSC V1 & 0.995 & 0.992 & 0.977 & 0.951 & 0.927 \\ 
-  FIML-C w/ SSC V2 & 0.995 & 0.991 & 0.974 & 0.945 & 0.920 \\ 
-  FIML-C w/ SSC V3 & 0.994 & 0.991 & 0.975 & 0.948 & 0.925 \\ 
-  FIML-C w/ SSC V4 & 0.994 & 0.991 & 0.976 & 0.948 & 0.926 \\ 
-  FIML-C w/ SSC V5 & 0.981 & 0.968 & 0.897 & 0.890 & 0.866 \\ 
-  FIML-C w/ SSC V6 & 0.994 & 0.991 & 0.976 & 0.948 & 0.926 \\ 
-   \hline
-  &   &   & n=500 &   &   \\ 
-  FIML & 0.998 & 0.994 & 0.977 & 0.950 & 0.928 \\ 
-  FIML-C w/o SSC & 0.998 & 0.994 & 0.977 & 0.950 & 0.928 \\ 
-  FIML-C w/ SSC V1 & 0.998 & 0.994 & 0.977 & 0.951 & 0.928 \\ 
-  FIML-C w/ SSC V2 & 0.998 & 0.994 & 0.976 & 0.949 & 0.925 \\ 
-  FIML-C w/ SSC V3 & 0.998 & 0.994 & 0.977 & 0.950 & 0.928 \\ 
-  FIML-C w/ SSC V4 & 0.998 & 0.994 & 0.977 & 0.950 & 0.928 \\ 
-  FIML-C w/ SSC V5 & 0.963 & 0.943 & 0.916 & 0.894 & 0.873 \\ 
-  FIML-C w/ SSC V6 & 0.998 & 0.994 & 0.977 & 0.950 & 0.928 \\ 
-   \hline
-  &   &   & n=1000 &   &   \\ 
-  FIML & 0.999 & 0.994 & 0.978 & 0.950 & 0.927 \\ 
-  FIML-C w/o SSC & 0.999 & 0.994 & 0.978 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V1 & 0.999 & 0.995 & 0.978 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V2 & 0.999 & 0.994 & 0.977 & 0.949 & 0.926 \\ 
-  FIML-C w/ SSC V3 & 0.999 & 0.994 & 0.978 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V4 & 0.999 & 0.994 & 0.978 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V5 & 0.981 & 0.945 & 0.940 & 0.896 & 0.894 \\ 
-  FIML-C w/ SSC V6 & 0.999 & 0.994 & 0.978 & 0.950 & 0.927 \\ 
-   \hline
-  &   &   & n=1000000 &   &   \\ 
-  FIML & 1.000 & 0.994 & 0.977 & 0.950 & 0.927 \\ 
-  FIML-C w/o SSC & 1.000 & 0.994 & 0.977 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V1 & 1.000 & 0.994 & 0.977 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V2 & 1.000 & 0.994 & 0.977 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V3 & 1.000 & 0.994 & 0.977 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V4 & 1.000 & 0.994 & 0.977 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V5 & 1.000 & 0.994 & 0.977 & 0.950 & 0.927 \\ 
-  FIML-C w/ SSC V6 & 1.000 & 0.994 & 0.977 & 0.950 & 0.927 \\ 
-   \hline 
- \multicolumn{6}{l}{\footnotesize{Note: }} \\
- \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
- \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
- \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
- \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
-\end{tabular}
-\endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
-\begin{table}[ht]
-\centering
-\caption{Average estimate of CFI comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0.4, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .cfi.fc0.4.}
-\begingroup\small
-\begin{tabular}{lccccc}
-  \hline
-  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
-  \hline
-  &   &   & n=200 &   &   \\ 
-  FIML & 0.994 & 0.991 & 0.975 & 0.946 & 0.921 \\ 
-  FIML-C w/o SSC & 0.994 & 0.991 & 0.975 & 0.946 & 0.921 \\ 
-  FIML-C w/ SSC V1 & 0.995 & 0.992 & 0.978 & 0.949 & 0.924 \\ 
-  FIML-C w/ SSC V2 & 0.994 & 0.990 & 0.972 & 0.938 & 0.911 \\ 
-  FIML-C w/ SSC V3 & 0.994 & 0.990 & 0.975 & 0.945 & 0.921 \\ 
-  FIML-C w/ SSC V4 & 0.994 & 0.991 & 0.975 & 0.946 & 0.921 \\ 
-  FIML-C w/ SSC V5 & 0.984 & 0.973 & 0.924 & 0.878 & 0.871 \\ 
-  FIML-C w/ SSC V6 & 0.994 & 0.991 & 0.975 & 0.946 & 0.921 \\ 
-   \hline
-  &   &   & n=500 &   &   \\ 
-  FIML & 0.998 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-  FIML-C w/o SSC & 0.998 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-  FIML-C w/ SSC V1 & 0.998 & 0.994 & 0.978 & 0.949 & 0.923 \\ 
-  FIML-C w/ SSC V2 & 0.998 & 0.994 & 0.976 & 0.945 & 0.919 \\ 
-  FIML-C w/ SSC V3 & 0.998 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-  FIML-C w/ SSC V4 & 0.998 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-  FIML-C w/ SSC V5 & 0.969 & 0.941 & 0.918 & 0.901 & 0.875 \\ 
-  FIML-C w/ SSC V6 & 0.998 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-   \hline
-  &   &   & n=1000 &   &   \\ 
-  FIML & 0.999 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-  FIML-C w/o SSC & 0.999 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-  FIML-C w/ SSC V1 & 0.999 & 0.995 & 0.977 & 0.949 & 0.923 \\ 
-  FIML-C w/ SSC V2 & 0.999 & 0.994 & 0.977 & 0.947 & 0.921 \\ 
-  FIML-C w/ SSC V3 & 0.999 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-  FIML-C w/ SSC V4 & 0.999 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-  FIML-C w/ SSC V5 & 0.969 & 0.953 & 0.936 & 0.910 & 0.881 \\ 
-  FIML-C w/ SSC V6 & 0.999 & 0.994 & 0.977 & 0.948 & 0.923 \\ 
-   \hline
-  &   &   & n=1000000 &   &   \\ 
-  FIML & 1.000 & 0.994 & 0.977 & 0.948 & 0.922 \\ 
-  FIML-C w/o SSC & 1.000 & 0.994 & 0.977 & 0.948 & 0.922 \\ 
-  FIML-C w/ SSC V1 & 1.000 & 0.994 & 0.977 & 0.948 & 0.922 \\ 
-  FIML-C w/ SSC V2 & 1.000 & 0.994 & 0.977 & 0.948 & 0.922 \\ 
-  FIML-C w/ SSC V3 & 1.000 & 0.994 & 0.977 & 0.948 & 0.922 \\ 
-  FIML-C w/ SSC V4 & 1.000 & 0.994 & 0.977 & 0.948 & 0.922 \\ 
-  FIML-C w/ SSC V5 & 1.000 & 0.994 & 0.977 & 0.948 & 0.922 \\ 
-  FIML-C w/ SSC V6 & 1.000 & 0.994 & 0.977 & 0.948 & 0.922 \\ 
-   \hline 
- \multicolumn{6}{l}{\footnotesize{Note: }} \\
- \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
- \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
- \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
- \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
-\end{tabular}
-\endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
-\begin{table}[ht]
-\centering
-\caption{Average estimate of CFI comparing FIML with FIML-C methods 
-                              \newline Study 1 condition: factor correlation of 0.8, complete data.} 
-\label{fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean .cfi.fc0.8.}
-\begingroup\small
-\begin{tabular}{lccccc}
-  \hline
-  & CR=0 & CR=0.1 & CR=0.2 & CR=0.3 & CR=0.4 \\ 
-  \hline
-  &   &   & n=200 &   &   \\ 
-  FIML & 0.995 & 0.991 & 0.975 & 0.943 & 0.902 \\ 
-  FIML-C w/o SSC & 0.995 & 0.991 & 0.975 & 0.943 & 0.902 \\ 
-  FIML-C w/ SSC V1 & 0.996 & 0.993 & 0.979 & 0.949 & 0.908 \\ 
-  FIML-C w/ SSC V2 & 0.992 & 0.986 & 0.963 & 0.918 & 0.863 \\ 
-  FIML-C w/ SSC V3 & 0.994 & 0.990 & 0.975 & 0.943 & 0.901 \\ 
-  FIML-C w/ SSC V4 & 0.995 & 0.991 & 0.975 & 0.943 & 0.902 \\ 
-  FIML-C w/ SSC V5 & 0.985 & 0.962 & 0.921 & 0.863 & 0.856 \\ 
-  FIML-C w/ SSC V6 & 0.995 & 0.991 & 0.975 & 0.943 & 0.902 \\ 
-   \hline
-  &   &   & n=500 &   &   \\ 
-  FIML & 0.998 & 0.994 & 0.976 & 0.944 & 0.902 \\ 
-  FIML-C w/o SSC & 0.998 & 0.994 & 0.976 & 0.944 & 0.902 \\ 
-  FIML-C w/ SSC V1 & 0.998 & 0.995 & 0.977 & 0.945 & 0.904 \\ 
-  FIML-C w/ SSC V2 & 0.998 & 0.993 & 0.973 & 0.936 & 0.890 \\ 
-  FIML-C w/ SSC V3 & 0.998 & 0.994 & 0.976 & 0.944 & 0.902 \\ 
-  FIML-C w/ SSC V4 & 0.998 & 0.994 & 0.976 & 0.944 & 0.902 \\ 
-  FIML-C w/ SSC V5 & 0.968 & 0.936 & 0.923 & 0.896 & 0.854 \\ 
-  FIML-C w/ SSC V6 & 0.998 & 0.994 & 0.976 & 0.944 & 0.902 \\ 
-   \hline
-  &   &   & n=1000 &   &   \\ 
-  FIML & 0.999 & 0.994 & 0.977 & 0.944 & 0.902 \\ 
-  FIML-C w/o SSC & 0.999 & 0.994 & 0.977 & 0.944 & 0.902 \\ 
-  FIML-C w/ SSC V1 & 0.999 & 0.995 & 0.977 & 0.944 & 0.903 \\ 
-  FIML-C w/ SSC V2 & 0.999 & 0.994 & 0.975 & 0.940 & 0.897 \\ 
-  FIML-C w/ SSC V3 & 0.999 & 0.994 & 0.977 & 0.943 & 0.902 \\ 
-  FIML-C w/ SSC V4 & 0.999 & 0.994 & 0.977 & 0.944 & 0.902 \\ 
-  FIML-C w/ SSC V5 & 0.981 & 0.946 & 0.938 & 0.911 & 0.878 \\ 
-  FIML-C w/ SSC V6 & 0.999 & 0.994 & 0.977 & 0.944 & 0.902 \\ 
-   \hline
-  &   &   & n=1000000 &   &   \\ 
-  FIML & 1.000 & 0.994 & 0.976 & 0.943 & 0.901 \\ 
-  FIML-C w/o SSC & 1.000 & 0.994 & 0.976 & 0.943 & 0.901 \\ 
-  FIML-C w/ SSC V1 & 1.000 & 0.994 & 0.976 & 0.943 & 0.901 \\ 
-  FIML-C w/ SSC V2 & 1.000 & 0.994 & 0.976 & 0.943 & 0.901 \\ 
-  FIML-C w/ SSC V3 & 1.000 & 0.994 & 0.976 & 0.943 & 0.901 \\ 
-  FIML-C w/ SSC V4 & 1.000 & 0.994 & 0.976 & 0.943 & 0.901 \\ 
-  FIML-C w/ SSC V5 & 1.000 & 0.994 & 0.976 & 0.943 & 0.901 \\ 
-  FIML-C w/ SSC V6 & 1.000 & 0.994 & 0.976 & 0.943 & 0.901 \\ 
-   \hline 
- \multicolumn{6}{l}{\footnotesize{Note: }} \\
- \multicolumn{6}{l}{\footnotesize{FIML=Full information maximum likelihood; FIML-C=FIML-Corrected; }} \\
- \multicolumn{6}{l}{\footnotesize{CR=Correlated Residual; SSC=Small sample correction;}} \\
- \multicolumn{6}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; }} \\ 
- \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
-\end{tabular}
-\endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -418,9 +58,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -479,9 +119,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -540,9 +180,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -601,9 +241,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -662,9 +302,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -723,9 +363,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -784,9 +424,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -845,9 +485,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -906,9 +546,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -967,9 +607,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -1028,9 +668,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -1089,9 +729,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -1150,9 +790,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -1211,9 +851,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -1272,9 +912,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -1333,9 +973,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -1394,9 +1034,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -1455,9 +1095,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -1516,9 +1156,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:18 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -1577,9 +1217,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -1638,9 +1278,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -1699,9 +1339,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -1760,9 +1400,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -1821,9 +1461,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -1882,9 +1522,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -1943,9 +1583,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -2004,9 +1644,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2065,9 +1705,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2126,9 +1766,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2187,9 +1827,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -2248,9 +1888,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -2309,9 +1949,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -2370,9 +2010,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2431,9 +2071,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2492,9 +2132,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2553,9 +2193,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -2614,9 +2254,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -2675,9 +2315,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -2736,9 +2376,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2797,9 +2437,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2858,9 +2498,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -2919,9 +2559,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -2980,9 +2620,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -3041,9 +2681,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -3102,9 +2742,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -3163,9 +2803,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -3224,9 +2864,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -3285,9 +2925,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -3346,9 +2986,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -3407,9 +3047,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -3468,9 +3108,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -3529,9 +3169,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -3590,9 +3230,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -3651,9 +3291,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -3712,9 +3352,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -3773,9 +3413,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -3834,9 +3474,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -3895,9 +3535,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -3956,9 +3596,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -4017,9 +3657,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4078,9 +3718,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4139,9 +3779,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4200,9 +3840,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -4261,9 +3901,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -4322,9 +3962,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -4383,9 +4023,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4444,9 +4084,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4505,9 +4145,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4566,9 +4206,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -4627,9 +4267,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -4688,9 +4328,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -4749,9 +4389,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4810,9 +4450,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4871,9 +4511,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -4932,9 +4572,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -4993,9 +4633,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -5054,9 +4694,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -5115,9 +4755,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -5176,9 +4816,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -5237,9 +4877,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -5298,9 +4938,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -5359,9 +4999,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -5420,9 +5060,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -5481,9 +5121,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -5542,9 +5182,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -5603,9 +5243,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -5664,9 +5304,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -5725,9 +5365,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -5786,9 +5426,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -5847,9 +5487,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -5908,9 +5548,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -5969,9 +5609,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -6030,9 +5670,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6091,9 +5731,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6152,9 +5792,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6213,9 +5853,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -6274,9 +5914,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -6335,9 +5975,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -6396,9 +6036,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6457,9 +6097,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6518,9 +6158,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6579,9 +6219,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -6640,9 +6280,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -6701,9 +6341,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -6762,9 +6402,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6823,9 +6463,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6884,9 +6524,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -6945,9 +6585,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7006,9 +6646,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7067,9 +6707,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7128,9 +6768,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -7189,9 +6829,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -7250,9 +6890,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -7311,9 +6951,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7372,9 +7012,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7433,9 +7073,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7494,9 +7134,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -7555,9 +7195,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -7616,9 +7256,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -7677,9 +7317,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7738,9 +7378,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7799,9 +7439,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -7860,9 +7500,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -7921,9 +7561,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -7982,9 +7622,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -8043,9 +7683,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8104,9 +7744,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8165,9 +7805,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8226,9 +7866,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -8287,9 +7927,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -8348,9 +7988,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -8409,9 +8049,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8470,9 +8110,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8531,9 +8171,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8592,9 +8232,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -8653,9 +8293,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -8714,9 +8354,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -8775,9 +8415,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:25 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8836,9 +8476,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8897,9 +8537,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -8958,9 +8598,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9019,9 +8659,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9080,9 +8720,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9141,9 +8781,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -9202,9 +8842,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -9263,9 +8903,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -9324,9 +8964,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9385,9 +9025,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9446,9 +9086,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9507,9 +9147,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -9568,9 +9208,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -9629,9 +9269,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -9690,9 +9330,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9751,9 +9391,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9812,9 +9452,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -9873,9 +9513,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -9934,9 +9574,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -9995,9 +9635,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -10056,9 +9696,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10117,9 +9757,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10178,9 +9818,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10239,9 +9879,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -10300,9 +9940,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -10361,9 +10001,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -10422,9 +10062,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10483,9 +10123,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10544,9 +10184,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10605,9 +10245,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -10666,9 +10306,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -10727,9 +10367,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -10788,9 +10428,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10849,9 +10489,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10910,9 +10550,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -10971,9 +10611,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11032,9 +10672,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11093,9 +10733,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11154,9 +10794,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -11215,9 +10855,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -11276,9 +10916,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -11337,9 +10977,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11398,9 +11038,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11459,9 +11099,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11520,9 +11160,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -11581,9 +11221,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -11642,9 +11282,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -11703,9 +11343,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11764,9 +11404,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11825,9 +11465,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -11886,9 +11526,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -11947,9 +11587,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -12008,9 +11648,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -12069,9 +11709,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12130,9 +11770,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12191,9 +11831,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12252,9 +11892,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -12313,9 +11953,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -12374,9 +12014,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -12435,9 +12075,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12496,9 +12136,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12557,9 +12197,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12618,9 +12258,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -12679,9 +12319,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -12740,9 +12380,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -12801,9 +12441,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12862,9 +12502,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12923,9 +12563,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -12984,9 +12624,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:19 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13045,9 +12685,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13106,9 +12746,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13167,9 +12807,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -13228,9 +12868,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -13289,9 +12929,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -13350,9 +12990,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13411,9 +13051,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13472,9 +13112,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13533,9 +13173,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -13594,9 +13234,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -13655,9 +13295,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -13716,9 +13356,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13777,9 +13417,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13838,9 +13478,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -13899,9 +13539,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -13960,9 +13600,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -14021,9 +13661,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -14082,9 +13722,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14143,9 +13783,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14204,9 +13844,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14265,9 +13905,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -14326,9 +13966,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -14387,9 +14027,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -14448,9 +14088,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14509,9 +14149,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14570,9 +14210,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14631,9 +14271,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -14692,9 +14332,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -14753,9 +14393,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -14814,9 +14454,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14875,9 +14515,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14936,9 +14576,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -14997,9 +14637,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15058,9 +14698,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15119,9 +14759,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15180,9 +14820,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -15241,9 +14881,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -15302,9 +14942,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -15363,9 +15003,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15424,9 +15064,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15485,9 +15125,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15546,9 +15186,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -15607,9 +15247,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -15668,9 +15308,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -15729,9 +15369,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15790,9 +15430,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15851,9 +15491,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -15912,9 +15552,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -15973,9 +15613,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -16034,9 +15674,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -16095,9 +15735,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -16156,9 +15796,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -16217,9 +15857,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -16278,9 +15918,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -16339,9 +15979,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -16400,9 +16040,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -16461,9 +16101,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -16522,9 +16162,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -16583,9 +16223,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -16644,9 +16284,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -16705,9 +16345,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -16766,9 +16406,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -16827,9 +16467,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -16888,9 +16528,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -16949,9 +16589,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -17010,9 +16650,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17071,9 +16711,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17132,9 +16772,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17193,9 +16833,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -17254,9 +16894,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -17315,9 +16955,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -17376,9 +17016,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17437,9 +17077,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17498,9 +17138,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17559,9 +17199,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -17620,9 +17260,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -17681,9 +17321,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of RMSEA comparing FIML with FIML-C methods 
@@ -17742,9 +17382,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17803,9 +17443,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17864,9 +17504,9 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Thu Jul  9 00:46:26 2020
+% Wed Nov 11 04:49:20 2020
 \begin{table}[ht]
 \centering
 \caption{Average estimate of CFI comparing FIML with FIML-C methods 
@@ -17925,4 +17565,4 @@
  \multicolumn{6}{l}{\footnotesize{FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}

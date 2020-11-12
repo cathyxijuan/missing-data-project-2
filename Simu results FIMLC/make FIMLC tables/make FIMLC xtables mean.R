@@ -24,13 +24,23 @@ library(xtable)
 
 #####STUDY 1
 sink("FIMLC Study 1 Mean Tables.txt")
-fimlc.s1.table(fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean ,
-               fitMCAR_0PerMiss_1CR_SF_fimlc_n500_mean ,
-               fitMCAR_0PerMiss_1CR_SF_fimlc_n1000_mean ,
-               fitMCAR_0PerMiss_1CR_SF_fimlc_n1000000_mean , 
-               label.name = "fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean ", 
+fimlc.s1.table(fit_0PerMiss_1CR_fimlc_n200_mean ,
+               fit_0PerMiss_1CR_fimlc_n500_mean ,
+               fit_0PerMiss_1CR_fimlc_n1000_mean ,
+               fit_0PerMiss_1CR_fimlc_n1000000_mean , 
+               label.name = "fit_0PerMiss_1CR_fimlc_n200_mean", 
                caption.before = "Average estimate of", 
-               caption.after = "complete data.", w.in.num = 100,         bold.note=" ")
+               caption.after = "one correlated residual, complete data.", w.in.num = 100,         bold.note=" ")
+
+fimlc.s1.table(fit_0PerMiss_1CR_fimlc_n200_mean ,
+               fit_0PerMiss_1CR_fimlc_n500_mean ,
+               fit_0PerMiss_1CR_fimlc_n1000_mean ,
+               fit_0PerMiss_1CR_fimlc_n1000000_mean , 
+               label.name = "fit_0PerMiss_2CR_fimlc_n200_mean", 
+               caption.before = "Average estimate of", 
+               caption.after = "two correlated residuals, complete data.", w.in.num = 100,         bold.note=" ")
+
+
 
 
 fimlc.s1.table(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean,
