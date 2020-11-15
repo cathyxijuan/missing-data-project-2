@@ -4,7 +4,7 @@ source("functions.R")
 #source("Models_2CR_SF.R") # done n=1000 ; done n=200, Done n=500；done n=150
 #source("Models_1CR_SF.R") # Done n=1000; done  n=500, done n=200
 #source("Models_1CR_DF.R")  #done n=200 done n=1000, done n=500
-source("Models_2CR_DF.R")  # done n=1000; done n=500 done n=200; doing n=150
+source("Models_2CR_DF.R")  # done n=1000; done n=500 done n=200; done n=150
 
 ##MISSING IS ON x11 and x12 or x9-12.
 
@@ -193,4 +193,4 @@ fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_checks_n150 <- ts.checks(fitMCAR_50PerMiss_
 save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_checks_n150, 
      file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_checks_n150.RData")
 
-fitNoMissing_2CR_DF_new
+list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_DF_ts_n150)
