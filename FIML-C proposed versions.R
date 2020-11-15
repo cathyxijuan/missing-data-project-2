@@ -4,19 +4,19 @@ library(lavaan)
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 
-#load("simuDataMARStrongmin.RData")
+load("simuDataMARStrongmin.RData")
 
 #load("simuDatawithMiss.RData") #this is N=1,000,000 #severly misspecified 
 #For complete data, the population RMSEA and CFI are 0.1915 and 0.538 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.112 and 0.754 respectively. 
 #head(simuDatawithMiss, 100)
 
-load("simuDatawithMiss2.RData") # slighly misspecified 
+#load("simuDatawithMiss2.RData") # slighly misspecified 
 #For complete data, the population RMSEA and CFI are 0.04452902 and 0.9791809 respectively. 
 #For incomplete data, the population RMSEA and CFI are 0.03199867 and 0.9847884 respectively. 
 
 
-data1<-simuDatawithMiss[1:2000,] 
+data1<-simuDatawithMiss[1:200,] 
 
 
 fitted.mod <- '     
@@ -304,11 +304,19 @@ RMSEA.final<-c(rmsea.fiml,rmsea, rmsea.obs_str,rmsea.obs.nonn_str,rmsea.exp_str,
           rmsea.exp.nonn_str,rmsea.obs_unstr,rmsea.obs.nonn_unstr)
 CFI.raw <-c(cfi.fiml,cfi,cfi.obs_str,cfi.obs.nonn_str,cfi.exp_str,
         cfi.exp.nonn_str,cfi.obs_unstr,cfi.obs.nonn_unstr)
-pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 6)), is.positive.definite(x=round(Wcm.obs_str, 6)), 
-                    is.positive.definite(x=round(Wcm.exp_str, 6)), is.positive.definite(x=round(Wcm.obs_unstr, 6)), 
-                    is.positive.definite(x=round(Wm_unstr, 6)),
-                    is.positive.definite(x=round(WmB_str, 6)), is.positive.definite(x=round(WcmB.obs_str, 6)), 
-                    is.positive.definite(x=round(WcmB.exp_str, 6)) )
+pos.def.weight <- c(is.positive.definite(x=round(Wm_str, 4)), 
+                    is.positive.definite(x=round(Wcm.obs_str, 4)), 
+                    is.positive.definite(x=round(Wcm.exp_str, 4)), 
+                    is.positive.definite(x=round(Wcm.obs_unstr, 4)), 
+                    is.positive.definite(x=round(Wm_unstr, 4)),
+                    is.positive.definite(x=round(WmB_str, 4)), 
+                    is.positive.definite(x=round(WcmB.obs_str, 4)), 
+                    is.positive.definite(x=round(WcmB.exp_str, 4)) )
+eigen(WmB_str)$values
+eigen(WcmB.obs_str)$values
+
+eigen(Wm_str)$values
+eigen(Wcm.obs_str)$values
 
 names(pos.def.weight) <- c("Wm_str", "Wcm.obs_str", "Wcm.exp_str", 
                            "Wcm.obs_unstr","Wm_unstr", "WmB_str", "WcmB.obs_str", "WcmB.exp_str" ) #check the positiveness of different weight matrices

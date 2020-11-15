@@ -1,16 +1,26 @@
+library(matrixNormal)
 
 require(lavaan)
 
 
-load("sampleData.RData") #sample data with missing values; download it at https://osf.io/y4g78/?view_only=74388fa13ca74853b03cd7be8f74aee9
+load("simuDatawithMiss.RData") #sample data with missing values; download it at https://osf.io/y4g78/?view_only=74388fa13ca74853b03cd7be8f74aee9
+load(file="sampMissData_study1_CR0.4_50PerMiss.RData")
+load(file="sampMissData_study2_FC0.2_50PerMiss_n200.RData")
+sampleData <- sampMissData_study1_CR0.4_50PerMiss_n200
+sampleData <- sampMissData_study2_FC0.2_50PerMiss_n200
 head(sampleData)
-
-
 
 hypothesized.model <- '     
 f1 =~ NA*x1 + x2 + x3 +x4 + x5 + x6 + x7 + x8 + x9 +x10 + x11 + x12
 f1 ~~ 1*f1
-'
+'#study 2
+
+hypothesized.model  <- '     
+f1 =~ NA*x1 + x2 + x3 +x4 + x5 + x6
+f2 =~ NA*x7 + x8 + x9 +x10 + x11 + x12
+f1 ~~ 1*f1
+f2 ~~ 1*f2' #study1
+
 
 fit<-
   cfa(hypothesized.model,data=sampleData,estimator="ML",missing="FIML") 
@@ -216,6 +226,7 @@ WcB.exp_str <-
     lavimplied = fitcB@implied, lavh1 = fitcB@h1, 
     lavcache = fitcB@Cache)[[1]]
 
+
 WmBi_str<-solve(WmB_str)
 
 
@@ -298,8 +309,7 @@ names(cfi) <- c("cfi.fiml", "cfi.fimlc.v0",
 rmsea
 cfi
 
+eigen(Wm_str)$values
 eigen(WmB_str)$values
-eigen(WcB.obs_str)$values
-
-
-
+eigen(Wc.obs_str)$values
+eigen(Wc.exp_str)$values
