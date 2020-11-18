@@ -313,3 +313,6 @@ eigen(Wm_str)$values
 eigen(WmB_str)$values
 eigen(Wc.obs_str)$values
 eigen(Wc.exp_str)$values
+##fisher information is always positive definite; 
+#but observed information is not guaranteed to be positive definite
+#for missing data, we only used observed information 
