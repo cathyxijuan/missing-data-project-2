@@ -400,8 +400,8 @@ fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n150<-
                       missing.percentage = 0.50, missing.type = "max", 
                       var.with.missing = 4)
 fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150<- fimlc.fit(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n150)
-load(file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n150.RData")
-load( file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150.RData")
+#load(file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n150.RData")
+#load( file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150.RData")
 fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_checks_n150<-
   fimlc.checks(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_compo_n150,
                fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150)

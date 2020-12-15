@@ -336,6 +336,25 @@ load(file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000000.RData")
 ######################## MCAR study 2 #################################
 
 ####### fit ######
+
+#n150
+load(file="fitMCAR_0PerMiss_WM_fimlc_n150.RData")
+
+load(file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n150.RData")
+
+load(file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150.RData")
+load(file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150.RData")
+
+
 #n200
 load(file="fitMCAR_0PerMiss_WM_fimlc_n200.RData")
 
@@ -564,6 +583,28 @@ load(file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n1000000.RData")
 
 
 ####fit#####
+#n150
+load(file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n150.RData")
+
+load(file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n150.RData")
+
+load(file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n150.RData")
+
+load(file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n150.RData")
+
+
 #n200
 load(file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n200.RData")
 load(file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n200.RData")
@@ -837,6 +878,27 @@ load(file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000000.RData")
 
 
 ####fit#####
+#n150
+load(file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n150.RData")
+
+load(file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n150.RData")
+
+load(file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n150.RData")
+
+load(file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n150.RData")
+
 #n200
 load(file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n200.RData")
 load(file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n200.RData")
@@ -1105,8 +1167,23 @@ load(file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_checks_n1000000.RData")
 ######################## Strong MAR study 2 #################################
 
 ####### fit ######
-#n200
+#n150
+load(file="fitMAR_Strong_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MinPat_50PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MinPat_20PerMiss_6VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MinPat_50PerMiss_6VarMiss_WM_fimlc_n150.RData")
 
+load(file="fitMAR_Strong_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Strong_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150.RData")
+
+
+#n200
 load(file="fitMAR_Strong_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200.RData")
 load(file="fitMAR_Strong_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200.RData")
 load(file="fitMAR_Strong_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200.RData")
