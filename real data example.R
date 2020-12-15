@@ -1,48 +1,111 @@
-library(matrixNormal)
 
 require(lavaan)
 
-setwd("/Volumes/SP PHD U3/missing-data-project-2")
-load("simuDatawithMiss.RData") #sample data with missing values; download it at https://osf.io/y4g78/?view_only=74388fa13ca74853b03cd7be8f74aee9
-load(file="sampMissData_study1_CR0.3_50PerMiss_n200.RData")
-load(file="sampMissData_study1_CR0.3_50PerMiss_n500.RData")
-load(file="sampMissData_study1_CR0.4_50PerMiss_n500.RData")
-load(file="sampMissData_study1_CR0.4_50PerMiss.RData")
-load(file="sampMissData_study2_FC0.2_50PerMiss_n200.RData")
-load(file="sampMissData_study2_FC0.2_50PerMiss_n500.RData")
-sampleData <- sampMissData_study1_CR0.4_50PerMiss_n200
-sampleData <- sampMissData_study2_FC0.2_50PerMiss_n200
-sampleData <- sampMissData_study2_FC0.2_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.3_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.4_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.3_50PerMiss_n200 #consider using this
-head(sampleData)
+library(psych)
+library(MVN)
+
+
+load("data2019s.original.Likert.RData") 
+real.data <- data2019s.original.Likert
+all.na <- which(rowSums(is.na(real.data))==10)
+length(all.na)
+real.data <- real.data[-all.na,]
+#View(real.data)
+nrow(real.data)
+
+
+head(real.data)
+describe(real.data)
+nonnormal <- mvn(data=real.data, mvnTest = "mardia")
+nonnormal
+nrow(real.data)
+comp <- real.data[complete.cases(real.data),]
+nrow(comp) 
+#View(real.data)
+percent.missing <-(nrow(real.data)- nrow(comp))/nrow(real.data)
+
+hist(real.data$q1)
+hist(real.data$q2)
+hist(real.data$q3)
+hist(real.data$q4)
+hist(real.data$q5)
+hist(real.data$q6)
+hist(real.data$q7)
+hist(real.data$q8)
+hist(real.data$q9)
+hist(real.data$q10)
+cor(comp)
+
+incomp <- real.data 
+#incomp[1:50, 1:3] <- NA
+#incomp[51:100, 4:7] <- NA
+#incomp[101:150, 8:10] <- NA
+
+incomp[181:220, 8:10] <- NA
+sum(complete.cases(incomp))
+
+
+
+incomp <- comp
+incomp[ incomp[,1] >=5, 6] <-NA
+incomp[ incomp[,2] >=5, 7] <-NA
+#incomp[ incomp[,3] >=4, 8] <-NA
+#incomp[ incomp[,4] >=4, 9] <-NA
+#incomp[ incomp[,5] >=4, 10] <-NA
+original.mis <- complete.cases(real.data)==F
+original.miss.data <- real.data[original.mis,]
+incomp <- rbind(incomp , original.miss.data)
+sum(complete.cases(incomp))
+
+
 
 hypothesized.model <- '     
-f1 =~ NA*x1 + x2 + x3 +x4 + x5 + x6 + x7 + x8 + x9 +x10 + x11 + x12
+f1 =~ NA*q1 + q2 + q3 +q4 + q5 + q6 + q7 + q8 + q9 +q10
 f1 ~~ 1*f1
-'#study 2
-
-hypothesized.model  <- '     
-f1 =~ NA*x1 + x2 + x3 +x4 + x5 + x6
-f2 =~ NA*x7 + x8 + x9 +x10 + x11 + x12
-f1 ~~ 1*f1
-f2 ~~ 1*f2' #study1
+reverse =~ NA*q3+q5+q8+q9+q10
+reverse ~~1*reverse 
+f1~~0*reverse
+'
 
 
 fit<-
-  cfa(hypothesized.model,data=sampleData,estimator="ML",missing="FIML") 
-#fitting the hypothesized model
+  cfa(hypothesized.model,data=real.data,estimator="ML",missing="FIML") 
 
-#------Compute FIML RMSEA and CFI -------------#
 rmsea.fiml<-lavInspect(fit,"fit")["rmsea"]  
 cfi.fiml<-lavInspect(fit,"fit")["cfi"] 
+rmsea.fiml  
+cfi.fiml 
+
+
+
+fit<-
+  cfa(hypothesized.model,data=real.data,estimator="MLM") 
+
+rmsea.fiml<-lavInspect(fit,"fit")["rmsea.robust"]  
+cfi.fiml<-lavInspect(fit,"fit")["cfi.robust"] 
+rmsea.fiml  
+cfi.fiml 
+
+
+fit<-
+  cfa(hypothesized.model,data=incomp,estimator="ML",missing="FIML") 
+rmsea.fiml<-lavInspect(fit,"fit")["rmsea"]  
+cfi.fiml<-lavInspect(fit,"fit")["cfi"] 
+rmsea.fiml
+cfi.fiml
+
+
+
+
+
+
+
 
 
 
 
 #-------FIMLC RMSEA and CFI----#
-n <-nrow(sampleData)
+n <-nrow(incomp)
 df<-lavInspect(fit,"fit")["df"] 
 #df for hypothesized model
 
@@ -234,14 +297,12 @@ WcB.exp_str <-
     lavimplied = fitcB@implied, lavh1 = fitcB@h1, 
     lavcache = fitcB@Cache)[[1]]
 
-
 WmBi_str<-solve(WmB_str)
 
 
 E.inv.b_str <- solve(t(deltab) %*% WmB_str%*% deltab)
 Ub_str <- WmB_str -
   WmB_str %*% deltab %*% E.inv.b_str %*% t(deltab)%*%WmB_str
-
 
 E.inv.b_unstr <- solve(t(deltab) %*% Wm_unstr%*% deltab)
 Ub_unstr <- Wm_unstr -
@@ -314,18 +375,203 @@ names(cfi) <- c("cfi.fiml", "cfi.fimlc.v0",
                 "cfi.fimlc.v1", "cfi.fimlc.v2", 
                 "cfi.fimlc.v3", "cfi.fimlc.v4",
                 "cfi.fimlc.v5", "cfi.fimlc.v6")
-kB <- c(kB.fimlc.v1, kB.fimlc.v2, kB.fimlc.v3, kB.fimlc.v4, kB.fimlc.v5, kB.fimlc.v6)
-k <- c(k.fimlc.v1, k.fimlc.v2, k.fimlc.v3, k.fimlc.v4, k.fimlc.v5, k.fimlc.v6)
 
-k
-kB
 rmsea
+cfi
 
 
-eigen(Wm_str)$values
-eigen(WmB_str)$values
-eigen(Wc.obs_str)$values
 
-##fisher information is always positive definite; 
-#but observed information is not guaranteed to be positive definite
-#for missing data, we only used observed information 
+
+
+
+#----------Fitting Hypothesized model-----------###
+
+#-----Stage 1------#
+fit1 <-cfa(hypothesized.model,data=incomp,
+           estimator="ML",missing="FIML") 
+#fitting the hypothesized model
+
+Sigmatilde <-lavInspect(fit1,"sampstat")$cov 
+#saturated model's cov matrix
+
+mutilde <-lavInspect(fit1,"sampstat")$mean 
+#saturated model's mean structure
+
+df <-lavInspect(fit1,"fit")["df"] 
+n <- nrow(incomp) #sample size
+
+#-----Stage 2------#
+fit2 <- cfa(hypothesized.model, sample.cov=Sigmatilde, 
+            sample.mean = mutilde, sample.nobs = n)
+
+Fmin<-lavInspect(fit2, "fit")["fmin"]*2 
+#fit function minimum; lavaan halves the fit finction
+
+
+#------Compute FIML RMSEA and CFI ------------#
+rmsea.fiml<-lavInspect(fit1,"fit")["rmsea"]  
+cfi.fiml<-lavInspect(fit1,"fit")["cfi"] 
+
+#-----------TS RMSEA and CFI--------------#
+
+#--Compute TS RMSEA and CFI without small sample correction (i.e., V0) #
+rmsea.ts.v0 <- lavInspect(fit2, "fit")["rmsea"]
+cfi.ts.v0 <-lavInspect(fit2, "fit")["cfi"]
+
+
+
+
+
+
+#----compute small sample corrections for V1-V2----#
+
+#----------Hypothesized  model---------------#
+#----------saturated---------------#
+fit1@Options$h1.information = "unstructured" 
+fit2@Options$h1.information = "unstructured" 
+
+deltabreve <- lavInspect(fit2, "delta")
+
+
+
+Wm.unstr <- 
+  lavaan:::lav_model_h1_information_observed(
+    lavmodel = fit1@Model,
+    lavsamplestats = fit1@SampleStats,
+    lavdata = fit1@Data, 
+    lavoptions = fit1@Options, 
+    lavimplied = fit1@implied,
+    lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
+
+
+V.unstr <- 
+  lavaan:::lav_model_h1_information_firstorder(
+    lavmodel = fit1@Model,
+    lavsamplestats = fit1@SampleStats, 
+    lavdata = fit1@Data,
+    lavoptions = fit1@Options, 
+    lavimplied = fit1@implied,
+    lavh1 = fit1@h1, lavcache = fit1@Cache)[[1]]
+
+
+
+Wc_unstr <- 
+  lavaan:::lav_model_h1_information_observed(
+    lavmodel = fit2@Model,
+    lavsamplestats = fit2@SampleStats,
+    lavdata = fit2@Data, 
+    lavoptions = fit2@Options, lavimplied = fit2@implied,
+    lavh1 = fit2@h1, lavcache = fit2@Cache)[[1]]
+
+
+#-----------structured---------#
+fit2@Options$h1.information = "structured" 
+
+
+Wc_str <-
+  lavaan:::lav_model_h1_information_observed(
+    lavmodel = fit2@Model,
+    lavsamplestats = fit2@SampleStats, lavdata = fit2@Data, 
+    lavoptions = fit2@Options, lavimplied = fit2@implied,
+    lavh1 = fit2@h1, lavcache = fit2@Cache)[[1]]
+
+Wmi.unstr <-solve(Wm.unstr)
+Gamma <- Wmi.unstr %*% V.unstr %*% Wmi.unstr  
+Uc.unstr <- 
+  Wc_unstr-Wc_unstr%*%
+  deltabreve%*%
+  solve(t(deltabreve)%*%
+          Wc_unstr%*%deltabreve)%*%
+  t(deltabreve)%*%Wc_unstr
+
+Uc.str <- 
+  Wc_str-Wc_str%*%
+  deltabreve%*%
+  solve(t(deltabreve)%*%
+          Wc_str%*%deltabreve)%*%
+  t(deltabreve)%*%Wc_str
+
+c.ts.v1 <- lav_matrix_trace(Uc.str%*%Gamma)
+c.ts.v2 <- lav_matrix_trace(Uc.unstr%*%Gamma)
+
+
+
+#--------Baseline  model----------#
+#-----Stage 1------#
+fit1B <-  lavaan:::lav_object_independence(fit1, se=T) 
+dfB <- lavInspect(fit1B, "fit")["df"]
+#-----Stage 2------#
+fit2B <- lavaan:::lav_object_independence(fit2, se=T) 
+FminB<- lavInspect(fit2B, "fit")["fmin"]*2
+
+#----------saturated---------------#
+fit2B@Options$h1.information = "unstructured" 
+
+deltabreveB <- lavInspect(fit2B, "delta")
+
+WcB_unstr <- 
+  lavaan:::lav_model_h1_information_observed(
+    lavmodel = fit2B@Model,
+    lavsamplestats = fit2B@SampleStats, lavdata = fit2B@Data,
+    lavoptions = fit2B@Options, lavimplied = fit2B@implied,
+    lavh1 = fit2B@h1, lavcache = fit2B@Cache)[[1]]
+
+#-----------structured---------#
+fit2B@Options$h1.information = "structured" 
+
+
+WcB_str <- 
+  lavaan:::lav_model_h1_information_observed(
+    lavmodel = fit2B@Model,
+    lavsamplestats = fit2B@SampleStats, lavdata = fit2B@Data, 
+    lavoptions = fit2B@Options, lavimplied = fit2B@implied,
+    lavh1 = fit2B@h1, lavcache = fit2B@Cache)[[1]]
+
+
+
+UcB.unstr <-
+  WcB_unstr-WcB_unstr%*%
+  deltabreveB%*%
+  solve(t(deltabreveB)%*%
+          WcB_unstr%*%deltabreveB)%*%
+  t(deltabreveB)%*%WcB_unstr
+
+UcB.str <- WcB_str-WcB_str%*%
+  deltabreveB%*%
+  solve(t(deltabreveB)%*%
+          WcB_str%*%deltabreveB)%*%
+  t(deltabreveB)%*%WcB_str
+
+cB.ts.v1 <- lav_matrix_trace(UcB.unstr%*%Gamma)
+
+cB.ts.v2 <- lav_matrix_trace(UcB.str%*%Gamma)
+
+
+#compute TS RMSEA and CFI with small sample corrections (i.e.,V1-V2)# 
+rmsea.ts.v1 <- sqrt(max((Fmin-c.ts.v1/n)/df, 0))
+rmsea.ts.v2 <- sqrt(max((Fmin-c.ts.v2/n)/df, 0))
+
+cfi.ts.v1 <- 
+  1 - max((Fmin-c.ts.v1/n)/df, 0)/
+  max((FminB-cB.ts.v1/n)/dfB,(Fmin-c.ts.v1/n)/df, 0)
+
+cfi.ts.v2 <- 
+  1 - max((Fmin-c.ts.v2/n)/df, 0)/
+  max((FminB-cB.ts.v2/n)/dfB,(Fmin-c.ts.v2/n)/df, 0)
+
+
+
+#--Print FIML and all versions of TS RMSEA and CFI --# 
+rmsea <- c(rmsea.fiml, rmsea.ts.v0, rmsea.ts.v1, rmsea.ts.v2)
+
+names(rmsea) <- c("rmsea.fiml", "rmsea.ts.v0",
+                  "rmsea.ts.v1","rmsea.ts.v2")
+
+cfi <- c(cfi.fiml, cfi.ts.v0, cfi.ts.v1, cfi.ts.v2)
+
+names(cfi) <- c("cfi.fiml", "cfi.ts.v0", 
+                "cfi.ts.v1","cfi.ts.v2" )
+
+rmsea
+cfi
+

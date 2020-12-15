@@ -1,7 +1,7 @@
 library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_WM.R") # done n=200 done n=500, 1000 doing n=150
+source("Models_WM.R") # done n=200 done n=500, 1000 done n=150
 
 
 
@@ -502,5 +502,4 @@ save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n150 ,
      file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_n150.RData")
 save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_checks_n150 , 
      file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_ts_checks_n150.RData")
-
 

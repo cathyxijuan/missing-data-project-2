@@ -3,25 +3,12 @@ library(matrixNormal)
 require(lavaan)
 
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
-load("simuDatawithMiss.RData") #sample data with missing values; download it at https://osf.io/y4g78/?view_only=74388fa13ca74853b03cd7be8f74aee9
-load(file="sampMissData_study1_CR0.3_50PerMiss_n200.RData")
-load(file="sampMissData_study1_CR0.3_50PerMiss_n500.RData")
-load(file="sampMissData_study1_CR0.4_50PerMiss_n500.RData")
-load(file="sampMissData_study1_CR0.4_50PerMiss.RData")
-load(file="sampMissData_study2_FC0.2_50PerMiss_n200.RData")
-load(file="sampMissData_study2_FC0.2_50PerMiss_n500.RData")
-sampleData <- sampMissData_study1_CR0.4_50PerMiss_n200
-sampleData <- sampMissData_study2_FC0.2_50PerMiss_n200
-sampleData <- sampMissData_study2_FC0.2_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.3_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.4_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.3_50PerMiss_n200 #consider using this
-head(sampleData)
 
-hypothesized.model <- '     
-f1 =~ NA*x1 + x2 + x3 +x4 + x5 + x6 + x7 + x8 + x9 +x10 + x11 + x12
-f1 ~~ 1*f1
-'#study 2
+
+
+load(file="sampMissData_study1_CR0.3_50PerMiss_n200.RData")
+
+sampleData <- sampMissData_study1_CR0.3_50PerMiss_n200
 
 hypothesized.model  <- '     
 f1 =~ NA*x1 + x2 + x3 +x4 + x5 + x6
@@ -188,12 +175,27 @@ k.fimlc.v3 <-
 k.fimlc.v4 <- 
   sum(diag(Wc.obs_str%*%
              Wmi_str%*%U_str%*%Wmi_str))
+
 k.fimlc.v5 <- 
   sum(diag(Wc.exp_str%*%
              Wmi_str%*%U_str%*%Wmi_str))
+
+round(diag(Wc.exp_str%*%
+             Wmi_str%*%U_str%*%Wmi_str), 4)
+eigen(Wmi_str)$values
+eigen(Wm_str)$values
+
+round(Wc.exp_str%*%
+        Wmi_str%*%U_str%*%Wmi_str, 4)
+
 k.fimlc.v6 <- 
   sum(diag(Wc.obs_unstr%*%
              Wmi_unstr%*%U_unstr%*%Wmi_unstr)) 
+eigen(Wmi_unstr)$values
+eigen(Wm_unstr)$values
+
+round(diag(Wc.obs_unstr%*%
+             Wmi_unstr%*%U_unstr%*%Wmi_unstr), 4)
 
 
 
@@ -325,7 +327,9 @@ rmsea
 eigen(Wm_str)$values
 eigen(WmB_str)$values
 eigen(Wc.obs_str)$values
-
+eigen(WcB.obs_str)$values
+round(eigen(U_str)$values,5)
+round(eigen(U_unstr)$values,5)
 ##fisher information is always positive definite; 
 #but observed information is not guaranteed to be positive definite
 #for missing data, we only used observed information 

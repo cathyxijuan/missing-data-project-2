@@ -1,7 +1,7 @@
 library(lavaan)
 setwd("/Volumes/SP PHD U3/missing-data-project-2")
 source("functions.R")
-source("Models_WM.R") #done n=1000; done n=500, 200; doing n=150
+source("Models_WM.R") #done n=1000; done n=500, 200; done n=150
 
 ### FOR TWO MISSING VARIABLES
 #purpose: create missing data on x11,  x12.
@@ -427,7 +427,6 @@ fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n150<-
 save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n150, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_compo_n150.RData")
 save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150.RData")
 save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n150, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_checks_n150.RData")
-
 
 
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_compo_n150<- 

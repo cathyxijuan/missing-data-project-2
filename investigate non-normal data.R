@@ -1,48 +1,122 @@
-library(matrixNormal)
+library(mnonr)
+library(PoisNonNor)
+library(lavaan)
 
-require(lavaan)
 
-setwd("/Volumes/SP PHD U3/missing-data-project-2")
-load("simuDatawithMiss.RData") #sample data with missing values; download it at https://osf.io/y4g78/?view_only=74388fa13ca74853b03cd7be8f74aee9
-load(file="sampMissData_study1_CR0.3_50PerMiss_n200.RData")
-load(file="sampMissData_study1_CR0.3_50PerMiss_n500.RData")
-load(file="sampMissData_study1_CR0.4_50PerMiss_n500.RData")
-load(file="sampMissData_study1_CR0.4_50PerMiss.RData")
-load(file="sampMissData_study2_FC0.2_50PerMiss_n200.RData")
-load(file="sampMissData_study2_FC0.2_50PerMiss_n500.RData")
-sampleData <- sampMissData_study1_CR0.4_50PerMiss_n200
-sampleData <- sampMissData_study2_FC0.2_50PerMiss_n200
-sampleData <- sampMissData_study2_FC0.2_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.3_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.4_50PerMiss_n500
-sampleData <- sampMissData_study1_CR0.3_50PerMiss_n200 #consider using this
-head(sampleData)
+#####Study 2
 
-hypothesized.model <- '     
+pop.mod9 <- '     
+f1 =~ .7*x1 + .7*x2 + .7*x3 +.7*x4 + .7*x5 + .7*x6
+f2 =~ .7*x7 + .7*x8 + .7*x9 +.7*x10 + .7*x11 + .7*x12
+f1 ~~ 0.2*f2
+f1 ~~ 1*f1
+f2 ~~ 1*f2    
+x1 ~~ .51*x1
+x2 ~~ .51*x2
+x3 ~~ .51*x3
+x4 ~~ .51*x4
+x5 ~~ .51*x5
+x6 ~~ .51*x6
+x7 ~~ .51*x7
+x8 ~~ .51*x8
+x9 ~~ .51*x9
+x10 ~~ .51*x10
+x11 ~~ .51*x11
+x12 ~~ .51*x12
+'
+
+#strong dependency
+
+#Usage: FOR THIS RESEARCH ONLY. There need to be 12 Variables. 
+#       Creating missing data on x11 and x12. Strong dependence:missing of x9 and x11 depends on x7; missing of x10 and x12 depends on x8.
+#Argument:
+#model: lavaan defined population model
+#sample.nobs: numeric; sample size without missing data
+#missing.percentage: numeric; a proportion of missing data
+MARStrong_6Var <- function(model, sample.nobs,  missing.percentage=0.5){
+  data <- simulateData(model, sample.nobs=sample.nobs)
+  simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
+                         x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
+                         x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
+  
+  cutoff<- qnorm(missing.percentage, lower.tail = F)
+  
+  for(i in 1:6){
+    simuData[simuData[,i] > cutoff,(i+6)] <- NA}
+  
+  simuData
+}
+
+
+
+#strong dependency
+
+#Usage: FOR THIS RESEARCH ONLY. There need to be 12 Variables. 
+#       Creating missing data on x11 and x12. Strong dependence:missing of x9 and x11 depends on x7; missing of x10 and x12 depends on x8.
+#Argument:
+#model: lavaan defined population model
+#sample.nobs: numeric; sample size without missing data
+#missing.percentage: numeric; a proportion of missing data
+MARStrongNonnormal_6Var <- function(model, sample.nobs,  missing.percentage=0.5){
+  data <- simulateData(model, sample.nobs=sample.nobs, 
+                       kurtosis=rep(5, 12), skewness = rep(1,12))
+  simuData <- data.frame(x1=data[,"x1"], x2=data[,"x2"], x3=data[,"x3"], x4=data[,"x4"],
+                         x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
+                         x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
+  
+  cutoff<- qnorm(missing.percentage, lower.tail = F)
+  
+  for(i in 1:6){
+    simuData[simuData[,i] > cutoff,(i+6)] <- NA}
+  
+  simuData
+}
+
+
+
+
+complete.normal.data <- MARStrong_6Var(pop.mod9, sample.nobs = 1000000, missing.percentage=0)
+
+
+fitted.mod <- '     
 f1 =~ NA*x1 + x2 + x3 +x4 + x5 + x6 + x7 + x8 + x9 +x10 + x11 + x12
 f1 ~~ 1*f1
-'#study 2
-
-hypothesized.model  <- '     
-f1 =~ NA*x1 + x2 + x3 +x4 + x5 + x6
-f2 =~ NA*x7 + x8 + x9 +x10 + x11 + x12
-f1 ~~ 1*f1
-f2 ~~ 1*f2' #study1
+'
 
 
-fit<-
-  cfa(hypothesized.model,data=sampleData,estimator="ML",missing="FIML") 
-#fitting the hypothesized model
-
-#------Compute FIML RMSEA and CFI -------------#
-rmsea.fiml<-lavInspect(fit,"fit")["rmsea"]  
-cfi.fiml<-lavInspect(fit,"fit")["cfi"] 
+fit1<-cfa(fitted.mod,data=complete.normal.data,estimator="ML",missing="FIML")
+rmsea.complete <-lavInspect(fit1,"fit")["rmsea"]  #0.1913833 
+cfi.complete <-lavInspect(fit1,"fit")["cfi"] #0.5380953
 
 
 
+incomplete.normal.data  <- MARStrong_6Var(pop.mod9, sample.nobs = 1000000, missing.percentage=0.5)
+fit2<-cfa(fitted.mod,data=incomplete.normal.data ,estimator="ML",missing="FIML")
+rmsea.fiml<-lavInspect(fit2,"fit")["rmsea"]  #0.1198075
+cfi.fiml<-lavInspect(fit2,"fit")["cfi"] #0.7382238
 
+
+
+set.seed(120)
+complete.nonnormal.data  <- MARStrongNonnormal_6Var(pop.mod9, sample.nobs = 500, missing.percentage=0)
+fit3<-cfa(fitted.mod,data=complete.nonnormal.data ,estimator="ML",missing="FIML")
+rmsea.fiml<-lavInspect(fit3,"fit")["rmsea"]  #0.2001249; 0.1902825
+cfi.fiml<-lavInspect(fit3,"fit")["cfi"] #0.4157642; 0.5150829 
+rmsea.fiml
+cfi.fiml
+
+
+set.seed(123)
+incomplete.nonnormal.data  <- MARStrongNonnormal_6Var(pop.mod9, sample.nobs = 300, missing.percentage=0.5)
+fit4<-cfa(fitted.mod,data=incomplete.nonnormal.data ,estimator="ML",missing="FIML")
+rmsea.fiml<-lavInspect(fit4,"fit")["rmsea"]  #0.1337876; 0.1241236 
+cfi.fiml<-lavInspect(fit4,"fit")["cfi"] #0.6572616; 0.7744649 
+rmsea.fiml
+cfi.fiml
+
+fit <- fit4
 #-------FIMLC RMSEA and CFI----#
-n <-nrow(sampleData)
+n <-nrow(incomplete.nonnormal.data)
 df<-lavInspect(fit,"fit")["df"] 
 #df for hypothesized model
 
@@ -234,14 +308,12 @@ WcB.exp_str <-
     lavimplied = fitcB@implied, lavh1 = fitcB@h1, 
     lavcache = fitcB@Cache)[[1]]
 
-
 WmBi_str<-solve(WmB_str)
 
 
 E.inv.b_str <- solve(t(deltab) %*% WmB_str%*% deltab)
 Ub_str <- WmB_str -
   WmB_str %*% deltab %*% E.inv.b_str %*% t(deltab)%*%WmB_str
-
 
 E.inv.b_unstr <- solve(t(deltab) %*% Wm_unstr%*% deltab)
 Ub_unstr <- Wm_unstr -
@@ -314,18 +386,6 @@ names(cfi) <- c("cfi.fiml", "cfi.fimlc.v0",
                 "cfi.fimlc.v1", "cfi.fimlc.v2", 
                 "cfi.fimlc.v3", "cfi.fimlc.v4",
                 "cfi.fimlc.v5", "cfi.fimlc.v6")
-kB <- c(kB.fimlc.v1, kB.fimlc.v2, kB.fimlc.v3, kB.fimlc.v4, kB.fimlc.v5, kB.fimlc.v6)
-k <- c(k.fimlc.v1, k.fimlc.v2, k.fimlc.v3, k.fimlc.v4, k.fimlc.v5, k.fimlc.v6)
 
-k
-kB
 rmsea
-
-
-eigen(Wm_str)$values
-eigen(WmB_str)$values
-eigen(Wc.obs_str)$values
-
-##fisher information is always positive definite; 
-#but observed information is not guaranteed to be positive definite
-#for missing data, we only used observed information 
+cfi

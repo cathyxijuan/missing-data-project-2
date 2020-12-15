@@ -333,7 +333,6 @@ save(fitMAR_Strong_minPat_20PerMiss_4VarMiss_WM_ts_checks_n150, file="fitMAR_Str
 
 
 
-
 fitMAR_Strong_minPat_50PerMiss_4VarMiss_WM_ts_compo_n150 <-  fit.components.simu(pop.model.list=pop.mod, 
                                                                                     fitted.mod=fitted.mod, 
                                                                                     missing.percentage = 0.50, 
