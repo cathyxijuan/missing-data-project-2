@@ -10,3 +10,4 @@ for(i in 1:length(file.list)){
 fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n200_mean
 
 
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_compo_n1000_mean

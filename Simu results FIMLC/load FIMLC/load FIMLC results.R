@@ -17,6 +17,31 @@ load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_new.RData")
 
 
 ####fit#####
+
+#n150
+load(file="fitMCAR_0PerMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150.RData")
+load(file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n150.RData")
+
+load(file="fitMCAR_0PerMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n150.RData")
+load(file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n150.RData")
+
+load(file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n150.RData")
+load(file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n150.RData")
+
+load(file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n150.RData")
+load(file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n150.RData")
+
+
 #n200
 load(file="fitMCAR_0PerMiss_1CR_SF_fimlc_n200.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200.RData")
