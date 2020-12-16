@@ -168,4 +168,4 @@ save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_checks_n150,
      file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_checks_n150.RData")
 
 
-apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n150), 1:2, mean)-apply(simplify2array(fit_0PerMiss_1CR_SF_fimlc_n150), 1:2, mean)
+#apply(simplify2array(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n150), 1:2, mean)-apply(simplify2array(fit_0PerMiss_1CR_SF_fimlc_n150), 1:2, mean)
