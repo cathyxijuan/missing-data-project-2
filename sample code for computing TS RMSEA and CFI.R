@@ -191,12 +191,12 @@ rmsea.ts.v1 <- sqrt(max((Fmin-c.ts.v1/n)/df, 0))
 rmsea.ts.v2 <- sqrt(max((Fmin-c.ts.v2/n)/df, 0))
 
 cfi.ts.v1 <- 
-  1 - max((Fmin-c.ts.v1/n)/df, 0)/
-  max((FminB-cB.ts.v1/n)/dfB,(Fmin-c.ts.v1/n)/df, 0)
+  1 - max((Fmin-c.ts.v1/n), 0)/
+  max((FminB-cB.ts.v1/n),(Fmin-c.ts.v1/n), 0)
 
 cfi.ts.v2 <- 
-  1 - max((Fmin-c.ts.v2/n)/df, 0)/
-  max((FminB-cB.ts.v2/n)/dfB,(Fmin-c.ts.v2/n)/df, 0)
+  1 - max((Fmin-c.ts.v2/n), 0)/
+  max((FminB-cB.ts.v2/n),(Fmin-c.ts.v2/n), 0)
 
 
 

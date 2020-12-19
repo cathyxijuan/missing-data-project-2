@@ -49,9 +49,9 @@ sum(complete.cases(incomp))
 incomp <- comp
 incomp[ incomp[,1] >=5, 6] <-NA
 incomp[ incomp[,2] >=5, 7] <-NA
-#incomp[ incomp[,3] >=4, 8] <-NA
-#incomp[ incomp[,4] >=4, 9] <-NA
-#incomp[ incomp[,5] >=4, 10] <-NA
+incomp[ incomp[,3] >=4, 8] <-NA
+incomp[ incomp[,4] >=4, 9] <-NA
+incomp[ incomp[,5] >=4, 10] <-NA
 original.mis <- complete.cases(real.data)==F
 original.miss.data <- real.data[original.mis,]
 incomp <- rbind(incomp , original.miss.data)
@@ -552,12 +552,12 @@ rmsea.ts.v1 <- sqrt(max((Fmin-c.ts.v1/n)/df, 0))
 rmsea.ts.v2 <- sqrt(max((Fmin-c.ts.v2/n)/df, 0))
 
 cfi.ts.v1 <- 
-  1 - max((Fmin-c.ts.v1/n)/df, 0)/
-  max((FminB-cB.ts.v1/n)/dfB,(Fmin-c.ts.v1/n)/df, 0)
+  1 - max((Fmin-c.ts.v1/n), 0)/
+  max((FminB-cB.ts.v1/n),(Fmin-c.ts.v1/n), 0)
 
 cfi.ts.v2 <- 
-  1 - max((Fmin-c.ts.v2/n)/df, 0)/
-  max((FminB-cB.ts.v2/n)/dfB,(Fmin-c.ts.v2/n)/df, 0)
+  1 - max((Fmin-c.ts.v2/n), 0)/
+  max((FminB-cB.ts.v2/n),(Fmin-c.ts.v2/n), 0)
 
 
 

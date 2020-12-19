@@ -2,7 +2,7 @@ setwd("/Volumes/SP PHD U3/missing-data-project-2")
 library(lavaan)
 source("functions.R")
 #source("Models_2CR_SF.R") # done n=1000 ; done n=200, Done n=500；done n=150
-source("Models_1CR_SF.R") # Done n=1000; done  n=500, done n=200; doing n=150
+source("Models_1CR_SF.R") # Done n=1000; done  n=500, done n=200; done n=150
 #source("Models_1CR_DF.R")  #done n=200 done n=1000, done n=500; done n=150
 #source("Models_2CR_DF.R")  # done n=1000; done n=500 done n=200; done n=150
 
