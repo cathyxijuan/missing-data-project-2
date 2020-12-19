@@ -269,7 +269,7 @@ save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000000_dif, file="fitMCAR_50PerMi
 ######################## MCAR study 2 #################################
 
 ####### fit ######
-fit_0PerMiss_WM_fimlc_n150_dif <- list.mean(fitMCAR_0PerMiss_WM_fimlc_n150)[nam,]-fitNoMissing_WM_matrix
+fitMCAR_0PerMiss_WM_fimlc_n150_dif <- list.mean(fitMCAR_0PerMiss_WM_fimlc_n150)[nam,]-fitNoMissing_WM_matrix
 
 
 fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150_dif <- list.mean(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150)[nam,]-fitNoMissing_WM_matrix
@@ -286,7 +286,7 @@ fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150_dif <- list.mean(fitMCAR_MaxPat_
 fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150_dif <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150)[nam,]-fitNoMissing_WM_matrix
 fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150_dif <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150)[nam,]-fitNoMissing_WM_matrix
 
-save(fit_0PerMiss_WM_fimlc_n150_dif, file="fit_0PerMiss_WM_fimlc_n150_dif.RData" ) 
+save(fitMCAR_0PerMiss_WM_fimlc_n150_dif, file="fitMCAR_0PerMiss_WM_fimlc_n150_dif.RData" ) 
 save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150_dif, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150_dif.RData" ) 
 save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150_dif, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150_dif.RData" )
 save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150_dif, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150_dif.RData" ) 

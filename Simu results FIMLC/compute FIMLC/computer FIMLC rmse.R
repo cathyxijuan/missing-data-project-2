@@ -14,7 +14,7 @@ nam <- c("rmsea.fiml", "rmsea.uncor.fimlc",
 
 ####fit#####
 #n150
-fit_0PerMiss_1CR_fimlc_n150_rmse <- rmse(fit_0PerMiss_1CR_SF_fimlc_n150,fitNoMissing_1CR_SF_matrix)[nam,]
+fitMCAR_0PerMiss_1CR_fimlc_n150_rmse <- rmse(fit_0PerMiss_1CR_SF_fimlc_n150,fitNoMissing_1CR_SF_matrix)[nam,]
 fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_rmse <- rmse(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150,fitNoMissing_1CR_SF_matrix)[nam,]
 fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_rmse <- rmse(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150,fitNoMissing_1CR_SF_matrix)[nam,]
 fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150,fitNoMissing_1CR_SF_matrix)[nam,]
@@ -37,7 +37,7 @@ fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_rmse <- rmse(fitMCAR_50PerMiss_2Var
 fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_rmse <- rmse(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n150,fitNoMissing_2CR_DF_matrix)[nam,]
 fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_rmse <- rmse(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n150,fitNoMissing_2CR_DF_matrix)[nam,]
 
-save(fit_0PerMiss_1CR_fimlc_n150_rmse, file="fit_0PerMiss_1CR_fimlc_n150_rmse.RData" ) 
+save(fitMCAR_0PerMiss_1CR_fimlc_n150_rmse, file="fitMCAR_0PerMiss_1CR_fimlc_n150_rmse.RData" ) 
 save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_rmse, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_rmse.RData" ) 
 save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_rmse, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_rmse.RData" )
 save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_rmse, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_rmse.RData" ) 

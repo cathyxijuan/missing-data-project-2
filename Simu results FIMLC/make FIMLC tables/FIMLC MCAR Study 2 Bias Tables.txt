@@ -1,8 +1,8 @@
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  complete data.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  complete data.} 
 \label{fitMCAR_0PerMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -54,12 +54,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  complete data.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  complete data.} 
 \label{fitMCAR_0PerMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -111,12 +111,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -168,12 +168,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -225,12 +225,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -282,12 +282,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -339,12 +339,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -396,12 +396,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -453,12 +453,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -510,12 +510,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -567,12 +567,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -624,12 +624,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -681,12 +681,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -738,12 +738,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, small number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -795,12 +795,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -852,12 +852,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -909,12 +909,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -966,12 +966,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, two variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1023,12 +1023,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1080,12 +1080,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1137,12 +1137,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1194,12 +1194,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, four variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1251,12 +1251,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1308,12 +1308,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 20\% missing in each.} 
 \label{fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1365,12 +1365,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of RMSEA comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_dif.rmsea}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1422,12 +1422,12 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
-% latex table generated in R 3.5.3 by xtable 1.8-4 package
-% Sat May 30 23:43:56 2020
+\end{table}
+% latex table generated in R 4.0.3 by xtable 1.8-4 package
+% Sat Dec 19 10:17:00 2020
 \begin{table}[ht]
 \centering
-\caption{Average bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
+\caption{Empirical bias of the estimate of CFI comparing FIML with FIML-C methods \newline Study 2 condition:  MCAR, large number of patterns, six variables with missing data with 50\% missing in each.} 
 \label{fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n200_dif.cfi}
 \begingroup\small
 \begin{tabular}{lccccccccc}
@@ -1479,4 +1479,4 @@
  \multicolumn{10}{l}{\footnotesize{FIML-C w/o SSC=FIML-C without SSC; FIML-C w/ SSC V1-V6=FIML-C with SSC versions 1-6.}} \\ 
 \end{tabular}
 \endgroup
-\end{table}\clearpage
+\end{table}
