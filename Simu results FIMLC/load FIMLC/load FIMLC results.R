@@ -19,13 +19,13 @@ load("/Volumes/SP PHD U3/missing-data-project-2/fitNoMissing_WM_new.RData")
 ####fit#####
 
 #n150
-load(file="fitMCAR_0PerMiss_1CR_SF_fimlc_n150.RData")
+load(file="fit_0PerMiss_1CR_SF_fimlc_n150.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150.RData")
 load(file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n150.RData")
 
-load(file="fitMCAR_0PerMiss_2CR_SF_fimlc_n150.RData")
+load(file="fit_0PerMiss_2CR_SF_fimlc_n150.RData")
 load(file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n150.RData")
 load(file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n150.RData")
 load(file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n150.RData")
@@ -1387,8 +1387,22 @@ load(file="fitMAR_Strong_MaxPat_50PerMiss_6VarMiss_WM_fimlc_checks_n1000000.RDat
 ######################## Weak MAR study 2 #################################
 
 ####### fit ######
-#n200
+#n150
+load(file="fitMAR_Weak_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MinPat_50PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MinPat_20PerMiss_6VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MinPat_50PerMiss_6VarMiss_WM_fimlc_n150.RData")
 
+load(file="fitMAR_Weak_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150.RData")
+load(file="fitMAR_Weak_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150.RData")
+
+#n200
 load(file="fitMAR_Weak_MinPat_20PerMiss_2VarMiss_WM_fimlc_n200.RData")
 load(file="fitMAR_Weak_MinPat_50PerMiss_2VarMiss_WM_fimlc_n200.RData")
 load(file="fitMAR_Weak_MinPat_20PerMiss_4VarMiss_WM_fimlc_n200.RData")

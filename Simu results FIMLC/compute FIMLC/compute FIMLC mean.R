@@ -12,8 +12,53 @@ nam <- c("rmsea.fiml", "rmsea.uncor.fimlc",
 #################### MCAR study 1  #############################
 
 ####fit#####
-#n200
+#n150
+fitMCAR_0PerMiss_1CR_SF_fimlc_n150_mean <- list.mean(fit_0PerMiss_1CR_SF_fimlc_n150)[nam,]
+fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n150)[nam,]
 
+fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n150)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n150)[nam,]
+
+fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n150)[nam,]
+
+save(fitMCAR_0PerMiss_1CR_SF_fimlc_n150_mean, file="fitMCAR_0PerMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean, file="fitMCAR_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean.RData" )
+save(fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean, file="fitMCAR_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean, file="fitMCAR_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean, file="fitMCAR_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean.RData" ) 
+
+save(fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean, file="fitMCAR_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean, file="fitMCAR_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean.RData" )
+save(fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean, file="fitMCAR_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean, file="fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+
+
+
+
+#n200
 fitMCAR_0PerMiss_1CR_SF_fimlc_n200_mean <- list.mean(fitMCAR_0PerMiss_1CR_SF_fimlc_n200)[nam,]
 fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean <- list.mean(fitMCAR_20PerMiss_2VarMiss_1CR_SF_fimlc_n200)[nam,]
 fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean <- list.mean(fitMCAR_50PerMiss_2VarMiss_1CR_SF_fimlc_n200)[nam,]
@@ -204,6 +249,39 @@ save(fitMCAR_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000000_mean, file="fitMCAR_50PerM
 ######################## MCAR study 2 #################################
 
 ####### fit ######
+#n150
+fitMCAR_0PerMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_0PerMiss_WM_fimlc_n150)[nam,]
+
+fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n150)[nam,]
+
+fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150)[nam,]
+fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean <- list.mean(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150)[nam,]
+
+save(fitMCAR_0PerMiss_WM_fimlc_n150_mean, file="fitMCAR_0PerMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MinPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MinPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean.RData" )
+save(fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MinPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MinPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MinPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MinPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean.RData" ) 
+
+save(fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MaxPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean.RData" )
+save(fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MaxPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MaxPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MaxPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MaxPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean, file="fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean.RData" ) 
+
+
 #n200
 fitMCAR_0PerMiss_WM_fimlc_n200_mean <- list.mean(fitMCAR_0PerMiss_WM_fimlc_n200)[nam,]
 
@@ -355,6 +433,48 @@ save(fitMCAR_MaxPat_50PerMiss_6VarMiss_WM_fimlc_n1000000_mean, file="fitMCAR_Max
 #################### MAR Strong study 1  #############################
 
 ####fit#####
+#n150
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n150)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n150)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n150)[nam,]
+
+fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n150)[nam,]
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean, file="fitMAR_Strong_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean.RData" )
+save(fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean, file="fitMAR_Strong_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean, file="fitMAR_Strong_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean, file="fitMAR_Strong_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean.RData" ) 
+
+save(fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean, file="fitMAR_Strong_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean, file="fitMAR_Strong_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean.RData" )
+save(fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean, file="fitMAR_Strong_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean, file="fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+
+
 #n200
 fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean <- list.mean(fitMAR_Strong_20PerMiss_2VarMiss_1CR_SF_fimlc_n200)[nam,]
 fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean <- list.mean(fitMAR_Strong_50PerMiss_2VarMiss_1CR_SF_fimlc_n200)[nam,]
@@ -532,6 +652,48 @@ save(fitMAR_Strong_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000000_mean, file="fitMAR_S
 #################### MAR Weak study 1  #############################
 
 ####fit#####
+#n150
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n150)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n150)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n150)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean <- list.mean(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n150)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n150)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n150)[nam,]
+
+fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n150)[nam,]
+fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean <- list.mean(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n150)[nam,]
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n150_mean.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_SF_fimlc_n150_mean.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_SF_fimlc_n150_mean.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean, file="fitMAR_Weak_20PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean.RData" )
+save(fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean, file="fitMAR_Weak_50PerMiss_2VarMiss_1CR_DF_fimlc_n150_mean.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean, file="fitMAR_Weak_20PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean, file="fitMAR_Weak_50PerMiss_4VarMiss_1CR_DF_fimlc_n150_mean.RData" ) 
+
+save(fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean, file="fitMAR_Weak_20PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean, file="fitMAR_Weak_50PerMiss_2VarMiss_2CR_DF_fimlc_n150_mean.RData" )
+save(fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean, file="fitMAR_Weak_20PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean, file="fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n150_mean.RData" ) 
+
+
 #n200
 fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean <- list.mean(fitMAR_Weak_20PerMiss_2VarMiss_1CR_SF_fimlc_n200)[nam,]
 fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n200_mean <- list.mean(fitMAR_Weak_50PerMiss_2VarMiss_1CR_SF_fimlc_n200)[nam,]
@@ -709,6 +871,35 @@ save(fitMAR_Weak_50PerMiss_4VarMiss_2CR_DF_fimlc_n1000000_mean, file="fitMAR_Wea
 ######################## Weak MAR study 2 #################################
 
 ####### fit ######
+#n150
+fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n150)[nam,]
+
+fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n150)[nam,]
+fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean <- list.mean(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n150)[nam,]
+
+save(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean.RData" )
+save(fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_minPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_minPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_minPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_minPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean.RData" ) 
+
+save(fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_maxPat_20PerMiss_2VarMiss_WM_fimlc_n150_mean.RData" )
+save(fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_maxPat_50PerMiss_2VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_maxPat_20PerMiss_4VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_maxPat_50PerMiss_4VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_maxPat_20PerMiss_6VarMiss_WM_fimlc_n150_mean.RData" ) 
+save(fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean, file="fitMAR_Weak_maxPat_50PerMiss_6VarMiss_WM_fimlc_n150_mean.RData" ) 
+
 #n200
 fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n200_mean <- list.mean(fitMAR_Weak_minPat_20PerMiss_2VarMiss_WM_fimlc_n200)[nam,]
 fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n200_mean <- list.mean(fitMAR_Weak_minPat_50PerMiss_2VarMiss_WM_fimlc_n200)[nam,]
