@@ -20,16 +20,7 @@ nonnormal
 hypothesized.model <- 
             'visual  =~ x1 + x2 + x3
              textual =~ x4 + x5 + x6
-             speed   =~ x7 + x8 + x9
- x1 ~ 1
-  x2 ~ 1
-  x3 ~ 1
-  x4 ~ 1
-  x5 ~ 1
-  x6 ~ 1
-  x7 ~ 1
-  x8 ~ 1
-  x9 ~ 1'
+             speed   =~ x7 + x8 + x9'
 
 
 
@@ -579,7 +570,6 @@ rmsea.ts
 cfi.ts
 
 
-49.6/75
 
 
 
