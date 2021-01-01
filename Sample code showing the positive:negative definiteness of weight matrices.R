@@ -2,7 +2,7 @@ library(lavaan)
 
 
 
-load(file="sampleData.RData")
+load(file="sampleData.RData") #posted on our OSF website
 
 head(sampleData)
 

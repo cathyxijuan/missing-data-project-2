@@ -41,13 +41,13 @@ MARWeak_2Var <- function(model, sample.nobs,  missing.percentage=0.5){
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
   
-  cutoff<- qnorm(missing.percentage, lower.tail = F)
+  cutoff<- qnorm(0.07142857, lower.tail = F)
   #create missing for x11
   ind <- which(simuData[,1] > cutoff)
-  keep.log <- as.logical(sample(0:1,length(ind),replace=T, prob=c(0.25, 0.75))) #1=delete
+  keep.log <- as.logical(sample(0:1,length(ind),replace=T, prob=c(0.15, 0.85))) #1=delete
   row.keep <- ind[keep.log]
   ind2 <- which(simuData[,1] < cutoff)
-  keep.log2 <- as.logical(sample(0:1,length(ind2),replace=T, prob=c(0.75, 0.25))) #1=delete
+  keep.log2 <- as.logical(sample(0:1,length(ind2),replace=T, prob=c(0.85, 0.15))) #1=delete
   row.keep2 <- ind2[keep.log2]
   simuData[c(row.keep, row.keep2),7:8] <-NA ##Note the rows that are kept got deleted. So it really should be called row.delete.
   
@@ -98,13 +98,13 @@ MARWeak_4Var <- function(model, sample.nobs,  missing.percentage=0.5){
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
   
-  cutoff<- qnorm(missing.percentage, lower.tail = F)
+  cutoff<- qnorm(0.07142857, lower.tail = F) #solve 0.85x+0.15(1-x)=0.2  --> x=0.07142857
   #create missing for x11
   ind <- which(simuData[,1] > cutoff)
-  keep.log <- as.logical(sample(0:1,length(ind),replace=T, prob=c(0.25, 0.75))) #1=delete
+  keep.log <- as.logical(sample(0:1,length(ind),replace=T, prob=c(0.15, 0.85))) #1=delete
   row.keep <- ind[keep.log]
   ind2 <- which(simuData[,1] < cutoff)
-  keep.log2 <- as.logical(sample(0:1,length(ind2),replace=T, prob=c(0.75, 0.25))) #1=delete
+  keep.log2 <- as.logical(sample(0:1,length(ind2),replace=T, prob=c(0.85, 0.15))) #1=delete
   row.keep2 <- ind2[keep.log2]
   simuData[c(row.keep, row.keep2),7:10] <-NA ##Note the rows that are kept got deleted. So it really should be called row.delete.
   
@@ -155,13 +155,13 @@ MARWeak_6Var <- function(model, sample.nobs,  missing.percentage=0.5){
                          x5=data[,"x5"], x6=data[,"x6"], x7=data[,"x7"], x8=data[,"x8"],
                          x9=data[,"x9"], x10=data[,"x10"], x11=data[,"x11"], x12=data[,"x12"])
   
-  cutoff<- qnorm(missing.percentage, lower.tail = F)
+  cutoff<- qnorm(0.07142857, lower.tail = F)
   #create missing for x11
   ind <- which(simuData[,1] > cutoff)
-  keep.log <- as.logical(sample(0:1,length(ind),replace=T, prob=c(0.25, 0.75))) #1=delete
+  keep.log <- as.logical(sample(0:1,length(ind),replace=T, prob=c(0.15, 0.85))) #1=delete
   row.keep <- ind[keep.log]
   ind2 <- which(simuData[,1] < cutoff)
-  keep.log2 <- as.logical(sample(0:1,length(ind2),replace=T, prob=c(0.75, 0.25))) #1=delete
+  keep.log2 <- as.logical(sample(0:1,length(ind2),replace=T, prob=c(0.85, 0.15))) #1=delete
   row.keep2 <- ind2[keep.log2]
   simuData[c(row.keep, row.keep2),7:12] <-NA ##Note the rows that are kept got deleted. So it really should be called row.delete.
   

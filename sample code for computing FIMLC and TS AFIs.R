@@ -321,7 +321,7 @@ cfi.fimlc.v6 <-
 
 
 
-#--Print FIML and all versions of FIMLC RMSEA and CFI --# 
+######--Print all versions of FIMLC RMSEA and CFI --###### 
 rmsea.fimlc <- c(rmsea.fimlc.v0, 
            rmsea.fimlc.v1, rmsea.fimlc.v2,
            rmsea.fimlc.v3, rmsea.fimlc.v4,
@@ -528,7 +528,7 @@ cfi.ts.v2 <-
 
 
 
-#--Print FIML and all versions of TS RMSEA and CFI --# 
+#####--Print all versions of TS RMSEA and CFI --##### 
 rmsea.ts <- c(rmsea.ts.v0, rmsea.ts.v1, rmsea.ts.v2)
 
 names(rmsea.ts) <- c("rmsea.ts.v0",
